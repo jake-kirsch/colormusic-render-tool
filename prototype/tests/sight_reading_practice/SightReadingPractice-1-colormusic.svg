@@ -1,0 +1,3699 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg height="3150" id="he87jmy" overflow="visible" version="1.1" width="2100px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="song-title-group"><text fill="Black" font-size="30" x="210" y="105">Sight Reading Practice - Evan Ramsey - Page 1</text></g><a href="https://www.mycolormusic.com/" target="_blank" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="logo-group"><circle cx="165.0" cy="100.0" fill="#3763AF" r="8.5" stroke="black" stroke_width="20"/><rect fill="#F58220" height="15" stroke="black" stroke_width="20" transform="rotate(60 156.29165124598853 67.5)" width="15" x="148.79165124598853" y="60.0"/><circle cx="132.5" cy="43.70834875401149" fill="#00A995" r="8.5" stroke="black" stroke_width="20"/><rect fill="#DA1E48" height="15" stroke="black" stroke_width="20" transform="rotate(0 100.0 35.0)" width="15" x="92.5" y="27.5"/><circle cx="67.50000000000001" cy="43.70834875401148" fill="#A6CE39" r="8.5" stroke="black" stroke_width="20"/><rect fill="#823F98" height="15" stroke="black" stroke_width="20" transform="rotate(-60 43.70834875401148 67.5)" width="15" x="36.20834875401148" y="60.0"/><circle cx="35.0" cy="99.99999999999999" fill="#fdbb13" r="8.5" stroke="black" stroke_width="20"/><rect fill="#0098DD" height="15" stroke="black" stroke_width="20" transform="rotate(-120 43.70834875401149 132.5)" width="15" x="36.20834875401149" y="125.0"/><circle cx="67.49999999999997" cy="156.2916512459885" fill="#F04E23" r="8.5" stroke="black" stroke_width="20"/><rect fill="#39B54A" height="15" stroke="black" stroke_width="20" transform="rotate(-180 99.99999999999999 165.0)" width="15" x="92.49999999999999" y="157.5"/><circle cx="132.5" cy="156.2916512459885" fill="#AB218E" r="8.5" stroke="black" stroke_width="20"/><rect fill="#F3DC0B" height="15" stroke="black" stroke_width="20" transform="rotate(-240 156.2916512459885 132.50000000000003)" width="15" x="148.7916512459885" y="125.00000000000003"/><text fill="#FDB813" font-size="20" x="55" y="105">color</text><text fill="#939598" font-size="20" x="97.5" y="105">music</text></g></a>
+
+
+
+
+<g transform="translate(0, 50)"><desc>Engraved by Verovio 5.2.0[undefined]</desc><defs>
+<symbol id="E241-he87jmy" overflow="inherit" viewBox="0 0 1000 1000">
+<path d="M179 646c-4 8 -17 30 -18 33l-4 10c0 3 2 5 5 5s7 -2 13 -7c23 -33 46 -81 66 -132c22 -57 35 -125 35 -163c0 -104 -60 -183 -122 -241c-63 -59 -57 -53 -61 -56c-38 -34 -63 -95 -71 -95h-22v190c40 7 69 11 87 16c88 27 168 95 168 200c0 30 -12 89 -30 138 c-17 47 -31 73 -46 102z" transform="scale(1,-1)"/>
+</symbol>
+<symbol id="E240-he87jmy" overflow="inherit" viewBox="0 0 1000 1000">
+<path d="M179 -646c15 29 29 55 46 102c18 49 30 108 30 138c0 105 -80 173 -168 200c-18 5 -47 9 -87 16v190h22c8 0 33 -61 71 -95c4 -3 -2 3 61 -56c62 -58 122 -137 122 -241c0 -38 -13 -106 -35 -163c-20 -51 -43 -99 -66 -132c-6 -5 -10 -7 -13 -7s-5 2 -5 5l4 10 c1 3 14 25 18 33z" transform="scale(1,-1)"/>
+</symbol>
+<symbol id="E0A4-he87jmy" overflow="inherit" viewBox="0 0 1000 1000">
+<path d="M0 -39c0 68 73 172 200 172c66 0 114 -37 114 -95c0 -84 -106 -171 -218 -171c-64 0 -96 30 -96 94z" transform="scale(1,-1)"/>
+</symbol>
+<symbol id="E084-he87jmy" overflow="inherit" viewBox="0 0 1000 1000">
+<path d="M20 -78c84 97 114 180 134 329h170c-13 -32 -82 -132 -99 -151l-84 -97c-33 -36 -59 -63 -80 -81h162v102l127 123v-225h57v-39h-57v-34c0 -43 19 -65 57 -65v-34h-244v36c48 0 60 26 60 70v27h-203v39z" transform="scale(1,-1)"/>
+</symbol>
+<symbol id="E0A3-he87jmy" overflow="inherit" viewBox="0 0 1000 1000">
+<path d="M278 64c0 22 -17 39 -43 39c-12 0 -26 -3 -41 -10c-85 -43 -165 -94 -165 -156c5 -25 15 -32 49 -32c67 11 200 95 200 159zM0 -36c0 68 73 174 200 174c66 0 114 -39 114 -97c0 -84 -106 -173 -218 -173c-64 0 -96 32 -96 96z" transform="scale(1,-1)"/>
+</symbol>
+<symbol id="E050-he87jmy" overflow="inherit" viewBox="0 0 1000 1000">
+<path d="M441 -245c-23 -4 -48 -6 -76 -6c-59 0 -102 7 -130 20c-88 42 -150 93 -187 154c-26 44 -43 103 -48 176c0 6 -1 13 -1 19c0 54 15 111 45 170c29 57 65 106 110 148s96 85 153 127c-3 16 -8 46 -13 92c-4 43 -5 73 -5 89c0 117 16 172 69 257c34 54 64 82 89 82 c21 0 43 -30 69 -92s39 -115 41 -159v-15c0 -109 -21 -162 -67 -241c-13 -20 -63 -90 -98 -118c-13 -9 -25 -19 -37 -29l31 -181c8 1 18 2 28 2c58 0 102 -12 133 -35c59 -43 92 -104 98 -184c1 -7 1 -15 1 -22c0 -123 -87 -209 -181 -248c8 -57 17 -110 25 -162 c5 -31 6 -58 6 -80c0 -30 -5 -53 -14 -70c-35 -64 -88 -99 -158 -103c-5 0 -11 -1 -16 -1c-37 0 -72 10 -108 27c-50 24 -77 59 -80 105v11c0 29 7 55 20 76c18 28 45 42 79 44h6c49 0 93 -42 97 -87v-9c0 -51 -34 -86 -105 -106c17 -24 51 -36 102 -36c62 0 116 43 140 85 c9 16 13 41 13 74c0 20 -1 42 -5 67c-8 53 -18 106 -26 159zM461 939c-95 0 -135 -175 -135 -286c0 -24 2 -48 5 -71c50 39 92 82 127 128c40 53 60 100 60 140v8c-4 53 -22 81 -55 81h-2zM406 119l54 -326c73 25 110 78 110 161c0 7 0 15 -1 23c-7 95 -57 142 -151 142h-12 zM382 117c-72 -2 -128 -47 -128 -120v-7c2 -46 43 -99 75 -115c-3 -2 -7 -5 -10 -10c-70 33 -116 88 -123 172v11c0 68 44 126 88 159c23 17 49 29 78 36l-29 170c-21 -13 -52 -37 -92 -73c-50 -44 -86 -84 -109 -119c-45 -69 -67 -130 -67 -182v-13c5 -68 35 -127 93 -176 s125 -73 203 -73c25 0 50 3 75 9c-19 111 -36 221 -54 331z" transform="scale(1,-1)"/>
+</symbol>
+<symbol id="E262-he87jmy" overflow="inherit" viewBox="0 0 1000 1000">
+<path d="M136 186v169h17v-164l44 14v-91l-44 -14v-165l44 12v-91l-44 -13v-155h-17v150l-76 -22v-155h-17v149l-43 -13v90l43 14v167l-43 -14v92l43 13v169h17v-163zM60 73v-167l76 22v168z" transform="scale(1,-1)"/>
+</symbol>
+<symbol id="E260-he87jmy" overflow="inherit" viewBox="0 0 1000 1000">
+<path d="M20 110c32 16 54 27 93 27c26 0 35 -3 54 -13c13 -7 24 -20 27 -38l4 -25c0 -28 -16 -57 -45 -89c-23 -25 -39 -44 -65 -68l-88 -79v644h20v-359zM90 106c-32 0 -48 -10 -70 -29v-194c31 31 54 59 71 84c21 32 32 59 32 84c0 9 1 16 1 20c0 14 -3 21 -11 30l-8 3z" transform="scale(1,-1)"/>
+</symbol>
+<symbol id="E0A2-he87jmy" overflow="inherit" viewBox="0 0 1000 1000">
+<path d="M198 133c102 0 207 -45 207 -133c0 -92 -118 -133 -227 -133c-101 0 -178 46 -178 133c0 88 93 133 198 133zM293 -21c0 14 -3 29 -8 44c-7 20 -18 38 -33 54c-20 21 -43 31 -68 31l-20 -2c-15 -5 -27 -14 -36 -28c-4 -9 -6 -17 -8 -24s-3 -16 -3 -27c0 -15 3 -34 9 -57 s18 -41 34 -55c15 -15 36 -23 62 -23c4 0 10 1 18 2c19 5 32 15 40 30s13 34 13 55z" transform="scale(1,-1)"/>
+</symbol>
+<symbol id="E062-he87jmy" overflow="inherit" viewBox="0 0 1000 1000">
+<path d="M582 -120c0 32 26 58 58 58s58 -26 58 -58s-26 -58 -58 -58s-58 26 -58 58zM582 120c0 32 26 58 58 58s58 -26 58 -58s-26 -58 -58 -58s-58 26 -58 58zM158 96c51 0 73 -14 88 -49l16 -39c0 -17 -2 -30 -7 -40c-3 -11 -10 -21 -19 -31c-17 -18 -49 -43 -84 -43 c-55 0 -77 13 -112 44c-24 21 -35 55 -35 100c0 46 14 81 32 112c30 52 71 79 137 93l36 6l26 2c154 0 235 -68 274 -182c11 -32 18 -68 18 -107c0 -103 -26 -182 -68 -250c-89 -145 -234 -230 -412 -288l-30 -5c-9 0 -14 3 -14 8c3 10 5 11 10 16c35 15 70 30 96 44l78 43 c96 57 162 136 197 258c9 33 17 60 22 100c3 22 5 35 6 39c-7 69 -16 115 -23 140s-4 22 -16 40c-8 12 -19 23 -31 34c-24 21 -62 44 -118 44c-48 0 -84 -8 -113 -28c-28 -19 -42 -44 -42 -73v-16c2 -5 3 -9 4 -11c24 22 52 39 84 39z" transform="scale(1,-1)"/>
+</symbol>
+<symbol id="E4E3-he87jmy" overflow="inherit" viewBox="0 0 1000 1000">
+<path d="M0 -115v105c0 9 1 10 10 10h280c9 0 10 -1 10 -10v-105c0 -9 -1 -10 -10 -10h-280c-9 0 -10 1 -10 10z" transform="scale(1,-1)"/>
+</symbol>
+<symbol id="Ab-open-stem-down" overflow="inherit" viewBox="0 0 1000 1000">
+<rect fill="#0098DD" height="240" stroke="Black" stroke-width="20" transform="translate(0, -120)" width="300.0"/>
+<rect fill="White" height="100" stroke="Black" stroke-width="20" transform="translate(85, -50)" width="125.0"/>
+</symbol><symbol id="Ab-filled-stem-down" overflow="inherit" viewBox="0 0 1000 1000">
+<rect fill="#0098DD" height="240" stroke="Black" stroke-width="20" transform="translate(10, -120)" width="300.0"/>
+</symbol><symbol id="G#-open-stem-down" overflow="inherit" viewBox="0 0 1000 1000">
+<rect fill="#0098DD" height="240" stroke="Black" stroke-width="20" transform="translate(0, -120)" width="300.0"/>
+<rect fill="White" height="100" stroke="Black" stroke-width="20" transform="translate(85, -50)" width="125.0"/>
+</symbol><symbol id="G#-filled-stem-down" overflow="inherit" viewBox="0 0 1000 1000">
+<rect fill="#0098DD" height="240" stroke="Black" stroke-width="20" transform="translate(10, -120)" width="300.0"/>
+</symbol><symbol id="Bb-open-stem-down" overflow="inherit" viewBox="0 0 1000 1000">
+<rect fill="#823F98" height="240" stroke="Black" stroke-width="20" transform="translate(0, -120)" width="300.0"/>
+<rect fill="White" height="100" stroke="Black" stroke-width="20" transform="translate(85, -50)" width="125.0"/>
+</symbol><symbol id="Bb-filled-stem-down" overflow="inherit" viewBox="0 0 1000 1000">
+<rect fill="#823F98" height="240" stroke="Black" stroke-width="20" transform="translate(10, -120)" width="300.0"/>
+</symbol><symbol id="A#-open-stem-down" overflow="inherit" viewBox="0 0 1000 1000">
+<rect fill="#823F98" height="240" stroke="Black" stroke-width="20" transform="translate(0, -120)" width="300.0"/>
+<rect fill="White" height="100" stroke="Black" stroke-width="20" transform="translate(85, -50)" width="125.0"/>
+</symbol><symbol id="A#-filled-stem-down" overflow="inherit" viewBox="0 0 1000 1000">
+<rect fill="#823F98" height="240" stroke="Black" stroke-width="20" transform="translate(10, -120)" width="300.0"/>
+</symbol><symbol id="C-open-stem-down" overflow="inherit" viewBox="0 0 1000 1000">
+<rect fill="#DA1E48" height="240" stroke="Black" stroke-width="20" transform="translate(0, -120)" width="300.0"/>
+<rect fill="White" height="100" stroke="Black" stroke-width="20" transform="translate(85, -50)" width="125.0"/>
+</symbol><symbol id="C-filled-stem-down" overflow="inherit" viewBox="0 0 1000 1000">
+<rect fill="#DA1E48" height="240" stroke="Black" stroke-width="20" transform="translate(10, -120)" width="300.0"/>
+</symbol><symbol id="D-open-stem-down" overflow="inherit" viewBox="0 0 1000 1000">
+<rect fill="#F58220" height="240" stroke="Black" stroke-width="20" transform="translate(0, -120)" width="300.0"/>
+<rect fill="White" height="100" stroke="Black" stroke-width="20" transform="translate(85, -50)" width="125.0"/>
+</symbol><symbol id="D-filled-stem-down" overflow="inherit" viewBox="0 0 1000 1000">
+<rect fill="#F58220" height="240" stroke="Black" stroke-width="20" transform="translate(10, -120)" width="300.0"/>
+</symbol><symbol id="E-open-stem-down" overflow="inherit" viewBox="0 0 1000 1000">
+<rect fill="#F3DC0B" height="240" stroke="Black" stroke-width="20" transform="translate(0, -120)" width="300.0"/>
+<rect fill="White" height="100" stroke="Black" stroke-width="20" transform="translate(85, -50)" width="125.0"/>
+</symbol><symbol id="E-filled-stem-down" overflow="inherit" viewBox="0 0 1000 1000">
+<rect fill="#F3DC0B" height="240" stroke="Black" stroke-width="20" transform="translate(10, -120)" width="300.0"/>
+</symbol><symbol id="Gb-open-stem-down" overflow="inherit" viewBox="0 0 1000 1000">
+<rect fill="#39B54A" height="240" stroke="Black" stroke-width="20" transform="translate(0, -120)" width="300.0"/>
+<rect fill="White" height="100" stroke="Black" stroke-width="20" transform="translate(85, -50)" width="125.0"/>
+</symbol><symbol id="Gb-filled-stem-down" overflow="inherit" viewBox="0 0 1000 1000">
+<rect fill="#39B54A" height="240" stroke="Black" stroke-width="20" transform="translate(10, -120)" width="300.0"/>
+</symbol><symbol id="F#-open-stem-down" overflow="inherit" viewBox="0 0 1000 1000">
+<rect fill="#39B54A" height="240" stroke="Black" stroke-width="20" transform="translate(0, -120)" width="300.0"/>
+<rect fill="White" height="100" stroke="Black" stroke-width="20" transform="translate(85, -50)" width="125.0"/>
+</symbol><symbol id="F#-filled-stem-down" overflow="inherit" viewBox="0 0 1000 1000">
+<rect fill="#39B54A" height="240" stroke="Black" stroke-width="20" transform="translate(10, -120)" width="300.0"/>
+</symbol><symbol id="Ab-open-stem-up" overflow="inherit" viewBox="0 0 1000 1000">
+<rect fill="#0098DD" height="240" stroke="Black" stroke-width="20" transform="translate(5, -120)" width="300.0"/>
+<rect fill="White" height="100" stroke="Black" stroke-width="20" transform="translate(95, -50)" width="125.0"/>
+</symbol><symbol id="Ab-filled-stem-up" overflow="inherit" viewBox="0 0 1000 1000">
+<rect fill="#0098DD" height="240" stroke="Black" stroke-width="20" transform="translate(5, -120)" width="300.0"/>
+</symbol><symbol id="G#-open-stem-up" overflow="inherit" viewBox="0 0 1000 1000">
+<rect fill="#0098DD" height="240" stroke="Black" stroke-width="20" transform="translate(5, -120)" width="300.0"/>
+<rect fill="White" height="100" stroke="Black" stroke-width="20" transform="translate(95, -50)" width="125.0"/>
+</symbol><symbol id="G#-filled-stem-up" overflow="inherit" viewBox="0 0 1000 1000">
+<rect fill="#0098DD" height="240" stroke="Black" stroke-width="20" transform="translate(5, -120)" width="300.0"/>
+</symbol><symbol id="Bb-open-stem-up" overflow="inherit" viewBox="0 0 1000 1000">
+<rect fill="#823F98" height="240" stroke="Black" stroke-width="20" transform="translate(5, -120)" width="300.0"/>
+<rect fill="White" height="100" stroke="Black" stroke-width="20" transform="translate(95, -50)" width="125.0"/>
+</symbol><symbol id="Bb-filled-stem-up" overflow="inherit" viewBox="0 0 1000 1000">
+<rect fill="#823F98" height="240" stroke="Black" stroke-width="20" transform="translate(5, -120)" width="300.0"/>
+</symbol><symbol id="A#-open-stem-up" overflow="inherit" viewBox="0 0 1000 1000">
+<rect fill="#823F98" height="240" stroke="Black" stroke-width="20" transform="translate(5, -120)" width="300.0"/>
+<rect fill="White" height="100" stroke="Black" stroke-width="20" transform="translate(95, -50)" width="125.0"/>
+</symbol><symbol id="A#-filled-stem-up" overflow="inherit" viewBox="0 0 1000 1000">
+<rect fill="#823F98" height="240" stroke="Black" stroke-width="20" transform="translate(5, -120)" width="300.0"/>
+</symbol><symbol id="C-open-stem-up" overflow="inherit" viewBox="0 0 1000 1000">
+<rect fill="#DA1E48" height="240" stroke="Black" stroke-width="20" transform="translate(5, -120)" width="300.0"/>
+<rect fill="White" height="100" stroke="Black" stroke-width="20" transform="translate(95, -50)" width="125.0"/>
+</symbol><symbol id="C-filled-stem-up" overflow="inherit" viewBox="0 0 1000 1000">
+<rect fill="#DA1E48" height="240" stroke="Black" stroke-width="20" transform="translate(5, -120)" width="300.0"/>
+</symbol><symbol id="D-open-stem-up" overflow="inherit" viewBox="0 0 1000 1000">
+<rect fill="#F58220" height="240" stroke="Black" stroke-width="20" transform="translate(5, -120)" width="300.0"/>
+<rect fill="White" height="100" stroke="Black" stroke-width="20" transform="translate(95, -50)" width="125.0"/>
+</symbol><symbol id="D-filled-stem-up" overflow="inherit" viewBox="0 0 1000 1000">
+<rect fill="#F58220" height="240" stroke="Black" stroke-width="20" transform="translate(5, -120)" width="300.0"/>
+</symbol><symbol id="E-open-stem-up" overflow="inherit" viewBox="0 0 1000 1000">
+<rect fill="#F3DC0B" height="240" stroke="Black" stroke-width="20" transform="translate(5, -120)" width="300.0"/>
+<rect fill="White" height="100" stroke="Black" stroke-width="20" transform="translate(95, -50)" width="125.0"/>
+</symbol><symbol id="E-filled-stem-up" overflow="inherit" viewBox="0 0 1000 1000">
+<rect fill="#F3DC0B" height="240" stroke="Black" stroke-width="20" transform="translate(5, -120)" width="300.0"/>
+</symbol><symbol id="Gb-open-stem-up" overflow="inherit" viewBox="0 0 1000 1000">
+<rect fill="#39B54A" height="240" stroke="Black" stroke-width="20" transform="translate(5, -120)" width="300.0"/>
+<rect fill="White" height="100" stroke="Black" stroke-width="20" transform="translate(95, -50)" width="125.0"/>
+</symbol><symbol id="Gb-filled-stem-up" overflow="inherit" viewBox="0 0 1000 1000">
+<rect fill="#39B54A" height="240" stroke="Black" stroke-width="20" transform="translate(5, -120)" width="300.0"/>
+</symbol><symbol id="F#-open-stem-up" overflow="inherit" viewBox="0 0 1000 1000">
+<rect fill="#39B54A" height="240" stroke="Black" stroke-width="20" transform="translate(5, -120)" width="300.0"/>
+<rect fill="White" height="100" stroke="Black" stroke-width="20" transform="translate(95, -50)" width="125.0"/>
+</symbol><symbol id="F#-filled-stem-up" overflow="inherit" viewBox="0 0 1000 1000">
+<rect fill="#39B54A" height="240" stroke="Black" stroke-width="20" transform="translate(5, -120)" width="300.0"/>
+</symbol><symbol id="Ab-open-no-stem" overflow="inherit" viewBox="0 0 1000 1000">
+<rect fill="#0098DD" height="240" stroke="Black" stroke-width="20" transform="translate(0, -120)" width="396.0"/>
+<rect fill="White" height="100" stroke="Black" stroke-width="20" transform="translate(115, -50)" width="165.0"/>
+</symbol><symbol id="Ab-filled-no-stem" overflow="inherit" viewBox="0 0 1000 1000">
+<rect fill="#0098DD" height="240" stroke="Black" stroke-width="20" transform="translate(10, -120)" width="300.0"/>
+</symbol><symbol id="G#-open-no-stem" overflow="inherit" viewBox="0 0 1000 1000">
+<rect fill="#0098DD" height="240" stroke="Black" stroke-width="20" transform="translate(0, -120)" width="396.0"/>
+<rect fill="White" height="100" stroke="Black" stroke-width="20" transform="translate(115, -50)" width="165.0"/>
+</symbol><symbol id="G#-filled-no-stem" overflow="inherit" viewBox="0 0 1000 1000">
+<rect fill="#0098DD" height="240" stroke="Black" stroke-width="20" transform="translate(10, -120)" width="300.0"/>
+</symbol><symbol id="Bb-open-no-stem" overflow="inherit" viewBox="0 0 1000 1000">
+<rect fill="#823F98" height="240" stroke="Black" stroke-width="20" transform="translate(0, -120)" width="396.0"/>
+<rect fill="White" height="100" stroke="Black" stroke-width="20" transform="translate(115, -50)" width="165.0"/>
+</symbol><symbol id="Bb-filled-no-stem" overflow="inherit" viewBox="0 0 1000 1000">
+<rect fill="#823F98" height="240" stroke="Black" stroke-width="20" transform="translate(10, -120)" width="300.0"/>
+</symbol><symbol id="A#-open-no-stem" overflow="inherit" viewBox="0 0 1000 1000">
+<rect fill="#823F98" height="240" stroke="Black" stroke-width="20" transform="translate(0, -120)" width="396.0"/>
+<rect fill="White" height="100" stroke="Black" stroke-width="20" transform="translate(115, -50)" width="165.0"/>
+</symbol><symbol id="A#-filled-no-stem" overflow="inherit" viewBox="0 0 1000 1000">
+<rect fill="#823F98" height="240" stroke="Black" stroke-width="20" transform="translate(10, -120)" width="300.0"/>
+</symbol><symbol id="C-open-no-stem" overflow="inherit" viewBox="0 0 1000 1000">
+<rect fill="#DA1E48" height="240" stroke="Black" stroke-width="20" transform="translate(0, -120)" width="396.0"/>
+<rect fill="White" height="100" stroke="Black" stroke-width="20" transform="translate(115, -50)" width="165.0"/>
+</symbol><symbol id="C-filled-no-stem" overflow="inherit" viewBox="0 0 1000 1000">
+<rect fill="#DA1E48" height="240" stroke="Black" stroke-width="20" transform="translate(10, -120)" width="300.0"/>
+</symbol><symbol id="D-open-no-stem" overflow="inherit" viewBox="0 0 1000 1000">
+<rect fill="#F58220" height="240" stroke="Black" stroke-width="20" transform="translate(0, -120)" width="396.0"/>
+<rect fill="White" height="100" stroke="Black" stroke-width="20" transform="translate(115, -50)" width="165.0"/>
+</symbol><symbol id="D-filled-no-stem" overflow="inherit" viewBox="0 0 1000 1000">
+<rect fill="#F58220" height="240" stroke="Black" stroke-width="20" transform="translate(10, -120)" width="300.0"/>
+</symbol><symbol id="E-open-no-stem" overflow="inherit" viewBox="0 0 1000 1000">
+<rect fill="#F3DC0B" height="240" stroke="Black" stroke-width="20" transform="translate(0, -120)" width="396.0"/>
+<rect fill="White" height="100" stroke="Black" stroke-width="20" transform="translate(115, -50)" width="165.0"/>
+</symbol><symbol id="E-filled-no-stem" overflow="inherit" viewBox="0 0 1000 1000">
+<rect fill="#F3DC0B" height="240" stroke="Black" stroke-width="20" transform="translate(10, -120)" width="300.0"/>
+</symbol><symbol id="Gb-open-no-stem" overflow="inherit" viewBox="0 0 1000 1000">
+<rect fill="#39B54A" height="240" stroke="Black" stroke-width="20" transform="translate(0, -120)" width="396.0"/>
+<rect fill="White" height="100" stroke="Black" stroke-width="20" transform="translate(115, -50)" width="165.0"/>
+</symbol><symbol id="Gb-filled-no-stem" overflow="inherit" viewBox="0 0 1000 1000">
+<rect fill="#39B54A" height="240" stroke="Black" stroke-width="20" transform="translate(10, -120)" width="300.0"/>
+</symbol><symbol id="F#-open-no-stem" overflow="inherit" viewBox="0 0 1000 1000">
+<rect fill="#39B54A" height="240" stroke="Black" stroke-width="20" transform="translate(0, -120)" width="396.0"/>
+<rect fill="White" height="100" stroke="Black" stroke-width="20" transform="translate(115, -50)" width="165.0"/>
+</symbol><symbol id="F#-filled-no-stem" overflow="inherit" viewBox="0 0 1000 1000">
+<rect fill="#39B54A" height="240" stroke="Black" stroke-width="20" transform="translate(10, -120)" width="300.0"/>
+</symbol></defs><style type="text/css">#he87jmy g.page-margin {font-family:Times,serif;}#he87jmy g.ending, #he87jmy g.fing, #he87jmy g.reh, #he87jmy g.tempo {font-weight:bold;}#he87jmy g.dir, #he87jmy g.dynam, #he87jmy g.mNum {font-style:italic;}#he87jmy g.label {font-weight:normal;}#he87jmy path {stroke:currentColor}</style><svg class="definition-scale" color="black" viewBox="0 0 21000 29700">
+<g class="page-margin" transform="translate(500, 500)">
+<g class="mdiv pageMilestone" id="i1qu7rvb"/>
+<g class="score pageMilestone" id="c1z030xr"/>
+<g class="system" id="byt1xck">
+<path d="M1523 804 L1523 3324" stroke-width="27"/>
+<g class="grpSym" id="lb1erd1">
+<path d="M1438,3306 C1078,2766 1528,2244 1258,2064 C1591,2244 1141,2766 1438,3306" stroke-linecap="round" stroke-linejoin="round" stroke-width="18"/>
+<path d="M1438,822 C1141,1362 1591,1884 1258,2064 C1528,1884 1078,1362 1438,822" stroke-linecap="round" stroke-linejoin="round" stroke-width="18"/>
+</g>
+<g class="label" id="x1rp79m7">
+<text font-size="0px" text-anchor="end" x="1105" y="2154">
+<tspan class="text" id="c1eijjvm">
+<tspan font-size="405px">Piano</tspan>
+</tspan>
+</text>
+</g>
+<g class="section systemMilestone" id="rjh0pw7"/>
+<g class="pb" id="s1dxmf41"/>
+<g class="measure" id="adap39j">
+<g class="staff" id="tv5tjyx">
+<path d="M1510 804 L6555 804" stroke-width="13"/>
+<path d="M1510 984 L6555 984" stroke-width="13"/>
+<path d="M1510 1164 L6555 1164" stroke-width="13"/>
+<path d="M1510 1344 L6555 1344" stroke-width="13"/>
+<path d="M1510 1524 L6555 1524" stroke-width="13"/>
+<g class="clef" id="r1n5vxgr">
+<use height="720px" width="720px" x="1627" xlink:href="#E050-he87jmy" y="1344"/>
+</g>
+<g class="keySig" id="j1p219q3"/>
+<g class="meterSig" id="m1udi7uu">
+<use height="720px" width="720px" x="2294" xlink:href="#E084-he87jmy" y="984"/>
+<use height="720px" width="720px" x="2294" xlink:href="#E084-he87jmy" y="1344"/>
+</g>
+<g class="layer" id="iip5ly7">
+<g class="note" id="ccp43yc">
+<title class="labelAttr">C:4</title>
+<g class="stem" id="dujlanu">
+<path d="M2864 1102 L2864 1704" stroke-width="18"/>
+</g><g class="notehead">
+<use height="720px" width="720px" x="2855" xlink:href="#C-filled-stem-down" y="1074"/>
+</g>
+
+</g>
+<g class="note" id="wu7ve51">
+<title class="labelAttr">B:4</title>
+<g class="stem" id="l15r8pun">
+<path d="M3786 1192 L3786 1764" stroke-width="18"/>
+</g><g class="notehead" fill="#A6CE39" stroke="Black" stroke-width="20">
+<use height="720px" width="720px" x="3777" xlink:href="#E0A4-he87jmy" y="1164"/>
+</g>
+
+</g>
+<g class="note" id="wjksgkq">
+<title class="labelAttr">A:4</title>
+<g class="stem" id="m1n3enpx">
+<path d="M4916 1226 L4916 624" stroke-width="18"/>
+</g><g class="notehead" fill="#fdbb13" stroke="Black" stroke-width="20">
+<use height="720px" width="720px" x="4699" xlink:href="#E0A4-he87jmy" y="1254"/>
+</g>
+
+</g>
+<g class="note" id="nltogqb">
+<title class="labelAttr">G:4</title>
+<g class="stem" id="sw46gzr">
+<path d="M5838 1316 L5838 714" stroke-width="18"/>
+</g><g class="notehead" fill="#F04E23" stroke="Black" stroke-width="20">
+<use height="720px" width="720px" x="5621" xlink:href="#E0A4-he87jmy" y="1344"/>
+</g>
+
+</g>
+</g>
+</g>
+<g class="staff" id="zy9hgqq">
+<path d="M1510 2604 L6555 2604" stroke-width="13"/>
+<path d="M1510 2784 L6555 2784" stroke-width="13"/>
+<path d="M1510 2964 L6555 2964" stroke-width="13"/>
+<path d="M1510 3144 L6555 3144" stroke-width="13"/>
+<path d="M1510 3324 L6555 3324" stroke-width="13"/>
+<g class="clef" id="htn79ye">
+<use height="720px" width="720px" x="1627" xlink:href="#E062-he87jmy" y="2784"/>
+</g>
+<g class="keySig" id="h8bw110"/>
+<g class="meterSig" id="bu3a3mt">
+<use height="720px" width="720px" x="2294" xlink:href="#E084-he87jmy" y="2784"/>
+<use height="720px" width="720px" x="2294" xlink:href="#E084-he87jmy" y="3144"/>
+</g>
+<g class="ledgerLines above">
+<path d="M2807 2424 L3129 2424" stroke-width="22"/>
+</g>
+<g class="layer" id="n40q43d">
+<g class="note" id="kdsrpu8">
+<title class="labelAttr">C:4</title>
+<g class="stem" id="j1apa68f">
+<path d="M2864 2452 L2864 3054" stroke-width="18"/>
+</g><g class="notehead">
+<use height="720px" width="720px" x="2855" xlink:href="#C-filled-stem-down" y="2424"/>
+</g>
+
+</g>
+<g class="note" id="tnkyfl5">
+<title class="labelAttr">B:4</title>
+<g class="stem" id="ld8dltc">
+<path d="M3786 2542 L3786 3144" stroke-width="18"/>
+</g><g class="notehead" fill="#A6CE39" stroke="Black" stroke-width="20">
+<use height="720px" width="720px" x="3777" xlink:href="#E0A4-he87jmy" y="2514"/>
+</g>
+
+</g>
+<g class="note" id="v829p0z">
+<title class="labelAttr">A:4</title>
+<g class="stem" id="yte5obq">
+<path d="M4708 2632 L4708 3234" stroke-width="18"/>
+</g><g class="notehead" fill="#fdbb13" stroke="Black" stroke-width="20">
+<use height="720px" width="720px" x="4699" xlink:href="#E0A4-he87jmy" y="2604"/>
+</g>
+
+</g>
+<g class="note" id="pnmrkxz">
+<title class="labelAttr">G:4</title>
+<g class="stem" id="lxd49l4">
+<path d="M5630 2722 L5630 3324" stroke-width="18"/>
+</g><g class="notehead" fill="#F04E23" stroke="Black" stroke-width="20">
+<use height="720px" width="720px" x="5621" xlink:href="#E0A4-he87jmy" y="2694"/>
+</g>
+
+</g>
+</g>
+</g>
+<g class="reh" id="u1dw7vlm" xml:lang="it">
+<rect fill-opacity="0" height="499" stroke="currentColor" stroke-opacity="1" stroke-width="20" width="13530" x="-4332" y="10"/>
+<text font-size="0px" text-anchor="middle" x="2433" y="381">
+<tspan class="rend" font-weight="bold" id="yypwt0b">
+<tspan class="text" id="u1fu3x14">
+<tspan font-size="405px">This will include do-mi-so skips in the major and la-do-mi skips in the minor.</tspan>
+</tspan>
+</tspan>
+</text>
+</g>
+<g class="barLine" id="b1mwyan1">
+<path d="M6542 804 L6542 1524" stroke-width="27"/>
+<path d="M6542 2604 L6542 3324" stroke-width="27"/>
+<path d="M6542 1524 L6542 2604" stroke-width="27"/>
+</g>
+</g>
+<g class="measure" id="ogr7s4w">
+<g class="staff" id="z1p8bk0d">
+<path d="M6555 804 L9994 804" stroke-width="13"/>
+<path d="M6555 984 L9994 984" stroke-width="13"/>
+<path d="M6555 1164 L9994 1164" stroke-width="13"/>
+<path d="M6555 1344 L9994 1344" stroke-width="13"/>
+<path d="M6555 1524 L9994 1524" stroke-width="13"/>
+<g class="layer" id="qw43sx">
+<g class="note" id="o6oeqv0">
+<title class="labelAttr">F:4</title>
+<g class="stem" id="qqdcigq">
+<path d="M6951 1406 L6951 804" stroke-width="18"/>
+</g><g class="notehead" fill="#AB218E" stroke="Black" stroke-width="20">
+<use height="720px" width="720px" x="6734" xlink:href="#E0A4-he87jmy" y="1434"/>
+</g>
+
+</g>
+<g class="note" id="y18itf8c">
+<title class="labelAttr">E:4</title>
+<g class="stem" id="c10n41mv">
+<path d="M7873 1496 L7873 894" stroke-width="18"/>
+</g><g class="notehead">
+<use height="720px" width="720px" x="7656" xlink:href="#E-filled-stem-up" y="1524"/>
+</g>
+
+</g>
+<g class="note" id="geqxlmd">
+<title class="labelAttr">F:2</title>
+<g class="stem" id="ivb2ebu">
+<path d="M8795 1406 L8795 804" stroke-width="18"/>
+</g><g class="notehead" fill="#AB218E" stroke="Black" stroke-width="20">
+<use height="720px" width="720px" x="8578" xlink:href="#E0A3-he87jmy" y="1434"/>
+</g>
+
+</g>
+</g>
+</g>
+<g class="staff" id="w1fubq86">
+<path d="M6555 2604 L9994 2604" stroke-width="13"/>
+<path d="M6555 2784 L9994 2784" stroke-width="13"/>
+<path d="M6555 2964 L9994 2964" stroke-width="13"/>
+<path d="M6555 3144 L9994 3144" stroke-width="13"/>
+<path d="M6555 3324 L9994 3324" stroke-width="13"/>
+<g class="layer" id="ih4ifp8">
+<g class="note" id="y1jcv3g2">
+<title class="labelAttr">F:4</title>
+<g class="stem" id="y1ot84ko">
+<path d="M6743 2812 L6743 3414" stroke-width="18"/>
+</g><g class="notehead" fill="#AB218E" stroke="Black" stroke-width="20">
+<use height="720px" width="720px" x="6734" xlink:href="#E0A4-he87jmy" y="2784"/>
+</g>
+
+</g>
+<g class="note" id="c4n8bnz">
+<title class="labelAttr">E:4</title>
+<g class="stem" id="z1lrd32f">
+<path d="M7665 2902 L7665 3504" stroke-width="18"/>
+</g><g class="notehead">
+<use height="720px" width="720px" x="7656" xlink:href="#E-filled-stem-down" y="2874"/>
+</g>
+
+</g>
+<g class="note" id="k6bfjr2">
+<title class="labelAttr">F:2</title>
+<g class="stem" id="tbfe8i3">
+<path d="M8587 2809 L8587 3414" stroke-width="18"/>
+</g><g class="notehead" fill="#AB218E" stroke="Black" stroke-width="20">
+<use height="720px" width="720px" x="8578" xlink:href="#E0A3-he87jmy" y="2784"/>
+</g>
+
+</g>
+</g>
+</g>
+<g class="barLine" id="u19cuhnd">
+<path d="M9981 804 L9981 1524" stroke-width="27"/>
+<path d="M9981 2604 L9981 3324" stroke-width="27"/>
+<path d="M9981 1524 L9981 2604" stroke-width="27"/>
+</g>
+</g>
+<g class="measure" id="nlusdwp">
+<g class="staff" id="lb2q5yd">
+<path d="M9994 804 L13873 804" stroke-width="13"/>
+<path d="M9994 984 L13873 984" stroke-width="13"/>
+<path d="M9994 1164 L13873 1164" stroke-width="13"/>
+<path d="M9994 1344 L13873 1344" stroke-width="13"/>
+<path d="M9994 1524 L13873 1524" stroke-width="13"/>
+<g class="layer" id="tb8i62n">
+<g class="note" id="k1sur31n">
+<title class="labelAttr">G:4</title>
+<g class="stem" id="t13vdnxp">
+<path d="M10390 1316 L10390 714" stroke-width="18"/>
+</g><g class="notehead" fill="#F04E23" stroke="Black" stroke-width="20">
+<use height="720px" width="720px" x="10173" xlink:href="#E0A4-he87jmy" y="1344"/>
+</g>
+
+</g>
+<g class="note" id="z1ybqcgf">
+<title class="labelAttr">A:4</title>
+<g class="stem" id="reyid2n">
+<path d="M11312 1226 L11312 624" stroke-width="18"/>
+</g><g class="notehead" fill="#fdbb13" stroke="Black" stroke-width="20">
+<use height="720px" width="720px" x="11095" xlink:href="#E0A4-he87jmy" y="1254"/>
+</g>
+
+</g>
+<g class="note" id="ihcrdrf">
+<title class="labelAttr">G:4</title>
+<g class="stem" id="o1tjme3f">
+<path d="M12234 1316 L12234 714" stroke-width="18"/>
+</g><g class="notehead" fill="#F04E23" stroke="Black" stroke-width="20">
+<use height="720px" width="720px" x="12017" xlink:href="#E0A4-he87jmy" y="1344"/>
+</g>
+
+</g>
+<g class="note" id="n6hb73s">
+<title class="labelAttr">F:4</title>
+<g class="stem" id="c10krcg0">
+<path d="M13156 1406 L13156 804" stroke-width="18"/>
+</g><g class="notehead" fill="#AB218E" stroke="Black" stroke-width="20">
+<use height="720px" width="720px" x="12939" xlink:href="#E0A4-he87jmy" y="1434"/>
+</g>
+
+</g>
+</g>
+</g>
+<g class="staff" id="p1dqgm9z">
+<path d="M9994 2604 L13873 2604" stroke-width="13"/>
+<path d="M9994 2784 L13873 2784" stroke-width="13"/>
+<path d="M9994 2964 L13873 2964" stroke-width="13"/>
+<path d="M9994 3144 L13873 3144" stroke-width="13"/>
+<path d="M9994 3324 L13873 3324" stroke-width="13"/>
+<g class="layer" id="r1h7hzwj">
+<g class="note" id="v5hyoqx">
+<title class="labelAttr">G:4</title>
+<g class="stem" id="l1jxrdbi">
+<path d="M10182 2722 L10182 3324" stroke-width="18"/>
+</g><g class="notehead" fill="#F04E23" stroke="Black" stroke-width="20">
+<use height="720px" width="720px" x="10173" xlink:href="#E0A4-he87jmy" y="2694"/>
+</g>
+
+</g>
+<g class="note" id="z107enjf">
+<title class="labelAttr">A:4</title>
+<g class="stem" id="y7hguzg">
+<path d="M11104 2632 L11104 3234" stroke-width="18"/>
+</g><g class="notehead" fill="#fdbb13" stroke="Black" stroke-width="20">
+<use height="720px" width="720px" x="11095" xlink:href="#E0A4-he87jmy" y="2604"/>
+</g>
+
+</g>
+<g class="note" id="h92ki5">
+<title class="labelAttr">G:4</title>
+<g class="stem" id="r1owake3">
+<path d="M12026 2722 L12026 3324" stroke-width="18"/>
+</g><g class="notehead" fill="#F04E23" stroke="Black" stroke-width="20">
+<use height="720px" width="720px" x="12017" xlink:href="#E0A4-he87jmy" y="2694"/>
+</g>
+
+</g>
+<g class="note" id="sovh4x0">
+<title class="labelAttr">F:4</title>
+<g class="stem" id="c1sso71w">
+<path d="M12948 2812 L12948 3414" stroke-width="18"/>
+</g><g class="notehead" fill="#AB218E" stroke="Black" stroke-width="20">
+<use height="720px" width="720px" x="12939" xlink:href="#E0A4-he87jmy" y="2784"/>
+</g>
+
+</g>
+</g>
+</g>
+<g class="barLine" id="e1mt176b">
+<path d="M13860 804 L13860 1524" stroke-width="27"/>
+<path d="M13860 2604 L13860 3324" stroke-width="27"/>
+<path d="M13860 1524 L13860 2604" stroke-width="27"/>
+</g>
+</g>
+<g class="measure" id="u16qel68">
+<g class="staff" id="c1pecaom">
+<path d="M13873 804 L16190 804" stroke-width="13"/>
+<path d="M13873 984 L16190 984" stroke-width="13"/>
+<path d="M13873 1164 L16190 1164" stroke-width="13"/>
+<path d="M13873 1344 L16190 1344" stroke-width="13"/>
+<path d="M13873 1524 L16190 1524" stroke-width="13"/>
+<g class="layer" id="in16av7">
+<g class="note" id="nfu0wn">
+<title class="labelAttr">G:1</title>
+<g class="notehead" fill="#F04E23" stroke="Black" stroke-width="20">
+<use height="720px" width="720px" x="14052" xlink:href="#E0A2-he87jmy" y="1344"/>
+</g>
+</g>
+</g>
+</g>
+<g class="staff" id="o1hm6l31">
+<path d="M13873 2604 L16190 2604" stroke-width="13"/>
+<path d="M13873 2784 L16190 2784" stroke-width="13"/>
+<path d="M13873 2964 L16190 2964" stroke-width="13"/>
+<path d="M13873 3144 L16190 3144" stroke-width="13"/>
+<path d="M13873 3324 L16190 3324" stroke-width="13"/>
+<g class="layer" id="d103tnic">
+<g class="note" id="bwnzcqw">
+<title class="labelAttr">G:1</title>
+<g class="notehead" fill="#F04E23" stroke="Black" stroke-width="20">
+<use height="720px" width="720px" x="14052" xlink:href="#E0A2-he87jmy" y="2694"/>
+</g>
+</g>
+</g>
+</g>
+<g class="barLine" id="ux624ay">
+<path d="M16177 804 L16177 1524" stroke-width="27"/>
+<path d="M16177 2604 L16177 3324" stroke-width="27"/>
+<path d="M16177 1524 L16177 2604" stroke-width="27"/>
+</g>
+</g>
+<g class="measure" id="huqcmfa">
+<g class="staff" id="swryvjb">
+<path d="M16190 804 L20002 804" stroke-width="13"/>
+<path d="M16190 984 L20002 984" stroke-width="13"/>
+<path d="M16190 1164 L20002 1164" stroke-width="13"/>
+<path d="M16190 1344 L20002 1344" stroke-width="13"/>
+<path d="M16190 1524 L20002 1524" stroke-width="13"/>
+<g class="ledgerLines below">
+<path d="M19340 1704 L19662 1704" stroke-width="22"/>
+</g>
+<g class="layer" id="q19a7dm8">
+<g class="note" id="o1uarc7t">
+<title class="labelAttr">F:4</title>
+<g class="stem" id="r1bygyt1">
+<path d="M16586 1406 L16586 804" stroke-width="18"/>
+</g><g class="notehead" fill="#AB218E" stroke="Black" stroke-width="20">
+<use height="720px" width="720px" x="16369" xlink:href="#E0A4-he87jmy" y="1434"/>
+</g>
+
+</g>
+<g class="note" id="uyiylgj">
+<title class="labelAttr">E:4</title>
+<g class="stem" id="lrlaj6z">
+<path d="M17508 1496 L17508 894" stroke-width="18"/>
+</g><g class="notehead">
+<use height="720px" width="720px" x="17291" xlink:href="#E-filled-stem-up" y="1524"/>
+</g>
+
+</g>
+<g class="note" id="a1dcwftr">
+<title class="labelAttr">D:4</title>
+<g class="stem" id="k1hy723">
+<path d="M18430 1586 L18430 984" stroke-width="18"/>
+</g><g class="notehead">
+<use height="720px" width="720px" x="18213" xlink:href="#D-filled-stem-up" y="1614"/>
+</g>
+<g class="dots" id="j1lnunlc">
+<ellipse cx="18529" cy="1614" fill-opacity="1" rx="36" ry="36" stroke-opacity="1"/>
+</g>
+
+</g>
+<g class="note" id="qk2y8nd">
+<title class="labelAttr">C:8</title>
+<g class="stem" id="x1umkvuu">
+<path d="M19605 1676 L19605 1074" stroke-width="18"/>
+<g class="flag" id="cfmgv8x">
+<use height="720px" width="720px" x="19596" xlink:href="#E240-he87jmy" y="1074"/>
+</g>
+</g><g class="notehead">
+<use height="720px" width="720px" x="19388" xlink:href="#C-filled-stem-up" y="1704"/>
+</g>
+
+</g>
+</g>
+</g>
+<g class="staff" id="zqr3j93">
+<path d="M16190 2604 L20002 2604" stroke-width="13"/>
+<path d="M16190 2784 L20002 2784" stroke-width="13"/>
+<path d="M16190 2964 L20002 2964" stroke-width="13"/>
+<path d="M16190 3144 L20002 3144" stroke-width="13"/>
+<path d="M16190 3324 L20002 3324" stroke-width="13"/>
+<g class="layer" id="t8v64zh">
+<g class="note" id="m1mwhssm">
+<title class="labelAttr">F:4</title>
+<g class="stem" id="yfykrg9">
+<path d="M16378 2812 L16378 3414" stroke-width="18"/>
+</g><g class="notehead" fill="#AB218E" stroke="Black" stroke-width="20">
+<use height="720px" width="720px" x="16369" xlink:href="#E0A4-he87jmy" y="2784"/>
+</g>
+
+</g>
+<g class="note" id="d12mg86g">
+<title class="labelAttr">E:4</title>
+<g class="stem" id="g1co9vd4">
+<path d="M17300 2902 L17300 3504" stroke-width="18"/>
+</g><g class="notehead">
+<use height="720px" width="720px" x="17291" xlink:href="#E-filled-stem-down" y="2874"/>
+</g>
+
+</g>
+<g class="note" id="o1cbkzxq">
+<title class="labelAttr">D:4</title>
+<g class="stem" id="p1k87hbp">
+<path d="M18222 2992 L18222 3564" stroke-width="18"/>
+</g><g class="notehead">
+<use height="720px" width="720px" x="18213" xlink:href="#D-filled-stem-down" y="2964"/>
+</g>
+<g class="dots" id="ne9tlo5">
+<ellipse cx="18529" cy="2874" fill-opacity="1" rx="36" ry="36" stroke-opacity="1"/>
+</g>
+
+</g>
+<g class="note" id="a8t4a2p">
+<title class="labelAttr">C:8</title>
+<g class="stem" id="c11gvcdk">
+<path d="M19605 3026 L19605 2424" stroke-width="18"/>
+<g class="flag" id="brv1pvr">
+<use height="720px" width="720px" x="19596" xlink:href="#E240-he87jmy" y="2424"/>
+</g>
+</g><g class="notehead">
+<use height="720px" width="720px" x="19388" xlink:href="#C-filled-stem-up" y="3054"/>
+</g>
+
+</g>
+</g>
+</g>
+<g class="barLine" id="vuikmu1">
+<path d="M19989 804 L19989 1524" stroke-width="27"/>
+<path d="M19989 2604 L19989 3324" stroke-width="27"/>
+<path d="M19989 1524 L19989 2604" stroke-width="27"/>
+</g>
+</g>
+</g>
+<g class="system" id="rbnafiq">
+<path d="M1332 4764 L1332 7284" stroke-width="27"/>
+<g class="grpSym" id="c1mejgrc">
+<path d="M1247,7266 C887,6726 1337,6204 1067,6024 C1400,6204 950,6726 1247,7266" stroke-linecap="round" stroke-linejoin="round" stroke-width="18"/>
+<path d="M1247,4782 C950,5322 1400,5844 1067,6024 C1337,5844 887,5322 1247,4782" stroke-linecap="round" stroke-linejoin="round" stroke-width="18"/>
+</g>
+<g class="labelAbbr" id="j1dyikxk">
+<text font-size="0px" text-anchor="end" x="914" y="6114">
+<tspan class="text" id="d9agl1x">
+<tspan font-size="405px">Pno.</tspan>
+</tspan>
+</text>
+</g>
+<g class="measure" id="svj88eb">
+<g class="mNum autogenerated" id="h2sgbf">
+<text font-size="0px" text-anchor="middle" x="1319" y="4521">
+<tspan class="text" id="c130k6fb">
+<tspan font-size="324px">6</tspan>
+</tspan>
+</text>
+</g>
+<g class="staff" id="zcjmehr">
+<path d="M1319 4764 L5088 4764" stroke-width="13"/>
+<path d="M1319 4944 L5088 4944" stroke-width="13"/>
+<path d="M1319 5124 L5088 5124" stroke-width="13"/>
+<path d="M1319 5304 L5088 5304" stroke-width="13"/>
+<path d="M1319 5484 L5088 5484" stroke-width="13"/>
+<g class="clef" id="dgu6fih">
+<use height="720px" width="720px" x="1436" xlink:href="#E050-he87jmy" y="5304"/>
+</g>
+<g class="keySig" id="u162zson"/>
+<g class="layer" id="x1fnttnl">
+<g class="beam" id="tr90ud3">
+<polygon fill-opacity="1" points="2407,4899 2915,4854 2915,4944 2407,4989" stroke-opacity="1"/>
+<g class="note" id="y8re4ka">
+<title class="labelAttr">D:8</title>
+<g class="stem" id="seb6i1s">
+<path d="M2416 5546 L2416 4917" stroke-width="18"/>
+</g><g class="notehead">
+<use height="720px" width="720px" x="2199" xlink:href="#D-filled-stem-up" y="5574"/>
+</g>
+
+</g>
+<g class="note" id="zfke4ut">
+<title class="labelAttr">E:8</title>
+<g class="stem" id="t7t49x5">
+<path d="M2906 5456 L2906 4872" stroke-width="18"/>
+</g><g class="notehead">
+<use height="720px" width="720px" x="2689" xlink:href="#E-filled-stem-up" y="5484"/>
+</g>
+
+</g>
+</g>
+<g class="note" id="x1uxmz7w">
+<title class="labelAttr">F:2</title>
+<g class="stem" id="va0pjrt">
+<path d="M3396 5366 L3396 4764" stroke-width="18"/>
+</g><g class="notehead" fill="#AB218E" stroke="Black" stroke-width="20">
+<use height="720px" width="720px" x="3179" xlink:href="#E0A3-he87jmy" y="5394"/>
+</g>
+
+</g>
+<g class="note" id="z1xnru6g">
+<title class="labelAttr">G:4</title>
+<g class="stem" id="v1sxj8pj">
+<path d="M4541 5276 L4541 4674" stroke-width="18"/>
+</g><g class="notehead" fill="#F04E23" stroke="Black" stroke-width="20">
+<use height="720px" width="720px" x="4324" xlink:href="#E0A4-he87jmy" y="5304"/>
+</g>
+
+</g>
+</g>
+</g>
+<g class="staff" id="r1rmores">
+<path d="M1319 6564 L5088 6564" stroke-width="13"/>
+<path d="M1319 6744 L5088 6744" stroke-width="13"/>
+<path d="M1319 6924 L5088 6924" stroke-width="13"/>
+<path d="M1319 7104 L5088 7104" stroke-width="13"/>
+<path d="M1319 7284 L5088 7284" stroke-width="13"/>
+<g class="clef" id="r7ffkeg">
+<use height="720px" width="720px" x="1436" xlink:href="#E062-he87jmy" y="6744"/>
+</g>
+<g class="keySig" id="i9zp1p7"/>
+<g class="layer" id="x397pa4">
+<g class="beam" id="r11f58t1">
+<polygon fill-opacity="1" points="2199,7509 2707,7464 2707,7374 2199,7419" stroke-opacity="1"/>
+<g class="note" id="d8p7s9g">
+<title class="labelAttr">D:8</title>
+<g class="stem" id="tlcx8wu">
+<path d="M2208 6952 L2208 7491" stroke-width="18"/>
+</g><g class="notehead">
+<use height="720px" width="720px" x="2199" xlink:href="#D-filled-stem-down" y="6924"/>
+</g>
+
+</g>
+<g class="note" id="p1nvh33s">
+<title class="labelAttr">E:8</title>
+<g class="stem" id="h1uwoihr">
+<path d="M2698 6862 L2698 7446" stroke-width="18"/>
+</g><g class="notehead">
+<use height="720px" width="720px" x="2689" xlink:href="#E-filled-stem-down" y="6834"/>
+</g>
+
+</g>
+</g>
+<g class="note" id="jb3mgp">
+<title class="labelAttr">F:2</title>
+<g class="stem" id="ko3seg3">
+<path d="M3188 6769 L3188 7374" stroke-width="18"/>
+</g><g class="notehead" fill="#AB218E" stroke="Black" stroke-width="20">
+<use height="720px" width="720px" x="3179" xlink:href="#E0A3-he87jmy" y="6744"/>
+</g>
+
+</g>
+<g class="note" id="j9k0d7f">
+<title class="labelAttr">G:4</title>
+<g class="stem" id="d1x2ztjx">
+<path d="M4333 6682 L4333 7284" stroke-width="18"/>
+</g><g class="notehead" fill="#F04E23" stroke="Black" stroke-width="20">
+<use height="720px" width="720px" x="4324" xlink:href="#E0A4-he87jmy" y="6654"/>
+</g>
+
+</g>
+</g>
+</g>
+<g class="barLine" id="o9hsjc1">
+<path d="M5075 4764 L5075 5484" stroke-width="27"/>
+<path d="M5075 6564 L5075 7284" stroke-width="27"/>
+<path d="M5075 5484 L5075 6564" stroke-width="27"/>
+</g>
+</g>
+<g class="measure" id="zfyx2b5">
+<g class="staff" id="y6rkkm3">
+<path d="M5088 4764 L7562 4764" stroke-width="13"/>
+<path d="M5088 4944 L7562 4944" stroke-width="13"/>
+<path d="M5088 5124 L7562 5124" stroke-width="13"/>
+<path d="M5088 5304 L7562 5304" stroke-width="13"/>
+<path d="M5088 5484 L7562 5484" stroke-width="13"/>
+<g class="layer" id="s1hqblm0">
+<g class="note" id="cm6jsrc">
+<title class="labelAttr">A:2</title>
+<g class="stem" id="gmrw5lo">
+<path d="M5477 5186 L5477 4584" stroke-width="18"/>
+</g><g class="notehead" fill="#fdbb13" stroke="Black" stroke-width="20">
+<use height="720px" width="720px" x="5260" xlink:href="#E0A3-he87jmy" y="5214"/>
+</g>
+
+</g>
+<g class="note" id="t1t3r7hz">
+<title class="labelAttr">B:2</title>
+<g class="stem" id="elvqfq4">
+<path d="M6414 5149 L6414 5724" stroke-width="18"/>
+</g><g class="notehead" fill="#A6CE39" stroke="Black" stroke-width="20">
+<use height="720px" width="720px" x="6405" xlink:href="#E0A3-he87jmy" y="5124"/>
+</g>
+
+</g>
+</g>
+</g>
+<g class="staff" id="lbgmr49">
+<path d="M5088 6564 L7562 6564" stroke-width="13"/>
+<path d="M5088 6744 L7562 6744" stroke-width="13"/>
+<path d="M5088 6924 L7562 6924" stroke-width="13"/>
+<path d="M5088 7104 L7562 7104" stroke-width="13"/>
+<path d="M5088 7284 L7562 7284" stroke-width="13"/>
+<g class="layer" id="mem2lz5">
+<g class="note" id="eq1y8sv">
+<title class="labelAttr">A:2</title>
+<g class="stem" id="m113qlk3">
+<path d="M5269 6589 L5269 7194" stroke-width="18"/>
+</g><g class="notehead" fill="#fdbb13" stroke="Black" stroke-width="20">
+<use height="720px" width="720px" x="5260" xlink:href="#E0A3-he87jmy" y="6564"/>
+</g>
+
+</g>
+<g class="note" id="f21zslt">
+<title class="labelAttr">B:2</title>
+<g class="stem" id="f8aklmh">
+<path d="M6414 6499 L6414 7104" stroke-width="18"/>
+</g><g class="notehead" fill="#A6CE39" stroke="Black" stroke-width="20">
+<use height="720px" width="720px" x="6405" xlink:href="#E0A3-he87jmy" y="6474"/>
+</g>
+
+</g>
+</g>
+</g>
+<g class="barLine" id="kjhdkt6">
+<path d="M7549 4764 L7549 5484" stroke-width="27"/>
+<path d="M7549 6564 L7549 7284" stroke-width="27"/>
+<path d="M7549 5484 L7549 6564" stroke-width="27"/>
+</g>
+</g>
+<g class="measure" id="v126zpe5">
+<g class="staff" id="v15oaxo7">
+<path d="M7562 4764 L9481 4764" stroke-width="13"/>
+<path d="M7562 4944 L9481 4944" stroke-width="13"/>
+<path d="M7562 5124 L9481 5124" stroke-width="13"/>
+<path d="M7562 5304 L9481 5304" stroke-width="13"/>
+<path d="M7562 5484 L9481 5484" stroke-width="13"/>
+<g class="layer" id="x15ylfsx">
+<g class="note" id="v1jmle9u">
+<title class="labelAttr">C:1</title>
+<g class="notehead">
+<use height="720px" width="720px" x="7734" xlink:href="#C-open-no-stem" y="5034"/>
+</g>
+</g>
+</g>
+</g>
+<g class="staff" id="j1wk06jc">
+<path d="M7562 6564 L9481 6564" stroke-width="13"/>
+<path d="M7562 6744 L9481 6744" stroke-width="13"/>
+<path d="M7562 6924 L9481 6924" stroke-width="13"/>
+<path d="M7562 7104 L9481 7104" stroke-width="13"/>
+<path d="M7562 7284 L9481 7284" stroke-width="13"/>
+<g class="ledgerLines above">
+<path d="M7686 6384 L8072 6384" stroke-width="22"/>
+</g>
+<g class="layer" id="k1p9jnk9">
+<g class="note" id="q12ow9px">
+<title class="labelAttr">C:1</title>
+<g class="notehead">
+<use height="720px" width="720px" x="7734" xlink:href="#C-open-no-stem" y="6384"/>
+</g>
+</g>
+</g>
+</g>
+<g class="barLine" id="cj865mm">
+<path d="M9468 4764 L9468 5484" stroke-width="27"/>
+<path d="M9468 6564 L9468 7284" stroke-width="27"/>
+<path d="M9468 5484 L9468 6564" stroke-width="27"/>
+</g>
+</g>
+<g class="measure" id="k1v8xjr2">
+<g class="staff" id="ntt0mxd">
+<path d="M9481 4764 L11314 4764" stroke-width="13"/>
+<path d="M9481 4944 L11314 4944" stroke-width="13"/>
+<path d="M9481 5124 L11314 5124" stroke-width="13"/>
+<path d="M9481 5304 L11314 5304" stroke-width="13"/>
+<path d="M9481 5484 L11314 5484" stroke-width="13"/>
+<g class="layer" id="xsdthzi">
+<g class="mRest" id="f9q8qgl">
+<use height="720px" width="720px" x="10276" xlink:href="#E4E3-he87jmy" y="4944"/>
+</g>
+</g>
+</g>
+<g class="staff" id="zboq5r8">
+<path d="M9481 6564 L11314 6564" stroke-width="13"/>
+<path d="M9481 6744 L11314 6744" stroke-width="13"/>
+<path d="M9481 6924 L11314 6924" stroke-width="13"/>
+<path d="M9481 7104 L11314 7104" stroke-width="13"/>
+<path d="M9481 7284 L11314 7284" stroke-width="13"/>
+<g class="layer" id="b180a2fv">
+<g class="mRest" id="pvx90uh">
+<use height="720px" width="720px" x="10276" xlink:href="#E4E3-he87jmy" y="6744"/>
+</g>
+</g>
+</g>
+<g class="barLine" id="u12x4kds">
+<path d="M11301 4764 L11301 5484" stroke-width="27"/>
+<path d="M11301 6564 L11301 7284" stroke-width="27"/>
+<path d="M11301 5484 L11301 6564" stroke-width="27"/>
+</g>
+</g>
+<g class="measure" id="ycphaax">
+<g class="staff" id="u1hzbm51">
+<path d="M11314 4764 L13147 4764" stroke-width="13"/>
+<path d="M11314 4944 L13147 4944" stroke-width="13"/>
+<path d="M11314 5124 L13147 5124" stroke-width="13"/>
+<path d="M11314 5304 L13147 5304" stroke-width="13"/>
+<path d="M11314 5484 L13147 5484" stroke-width="13"/>
+<g class="layer" id="au2uvwg">
+<g class="mRest" id="w1p6yd0b">
+<use height="720px" width="720px" x="12109" xlink:href="#E4E3-he87jmy" y="4944"/>
+</g>
+</g>
+</g>
+<g class="staff" id="g1wz5e07">
+<path d="M11314 6564 L13147 6564" stroke-width="13"/>
+<path d="M11314 6744 L13147 6744" stroke-width="13"/>
+<path d="M11314 6924 L13147 6924" stroke-width="13"/>
+<path d="M11314 7104 L13147 7104" stroke-width="13"/>
+<path d="M11314 7284 L13147 7284" stroke-width="13"/>
+<g class="layer" id="y4hbshd">
+<g class="mRest" id="a1f3vf8b">
+<use height="720px" width="720px" x="12109" xlink:href="#E4E3-he87jmy" y="6744"/>
+</g>
+</g>
+</g>
+<g class="barLine" id="fje39cj">
+<path d="M13134 4764 L13134 5484" stroke-width="27"/>
+<path d="M13134 6564 L13134 7284" stroke-width="27"/>
+<path d="M13134 5484 L13134 6564" stroke-width="27"/>
+</g>
+</g>
+<g class="measure" id="w1euxf35">
+<g class="staff" id="u1catd73">
+<path d="M13147 4764 L14980 4764" stroke-width="13"/>
+<path d="M13147 4944 L14980 4944" stroke-width="13"/>
+<path d="M13147 5124 L14980 5124" stroke-width="13"/>
+<path d="M13147 5304 L14980 5304" stroke-width="13"/>
+<path d="M13147 5484 L14980 5484" stroke-width="13"/>
+<g class="keySig" id="x94ji3n"/>
+<g class="layer" id="v12wu9k8">
+<g class="mRest" id="o12837w2">
+<use height="720px" width="720px" x="13942" xlink:href="#E4E3-he87jmy" y="4944"/>
+</g>
+</g>
+</g>
+<g class="staff" id="d1artzap">
+<path d="M13147 6564 L14980 6564" stroke-width="13"/>
+<path d="M13147 6744 L14980 6744" stroke-width="13"/>
+<path d="M13147 6924 L14980 6924" stroke-width="13"/>
+<path d="M13147 7104 L14980 7104" stroke-width="13"/>
+<path d="M13147 7284 L14980 7284" stroke-width="13"/>
+<g class="keySig" id="qa8x4vj"/>
+<g class="layer" id="ewjno80">
+<g class="mRest" id="z1yh1mtq">
+<use height="720px" width="720px" x="13942" xlink:href="#E4E3-he87jmy" y="6744"/>
+</g>
+</g>
+</g>
+<g class="barLine" id="h14nyyl2">
+<path d="M14967 4764 L14967 5484" stroke-width="27"/>
+<path d="M14967 6564 L14967 7284" stroke-width="27"/>
+<path d="M14967 5484 L14967 6564" stroke-width="27"/>
+</g>
+</g>
+<g class="measure" id="f121l4bw">
+<g class="staff" id="k1v303vs">
+<path d="M14980 4764 L16813 4764" stroke-width="13"/>
+<path d="M14980 4944 L16813 4944" stroke-width="13"/>
+<path d="M14980 5124 L16813 5124" stroke-width="13"/>
+<path d="M14980 5304 L16813 5304" stroke-width="13"/>
+<path d="M14980 5484 L16813 5484" stroke-width="13"/>
+<g class="layer" id="jnmxg3g">
+<g class="mRest" id="zrd6j5h">
+<use height="720px" width="720px" x="15775" xlink:href="#E4E3-he87jmy" y="4944"/>
+</g>
+</g>
+</g>
+<g class="staff" id="ckbd2d2">
+<path d="M14980 6564 L16813 6564" stroke-width="13"/>
+<path d="M14980 6744 L16813 6744" stroke-width="13"/>
+<path d="M14980 6924 L16813 6924" stroke-width="13"/>
+<path d="M14980 7104 L16813 7104" stroke-width="13"/>
+<path d="M14980 7284 L16813 7284" stroke-width="13"/>
+<g class="layer" id="ynhgns7">
+<g class="mRest" id="ahzsjjg">
+<use height="720px" width="720px" x="15775" xlink:href="#E4E3-he87jmy" y="6744"/>
+</g>
+</g>
+</g>
+<g class="barLine" id="w6tdsy">
+<path d="M16800 4764 L16800 5484" stroke-width="27"/>
+<path d="M16800 6564 L16800 7284" stroke-width="27"/>
+<path d="M16800 5484 L16800 6564" stroke-width="27"/>
+</g>
+</g>
+<g class="sb" id="x1teon1f"/>
+<g class="measure" id="wo0766">
+<g class="staff" id="rif2dhl">
+<path d="M16813 4764 L20004 4764" stroke-width="13"/>
+<path d="M16813 4944 L20004 4944" stroke-width="13"/>
+<path d="M16813 5124 L20004 5124" stroke-width="13"/>
+<path d="M16813 5304 L20004 5304" stroke-width="13"/>
+<path d="M16813 5484 L20004 5484" stroke-width="13"/>
+<g class="ledgerLines below">
+<path d="M16937 5664 L17259 5664" stroke-width="22"/>
+<path d="M18440 5664 L18762 5664" stroke-width="22"/>
+<path d="M19192 5664 L19514 5664" stroke-width="22"/>
+</g>
+<g class="layer" id="b1jbervj">
+<g class="note" id="m1coihw9">
+<title class="labelAttr">C:4</title>
+<g class="stem" id="cleiviz">
+<path d="M17202 5636 L17202 5034" stroke-width="18"/>
+</g><g class="notehead">
+<use height="720px" width="720px" x="16985" xlink:href="#C-filled-stem-up" y="5664"/>
+</g>
+
+</g>
+<g class="note" id="d1exd3hi">
+<title class="labelAttr">D:4</title>
+<g class="stem" id="u13f91e7">
+<path d="M17954 5546 L17954 4944" stroke-width="18"/>
+</g><g class="notehead">
+<use height="720px" width="720px" x="17737" xlink:href="#D-filled-stem-up" y="5574"/>
+</g>
+
+</g>
+<g class="note" id="m1w3hl3o">
+<title class="labelAttr">C:4</title>
+<g class="stem" id="o18l1coi">
+<path d="M18705 5636 L18705 5034" stroke-width="18"/>
+</g><g class="notehead">
+<use height="720px" width="720px" x="18488" xlink:href="#C-filled-stem-up" y="5664"/>
+</g>
+
+</g>
+<g class="note" id="a1f8a6i5">
+<title class="labelAttr">B:4</title>
+<g class="stem" id="q5932ip">
+<path d="M19457 5726 L19457 5124" stroke-width="18"/>
+</g><g class="notehead" fill="#A6CE39" stroke="Black" stroke-width="20">
+<use height="720px" width="720px" x="19240" xlink:href="#E0A4-he87jmy" y="5754"/>
+</g>
+
+</g>
+</g>
+</g>
+<g class="staff" id="a1gbot0a">
+<path d="M16813 6564 L20004 6564" stroke-width="13"/>
+<path d="M16813 6744 L20004 6744" stroke-width="13"/>
+<path d="M16813 6924 L20004 6924" stroke-width="13"/>
+<path d="M16813 7104 L20004 7104" stroke-width="13"/>
+<path d="M16813 7284 L20004 7284" stroke-width="13"/>
+<g class="layer" id="xcy270l">
+<g class="note" id="o16qprb2">
+<title class="labelAttr">C:4</title>
+<g class="stem" id="m1tyccp">
+<path d="M17202 6986 L17202 6384" stroke-width="18"/>
+</g><g class="notehead">
+<use height="720px" width="720px" x="16985" xlink:href="#C-filled-stem-up" y="7014"/>
+</g>
+
+</g>
+<g class="note" id="n16n97vn">
+<title class="labelAttr">D:4</title>
+<g class="stem" id="n6te9rk">
+<path d="M17746 6952 L17746 7524" stroke-width="18"/>
+</g><g class="notehead">
+<use height="720px" width="720px" x="17737" xlink:href="#D-filled-stem-down" y="6924"/>
+</g>
+
+</g>
+<g class="note" id="g1ln0zwl">
+<title class="labelAttr">C:4</title>
+<g class="stem" id="g180aa71">
+<path d="M18705 6986 L18705 6384" stroke-width="18"/>
+</g><g class="notehead">
+<use height="720px" width="720px" x="18488" xlink:href="#C-filled-stem-up" y="7014"/>
+</g>
+
+</g>
+<g class="note" id="pwmz812">
+<title class="labelAttr">B:4</title>
+<g class="stem" id="o9986o2">
+<path d="M19457 7076 L19457 6474" stroke-width="18"/>
+</g><g class="notehead" fill="#A6CE39" stroke="Black" stroke-width="20">
+<use height="720px" width="720px" x="19240" xlink:href="#E0A4-he87jmy" y="7104"/>
+</g>
+
+</g>
+</g>
+</g>
+<g class="barLine" id="g1ipp617">
+<path d="M19991 4764 L19991 5484" stroke-width="27"/>
+<path d="M19991 6564 L19991 7284" stroke-width="27"/>
+<path d="M19991 5484 L19991 6564" stroke-width="27"/>
+</g>
+</g>
+</g>
+<g class="system" id="l13719yv">
+<path d="M1332 8724 L1332 11244" stroke-width="27"/>
+<g class="grpSym" id="o1s8rkzp">
+<path d="M1247,11226 C887,10686 1337,10164 1067,9984 C1400,10164 950,10686 1247,11226" stroke-linecap="round" stroke-linejoin="round" stroke-width="18"/>
+<path d="M1247,8742 C950,9282 1400,9804 1067,9984 C1337,9804 887,9282 1247,8742" stroke-linecap="round" stroke-linejoin="round" stroke-width="18"/>
+</g>
+<g class="labelAbbr" id="prdqt22">
+<text font-size="0px" text-anchor="end" x="914" y="10074">
+<tspan class="text" id="kcxpee4">
+<tspan font-size="405px">Pno.</tspan>
+</tspan>
+</text>
+</g>
+<g class="measure" id="b1yjngzk">
+<g class="mNum autogenerated" id="v7mu9y1">
+<text font-size="0px" text-anchor="middle" x="1319" y="8481">
+<tspan class="text" id="c100fg86">
+<tspan font-size="324px">14</tspan>
+</tspan>
+</text>
+</g>
+<g class="staff" id="fmkpgxn">
+<path d="M1319 8724 L5311 8724" stroke-width="13"/>
+<path d="M1319 8904 L5311 8904" stroke-width="13"/>
+<path d="M1319 9084 L5311 9084" stroke-width="13"/>
+<path d="M1319 9264 L5311 9264" stroke-width="13"/>
+<path d="M1319 9444 L5311 9444" stroke-width="13"/>
+<g class="clef" id="g16q35lw">
+<use height="720px" width="720px" x="1436" xlink:href="#E050-he87jmy" y="9264"/>
+</g>
+<g class="keySig" id="saz1qks"/>
+<g class="ledgerLines below">
+<path d="M2153 9624 L2475 9624" stroke-width="22"/>
+</g>
+<g class="layer" id="f1o4v0cb">
+<g class="note" id="s40a40">
+<title class="labelAttr">C:4</title>
+<g class="stem" id="d3h6cbt">
+<path d="M2418 9596 L2418 8994" stroke-width="18"/>
+</g><g class="notehead">
+<use height="720px" width="720px" x="2201" xlink:href="#C-filled-stem-up" y="9624"/>
+</g>
+
+</g>
+<g class="note" id="a1lfp1l9">
+<title class="labelAttr">D:4</title>
+<g class="stem" id="tsk1b72">
+<path d="M3192 9506 L3192 8904" stroke-width="18"/>
+</g><g class="notehead">
+<use height="720px" width="720px" x="2975" xlink:href="#D-filled-stem-up" y="9534"/>
+</g>
+
+</g>
+<g class="note" id="yg2bh27">
+<title class="labelAttr">E:4</title>
+<g class="stem" id="m1tvscr4">
+<path d="M3966 9416 L3966 8814" stroke-width="18"/>
+</g><g class="notehead">
+<use height="720px" width="720px" x="3749" xlink:href="#E-filled-stem-up" y="9444"/>
+</g>
+
+</g>
+<g class="note" id="r1uizspj">
+<title class="labelAttr">F:4</title>
+<g class="stem" id="wvo5bl">
+<path d="M4741 9326 L4741 8724" stroke-width="18"/>
+</g><g class="notehead" fill="#AB218E" stroke="Black" stroke-width="20">
+<use height="720px" width="720px" x="4524" xlink:href="#E0A4-he87jmy" y="9354"/>
+</g>
+
+</g>
+</g>
+</g>
+<g class="staff" id="rv53de7">
+<path d="M1319 10524 L5311 10524" stroke-width="13"/>
+<path d="M1319 10704 L5311 10704" stroke-width="13"/>
+<path d="M1319 10884 L5311 10884" stroke-width="13"/>
+<path d="M1319 11064 L5311 11064" stroke-width="13"/>
+<path d="M1319 11244 L5311 11244" stroke-width="13"/>
+<g class="clef" id="l1hmw686">
+<use height="720px" width="720px" x="1436" xlink:href="#E062-he87jmy" y="10704"/>
+</g>
+<g class="keySig" id="lah0llo"/>
+<g class="layer" id="l1fmeirt">
+<g class="note" id="d1m8eoa8">
+<title class="labelAttr">C:4</title>
+<g class="stem" id="whep8tx">
+<path d="M2418 10946 L2418 10344" stroke-width="18"/>
+</g><g class="notehead">
+<use height="720px" width="720px" x="2201" xlink:href="#C-filled-stem-up" y="10974"/>
+</g>
+
+</g>
+<g class="note" id="czb8cza">
+<title class="labelAttr">D:4</title>
+<g class="stem" id="b65vrj1">
+<path d="M2984 10912 L2984 11484" stroke-width="18"/>
+</g><g class="notehead">
+<use height="720px" width="720px" x="2975" xlink:href="#D-filled-stem-down" y="10884"/>
+</g>
+
+</g>
+<g class="note" id="io7uux9">
+<title class="labelAttr">E:4</title>
+<g class="stem" id="noqsxjt">
+<path d="M3758 10822 L3758 11424" stroke-width="18"/>
+</g><g class="notehead">
+<use height="720px" width="720px" x="3749" xlink:href="#E-filled-stem-down" y="10794"/>
+</g>
+
+</g>
+<g class="note" id="ufso6zn">
+<title class="labelAttr">F:4</title>
+<g class="stem" id="twitzcu">
+<path d="M4533 10732 L4533 11334" stroke-width="18"/>
+</g><g class="notehead" fill="#AB218E" stroke="Black" stroke-width="20">
+<use height="720px" width="720px" x="4524" xlink:href="#E0A4-he87jmy" y="10704"/>
+</g>
+
+</g>
+</g>
+</g>
+<g class="barLine" id="gsii6on">
+<path d="M5298 8724 L5298 9444" stroke-width="27"/>
+<path d="M5298 10524 L5298 11244" stroke-width="27"/>
+<path d="M5298 9444 L5298 10524" stroke-width="27"/>
+</g>
+</g>
+<g class="measure" id="v1o4oyrc">
+<g class="staff" id="cna3ptb">
+<path d="M5311 8724 L8225 8724" stroke-width="13"/>
+<path d="M5311 8904 L8225 8904" stroke-width="13"/>
+<path d="M5311 9084 L8225 9084" stroke-width="13"/>
+<path d="M5311 9264 L8225 9264" stroke-width="13"/>
+<path d="M5311 9444 L8225 9444" stroke-width="13"/>
+<g class="layer" id="lbrx40n">
+<g class="note" id="c1cbqnwp">
+<title class="labelAttr">E:4</title>
+<g class="stem" id="uas90ig">
+<path d="M5702 9416 L5702 8814" stroke-width="18"/>
+</g><g class="notehead">
+<use height="720px" width="720px" x="5485" xlink:href="#E-filled-stem-up" y="9444"/>
+</g>
+
+</g>
+<g class="note" id="c7buuiq">
+<title class="labelAttr">F:4</title>
+<g class="stem" id="f18ofmx">
+<path d="M6476 9326 L6476 8724" stroke-width="18"/>
+</g><g class="notehead" fill="#AB218E" stroke="Black" stroke-width="20">
+<use height="720px" width="720px" x="6259" xlink:href="#E0A4-he87jmy" y="9354"/>
+</g>
+
+</g>
+<g class="note" id="h73qg0x">
+<title class="labelAttr">G:2</title>
+<g class="stem" id="e12dc50l">
+<path d="M7250 9236 L7250 8634" stroke-width="18"/>
+</g><g class="notehead" fill="#F04E23" stroke="Black" stroke-width="20">
+<use height="720px" width="720px" x="7033" xlink:href="#E0A3-he87jmy" y="9264"/>
+</g>
+
+</g>
+</g>
+</g>
+<g class="staff" id="p13a1kq8">
+<path d="M5311 10524 L8225 10524" stroke-width="13"/>
+<path d="M5311 10704 L8225 10704" stroke-width="13"/>
+<path d="M5311 10884 L8225 10884" stroke-width="13"/>
+<path d="M5311 11064 L8225 11064" stroke-width="13"/>
+<path d="M5311 11244 L8225 11244" stroke-width="13"/>
+<g class="layer" id="vm5serl">
+<g class="note" id="a1wv5rdu">
+<title class="labelAttr">E:4</title>
+<g class="stem" id="p1s1b4f7">
+<path d="M5494 10822 L5494 11424" stroke-width="18"/>
+</g><g class="notehead">
+<use height="720px" width="720px" x="5485" xlink:href="#E-filled-stem-down" y="10794"/>
+</g>
+
+</g>
+<g class="note" id="q1tni3hu">
+<title class="labelAttr">F:4</title>
+<g class="stem" id="x1r1k5jr">
+<path d="M6268 10732 L6268 11334" stroke-width="18"/>
+</g><g class="notehead" fill="#AB218E" stroke="Black" stroke-width="20">
+<use height="720px" width="720px" x="6259" xlink:href="#E0A4-he87jmy" y="10704"/>
+</g>
+
+</g>
+<g class="note" id="ikvhiwm">
+<title class="labelAttr">G:2</title>
+<g class="stem" id="m6arrrh">
+<path d="M7042 10639 L7042 11244" stroke-width="18"/>
+</g><g class="notehead" fill="#F04E23" stroke="Black" stroke-width="20">
+<use height="720px" width="720px" x="7033" xlink:href="#E0A3-he87jmy" y="10614"/>
+</g>
+
+</g>
+</g>
+</g>
+<g class="barLine" id="uh9brnx">
+<path d="M8212 8724 L8212 9444" stroke-width="27"/>
+<path d="M8212 10524 L8212 11244" stroke-width="27"/>
+<path d="M8212 9444 L8212 10524" stroke-width="27"/>
+</g>
+</g>
+<g class="measure" id="sc4441f">
+<g class="staff" id="wqfrujo">
+<path d="M8225 8724 L11375 8724" stroke-width="13"/>
+<path d="M8225 8904 L11375 8904" stroke-width="13"/>
+<path d="M8225 9084 L11375 9084" stroke-width="13"/>
+<path d="M8225 9264 L11375 9264" stroke-width="13"/>
+<path d="M8225 9444 L11375 9444" stroke-width="13"/>
+<g class="layer" id="d1spzm45">
+<g class="note" id="tfs2zwu">
+<title class="labelAttr">G:2</title>
+<g class="stem" id="g1cgztcq">
+<path d="M8616 9236 L8616 8634" stroke-width="18"/>
+</g><g class="notehead" fill="#F04E23" stroke="Black" stroke-width="20">
+<use height="720px" width="720px" x="8399" xlink:href="#E0A3-he87jmy" y="9264"/>
+</g>
+
+</g>
+<g class="beam" id="h15gan93">
+<polygon fill-opacity="1" points="9785,8544 10308,8499 10308,8589 9785,8634" stroke-opacity="1"/>
+<g class="note" id="hicu9t9">
+<title class="labelAttr">A:8</title>
+<g class="stem" id="dy7gga0">
+<path d="M9794 9146 L9794 8562" stroke-width="18"/>
+</g><g class="notehead" fill="#fdbb13" stroke="Black" stroke-width="20">
+<use height="720px" width="720px" x="9577" xlink:href="#E0A4-he87jmy" y="9174"/>
+</g>
+
+</g>
+<g class="note" id="x16v70bx">
+<title class="labelAttr">B:8</title>
+<g class="stem" id="qbocx2q">
+<path d="M10299 9056 L10299 8517" stroke-width="18"/>
+</g><g class="notehead" fill="#A6CE39" stroke="Black" stroke-width="20">
+<use height="720px" width="720px" x="10082" xlink:href="#E0A4-he87jmy" y="9084"/>
+</g>
+
+</g>
+</g>
+<g class="note" id="y7adt40">
+<title class="labelAttr">C:4</title>
+<g class="stem" id="h8rutp0">
+<path d="M10596 9022 L10596 9624" stroke-width="18"/>
+</g><g class="notehead">
+<use height="720px" width="720px" x="10587" xlink:href="#C-filled-stem-down" y="8994"/>
+</g>
+
+</g>
+</g>
+</g>
+<g class="staff" id="cokjtrk">
+<path d="M8225 10524 L11375 10524" stroke-width="13"/>
+<path d="M8225 10704 L11375 10704" stroke-width="13"/>
+<path d="M8225 10884 L11375 10884" stroke-width="13"/>
+<path d="M8225 11064 L11375 11064" stroke-width="13"/>
+<path d="M8225 11244 L11375 11244" stroke-width="13"/>
+<g class="ledgerLines above">
+<path d="M10539 10344 L10861 10344" stroke-width="22"/>
+</g>
+<g class="layer" id="lg52c4p">
+<g class="note" id="d1i0qwu4">
+<title class="labelAttr">G:2</title>
+<g class="stem" id="mcw59eb">
+<path d="M8408 10639 L8408 11244" stroke-width="18"/>
+</g><g class="notehead" fill="#F04E23" stroke="Black" stroke-width="20">
+<use height="720px" width="720px" x="8399" xlink:href="#E0A3-he87jmy" y="10614"/>
+</g>
+
+</g>
+<g class="beam" id="q8a8pmp">
+<polygon fill-opacity="1" points="9577,11154 10100,11109 10100,11019 9577,11064" stroke-opacity="1"/>
+<g class="note" id="e1nux76o">
+<title class="labelAttr">A:8</title>
+<g class="stem" id="c85epcz">
+<path d="M9586 10552 L9586 11136" stroke-width="18"/>
+</g><g class="notehead" fill="#fdbb13" stroke="Black" stroke-width="20">
+<use height="720px" width="720px" x="9577" xlink:href="#E0A4-he87jmy" y="10524"/>
+</g>
+
+</g>
+<g class="note" id="o4a3kku">
+<title class="labelAttr">B:8</title>
+<g class="stem" id="e1u4yhrv">
+<path d="M10091 10462 L10091 11091" stroke-width="18"/>
+</g><g class="notehead" fill="#A6CE39" stroke="Black" stroke-width="20">
+<use height="720px" width="720px" x="10082" xlink:href="#E0A4-he87jmy" y="10434"/>
+</g>
+
+</g>
+</g>
+<g class="note" id="nwj72do">
+<title class="labelAttr">C:4</title>
+<g class="stem" id="etkd5nr">
+<path d="M10596 10372 L10596 10974" stroke-width="18"/>
+</g><g class="notehead">
+<use height="720px" width="720px" x="10587" xlink:href="#C-filled-stem-down" y="10344"/>
+</g>
+
+</g>
+</g>
+</g>
+<g class="barLine" id="i1m0z39d">
+<path d="M11362 8724 L11362 9444" stroke-width="27"/>
+<path d="M11362 10524 L11362 11244" stroke-width="27"/>
+<path d="M11362 9444 L11362 10524" stroke-width="27"/>
+</g>
+</g>
+<g class="measure" id="j1j7v64m">
+<g class="staff" id="bcg3nai">
+<path d="M11375 8724 L14603 8724" stroke-width="13"/>
+<path d="M11375 8904 L14603 8904" stroke-width="13"/>
+<path d="M11375 9084 L14603 9084" stroke-width="13"/>
+<path d="M11375 9264 L14603 9264" stroke-width="13"/>
+<path d="M11375 9444 L14603 9444" stroke-width="13"/>
+<g class="layer" id="v53361g">
+<g class="note" id="e1rltws5">
+<title class="labelAttr">B:4</title>
+<g class="stem" id="h5yh1gx">
+<path d="M11558 9112 L11558 9684" stroke-width="18"/>
+</g><g class="notehead" fill="#A6CE39" stroke="Black" stroke-width="20">
+<use height="720px" width="720px" x="11549" xlink:href="#E0A4-he87jmy" y="9084"/>
+</g>
+
+</g>
+<g class="note" id="w8cby1r">
+<title class="labelAttr">A:4</title>
+<g class="stem" id="h5zu0lc">
+<path d="M12540 9146 L12540 8544" stroke-width="18"/>
+</g><g class="notehead" fill="#fdbb13" stroke="Black" stroke-width="20">
+<use height="720px" width="720px" x="12323" xlink:href="#E0A4-he87jmy" y="9174"/>
+</g>
+
+</g>
+<g class="note" id="jnjstkl">
+<title class="labelAttr">G:4</title>
+<g class="stem" id="j1i36jdo">
+<path d="M13314 9236 L13314 8634" stroke-width="18"/>
+</g><g class="notehead" fill="#F04E23" stroke="Black" stroke-width="20">
+<use height="720px" width="720px" x="13097" xlink:href="#E0A4-he87jmy" y="9264"/>
+</g>
+<g class="dots" id="w1hyq737">
+<ellipse cx="13413" cy="9174" fill-opacity="1" rx="36" ry="36" stroke-opacity="1"/>
+</g>
+
+</g>
+<g class="note" id="awe1jda">
+<title class="labelAttr">A:8</title>
+<g class="stem" id="r1jp02hf">
+<path d="M14301 9146 L14301 8544" stroke-width="18"/>
+<g class="flag" id="bs59l57">
+<use height="720px" width="720px" x="14292" xlink:href="#E240-he87jmy" y="8544"/>
+</g>
+</g><g class="notehead" fill="#fdbb13" stroke="Black" stroke-width="20">
+<use height="720px" width="720px" x="14084" xlink:href="#E0A4-he87jmy" y="9174"/>
+</g>
+
+</g>
+</g>
+</g>
+<g class="staff" id="d1hyf1nt">
+<path d="M11375 10524 L14603 10524" stroke-width="13"/>
+<path d="M11375 10704 L14603 10704" stroke-width="13"/>
+<path d="M11375 10884 L14603 10884" stroke-width="13"/>
+<path d="M11375 11064 L14603 11064" stroke-width="13"/>
+<path d="M11375 11244 L14603 11244" stroke-width="13"/>
+<g class="layer" id="xwyvobc">
+<g class="note" id="u167cafa">
+<title class="labelAttr">B:4</title>
+<g class="stem" id="eidumjx">
+<path d="M11558 10462 L11558 11064" stroke-width="18"/>
+</g><g class="notehead" fill="#A6CE39" stroke="Black" stroke-width="20">
+<use height="720px" width="720px" x="11549" xlink:href="#E0A4-he87jmy" y="10434"/>
+</g>
+
+</g>
+<g class="note" id="wajs2hp">
+<title class="labelAttr">A:4</title>
+<g class="stem" id="lzot6do">
+<path d="M12332 10552 L12332 11154" stroke-width="18"/>
+</g><g class="notehead" fill="#fdbb13" stroke="Black" stroke-width="20">
+<use height="720px" width="720px" x="12323" xlink:href="#E0A4-he87jmy" y="10524"/>
+</g>
+
+</g>
+<g class="note" id="q1usxqwc">
+<title class="labelAttr">G:4</title>
+<g class="stem" id="h1vmymhr">
+<path d="M13106 10642 L13106 11244" stroke-width="18"/>
+</g><g class="notehead" fill="#F04E23" stroke="Black" stroke-width="20">
+<use height="720px" width="720px" x="13097" xlink:href="#E0A4-he87jmy" y="10614"/>
+</g>
+<g class="dots" id="mszgnhg">
+<ellipse cx="13413" cy="10614" fill-opacity="1" rx="36" ry="36" stroke-opacity="1"/>
+</g>
+
+</g>
+<g class="note" id="cts8ldx">
+<title class="labelAttr">A:8</title>
+<g class="stem" id="oe5ayex">
+<path d="M14093 10552 L14093 11154" stroke-width="18"/>
+<g class="flag" id="dduhai6">
+<use height="720px" width="720px" x="14084" xlink:href="#E241-he87jmy" y="11154"/>
+</g>
+</g><g class="notehead" fill="#fdbb13" stroke="Black" stroke-width="20">
+<use height="720px" width="720px" x="14084" xlink:href="#E0A4-he87jmy" y="10524"/>
+</g>
+
+</g>
+</g>
+</g>
+<g class="barLine" id="d1uzfo0v">
+<path d="M14590 8724 L14590 9444" stroke-width="27"/>
+<path d="M14590 10524 L14590 11244" stroke-width="27"/>
+<path d="M14590 9444 L14590 10524" stroke-width="27"/>
+</g>
+</g>
+<g class="measure" id="nvw3ied">
+<g class="staff" id="w2cdlu8">
+<path d="M14603 8724 L17147 8724" stroke-width="13"/>
+<path d="M14603 8904 L17147 8904" stroke-width="13"/>
+<path d="M14603 9084 L17147 9084" stroke-width="13"/>
+<path d="M14603 9264 L17147 9264" stroke-width="13"/>
+<path d="M14603 9444 L17147 9444" stroke-width="13"/>
+<g class="layer" id="hib9gig">
+<g class="note" id="j9vx6f2">
+<title class="labelAttr">G:2</title>
+<g class="stem" id="wyrb38b">
+<path d="M14994 9236 L14994 8634" stroke-width="18"/>
+</g><g class="notehead" fill="#F04E23" stroke="Black" stroke-width="20">
+<use height="720px" width="720px" x="14777" xlink:href="#E0A3-he87jmy" y="9264"/>
+</g>
+
+</g>
+<g class="note" id="hs2uhmg">
+<title class="labelAttr">F:2</title>
+<g class="stem" id="q17adwj">
+<path d="M16172 9326 L16172 8724" stroke-width="18"/>
+</g><g class="notehead" fill="#AB218E" stroke="Black" stroke-width="20">
+<use height="720px" width="720px" x="15955" xlink:href="#E0A3-he87jmy" y="9354"/>
+</g>
+
+</g>
+</g>
+</g>
+<g class="staff" id="t19j9r7g">
+<path d="M14603 10524 L17147 10524" stroke-width="13"/>
+<path d="M14603 10704 L17147 10704" stroke-width="13"/>
+<path d="M14603 10884 L17147 10884" stroke-width="13"/>
+<path d="M14603 11064 L17147 11064" stroke-width="13"/>
+<path d="M14603 11244 L17147 11244" stroke-width="13"/>
+<g class="layer" id="p1o09p94">
+<g class="note" id="a1fvacxv">
+<title class="labelAttr">G:2</title>
+<g class="stem" id="r1t45mvb">
+<path d="M14786 10639 L14786 11244" stroke-width="18"/>
+</g><g class="notehead" fill="#F04E23" stroke="Black" stroke-width="20">
+<use height="720px" width="720px" x="14777" xlink:href="#E0A3-he87jmy" y="10614"/>
+</g>
+
+</g>
+<g class="note" id="y1w9gwpt">
+<title class="labelAttr">F:2</title>
+<g class="stem" id="p1gjwlog">
+<path d="M15964 10729 L15964 11334" stroke-width="18"/>
+</g><g class="notehead" fill="#AB218E" stroke="Black" stroke-width="20">
+<use height="720px" width="720px" x="15955" xlink:href="#E0A3-he87jmy" y="10704"/>
+</g>
+
+</g>
+</g>
+</g>
+<g class="barLine" id="i1feal7n">
+<path d="M17134 8724 L17134 9444" stroke-width="27"/>
+<path d="M17134 10524 L17134 11244" stroke-width="27"/>
+<path d="M17134 9444 L17134 10524" stroke-width="27"/>
+</g>
+</g>
+<g class="measure" id="o1y7p1u5">
+<g class="staff" id="uvc8ap1">
+<path d="M17147 8724 L20004 8724" stroke-width="13"/>
+<path d="M17147 8904 L20004 8904" stroke-width="13"/>
+<path d="M17147 9084 L20004 9084" stroke-width="13"/>
+<path d="M17147 9264 L20004 9264" stroke-width="13"/>
+<path d="M17147 9444 L20004 9444" stroke-width="13"/>
+<g class="ledgerLines below">
+<path d="M19438 9624 L19760 9624" stroke-width="22"/>
+</g>
+<g class="layer" id="a1i4uu7m">
+<g class="note" id="n1mpjzzg">
+<title class="labelAttr">E:2</title>
+<g class="stem" id="qcp7k4e">
+<path d="M17538 9416 L17538 8814" stroke-width="18"/>
+</g><g class="notehead">
+<use height="720px" width="720px" x="17321" xlink:href="#E-open-stem-up" y="9444"/>
+</g>
+
+</g>
+<g class="note" id="l8ivgsj">
+<title class="labelAttr">D:4</title>
+<g class="stem" id="h1j5pj2e">
+<path d="M18716 9506 L18716 8904" stroke-width="18"/>
+</g><g class="notehead">
+<use height="720px" width="720px" x="18499" xlink:href="#D-filled-stem-up" y="9534"/>
+</g>
+<g class="dots" id="y1ddle5r">
+<ellipse cx="18815" cy="9534" fill-opacity="1" rx="36" ry="36" stroke-opacity="1"/>
+</g>
+
+</g>
+<g class="note" id="kryd0l">
+<title class="labelAttr">C:8</title>
+<g class="stem" id="k1mjbfdo">
+<path d="M19703 9596 L19703 8994" stroke-width="18"/>
+<g class="flag" id="moqbg0q">
+<use height="720px" width="720px" x="19694" xlink:href="#E240-he87jmy" y="8994"/>
+</g>
+</g><g class="notehead">
+<use height="720px" width="720px" x="19486" xlink:href="#C-filled-stem-up" y="9624"/>
+</g>
+
+</g>
+</g>
+</g>
+<g class="staff" id="c1nq8o7e">
+<path d="M17147 10524 L20004 10524" stroke-width="13"/>
+<path d="M17147 10704 L20004 10704" stroke-width="13"/>
+<path d="M17147 10884 L20004 10884" stroke-width="13"/>
+<path d="M17147 11064 L20004 11064" stroke-width="13"/>
+<path d="M17147 11244 L20004 11244" stroke-width="13"/>
+<g class="layer" id="sgspoib">
+<g class="note" id="y1d6z52">
+<title class="labelAttr">E:2</title>
+<g class="stem" id="nb62j7p">
+<path d="M17330 10819 L17330 11424" stroke-width="18"/>
+</g><g class="notehead">
+<use height="720px" width="720px" x="17321" xlink:href="#E-open-stem-down" y="10794"/>
+</g>
+
+</g>
+<g class="note" id="xni0czj">
+<title class="labelAttr">D:4</title>
+<g class="stem" id="w75b5nj">
+<path d="M18508 10912 L18508 11484" stroke-width="18"/>
+</g><g class="notehead">
+<use height="720px" width="720px" x="18499" xlink:href="#D-filled-stem-down" y="10884"/>
+</g>
+<g class="dots" id="s133qqwk">
+<ellipse cx="18815" cy="10794" fill-opacity="1" rx="36" ry="36" stroke-opacity="1"/>
+</g>
+
+</g>
+<g class="note" id="rxsn652">
+<title class="labelAttr">C:8</title>
+<g class="stem" id="a18mtts1">
+<path d="M19703 10946 L19703 10344" stroke-width="18"/>
+<g class="flag" id="e154m0i6">
+<use height="720px" width="720px" x="19694" xlink:href="#E240-he87jmy" y="10344"/>
+</g>
+</g><g class="notehead">
+<use height="720px" width="720px" x="19486" xlink:href="#C-filled-stem-up" y="10974"/>
+</g>
+
+</g>
+</g>
+</g>
+<g class="barLine" id="y1m812ge">
+<path d="M19991 8724 L19991 9444" stroke-width="27"/>
+<path d="M19991 10524 L19991 11244" stroke-width="27"/>
+<path d="M19991 9444 L19991 10524" stroke-width="27"/>
+</g>
+</g>
+</g>
+<g class="system" id="d1j4bnve">
+<path d="M1332 12684 L1332 15204" stroke-width="27"/>
+<g class="grpSym" id="i1s5eomd">
+<path d="M1247,15186 C887,14646 1337,14124 1067,13944 C1400,14124 950,14646 1247,15186" stroke-linecap="round" stroke-linejoin="round" stroke-width="18"/>
+<path d="M1247,12702 C950,13242 1400,13764 1067,13944 C1337,13764 887,13242 1247,12702" stroke-linecap="round" stroke-linejoin="round" stroke-width="18"/>
+</g>
+<g class="labelAbbr" id="b1d87mh8">
+<text font-size="0px" text-anchor="end" x="914" y="14034">
+<tspan class="text" id="t108ac9z">
+<tspan font-size="405px">Pno.</tspan>
+</tspan>
+</text>
+</g>
+<g class="measure" id="ieeldhi">
+<g class="mNum autogenerated" id="whyhi6y">
+<text font-size="0px" text-anchor="middle" x="1319" y="12441">
+<tspan class="text" id="h1i6zixg">
+<tspan font-size="324px">20</tspan>
+</tspan>
+</text>
+</g>
+<g class="staff" id="c166250c">
+<path d="M1319 12684 L4526 12684" stroke-width="13"/>
+<path d="M1319 12864 L4526 12864" stroke-width="13"/>
+<path d="M1319 13044 L4526 13044" stroke-width="13"/>
+<path d="M1319 13224 L4526 13224" stroke-width="13"/>
+<path d="M1319 13404 L4526 13404" stroke-width="13"/>
+<g class="clef" id="g1orv5y7">
+<use height="720px" width="720px" x="1436" xlink:href="#E050-he87jmy" y="13224"/>
+</g>
+<g class="keySig" id="jcp9agf"/>
+<g class="ledgerLines below">
+<path d="M2153 13584 L2475 13584" stroke-width="22"/>
+<path d="M2939 13584 L3261 13584" stroke-width="22"/>
+</g>
+<g class="layer" id="c1mx3hkm">
+<g class="note" id="i16smibb">
+<title class="labelAttr">B:4</title>
+<g class="stem" id="a5ply5a">
+<path d="M2418 13646 L2418 13044" stroke-width="18"/>
+</g><g class="notehead" fill="#A6CE39" stroke="Black" stroke-width="20">
+<use height="720px" width="720px" x="2201" xlink:href="#E0A4-he87jmy" y="13674"/>
+</g>
+
+</g>
+<g class="note" id="md2upn3">
+<title class="labelAttr">C:2</title>
+<g class="stem" id="k7o5ya2">
+<path d="M3204 13556 L3204 12954" stroke-width="18"/>
+</g><g class="notehead">
+<use height="720px" width="720px" x="2987" xlink:href="#C-open-stem-up" y="13584"/>
+</g>
+<g class="dots" id="i1rxy3ck">
+<ellipse cx="3303" cy="13494" fill-opacity="1" rx="36" ry="36" stroke-opacity="1"/>
+</g>
+
+</g>
+</g>
+</g>
+<g class="staff" id="qgs9vh3">
+<path d="M1319 14484 L4526 14484" stroke-width="13"/>
+<path d="M1319 14664 L4526 14664" stroke-width="13"/>
+<path d="M1319 14844 L4526 14844" stroke-width="13"/>
+<path d="M1319 15024 L4526 15024" stroke-width="13"/>
+<path d="M1319 15204 L4526 15204" stroke-width="13"/>
+<g class="clef" id="qjtzqqy">
+<use height="720px" width="720px" x="1436" xlink:href="#E062-he87jmy" y="14664"/>
+</g>
+<g class="keySig" id="l1bwjni1"/>
+<g class="layer" id="np0ft32">
+<g class="note" id="s12upeam">
+<title class="labelAttr">B:4</title>
+<g class="stem" id="y3dwsss">
+<path d="M2418 14996 L2418 14394" stroke-width="18"/>
+</g><g class="notehead" fill="#A6CE39" stroke="Black" stroke-width="20">
+<use height="720px" width="720px" x="2201" xlink:href="#E0A4-he87jmy" y="15024"/>
+</g>
+
+</g>
+<g class="note" id="m15hy5da">
+<title class="labelAttr">C:2</title>
+<g class="stem" id="t1bxkgx3">
+<path d="M3204 14906 L3204 14304" stroke-width="18"/>
+</g><g class="notehead">
+<use height="720px" width="720px" x="2987" xlink:href="#C-open-stem-up" y="14934"/>
+</g>
+<g class="dots" id="p1v80y83">
+<ellipse cx="3303" cy="14934" fill-opacity="1" rx="36" ry="36" stroke-opacity="1"/>
+</g>
+
+</g>
+</g>
+</g>
+<g class="barLine" id="d2agyes">
+<path d="M4513 12684 L4513 13404" stroke-width="27"/>
+<path d="M4513 14484 L4513 15204" stroke-width="27"/>
+<path d="M4513 13404 L4513 14484" stroke-width="27"/>
+</g>
+</g>
+<g class="measure" id="tf3i1z2">
+<g class="staff" id="y1h36dyq">
+<path d="M4526 12684 L6438 12684" stroke-width="13"/>
+<path d="M4526 12864 L6438 12864" stroke-width="13"/>
+<path d="M4526 13044 L6438 13044" stroke-width="13"/>
+<path d="M4526 13224 L6438 13224" stroke-width="13"/>
+<path d="M4526 13404 L6438 13404" stroke-width="13"/>
+<g class="layer" id="z1igp4x4">
+<g class="mRest" id="d3tfemz">
+<use height="720px" width="720px" x="5360" xlink:href="#E4E3-he87jmy" y="12864"/>
+</g>
+</g>
+</g>
+<g class="staff" id="yhqdwsc">
+<path d="M4526 14484 L6438 14484" stroke-width="13"/>
+<path d="M4526 14664 L6438 14664" stroke-width="13"/>
+<path d="M4526 14844 L6438 14844" stroke-width="13"/>
+<path d="M4526 15024 L6438 15024" stroke-width="13"/>
+<path d="M4526 15204 L6438 15204" stroke-width="13"/>
+<g class="layer" id="vwta737">
+<g class="mRest" id="o4gh7nz">
+<use height="720px" width="720px" x="5360" xlink:href="#E4E3-he87jmy" y="14664"/>
+</g>
+</g>
+</g>
+<g class="barLine" id="b1kocbwi">
+<path d="M6425 12684 L6425 13404" stroke-width="27"/>
+<path d="M6425 14484 L6425 15204" stroke-width="27"/>
+<path d="M6425 13404 L6425 14484" stroke-width="27"/>
+</g>
+</g>
+<g class="measure" id="i5pnm2">
+<g class="staff" id="w19c3zp3">
+<path d="M6438 12684 L8350 12684" stroke-width="13"/>
+<path d="M6438 12864 L8350 12864" stroke-width="13"/>
+<path d="M6438 13044 L8350 13044" stroke-width="13"/>
+<path d="M6438 13224 L8350 13224" stroke-width="13"/>
+<path d="M6438 13404 L8350 13404" stroke-width="13"/>
+<g class="layer" id="rxdiztu">
+<g class="mRest" id="k16r35xd">
+<use height="720px" width="720px" x="7272" xlink:href="#E4E3-he87jmy" y="12864"/>
+</g>
+</g>
+</g>
+<g class="staff" id="s1x1r8em">
+<path d="M6438 14484 L8350 14484" stroke-width="13"/>
+<path d="M6438 14664 L8350 14664" stroke-width="13"/>
+<path d="M6438 14844 L8350 14844" stroke-width="13"/>
+<path d="M6438 15024 L8350 15024" stroke-width="13"/>
+<path d="M6438 15204 L8350 15204" stroke-width="13"/>
+<g class="layer" id="n1lrnu6g">
+<g class="mRest" id="dbxbdph">
+<use height="720px" width="720px" x="7272" xlink:href="#E4E3-he87jmy" y="14664"/>
+</g>
+</g>
+</g>
+<g class="barLine" id="zuojias">
+<path d="M8337 12684 L8337 13404" stroke-width="27"/>
+<path d="M8337 14484 L8337 15204" stroke-width="27"/>
+<path d="M8337 13404 L8337 14484" stroke-width="27"/>
+</g>
+</g>
+<g class="measure" id="h1us2ycw">
+<g class="staff" id="amsya7l">
+<path d="M8350 12684 L10262 12684" stroke-width="13"/>
+<path d="M8350 12864 L10262 12864" stroke-width="13"/>
+<path d="M8350 13044 L10262 13044" stroke-width="13"/>
+<path d="M8350 13224 L10262 13224" stroke-width="13"/>
+<path d="M8350 13404 L10262 13404" stroke-width="13"/>
+<g class="layer" id="czur5vv">
+<g class="mRest" id="r1s0r0xp">
+<use height="720px" width="720px" x="9184" xlink:href="#E4E3-he87jmy" y="12864"/>
+</g>
+</g>
+</g>
+<g class="staff" id="s1q6inxi">
+<path d="M8350 14484 L10262 14484" stroke-width="13"/>
+<path d="M8350 14664 L10262 14664" stroke-width="13"/>
+<path d="M8350 14844 L10262 14844" stroke-width="13"/>
+<path d="M8350 15024 L10262 15024" stroke-width="13"/>
+<path d="M8350 15204 L10262 15204" stroke-width="13"/>
+<g class="layer" id="i1q22xhk">
+<g class="mRest" id="z1kxtktn">
+<use height="720px" width="720px" x="9184" xlink:href="#E4E3-he87jmy" y="14664"/>
+</g>
+</g>
+</g>
+<g class="barLine" id="av039e8">
+<path d="M10249 12684 L10249 13404" stroke-width="27"/>
+<path d="M10249 14484 L10249 15204" stroke-width="27"/>
+<path d="M10249 13404 L10249 14484" stroke-width="27"/>
+</g>
+</g>
+<g class="sb" id="h10hljws"/>
+<g class="measure" id="q11ilwo3">
+<g class="staff" id="v1dsqitp">
+<path d="M10262 12684 L13217 12684" stroke-width="13"/>
+<path d="M10262 12864 L13217 12864" stroke-width="13"/>
+<path d="M10262 13044 L13217 13044" stroke-width="13"/>
+<path d="M10262 13224 L13217 13224" stroke-width="13"/>
+<path d="M10262 13404 L13217 13404" stroke-width="13"/>
+<g class="ledgerLines below">
+<path d="M10388 13584 L10710 13584" stroke-width="22"/>
+</g>
+<g class="layer" id="zsgzq58">
+<g class="note" id="pdyylj1">
+<title class="labelAttr">C:4</title>
+<g class="stem" id="y1gj5bx5">
+<path d="M10653 13556 L10653 12954" stroke-width="18"/>
+</g><g class="notehead">
+<use height="720px" width="720px" x="10436" xlink:href="#C-filled-stem-up" y="13584"/>
+</g>
+
+</g>
+<g class="note" id="b4rvnkd">
+<title class="labelAttr">E:4</title>
+<g class="stem" id="n1iv03eu">
+<path d="M11439 13376 L11439 12774" stroke-width="18"/>
+</g><g class="notehead">
+<use height="720px" width="720px" x="11222" xlink:href="#E-filled-stem-up" y="13404"/>
+</g>
+
+</g>
+<g class="note" id="fnfq148">
+<title class="labelAttr">F:2</title>
+<g class="stem" id="f16omlk6">
+<path d="M12225 13286 L12225 12684" stroke-width="18"/>
+</g><g class="notehead" fill="#AB218E" stroke="Black" stroke-width="20">
+<use height="720px" width="720px" x="12008" xlink:href="#E0A3-he87jmy" y="13314"/>
+</g>
+
+</g>
+</g>
+</g>
+<g class="staff" id="n10yvppa">
+<path d="M10262 14484 L13217 14484" stroke-width="13"/>
+<path d="M10262 14664 L13217 14664" stroke-width="13"/>
+<path d="M10262 14844 L13217 14844" stroke-width="13"/>
+<path d="M10262 15024 L13217 15024" stroke-width="13"/>
+<path d="M10262 15204 L13217 15204" stroke-width="13"/>
+<g class="layer" id="f33or8t">
+<g class="note" id="n1iwzv2l">
+<title class="labelAttr">C:4</title>
+<g class="stem" id="o7ix8y">
+<path d="M10653 14906 L10653 14304" stroke-width="18"/>
+</g><g class="notehead">
+<use height="720px" width="720px" x="10436" xlink:href="#C-filled-stem-up" y="14934"/>
+</g>
+
+</g>
+<g class="note" id="o1h1vtpu">
+<title class="labelAttr">E:4</title>
+<g class="stem" id="yywxr0w">
+<path d="M11231 14782 L11231 15384" stroke-width="18"/>
+</g><g class="notehead">
+<use height="720px" width="720px" x="11222" xlink:href="#E-filled-stem-down" y="14754"/>
+</g>
+
+</g>
+<g class="note" id="g140kk1j">
+<title class="labelAttr">F:2</title>
+<g class="stem" id="ujc9hxf">
+<path d="M12017 14689 L12017 15294" stroke-width="18"/>
+</g><g class="notehead" fill="#AB218E" stroke="Black" stroke-width="20">
+<use height="720px" width="720px" x="12008" xlink:href="#E0A3-he87jmy" y="14664"/>
+</g>
+
+</g>
+</g>
+</g>
+<g class="barLine" id="n1jjte3z">
+<path d="M13204 12684 L13204 13404" stroke-width="27"/>
+<path d="M13204 14484 L13204 15204" stroke-width="27"/>
+<path d="M13204 13404 L13204 14484" stroke-width="27"/>
+</g>
+</g>
+<g class="measure" id="z14mi3oa">
+<g class="staff" id="s15m9jwz">
+<path d="M13217 12684 L16491 12684" stroke-width="13"/>
+<path d="M13217 12864 L16491 12864" stroke-width="13"/>
+<path d="M13217 13044 L16491 13044" stroke-width="13"/>
+<path d="M13217 13224 L16491 13224" stroke-width="13"/>
+<path d="M13217 13404 L16491 13404" stroke-width="13"/>
+<g class="layer" id="ohjg4ue">
+<g class="note" id="jmwxauz">
+<title class="labelAttr">G:4</title>
+<g class="stem" id="tn32yar">
+<path d="M13608 13196 L13608 12594" stroke-width="18"/>
+</g><g class="notehead" fill="#F04E23" stroke="Black" stroke-width="20">
+<use height="720px" width="720px" x="13391" xlink:href="#E0A4-he87jmy" y="13224"/>
+</g>
+
+</g>
+<g class="note" id="tz5k4uc">
+<title class="labelAttr">G:4</title>
+<g class="stem" id="svco9na">
+<path d="M14394 13196 L14394 12594" stroke-width="18"/>
+</g><g class="notehead" fill="#F04E23" stroke="Black" stroke-width="20">
+<use height="720px" width="720px" x="14177" xlink:href="#E0A4-he87jmy" y="13224"/>
+</g>
+
+</g>
+<g class="note" id="b1rbaphr">
+<title class="labelAttr">A:4</title>
+<g class="stem" id="c4eqahm">
+<path d="M15180 13106 L15180 12504" stroke-width="18"/>
+</g><g class="notehead" fill="#fdbb13" stroke="Black" stroke-width="20">
+<use height="720px" width="720px" x="14963" xlink:href="#E0A4-he87jmy" y="13134"/>
+</g>
+<g class="dots" id="fb1licb">
+<ellipse cx="15279" cy="13134" fill-opacity="1" rx="36" ry="36" stroke-opacity="1"/>
+</g>
+
+</g>
+<g class="note" id="zcysgh6">
+<title class="labelAttr">G:8</title>
+<g class="stem" id="z1emersr">
+<path d="M16183 13196 L16183 12594" stroke-width="18"/>
+<g class="flag" id="r1kkibrn">
+<use height="720px" width="720px" x="16174" xlink:href="#E240-he87jmy" y="12594"/>
+</g>
+</g><g class="notehead" fill="#F04E23" stroke="Black" stroke-width="20">
+<use height="720px" width="720px" x="15966" xlink:href="#E0A4-he87jmy" y="13224"/>
+</g>
+
+</g>
+</g>
+</g>
+<g class="staff" id="h1c7hp90">
+<path d="M13217 14484 L16491 14484" stroke-width="13"/>
+<path d="M13217 14664 L16491 14664" stroke-width="13"/>
+<path d="M13217 14844 L16491 14844" stroke-width="13"/>
+<path d="M13217 15024 L16491 15024" stroke-width="13"/>
+<path d="M13217 15204 L16491 15204" stroke-width="13"/>
+<g class="layer" id="f1ho3lwj">
+<g class="note" id="xy9busu">
+<title class="labelAttr">G:4</title>
+<g class="stem" id="k1y9tho1">
+<path d="M13400 14602 L13400 15204" stroke-width="18"/>
+</g><g class="notehead" fill="#F04E23" stroke="Black" stroke-width="20">
+<use height="720px" width="720px" x="13391" xlink:href="#E0A4-he87jmy" y="14574"/>
+</g>
+
+</g>
+<g class="note" id="ge210m1">
+<title class="labelAttr">G:4</title>
+<g class="stem" id="v1l8ashg">
+<path d="M14186 14602 L14186 15204" stroke-width="18"/>
+</g><g class="notehead" fill="#F04E23" stroke="Black" stroke-width="20">
+<use height="720px" width="720px" x="14177" xlink:href="#E0A4-he87jmy" y="14574"/>
+</g>
+
+</g>
+<g class="note" id="azh1txn">
+<title class="labelAttr">A:4</title>
+<g class="stem" id="g1iklmu">
+<path d="M14972 14512 L14972 15114" stroke-width="18"/>
+</g><g class="notehead" fill="#fdbb13" stroke="Black" stroke-width="20">
+<use height="720px" width="720px" x="14963" xlink:href="#E0A4-he87jmy" y="14484"/>
+</g>
+<g class="dots" id="jsjn7nd">
+<ellipse cx="15279" cy="14394" fill-opacity="1" rx="36" ry="36" stroke-opacity="1"/>
+</g>
+
+</g>
+<g class="note" id="u1hj8in9">
+<title class="labelAttr">G:8</title>
+<g class="stem" id="b10hob2z">
+<path d="M15975 14602 L15975 15204" stroke-width="18"/>
+<g class="flag" id="a1uzfejf">
+<use height="720px" width="720px" x="15966" xlink:href="#E241-he87jmy" y="15204"/>
+</g>
+</g><g class="notehead" fill="#F04E23" stroke="Black" stroke-width="20">
+<use height="720px" width="720px" x="15966" xlink:href="#E0A4-he87jmy" y="14574"/>
+</g>
+
+</g>
+</g>
+</g>
+<g class="barLine" id="o9ki8vw">
+<path d="M16478 12684 L16478 13404" stroke-width="27"/>
+<path d="M16478 14484 L16478 15204" stroke-width="27"/>
+<path d="M16478 13404 L16478 14484" stroke-width="27"/>
+</g>
+</g>
+<g class="measure" id="s15q1vx8">
+<g class="staff" id="f1nwrw0p">
+<path d="M16491 12684 L20003 12684" stroke-width="13"/>
+<path d="M16491 12864 L20003 12864" stroke-width="13"/>
+<path d="M16491 13044 L20003 13044" stroke-width="13"/>
+<path d="M16491 13224 L20003 13224" stroke-width="13"/>
+<path d="M16491 13404 L20003 13404" stroke-width="13"/>
+<g class="layer" id="t15ymhnb">
+<g class="note" id="bqyepci">
+<title class="labelAttr">F:4</title>
+<g class="stem" id="bvsqqgz">
+<path d="M16882 13286 L16882 12684" stroke-width="18"/>
+</g><g class="notehead" fill="#AB218E" stroke="Black" stroke-width="20">
+<use height="720px" width="720px" x="16665" xlink:href="#E0A4-he87jmy" y="13314"/>
+</g>
+
+</g>
+<g class="beam" id="mrinaae">
+<polygon fill-opacity="1" points="17659,12774 18189,12819 18189,12909 17659,12864" stroke-opacity="1"/>
+<g class="note" id="r1vs1rsr">
+<title class="labelAttr">E:8</title>
+<g class="stem" id="pt58v2q">
+<path d="M17668 13376 L17668 12792" stroke-width="18"/>
+</g><g class="notehead">
+<use height="720px" width="720px" x="17451" xlink:href="#E-filled-stem-up" y="13404"/>
+</g>
+
+</g>
+<g class="note" id="o1qtqz6w">
+<title class="labelAttr">D:8</title>
+<g class="stem" id="b1vnjuhm">
+<path d="M18180 13466 L18180 12837" stroke-width="18"/>
+</g><g class="notehead">
+<use height="720px" width="720px" x="17963" xlink:href="#D-filled-stem-up" y="13494"/>
+</g>
+
+</g>
+</g>
+<g class="note" id="v12abxpg">
+<title class="labelAttr">E:4</title>
+<g class="stem" id="z80c1l7">
+<path d="M18692 13376 L18692 12774" stroke-width="18"/>
+</g><g class="notehead">
+<use height="720px" width="720px" x="18475" xlink:href="#E-filled-stem-up" y="13404"/>
+</g>
+<g class="dots" id="uqfaq11">
+<ellipse cx="18791" cy="13314" fill-opacity="1" rx="36" ry="36" stroke-opacity="1"/>
+</g>
+
+</g>
+<g class="note" id="ytgtzd6">
+<title class="labelAttr">F:8</title>
+<g class="stem" id="ysz7453">
+<path d="M19695 13286 L19695 12684" stroke-width="18"/>
+<g class="flag" id="szci2ck">
+<use height="720px" width="720px" x="19686" xlink:href="#E240-he87jmy" y="12684"/>
+</g>
+</g><g class="notehead" fill="#AB218E" stroke="Black" stroke-width="20">
+<use height="720px" width="720px" x="19478" xlink:href="#E0A4-he87jmy" y="13314"/>
+</g>
+
+</g>
+</g>
+</g>
+<g class="staff" id="gpjzb9d">
+<path d="M16491 14484 L20003 14484" stroke-width="13"/>
+<path d="M16491 14664 L20003 14664" stroke-width="13"/>
+<path d="M16491 14844 L20003 14844" stroke-width="13"/>
+<path d="M16491 15024 L20003 15024" stroke-width="13"/>
+<path d="M16491 15204 L20003 15204" stroke-width="13"/>
+<g class="layer" id="d1l5eyyl">
+<g class="note" id="sxjrrb6">
+<title class="labelAttr">F:4</title>
+<g class="stem" id="k1irzr4k">
+<path d="M16674 14692 L16674 15294" stroke-width="18"/>
+</g><g class="notehead" fill="#AB218E" stroke="Black" stroke-width="20">
+<use height="720px" width="720px" x="16665" xlink:href="#E0A4-he87jmy" y="14664"/>
+</g>
+
+</g>
+<g class="beam" id="z2ezvgs">
+<polygon fill-opacity="1" points="17451,15384 17981,15429 17981,15339 17451,15294" stroke-opacity="1"/>
+<g class="note" id="qld1cr7">
+<title class="labelAttr">E:8</title>
+<g class="stem" id="jdas5b8">
+<path d="M17460 14782 L17460 15366" stroke-width="18"/>
+</g><g class="notehead">
+<use height="720px" width="720px" x="17451" xlink:href="#E-filled-stem-down" y="14754"/>
+</g>
+
+</g>
+<g class="note" id="o1inmdny">
+<title class="labelAttr">D:8</title>
+<g class="stem" id="q1jdcirg">
+<path d="M17972 14872 L17972 15411" stroke-width="18"/>
+</g><g class="notehead">
+<use height="720px" width="720px" x="17963" xlink:href="#D-filled-stem-down" y="14844"/>
+</g>
+
+</g>
+</g>
+<g class="note" id="l1y70xr5">
+<title class="labelAttr">E:4</title>
+<g class="stem" id="u161x92f">
+<path d="M18484 14782 L18484 15384" stroke-width="18"/>
+</g><g class="notehead">
+<use height="720px" width="720px" x="18475" xlink:href="#E-filled-stem-down" y="14754"/>
+</g>
+<g class="dots" id="y26h096">
+<ellipse cx="18791" cy="14754" fill-opacity="1" rx="36" ry="36" stroke-opacity="1"/>
+</g>
+
+</g>
+<g class="note" id="hhrsm4n">
+<title class="labelAttr">F:8</title>
+<g class="stem" id="aj0f6x6">
+<path d="M19487 14692 L19487 15294" stroke-width="18"/>
+<g class="flag" id="d1hyq4vf">
+<use height="720px" width="720px" x="19478" xlink:href="#E241-he87jmy" y="15294"/>
+</g>
+</g><g class="notehead" fill="#AB218E" stroke="Black" stroke-width="20">
+<use height="720px" width="720px" x="19478" xlink:href="#E0A4-he87jmy" y="14664"/>
+</g>
+
+</g>
+</g>
+</g>
+<g class="barLine" id="s1nlyxi7">
+<path d="M19990 12684 L19990 13404" stroke-width="27"/>
+<path d="M19990 14484 L19990 15204" stroke-width="27"/>
+<path d="M19990 13404 L19990 14484" stroke-width="27"/>
+</g>
+</g>
+</g>
+<g class="system" id="k3jv2o8">
+<path d="M1332 16644 L1332 19164" stroke-width="27"/>
+<g class="grpSym" id="wzrjgt4">
+<path d="M1247,19146 C887,18606 1337,18084 1067,17904 C1400,18084 950,18606 1247,19146" stroke-linecap="round" stroke-linejoin="round" stroke-width="18"/>
+<path d="M1247,16662 C950,17202 1400,17724 1067,17904 C1337,17724 887,17202 1247,16662" stroke-linecap="round" stroke-linejoin="round" stroke-width="18"/>
+</g>
+<g class="labelAbbr" id="s1fp4g06">
+<text font-size="0px" text-anchor="end" x="914" y="17994">
+<tspan class="text" id="g7agooq">
+<tspan font-size="405px">Pno.</tspan>
+</tspan>
+</text>
+</g>
+<g class="measure" id="xu2t5ff">
+<g class="mNum autogenerated" id="m1dd1pyy">
+<text font-size="0px" text-anchor="middle" x="1319" y="16401">
+<tspan class="text" id="k1jo1mpn">
+<tspan font-size="324px">27</tspan>
+</tspan>
+</text>
+</g>
+<g class="staff" id="btsokz9">
+<path d="M1319 16644 L4742 16644" stroke-width="13"/>
+<path d="M1319 16824 L4742 16824" stroke-width="13"/>
+<path d="M1319 17004 L4742 17004" stroke-width="13"/>
+<path d="M1319 17184 L4742 17184" stroke-width="13"/>
+<path d="M1319 17364 L4742 17364" stroke-width="13"/>
+<g class="clef" id="h1fqbpi6">
+<use height="720px" width="720px" x="1436" xlink:href="#E050-he87jmy" y="17184"/>
+</g>
+<g class="keySig" id="qcppcih"/>
+<g class="layer" id="j1tmigm3">
+<g class="note" id="uy7yp5h">
+<title class="labelAttr">G:2</title>
+<g class="stem" id="g1dpi2c7">
+<path d="M2414 17156 L2414 16554" stroke-width="18"/>
+</g><g class="notehead" fill="#F04E23" stroke="Black" stroke-width="20">
+<use height="720px" width="720px" x="2197" xlink:href="#E0A3-he87jmy" y="17184"/>
+</g>
+<g class="dots" id="q7kidvv">
+<ellipse cx="2513" cy="17094" fill-opacity="1" rx="36" ry="36" stroke-opacity="1"/>
+</g>
+
+</g>
+<g class="beam" id="e1s4lybs">
+<polygon fill-opacity="1" points="3921,16464 4447,16419 4447,16509 3921,16554" stroke-opacity="1"/>
+<g class="note" id="p1ay6wo">
+<title class="labelAttr">A:8</title>
+<g class="stem" id="x1dl0uyz">
+<path d="M3930 17066 L3930 16482" stroke-width="18"/>
+</g><g class="notehead" fill="#fdbb13" stroke="Black" stroke-width="20">
+<use height="720px" width="720px" x="3713" xlink:href="#E0A4-he87jmy" y="17094"/>
+</g>
+
+</g>
+<g class="note" id="k1k2z7tk">
+<title class="labelAttr">B:8</title>
+<g class="stem" id="u1ba83f9">
+<path d="M4438 16976 L4438 16437" stroke-width="18"/>
+</g><g class="notehead" fill="#A6CE39" stroke="Black" stroke-width="20">
+<use height="720px" width="720px" x="4221" xlink:href="#E0A4-he87jmy" y="17004"/>
+</g>
+
+</g>
+</g>
+</g>
+</g>
+<g class="staff" id="e1sb5uf2">
+<path d="M1319 18444 L4742 18444" stroke-width="13"/>
+<path d="M1319 18624 L4742 18624" stroke-width="13"/>
+<path d="M1319 18804 L4742 18804" stroke-width="13"/>
+<path d="M1319 18984 L4742 18984" stroke-width="13"/>
+<path d="M1319 19164 L4742 19164" stroke-width="13"/>
+<g class="clef" id="uqavuji">
+<use height="720px" width="720px" x="1436" xlink:href="#E062-he87jmy" y="18624"/>
+</g>
+<g class="keySig" id="a3lphe6"/>
+<g class="layer" id="v153o7sc">
+<g class="note" id="ecdwba6">
+<title class="labelAttr">G:2</title>
+<g class="stem" id="y18ecppg">
+<path d="M2206 18559 L2206 19164" stroke-width="18"/>
+</g><g class="notehead" fill="#F04E23" stroke="Black" stroke-width="20">
+<use height="720px" width="720px" x="2197" xlink:href="#E0A3-he87jmy" y="18534"/>
+</g>
+<g class="dots" id="g1jdpsvk">
+<ellipse cx="2513" cy="18534" fill-opacity="1" rx="36" ry="36" stroke-opacity="1"/>
+</g>
+
+</g>
+<g class="beam" id="qt5pyel">
+<polygon fill-opacity="1" points="3713,19074 4239,19029 4239,18939 3713,18984" stroke-opacity="1"/>
+<g class="note" id="yeahnw">
+<title class="labelAttr">A:8</title>
+<g class="stem" id="u1xsbdvo">
+<path d="M3722 18472 L3722 19056" stroke-width="18"/>
+</g><g class="notehead" fill="#fdbb13" stroke="Black" stroke-width="20">
+<use height="720px" width="720px" x="3713" xlink:href="#E0A4-he87jmy" y="18444"/>
+</g>
+
+</g>
+<g class="note" id="uy78fvb">
+<title class="labelAttr">B:8</title>
+<g class="stem" id="n1vo2d3o">
+<path d="M4230 18382 L4230 19011" stroke-width="18"/>
+</g><g class="notehead" fill="#A6CE39" stroke="Black" stroke-width="20">
+<use height="720px" width="720px" x="4221" xlink:href="#E0A4-he87jmy" y="18354"/>
+</g>
+
+</g>
+</g>
+</g>
+</g>
+<g class="barLine" id="v17xvt14">
+<path d="M4729 16644 L4729 17364" stroke-width="27"/>
+<path d="M4729 18444 L4729 19164" stroke-width="27"/>
+<path d="M4729 17364 L4729 18444" stroke-width="27"/>
+</g>
+</g>
+<g class="measure" id="cp1uy6n">
+<g class="staff" id="j10s83c9">
+<path d="M4742 16644 L8045 16644" stroke-width="13"/>
+<path d="M4742 16824 L8045 16824" stroke-width="13"/>
+<path d="M4742 17004 L8045 17004" stroke-width="13"/>
+<path d="M4742 17184 L8045 17184" stroke-width="13"/>
+<path d="M4742 17364 L8045 17364" stroke-width="13"/>
+<g class="layer" id="kvj15r3">
+<g class="note" id="xjg6dev">
+<title class="labelAttr">C:4</title>
+<g class="stem" id="bfaj13j">
+<path d="M4921 16942 L4921 17544" stroke-width="18"/>
+</g><g class="notehead">
+<use height="720px" width="720px" x="4912" xlink:href="#C-filled-stem-down" y="16914"/>
+</g>
+
+</g>
+<g class="note" id="dlalpwf">
+<title class="labelAttr">B:4</title>
+<g class="stem" id="zia3i4o">
+<path d="M5701 17032 L5701 17604" stroke-width="18"/>
+</g><g class="notehead" fill="#A6CE39" stroke="Black" stroke-width="20">
+<use height="720px" width="720px" x="5692" xlink:href="#E0A4-he87jmy" y="17004"/>
+</g>
+
+</g>
+<g class="note" id="n1mhwjks">
+<title class="labelAttr">A:4</title>
+<g class="stem" id="eqfo3yu">
+<path d="M6689 17066 L6689 16464" stroke-width="18"/>
+</g><g class="notehead" fill="#fdbb13" stroke="Black" stroke-width="20">
+<use height="720px" width="720px" x="6472" xlink:href="#E0A4-he87jmy" y="17094"/>
+</g>
+
+</g>
+<g class="note" id="a8tyowi">
+<title class="labelAttr">G:4</title>
+<g class="stem" id="cu294h5">
+<path d="M7469 17156 L7469 16554" stroke-width="18"/>
+</g><g class="notehead" fill="#F04E23" stroke="Black" stroke-width="20">
+<use height="720px" width="720px" x="7252" xlink:href="#E0A4-he87jmy" y="17184"/>
+</g>
+
+</g>
+</g>
+</g>
+<g class="staff" id="ouxvfx6">
+<path d="M4742 18444 L8045 18444" stroke-width="13"/>
+<path d="M4742 18624 L8045 18624" stroke-width="13"/>
+<path d="M4742 18804 L8045 18804" stroke-width="13"/>
+<path d="M4742 18984 L8045 18984" stroke-width="13"/>
+<path d="M4742 19164 L8045 19164" stroke-width="13"/>
+<g class="ledgerLines above">
+<path d="M4864 18264 L5186 18264" stroke-width="22"/>
+</g>
+<g class="layer" id="m1eug048">
+<g class="note" id="wfz721z">
+<title class="labelAttr">C:4</title>
+<g class="stem" id="umpd22t">
+<path d="M4921 18292 L4921 18894" stroke-width="18"/>
+</g><g class="notehead">
+<use height="720px" width="720px" x="4912" xlink:href="#C-filled-stem-down" y="18264"/>
+</g>
+
+</g>
+<g class="note" id="cbqqg6">
+<title class="labelAttr">B:4</title>
+<g class="stem" id="do9g04i">
+<path d="M5701 18382 L5701 18984" stroke-width="18"/>
+</g><g class="notehead" fill="#A6CE39" stroke="Black" stroke-width="20">
+<use height="720px" width="720px" x="5692" xlink:href="#E0A4-he87jmy" y="18354"/>
+</g>
+
+</g>
+<g class="note" id="gzpjm8e">
+<title class="labelAttr">A:4</title>
+<g class="stem" id="sowypmo">
+<path d="M6481 18472 L6481 19074" stroke-width="18"/>
+</g><g class="notehead" fill="#fdbb13" stroke="Black" stroke-width="20">
+<use height="720px" width="720px" x="6472" xlink:href="#E0A4-he87jmy" y="18444"/>
+</g>
+
+</g>
+<g class="note" id="rbsawn6">
+<title class="labelAttr">G:4</title>
+<g class="stem" id="s19pg0z2">
+<path d="M7261 18562 L7261 19164" stroke-width="18"/>
+</g><g class="notehead" fill="#F04E23" stroke="Black" stroke-width="20">
+<use height="720px" width="720px" x="7252" xlink:href="#E0A4-he87jmy" y="18534"/>
+</g>
+
+</g>
+</g>
+</g>
+<g class="barLine" id="x1ngjuc3">
+<path d="M8032 16644 L8032 17364" stroke-width="27"/>
+<path d="M8032 18444 L8032 19164" stroke-width="27"/>
+<path d="M8032 17364 L8032 18444" stroke-width="27"/>
+</g>
+</g>
+<g class="measure" id="e385swe">
+<g class="staff" id="g2ol41h">
+<path d="M8045 16644 L11348 16644" stroke-width="13"/>
+<path d="M8045 16824 L11348 16824" stroke-width="13"/>
+<path d="M8045 17004 L11348 17004" stroke-width="13"/>
+<path d="M8045 17184 L11348 17184" stroke-width="13"/>
+<path d="M8045 17364 L11348 17364" stroke-width="13"/>
+<g class="layer" id="u1gu45qq">
+<g class="note" id="q1tb1z4m">
+<title class="labelAttr">F:4</title>
+<g class="stem" id="pfi15su">
+<path d="M8432 17246 L8432 16644" stroke-width="18"/>
+</g><g class="notehead" fill="#AB218E" stroke="Black" stroke-width="20">
+<use height="720px" width="720px" x="8215" xlink:href="#E0A4-he87jmy" y="17274"/>
+</g>
+
+</g>
+<g class="note" id="bz7spf0">
+<title class="labelAttr">E:4</title>
+<g class="stem" id="i1eui0r8">
+<path d="M9212 17336 L9212 16734" stroke-width="18"/>
+</g><g class="notehead">
+<use height="720px" width="720px" x="8995" xlink:href="#E-filled-stem-up" y="17364"/>
+</g>
+
+</g>
+<g class="note" id="eywkm17">
+<title class="labelAttr">D:4</title>
+<g class="stem" id="tmq2ei3">
+<path d="M9992 17426 L9992 16824" stroke-width="18"/>
+</g><g class="notehead">
+<use height="720px" width="720px" x="9775" xlink:href="#D-filled-stem-up" y="17454"/>
+</g>
+
+</g>
+<g class="note" id="v1xgjiok">
+<title class="labelAttr">E:4</title>
+<g class="stem" id="gqht90h">
+<path d="M10772 17336 L10772 16734" stroke-width="18"/>
+</g><g class="notehead">
+<use height="720px" width="720px" x="10555" xlink:href="#E-filled-stem-up" y="17364"/>
+</g>
+
+</g>
+</g>
+</g>
+<g class="staff" id="c1ftzc1j">
+<path d="M8045 18444 L11348 18444" stroke-width="13"/>
+<path d="M8045 18624 L11348 18624" stroke-width="13"/>
+<path d="M8045 18804 L11348 18804" stroke-width="13"/>
+<path d="M8045 18984 L11348 18984" stroke-width="13"/>
+<path d="M8045 19164 L11348 19164" stroke-width="13"/>
+<g class="layer" id="o1cx3cp7">
+<g class="note" id="o1cjhzah">
+<title class="labelAttr">F:4</title>
+<g class="stem" id="k1z0lbaw">
+<path d="M8224 18652 L8224 19254" stroke-width="18"/>
+</g><g class="notehead" fill="#AB218E" stroke="Black" stroke-width="20">
+<use height="720px" width="720px" x="8215" xlink:href="#E0A4-he87jmy" y="18624"/>
+</g>
+
+</g>
+<g class="note" id="ssnk4qi">
+<title class="labelAttr">E:4</title>
+<g class="stem" id="piheltb">
+<path d="M9004 18742 L9004 19344" stroke-width="18"/>
+</g><g class="notehead">
+<use height="720px" width="720px" x="8995" xlink:href="#E-filled-stem-down" y="18714"/>
+</g>
+
+</g>
+<g class="note" id="ea8cv8r">
+<title class="labelAttr">D:4</title>
+<g class="stem" id="q6zzu4v">
+<path d="M9784 18832 L9784 19404" stroke-width="18"/>
+</g><g class="notehead">
+<use height="720px" width="720px" x="9775" xlink:href="#D-filled-stem-down" y="18804"/>
+</g>
+
+</g>
+<g class="note" id="wmfwgcu">
+<title class="labelAttr">E:4</title>
+<g class="stem" id="cmdb37g">
+<path d="M10564 18742 L10564 19344" stroke-width="18"/>
+</g><g class="notehead">
+<use height="720px" width="720px" x="10555" xlink:href="#E-filled-stem-down" y="18714"/>
+</g>
+
+</g>
+</g>
+</g>
+<g class="barLine" id="ivgaqy">
+<path d="M11335 16644 L11335 17364" stroke-width="27"/>
+<path d="M11335 18444 L11335 19164" stroke-width="27"/>
+<path d="M11335 17364 L11335 18444" stroke-width="27"/>
+</g>
+</g>
+<g class="measure" id="f1q2fxof">
+<g class="staff" id="t52jxcf">
+<path d="M11348 16644 L13906 16644" stroke-width="13"/>
+<path d="M11348 16824 L13906 16824" stroke-width="13"/>
+<path d="M11348 17004 L13906 17004" stroke-width="13"/>
+<path d="M11348 17184 L13906 17184" stroke-width="13"/>
+<path d="M11348 17364 L13906 17364" stroke-width="13"/>
+<g class="layer" id="i14l7p8y">
+<g class="note" id="abq7u4t">
+<title class="labelAttr">G:2</title>
+<g class="stem" id="z1br0t2k">
+<path d="M11735 17156 L11735 16554" stroke-width="18"/>
+</g><g class="notehead" fill="#F04E23" stroke="Black" stroke-width="20">
+<use height="720px" width="720px" x="11518" xlink:href="#E0A3-he87jmy" y="17184"/>
+</g>
+
+</g>
+<g class="note" id="m1enkosp">
+<title class="labelAttr">G:2</title>
+<g class="stem" id="mnb71nz">
+<path d="M12923 17156 L12923 16554" stroke-width="18"/>
+</g><g class="notehead" fill="#F04E23" stroke="Black" stroke-width="20">
+<use height="720px" width="720px" x="12706" xlink:href="#E0A3-he87jmy" y="17184"/>
+</g>
+
+</g>
+</g>
+</g>
+<g class="staff" id="p18pjpjq">
+<path d="M11348 18444 L13906 18444" stroke-width="13"/>
+<path d="M11348 18624 L13906 18624" stroke-width="13"/>
+<path d="M11348 18804 L13906 18804" stroke-width="13"/>
+<path d="M11348 18984 L13906 18984" stroke-width="13"/>
+<path d="M11348 19164 L13906 19164" stroke-width="13"/>
+<g class="layer" id="y1y86v4v">
+<g class="note" id="ttqlbs3">
+<title class="labelAttr">G:2</title>
+<g class="stem" id="vkdi0ow">
+<path d="M11527 18559 L11527 19164" stroke-width="18"/>
+</g><g class="notehead" fill="#F04E23" stroke="Black" stroke-width="20">
+<use height="720px" width="720px" x="11518" xlink:href="#E0A3-he87jmy" y="18534"/>
+</g>
+
+</g>
+<g class="note" id="n1ees80l">
+<title class="labelAttr">G:2</title>
+<g class="stem" id="e1lzko2x">
+<path d="M12715 18559 L12715 19164" stroke-width="18"/>
+</g><g class="notehead" fill="#F04E23" stroke="Black" stroke-width="20">
+<use height="720px" width="720px" x="12706" xlink:href="#E0A3-he87jmy" y="18534"/>
+</g>
+
+</g>
+</g>
+</g>
+<g class="barLine" id="ak25ohy">
+<path d="M13893 16644 L13893 17364" stroke-width="27"/>
+<path d="M13893 18444 L13893 19164" stroke-width="27"/>
+<path d="M13893 17364 L13893 18444" stroke-width="27"/>
+</g>
+</g>
+<g class="measure" id="n1sd2yt0">
+<g class="staff" id="p1tbo69s">
+<path d="M13906 16644 L15887 16644" stroke-width="13"/>
+<path d="M13906 16824 L15887 16824" stroke-width="13"/>
+<path d="M13906 17004 L15887 17004" stroke-width="13"/>
+<path d="M13906 17184 L15887 17184" stroke-width="13"/>
+<path d="M13906 17364 L15887 17364" stroke-width="13"/>
+<g class="layer" id="z3thoxw">
+<g class="note" id="hzklsto">
+<title class="labelAttr">C:1</title>
+<g class="notehead">
+<use height="720px" width="720px" x="14076" xlink:href="#C-open-no-stem" y="16914"/>
+</g>
+</g>
+</g>
+</g>
+<g class="staff" id="j1830oww">
+<path d="M13906 18444 L15887 18444" stroke-width="13"/>
+<path d="M13906 18624 L15887 18624" stroke-width="13"/>
+<path d="M13906 18804 L15887 18804" stroke-width="13"/>
+<path d="M13906 18984 L15887 18984" stroke-width="13"/>
+<path d="M13906 19164 L15887 19164" stroke-width="13"/>
+<g class="ledgerLines above">
+<path d="M14028 18264 L14414 18264" stroke-width="22"/>
+</g>
+<g class="layer" id="vzz6uad">
+<g class="note" id="d1wpcy5a">
+<title class="labelAttr">C:1</title>
+<g class="notehead">
+<use height="720px" width="720px" x="14076" xlink:href="#C-open-no-stem" y="18264"/>
+</g>
+</g>
+</g>
+</g>
+<g class="barLine" id="csg6fby">
+<path d="M15874 16644 L15874 17364" stroke-width="27"/>
+<path d="M15874 18444 L15874 19164" stroke-width="27"/>
+<path d="M15874 17364 L15874 18444" stroke-width="27"/>
+</g>
+</g>
+<g class="measure" id="o1o221dv">
+<g class="staff" id="pmfkfe4">
+<path d="M15887 16644 L17784 16644" stroke-width="13"/>
+<path d="M15887 16824 L17784 16824" stroke-width="13"/>
+<path d="M15887 17004 L17784 17004" stroke-width="13"/>
+<path d="M15887 17184 L17784 17184" stroke-width="13"/>
+<path d="M15887 17364 L17784 17364" stroke-width="13"/>
+<g class="layer" id="r1uvktj4">
+<g class="mRest" id="e1hvqbic">
+<use height="720px" width="720px" x="16714" xlink:href="#E4E3-he87jmy" y="16824"/>
+</g>
+</g>
+</g>
+<g class="staff" id="t1tks1zs">
+<path d="M15887 18444 L17784 18444" stroke-width="13"/>
+<path d="M15887 18624 L17784 18624" stroke-width="13"/>
+<path d="M15887 18804 L17784 18804" stroke-width="13"/>
+<path d="M15887 18984 L17784 18984" stroke-width="13"/>
+<path d="M15887 19164 L17784 19164" stroke-width="13"/>
+<g class="layer" id="i1fmjez6">
+<g class="mRest" id="q1ll151s">
+<use height="720px" width="720px" x="16714" xlink:href="#E4E3-he87jmy" y="18624"/>
+</g>
+</g>
+</g>
+<g class="barLine" id="q163jc9j">
+<path d="M17771 16644 L17771 17364" stroke-width="27"/>
+<path d="M17771 18444 L17771 19164" stroke-width="27"/>
+<path d="M17771 17364 L17771 18444" stroke-width="27"/>
+</g>
+</g>
+<g class="measure" id="t19zs5ya">
+<g class="staff" id="gaky6cb">
+<path d="M17784 16644 L20003 16644" stroke-width="13"/>
+<path d="M17784 16824 L20003 16824" stroke-width="13"/>
+<path d="M17784 17004 L20003 17004" stroke-width="13"/>
+<path d="M17784 17184 L20003 17184" stroke-width="13"/>
+<path d="M17784 17364 L20003 17364" stroke-width="13"/>
+<g class="layer" id="gh9ysjy">
+<g class="mRest" id="r1nmeqan">
+<use height="720px" width="720px" x="18611" xlink:href="#E4E3-he87jmy" y="16824"/>
+</g>
+</g>
+<g class="keySig" id="w4yso3m">
+<g class="keyAccid" id="dacernm">
+<use height="720px" width="720px" x="19771" xlink:href="#E260-he87jmy" y="17004"/>
+</g>
+</g>
+</g>
+<g class="staff" id="f1auhpih">
+<path d="M17784 18444 L20003 18444" stroke-width="13"/>
+<path d="M17784 18624 L20003 18624" stroke-width="13"/>
+<path d="M17784 18804 L20003 18804" stroke-width="13"/>
+<path d="M17784 18984 L20003 18984" stroke-width="13"/>
+<path d="M17784 19164 L20003 19164" stroke-width="13"/>
+<g class="layer" id="t1uj32z8">
+<g class="mRest" id="tpp3glt">
+<use height="720px" width="720px" x="18611" xlink:href="#E4E3-he87jmy" y="18624"/>
+</g>
+</g>
+<g class="keySig" id="hwadjqq">
+<g class="keyAccid" id="f1twu0h5">
+<use height="720px" width="720px" x="19771" xlink:href="#E260-he87jmy" y="18984"/>
+</g>
+</g>
+</g>
+<g class="barLine" id="sncxl96">
+<path d="M19668 16644 L19668 17364" stroke-width="27"/>
+<path d="M19668 18444 L19668 19164" stroke-width="27"/>
+<path d="M19668 17364 L19668 18444" stroke-width="27"/>
+</g>
+</g>
+</g>
+<g class="system" id="ciujb32">
+<path d="M1332 20604 L1332 23124" stroke-width="27"/>
+<g class="grpSym" id="i9mjd9s">
+<path d="M1247,23106 C887,22566 1337,22044 1067,21864 C1400,22044 950,22566 1247,23106" stroke-linecap="round" stroke-linejoin="round" stroke-width="18"/>
+<path d="M1247,20622 C950,21162 1400,21684 1067,21864 C1337,21684 887,21162 1247,20622" stroke-linecap="round" stroke-linejoin="round" stroke-width="18"/>
+</g>
+<g class="labelAbbr" id="khfj3xd">
+<text font-size="0px" text-anchor="end" x="914" y="21954">
+<tspan class="text" id="drrfrde">
+<tspan font-size="405px">Pno.</tspan>
+</tspan>
+</text>
+</g>
+<g class="measure" id="w1heamb5">
+<g class="mNum autogenerated" id="s1no7nh1">
+<text font-size="0px" text-anchor="middle" x="1319" y="20361">
+<tspan class="text" id="h1iwj4al">
+<tspan font-size="324px">34</tspan>
+</tspan>
+</text>
+</g>
+<g class="staff" id="wm3d4y6">
+<path d="M1319 20604 L4268 20604" stroke-width="13"/>
+<path d="M1319 20784 L4268 20784" stroke-width="13"/>
+<path d="M1319 20964 L4268 20964" stroke-width="13"/>
+<path d="M1319 21144 L4268 21144" stroke-width="13"/>
+<path d="M1319 21324 L4268 21324" stroke-width="13"/>
+<g class="clef" id="f1uhf35j">
+<use height="720px" width="720px" x="1436" xlink:href="#E050-he87jmy" y="21144"/>
+</g>
+<g class="keySig" id="z14bnswt">
+<g class="keyAccid" id="n1696r8j">
+<use height="720px" width="720px" x="2117" xlink:href="#E260-he87jmy" y="20964"/>
+</g>
+</g>
+<g class="layer" id="x112h1oq">
+<g class="mRest" id="j1bymaxm">
+<use height="720px" width="720px" x="3187" xlink:href="#E4E3-he87jmy" y="20784"/>
+</g>
+</g>
+</g>
+<g class="staff" id="psyo91g">
+<path d="M1319 22404 L4268 22404" stroke-width="13"/>
+<path d="M1319 22584 L4268 22584" stroke-width="13"/>
+<path d="M1319 22764 L4268 22764" stroke-width="13"/>
+<path d="M1319 22944 L4268 22944" stroke-width="13"/>
+<path d="M1319 23124 L4268 23124" stroke-width="13"/>
+<g class="clef" id="f1ivk0ak">
+<use height="720px" width="720px" x="1436" xlink:href="#E062-he87jmy" y="22584"/>
+</g>
+<g class="keySig" id="v1yxoqqs">
+<g class="keyAccid" id="tufebw7">
+<use height="720px" width="720px" x="2117" xlink:href="#E260-he87jmy" y="22944"/>
+</g>
+</g>
+<g class="layer" id="vmzlwcc">
+<g class="mRest" id="yfy3xl0">
+<use height="720px" width="720px" x="3187" xlink:href="#E4E3-he87jmy" y="22584"/>
+</g>
+</g>
+</g>
+<g class="barLine" id="vmhjvu1">
+<path d="M4255 20604 L4255 21324" stroke-width="27"/>
+<path d="M4255 22404 L4255 23124" stroke-width="27"/>
+<path d="M4255 21324 L4255 22404" stroke-width="27"/>
+</g>
+</g>
+<g class="sb" id="a1p3m5ok"/>
+<g class="measure" id="kuz9no2">
+<g class="staff" id="y14mooq0">
+<path d="M4268 20604 L7613 20604" stroke-width="13"/>
+<path d="M4268 20784 L7613 20784" stroke-width="13"/>
+<path d="M4268 20964 L7613 20964" stroke-width="13"/>
+<path d="M4268 21144 L7613 21144" stroke-width="13"/>
+<path d="M4268 21324 L7613 21324" stroke-width="13"/>
+<g class="layer" id="mrkobfc">
+<g class="note" id="i14w7k4c">
+<title class="labelAttr">D:4</title>
+<g class="stem" id="y172k7ch">
+<path d="M4658 21386 L4658 20784" stroke-width="18"/>
+</g><g class="notehead">
+<use height="720px" width="720px" x="4441" xlink:href="#D-filled-stem-up" y="21414"/>
+</g>
+
+</g>
+<g class="note" id="y1ncrvpn">
+<title class="labelAttr">E:4</title>
+<g class="stem" id="v1166txm">
+<path d="M5447 21296 L5447 20694" stroke-width="18"/>
+</g><g class="notehead">
+<use height="720px" width="720px" x="5230" xlink:href="#E-filled-stem-up" y="21324"/>
+</g>
+
+</g>
+<g class="note" id="zojzn8o">
+<title class="labelAttr">F:4</title>
+<g class="stem" id="koptxz4">
+<path d="M6237 21206 L6237 20604" stroke-width="18"/>
+</g><g class="notehead" fill="#AB218E" stroke="Black" stroke-width="20">
+<use height="720px" width="720px" x="6020" xlink:href="#E0A4-he87jmy" y="21234"/>
+</g>
+
+</g>
+<g class="note" id="d1l6orex">
+<title class="labelAttr">E:4</title>
+<g class="stem" id="o14lzrsq">
+<path d="M7027 21296 L7027 20694" stroke-width="18"/>
+</g><g class="notehead">
+<use height="720px" width="720px" x="6810" xlink:href="#E-filled-stem-up" y="21324"/>
+</g>
+
+</g>
+</g>
+</g>
+<g class="staff" id="v1nggoqa">
+<path d="M4268 22404 L7613 22404" stroke-width="13"/>
+<path d="M4268 22584 L7613 22584" stroke-width="13"/>
+<path d="M4268 22764 L7613 22764" stroke-width="13"/>
+<path d="M4268 22944 L7613 22944" stroke-width="13"/>
+<path d="M4268 23124 L7613 23124" stroke-width="13"/>
+<g class="layer" id="c2gt77g">
+<g class="note" id="h1ne0uud">
+<title class="labelAttr">D:4</title>
+<g class="stem" id="ppimnnj">
+<path d="M4450 22792 L4450 23364" stroke-width="18"/>
+</g><g class="notehead">
+<use height="720px" width="720px" x="4441" xlink:href="#D-filled-stem-down" y="22764"/>
+</g>
+
+</g>
+<g class="note" id="s148gl6w">
+<title class="labelAttr">E:4</title>
+<g class="stem" id="ll6bkjf">
+<path d="M5239 22702 L5239 23304" stroke-width="18"/>
+</g><g class="notehead">
+<use height="720px" width="720px" x="5230" xlink:href="#E-filled-stem-down" y="22674"/>
+</g>
+
+</g>
+<g class="note" id="g1cz28dt">
+<title class="labelAttr">F:4</title>
+<g class="stem" id="cn7amn7">
+<path d="M6029 22612 L6029 23214" stroke-width="18"/>
+</g><g class="notehead" fill="#AB218E" stroke="Black" stroke-width="20">
+<use height="720px" width="720px" x="6020" xlink:href="#E0A4-he87jmy" y="22584"/>
+</g>
+
+</g>
+<g class="note" id="t122b3yv">
+<title class="labelAttr">E:4</title>
+<g class="stem" id="v1wgv97r">
+<path d="M6819 22702 L6819 23304" stroke-width="18"/>
+</g><g class="notehead">
+<use height="720px" width="720px" x="6810" xlink:href="#E-filled-stem-down" y="22674"/>
+</g>
+
+</g>
+</g>
+</g>
+<g class="barLine" id="jx89piz">
+<path d="M7600 20604 L7600 21324" stroke-width="27"/>
+<path d="M7600 22404 L7600 23124" stroke-width="27"/>
+<path d="M7600 21324 L7600 22404" stroke-width="27"/>
+</g>
+</g>
+<g class="measure" id="y1eomxdo">
+<g class="staff" id="t1olkiye">
+<path d="M7613 20604 L10958 20604" stroke-width="13"/>
+<path d="M7613 20784 L10958 20784" stroke-width="13"/>
+<path d="M7613 20964 L10958 20964" stroke-width="13"/>
+<path d="M7613 21144 L10958 21144" stroke-width="13"/>
+<path d="M7613 21324 L10958 21324" stroke-width="13"/>
+<g class="layer" id="ansp9xu">
+<g class="note" id="q8hoe8q">
+<title class="labelAttr">F:4</title>
+<g class="stem" id="zo8elit">
+<path d="M8003 21206 L8003 20604" stroke-width="18"/>
+</g><g class="notehead" fill="#AB218E" stroke="Black" stroke-width="20">
+<use height="720px" width="720px" x="7786" xlink:href="#E0A4-he87jmy" y="21234"/>
+</g>
+
+</g>
+<g class="note" id="d6q9rqw">
+<title class="labelAttr">G:4</title>
+<g class="stem" id="yk1ce06">
+<path d="M8792 21116 L8792 20514" stroke-width="18"/>
+</g><g class="notehead" fill="#F04E23" stroke="Black" stroke-width="20">
+<use height="720px" width="720px" x="8575" xlink:href="#E0A4-he87jmy" y="21144"/>
+</g>
+
+</g>
+<g class="note" id="t13sjs18">
+<title class="labelAttr">A:4</title>
+<g class="stem" id="r1i1066m">
+<path d="M9582 21026 L9582 20424" stroke-width="18"/>
+</g><g class="notehead" fill="#fdbb13" stroke="Black" stroke-width="20">
+<use height="720px" width="720px" x="9365" xlink:href="#E0A4-he87jmy" y="21054"/>
+</g>
+
+</g>
+<g class="note" id="s5kj325">
+<title class="labelAttr">G:4</title>
+<g class="stem" id="g9bfby2">
+<path d="M10372 21116 L10372 20514" stroke-width="18"/>
+</g><g class="notehead" fill="#F04E23" stroke="Black" stroke-width="20">
+<use height="720px" width="720px" x="10155" xlink:href="#E0A4-he87jmy" y="21144"/>
+</g>
+
+</g>
+</g>
+</g>
+<g class="staff" id="jcrtyme">
+<path d="M7613 22404 L10958 22404" stroke-width="13"/>
+<path d="M7613 22584 L10958 22584" stroke-width="13"/>
+<path d="M7613 22764 L10958 22764" stroke-width="13"/>
+<path d="M7613 22944 L10958 22944" stroke-width="13"/>
+<path d="M7613 23124 L10958 23124" stroke-width="13"/>
+<g class="layer" id="r67fra">
+<g class="note" id="n1fofqq2">
+<title class="labelAttr">F:4</title>
+<g class="stem" id="j1dqyj3">
+<path d="M7795 22612 L7795 23214" stroke-width="18"/>
+</g><g class="notehead" fill="#AB218E" stroke="Black" stroke-width="20">
+<use height="720px" width="720px" x="7786" xlink:href="#E0A4-he87jmy" y="22584"/>
+</g>
+
+</g>
+<g class="note" id="v1obdwdb">
+<title class="labelAttr">G:4</title>
+<g class="stem" id="w1ytop90">
+<path d="M8584 22522 L8584 23124" stroke-width="18"/>
+</g><g class="notehead" fill="#F04E23" stroke="Black" stroke-width="20">
+<use height="720px" width="720px" x="8575" xlink:href="#E0A4-he87jmy" y="22494"/>
+</g>
+
+</g>
+<g class="note" id="au0xg70">
+<title class="labelAttr">A:4</title>
+<g class="stem" id="r10jsj07">
+<path d="M9374 22432 L9374 23034" stroke-width="18"/>
+</g><g class="notehead" fill="#fdbb13" stroke="Black" stroke-width="20">
+<use height="720px" width="720px" x="9365" xlink:href="#E0A4-he87jmy" y="22404"/>
+</g>
+
+</g>
+<g class="note" id="e5cp5lp">
+<title class="labelAttr">G:4</title>
+<g class="stem" id="vx1iyih">
+<path d="M10164 22522 L10164 23124" stroke-width="18"/>
+</g><g class="notehead" fill="#F04E23" stroke="Black" stroke-width="20">
+<use height="720px" width="720px" x="10155" xlink:href="#E0A4-he87jmy" y="22494"/>
+</g>
+
+</g>
+</g>
+</g>
+<g class="barLine" id="ixr1uzw">
+<path d="M10945 20604 L10945 21324" stroke-width="27"/>
+<path d="M10945 22404 L10945 23124" stroke-width="27"/>
+<path d="M10945 21324 L10945 22404" stroke-width="27"/>
+</g>
+</g>
+<g class="measure" id="o1vu4z5b">
+<g class="staff" id="w19zbw6s">
+<path d="M10958 20604 L13547 20604" stroke-width="13"/>
+<path d="M10958 20784 L13547 20784" stroke-width="13"/>
+<path d="M10958 20964 L13547 20964" stroke-width="13"/>
+<path d="M10958 21144 L13547 21144" stroke-width="13"/>
+<path d="M10958 21324 L13547 21324" stroke-width="13"/>
+<g class="layer" id="z8fhdh6">
+<g class="note" id="v14ey990">
+<title class="labelAttr">A:2</title>
+<g class="stem" id="t1rorb2o">
+<path d="M11348 21026 L11348 20424" stroke-width="18"/>
+</g><g class="notehead" fill="#fdbb13" stroke="Black" stroke-width="20">
+<use height="720px" width="720px" x="11131" xlink:href="#E0A3-he87jmy" y="21054"/>
+</g>
+
+</g>
+<g class="note" id="kj9onqx">
+<title class="labelAttr">B:2</title>
+<g class="stem" id="m1wl8l77">
+<path d="M12341 20989 L12341 21564" stroke-width="18"/>
+</g><g class="notehead" fill="#A6CE39" stroke="Black" stroke-width="20">
+<use height="720px" width="720px" x="12332" xlink:href="#E0A3-he87jmy" y="20964"/>
+</g>
+
+<g class="accid" id="x18eu6ei"/>
+</g>
+</g>
+</g>
+<g class="staff" id="aelh967">
+<path d="M10958 22404 L13547 22404" stroke-width="13"/>
+<path d="M10958 22584 L13547 22584" stroke-width="13"/>
+<path d="M10958 22764 L13547 22764" stroke-width="13"/>
+<path d="M10958 22944 L13547 22944" stroke-width="13"/>
+<path d="M10958 23124 L13547 23124" stroke-width="13"/>
+<g class="layer" id="c1gdf308">
+<g class="note" id="jjs9hyi">
+<title class="labelAttr">A:2</title>
+<g class="stem" id="w1wfgyx3">
+<path d="M11140 22429 L11140 23034" stroke-width="18"/>
+</g><g class="notehead" fill="#fdbb13" stroke="Black" stroke-width="20">
+<use height="720px" width="720px" x="11131" xlink:href="#E0A3-he87jmy" y="22404"/>
+</g>
+
+</g>
+<g class="note" id="w1ifgnk1">
+<title class="labelAttr">B:2</title>
+<g class="stem" id="o2i3rh8">
+<path d="M12341 22339 L12341 22944" stroke-width="18"/>
+</g><g class="notehead" fill="#A6CE39" stroke="Black" stroke-width="20">
+<use height="720px" width="720px" x="12332" xlink:href="#E0A3-he87jmy" y="22314"/>
+</g>
+
+<g class="accid" id="cn6qkvf"/>
+</g>
+</g>
+</g>
+<g class="barLine" id="f159crtu">
+<path d="M13534 20604 L13534 21324" stroke-width="27"/>
+<path d="M13534 22404 L13534 23124" stroke-width="27"/>
+<path d="M13534 21324 L13534 22404" stroke-width="27"/>
+</g>
+</g>
+<g class="measure" id="e1r6aco1">
+<g class="staff" id="wrr2asa">
+<path d="M13547 20604 L17094 20604" stroke-width="13"/>
+<path d="M13547 20784 L17094 20784" stroke-width="13"/>
+<path d="M13547 20964 L17094 20964" stroke-width="13"/>
+<path d="M13547 21144 L17094 21144" stroke-width="13"/>
+<path d="M13547 21324 L17094 21324" stroke-width="13"/>
+<g class="layer" id="q1t43wwj">
+<g class="note" id="cqu3mf">
+<title class="labelAttr">C:4</title>
+<g class="stem" id="e3un10">
+<path d="M13931 20902 L13931 21504" stroke-width="18"/>
+</g><g class="notehead">
+<use height="720px" width="720px" x="13922" xlink:href="#C-filled-stem-down" y="20874"/>
+</g>
+
+<g class="accid" id="o1abomrx">
+<use height="720px" width="720px" x="13736" xlink:href="#E262-he87jmy" y="20874"/>
+</g>
+</g>
+<g class="note" id="d45lo97">
+<title class="labelAttr">D:4</title>
+<g class="stem" id="dlei1ur">
+<path d="M14721 20812 L14721 21414" stroke-width="18"/>
+</g><g class="notehead">
+<use height="720px" width="720px" x="14712" xlink:href="#D-filled-stem-down" y="20784"/>
+</g>
+
+</g>
+<g class="note" id="uu8o9uy">
+<title class="labelAttr">C:4</title>
+<g class="stem" id="lf5p0on">
+<path d="M15511 20902 L15511 21504" stroke-width="18"/>
+</g><g class="notehead">
+<use height="720px" width="720px" x="15502" xlink:href="#C-filled-stem-down" y="20874"/>
+</g>
+
+<g class="accid" id="i1uiznv0"/>
+</g>
+<g class="note" id="qhrsfsy">
+<title class="labelAttr">B:4</title>
+<g class="stem" id="u1sin2m0">
+<path d="M16301 20992 L16301 21564" stroke-width="18"/>
+</g><g class="notehead" fill="#A6CE39" stroke="Black" stroke-width="20">
+<use height="720px" width="720px" x="16292" xlink:href="#E0A4-he87jmy" y="20964"/>
+</g>
+
+<g class="accid" id="vrwyq7h"/>
+</g>
+</g>
+</g>
+<g class="staff" id="n1yuewat">
+<path d="M13547 22404 L17094 22404" stroke-width="13"/>
+<path d="M13547 22584 L17094 22584" stroke-width="13"/>
+<path d="M13547 22764 L17094 22764" stroke-width="13"/>
+<path d="M13547 22944 L17094 22944" stroke-width="13"/>
+<path d="M13547 23124 L17094 23124" stroke-width="13"/>
+<g class="ledgerLines above">
+<path d="M13874 22224 L14196 22224" stroke-width="22"/>
+<path d="M14664 22224 L14986 22224" stroke-width="22"/>
+<path d="M15454 22224 L15776 22224" stroke-width="22"/>
+</g>
+<g class="layer" id="td8b3wv">
+<g class="note" id="vob3kjg">
+<title class="labelAttr">C:4</title>
+<g class="stem" id="uka2jrb">
+<path d="M13931 22252 L13931 22854" stroke-width="18"/>
+</g><g class="notehead">
+<use height="720px" width="720px" x="13922" xlink:href="#C-filled-stem-down" y="22224"/>
+</g>
+
+<g class="accid" id="a1eatbxn">
+<use height="720px" width="720px" x="13710" xlink:href="#E262-he87jmy" y="22224"/>
+</g>
+</g>
+<g class="note" id="th45tsn">
+<title class="labelAttr">D:4</title>
+<g class="stem" id="sdpqkia">
+<path d="M14721 22162 L14721 22764" stroke-width="18"/>
+</g><g class="notehead">
+<use height="720px" width="720px" x="14712" xlink:href="#D-filled-stem-down" y="22134"/>
+</g>
+
+</g>
+<g class="note" id="m1snuhu4">
+<title class="labelAttr">C:4</title>
+<g class="stem" id="o1dbm5vf">
+<path d="M15511 22252 L15511 22854" stroke-width="18"/>
+</g><g class="notehead">
+<use height="720px" width="720px" x="15502" xlink:href="#C-filled-stem-down" y="22224"/>
+</g>
+
+<g class="accid" id="e1pgd3qb"/>
+</g>
+<g class="note" id="x12dd1qy">
+<title class="labelAttr">B:4</title>
+<g class="stem" id="j1otxelp">
+<path d="M16301 22342 L16301 22944" stroke-width="18"/>
+</g><g class="notehead" fill="#A6CE39" stroke="Black" stroke-width="20">
+<use height="720px" width="720px" x="16292" xlink:href="#E0A4-he87jmy" y="22314"/>
+</g>
+
+<g class="accid" id="h5ziqh9"/>
+</g>
+</g>
+</g>
+<g class="barLine" id="b2y7tlb">
+<path d="M17081 20604 L17081 21324" stroke-width="27"/>
+<path d="M17081 22404 L17081 23124" stroke-width="27"/>
+<path d="M17081 21324 L17081 22404" stroke-width="27"/>
+</g>
+</g>
+<g class="measure" id="l1vo2zwv">
+<g class="staff" id="s5ilc0o">
+<path d="M17094 20604 L20003 20604" stroke-width="13"/>
+<path d="M17094 20784 L20003 20784" stroke-width="13"/>
+<path d="M17094 20964 L20003 20964" stroke-width="13"/>
+<path d="M17094 21144 L20003 21144" stroke-width="13"/>
+<path d="M17094 21324 L20003 21324" stroke-width="13"/>
+<g class="layer" id="m1q5a72t">
+<g class="note" id="h1r83qa">
+<title class="labelAttr">A:4</title>
+<g class="stem" id="g11478r6">
+<path d="M17484 21026 L17484 20424" stroke-width="18"/>
+</g><g class="notehead" fill="#fdbb13" stroke="Black" stroke-width="20">
+<use height="720px" width="720px" x="17267" xlink:href="#E0A4-he87jmy" y="21054"/>
+</g>
+<g class="dots" id="uj4jgwl">
+<ellipse cx="17583" cy="21054" fill-opacity="1" rx="36" ry="36" stroke-opacity="1"/>
+</g>
+
+</g>
+<g class="note" id="q1n5i3mp">
+<title class="labelAttr">G:8</title>
+<g class="stem" id="a1iu2xfy">
+<path d="M18490 21116 L18490 20514" stroke-width="18"/>
+<g class="flag" id="v1c80av6">
+<use height="720px" width="720px" x="18481" xlink:href="#E240-he87jmy" y="20514"/>
+</g>
+</g><g class="notehead" fill="#F04E23" stroke="Black" stroke-width="20">
+<use height="720px" width="720px" x="18273" xlink:href="#E0A4-he87jmy" y="21144"/>
+</g>
+
+</g>
+<g class="note" id="myg76pm">
+<title class="labelAttr">F:2</title>
+<g class="stem" id="f10r9pf3">
+<path d="M19005 21206 L19005 20604" stroke-width="18"/>
+</g><g class="notehead" fill="#AB218E" stroke="Black" stroke-width="20">
+<use height="720px" width="720px" x="18788" xlink:href="#E0A3-he87jmy" y="21234"/>
+</g>
+
+</g>
+</g>
+</g>
+<g class="staff" id="yhvl6rm">
+<path d="M17094 22404 L20003 22404" stroke-width="13"/>
+<path d="M17094 22584 L20003 22584" stroke-width="13"/>
+<path d="M17094 22764 L20003 22764" stroke-width="13"/>
+<path d="M17094 22944 L20003 22944" stroke-width="13"/>
+<path d="M17094 23124 L20003 23124" stroke-width="13"/>
+<g class="layer" id="u1a8yzh6">
+<g class="note" id="h1kjzyvr">
+<title class="labelAttr">A:4</title>
+<g class="stem" id="f5qed07">
+<path d="M17276 22432 L17276 23034" stroke-width="18"/>
+</g><g class="notehead" fill="#fdbb13" stroke="Black" stroke-width="20">
+<use height="720px" width="720px" x="17267" xlink:href="#E0A4-he87jmy" y="22404"/>
+</g>
+<g class="dots" id="c142g8oh">
+<ellipse cx="17583" cy="22314" fill-opacity="1" rx="36" ry="36" stroke-opacity="1"/>
+</g>
+
+</g>
+<g class="note" id="d1nfstpz">
+<title class="labelAttr">G:8</title>
+<g class="stem" id="vxeq3qb">
+<path d="M18282 22522 L18282 23124" stroke-width="18"/>
+<g class="flag" id="n1on8dd9">
+<use height="720px" width="720px" x="18273" xlink:href="#E241-he87jmy" y="23124"/>
+</g>
+</g><g class="notehead" fill="#F04E23" stroke="Black" stroke-width="20">
+<use height="720px" width="720px" x="18273" xlink:href="#E0A4-he87jmy" y="22494"/>
+</g>
+
+</g>
+<g class="note" id="z1dw076g">
+<title class="labelAttr">F:2</title>
+<g class="stem" id="i1qi58q2">
+<path d="M18797 22609 L18797 23214" stroke-width="18"/>
+</g><g class="notehead" fill="#AB218E" stroke="Black" stroke-width="20">
+<use height="720px" width="720px" x="18788" xlink:href="#E0A3-he87jmy" y="22584"/>
+</g>
+
+</g>
+</g>
+</g>
+<g class="barLine" id="bstfw4v">
+<path d="M19990 20604 L19990 21324" stroke-width="27"/>
+<path d="M19990 22404 L19990 23124" stroke-width="27"/>
+<path d="M19990 21324 L19990 22404" stroke-width="27"/>
+</g>
+</g>
+</g>
+<g class="system" id="nd6wipq">
+<path d="M1332 24564 L1332 27084" stroke-width="27"/>
+<g class="grpSym" id="o1f6lmx9">
+<path d="M1247,27066 C887,26526 1337,26004 1067,25824 C1400,26004 950,26526 1247,27066" stroke-linecap="round" stroke-linejoin="round" stroke-width="18"/>
+<path d="M1247,24582 C950,25122 1400,25644 1067,25824 C1337,25644 887,25122 1247,24582" stroke-linecap="round" stroke-linejoin="round" stroke-width="18"/>
+</g>
+<g class="labelAbbr" id="g1li1tjo">
+<text font-size="0px" text-anchor="end" x="914" y="25914">
+<tspan class="text" id="s161glei">
+<tspan font-size="405px">Pno.</tspan>
+</tspan>
+</text>
+</g>
+<g class="measure" id="y1ehe6u4">
+<g class="mNum autogenerated" id="z1bt5g9e">
+<text font-size="0px" text-anchor="middle" x="1319" y="24321">
+<tspan class="text" id="u1pe16je">
+<tspan font-size="324px">40</tspan>
+</tspan>
+</text>
+</g>
+<g class="staff" id="m1jsmca2">
+<path d="M1319 24564 L5355 24564" stroke-width="13"/>
+<path d="M1319 24744 L5355 24744" stroke-width="13"/>
+<path d="M1319 24924 L5355 24924" stroke-width="13"/>
+<path d="M1319 25104 L5355 25104" stroke-width="13"/>
+<path d="M1319 25284 L5355 25284" stroke-width="13"/>
+<g class="clef" id="cpdzavl">
+<use height="720px" width="720px" x="1436" xlink:href="#E050-he87jmy" y="25104"/>
+</g>
+<g class="keySig" id="w1cprmc0">
+<g class="keyAccid" id="juvrtz5">
+<use height="720px" width="720px" x="2117" xlink:href="#E260-he87jmy" y="24924"/>
+</g>
+</g>
+<g class="ledgerLines below">
+<path d="M4074 25464 L4396 25464" stroke-width="22"/>
+</g>
+<g class="layer" id="a1dqln3b">
+<g class="note" id="x1t9rbzy">
+<title class="labelAttr">E:4</title>
+<g class="stem" id="t15nq7vw">
+<path d="M2736 25256 L2736 24654" stroke-width="18"/>
+</g><g class="notehead">
+<use height="720px" width="720px" x="2519" xlink:href="#E-filled-stem-up" y="25284"/>
+</g>
+
+</g>
+<g class="note" id="w148y0pr">
+<title class="labelAttr">D:4</title>
+<g class="stem" id="t90x33r">
+<path d="M3537 25346 L3537 24744" stroke-width="18"/>
+</g><g class="notehead">
+<use height="720px" width="720px" x="3320" xlink:href="#D-filled-stem-up" y="25374"/>
+</g>
+
+</g>
+<g class="note" id="l1n2y3mh">
+<title class="labelAttr">C:2</title>
+<g class="stem" id="mu6r8oj">
+<path d="M4339 25436 L4339 24834" stroke-width="18"/>
+</g><g class="notehead">
+<use height="720px" width="720px" x="4122" xlink:href="#C-open-stem-up" y="25464"/>
+</g>
+
+<g class="accid" id="y1ucawla">
+<use height="720px" width="720px" x="3910" xlink:href="#E262-he87jmy" y="25464"/>
+</g>
+</g>
+</g>
+</g>
+<g class="staff" id="k1i06vhs">
+<path d="M1319 26364 L5355 26364" stroke-width="13"/>
+<path d="M1319 26544 L5355 26544" stroke-width="13"/>
+<path d="M1319 26724 L5355 26724" stroke-width="13"/>
+<path d="M1319 26904 L5355 26904" stroke-width="13"/>
+<path d="M1319 27084 L5355 27084" stroke-width="13"/>
+<g class="clef" id="n187r7mm">
+<use height="720px" width="720px" x="1436" xlink:href="#E062-he87jmy" y="26544"/>
+</g>
+<g class="keySig" id="b3uqf9t">
+<g class="keyAccid" id="g14gyc7t">
+<use height="720px" width="720px" x="2117" xlink:href="#E260-he87jmy" y="26904"/>
+</g>
+</g>
+<g class="layer" id="t1358kc6">
+<g class="note" id="trxys90">
+<title class="labelAttr">E:4</title>
+<g class="stem" id="qew0h5w">
+<path d="M2528 26662 L2528 27264" stroke-width="18"/>
+</g><g class="notehead">
+<use height="720px" width="720px" x="2519" xlink:href="#E-filled-stem-down" y="26634"/>
+</g>
+
+</g>
+<g class="note" id="wh54gx">
+<title class="labelAttr">D:4</title>
+<g class="stem" id="k1gtnnqj">
+<path d="M3329 26752 L3329 27324" stroke-width="18"/>
+</g><g class="notehead">
+<use height="720px" width="720px" x="3320" xlink:href="#D-filled-stem-down" y="26724"/>
+</g>
+
+</g>
+<g class="note" id="u1vblgun">
+<title class="labelAttr">C:2</title>
+<g class="stem" id="ufmce7i">
+<path d="M4339 26786 L4339 26184" stroke-width="18"/>
+</g><g class="notehead">
+<use height="720px" width="720px" x="4122" xlink:href="#C-open-stem-up" y="26814"/>
+</g>
+
+<g class="accid" id="n13upakr">
+<use height="720px" width="720px" x="3936" xlink:href="#E262-he87jmy" y="26814"/>
+</g>
+</g>
+</g>
+</g>
+<g class="barLine" id="y15coheg">
+<path d="M5342 24564 L5342 25284" stroke-width="27"/>
+<path d="M5342 26364 L5342 27084" stroke-width="27"/>
+<path d="M5342 25284 L5342 26364" stroke-width="27"/>
+</g>
+</g>
+<g class="measure" id="t1b0k19c">
+<g class="staff" id="q10usi8u">
+<path d="M5355 24564 L8744 24564" stroke-width="13"/>
+<path d="M5355 24744 L8744 24744" stroke-width="13"/>
+<path d="M5355 24924 L8744 24924" stroke-width="13"/>
+<path d="M5355 25104 L8744 25104" stroke-width="13"/>
+<path d="M5355 25284 L8744 25284" stroke-width="13"/>
+<g class="layer" id="vpx87dd">
+<g class="note" id="a1v1nvqv">
+<title class="labelAttr">D:4</title>
+<g class="stem" id="y19fy782">
+<path d="M5742 25346 L5742 24744" stroke-width="18"/>
+</g><g class="notehead">
+<use height="720px" width="720px" x="5525" xlink:href="#D-filled-stem-up" y="25374"/>
+</g>
+
+</g>
+<g class="note" id="z17qx2kg">
+<title class="labelAttr">F:4</title>
+<g class="stem" id="n18car9y">
+<path d="M6543 25166 L6543 24564" stroke-width="18"/>
+</g><g class="notehead" fill="#AB218E" stroke="Black" stroke-width="20">
+<use height="720px" width="720px" x="6326" xlink:href="#E0A4-he87jmy" y="25194"/>
+</g>
+
+</g>
+<g class="note" id="fkq96l5">
+<title class="labelAttr">A:4</title>
+<g class="stem" id="pkfgkvc">
+<path d="M7345 24986 L7345 24384" stroke-width="18"/>
+</g><g class="notehead" fill="#fdbb13" stroke="Black" stroke-width="20">
+<use height="720px" width="720px" x="7128" xlink:href="#E0A4-he87jmy" y="25014"/>
+</g>
+
+</g>
+<g class="note" id="i1k4befo">
+<title class="labelAttr">F:4</title>
+<g class="stem" id="e1dizrba">
+<path d="M8146 25166 L8146 24564" stroke-width="18"/>
+</g><g class="notehead" fill="#AB218E" stroke="Black" stroke-width="20">
+<use height="720px" width="720px" x="7929" xlink:href="#E0A4-he87jmy" y="25194"/>
+</g>
+
+</g>
+</g>
+</g>
+<g class="staff" id="z6hkp61">
+<path d="M5355 26364 L8744 26364" stroke-width="13"/>
+<path d="M5355 26544 L8744 26544" stroke-width="13"/>
+<path d="M5355 26724 L8744 26724" stroke-width="13"/>
+<path d="M5355 26904 L8744 26904" stroke-width="13"/>
+<path d="M5355 27084 L8744 27084" stroke-width="13"/>
+<g class="layer" id="rcm4s0f">
+<g class="note" id="rbgms0m">
+<title class="labelAttr">D:4</title>
+<g class="stem" id="djrktc8">
+<path d="M5534 26752 L5534 27324" stroke-width="18"/>
+</g><g class="notehead">
+<use height="720px" width="720px" x="5525" xlink:href="#D-filled-stem-down" y="26724"/>
+</g>
+
+</g>
+<g class="note" id="f160h7bj">
+<title class="labelAttr">F:4</title>
+<g class="stem" id="gp8tesn">
+<path d="M6335 26572 L6335 27174" stroke-width="18"/>
+</g><g class="notehead" fill="#AB218E" stroke="Black" stroke-width="20">
+<use height="720px" width="720px" x="6326" xlink:href="#E0A4-he87jmy" y="26544"/>
+</g>
+
+</g>
+<g class="note" id="q1cqfja7">
+<title class="labelAttr">A:4</title>
+<g class="stem" id="jp5hwx9">
+<path d="M7137 26392 L7137 26994" stroke-width="18"/>
+</g><g class="notehead" fill="#fdbb13" stroke="Black" stroke-width="20">
+<use height="720px" width="720px" x="7128" xlink:href="#E0A4-he87jmy" y="26364"/>
+</g>
+
+</g>
+<g class="note" id="l14h9scd">
+<title class="labelAttr">F:4</title>
+<g class="stem" id="l1z0gyya">
+<path d="M7938 26572 L7938 27174" stroke-width="18"/>
+</g><g class="notehead" fill="#AB218E" stroke="Black" stroke-width="20">
+<use height="720px" width="720px" x="7929" xlink:href="#E0A4-he87jmy" y="26544"/>
+</g>
+
+</g>
+</g>
+</g>
+<g class="barLine" id="b18k5po2">
+<path d="M8731 24564 L8731 25284" stroke-width="27"/>
+<path d="M8731 26364 L8731 27084" stroke-width="27"/>
+<path d="M8731 25284 L8731 26364" stroke-width="27"/>
+</g>
+</g>
+<g class="measure" id="i14qqyl5">
+<g class="staff" id="l11gzymj">
+<path d="M8744 24564 L10775 24564" stroke-width="13"/>
+<path d="M8744 24744 L10775 24744" stroke-width="13"/>
+<path d="M8744 24924 L10775 24924" stroke-width="13"/>
+<path d="M8744 25104 L10775 25104" stroke-width="13"/>
+<path d="M8744 25284 L10775 25284" stroke-width="13"/>
+<g class="layer" id="c1yaocb1">
+<g class="note" id="l1atz3lu">
+<title class="labelAttr">D:1</title>
+<g class="notehead">
+<use height="720px" width="720px" x="8914" xlink:href="#D-open-no-stem" y="25374"/>
+</g>
+</g>
+</g>
+</g>
+<g class="staff" id="q1bq09l3">
+<path d="M8744 26364 L10775 26364" stroke-width="13"/>
+<path d="M8744 26544 L10775 26544" stroke-width="13"/>
+<path d="M8744 26724 L10775 26724" stroke-width="13"/>
+<path d="M8744 26904 L10775 26904" stroke-width="13"/>
+<path d="M8744 27084 L10775 27084" stroke-width="13"/>
+<g class="layer" id="zqmpck4">
+<g class="note" id="f1nq64dv">
+<title class="labelAttr">D:1</title>
+<g class="notehead">
+<use height="720px" width="720px" x="8914" xlink:href="#D-open-no-stem" y="26724"/>
+</g>
+</g>
+</g>
+</g>
+<g class="barLine" id="e2jaekb">
+<path d="M10762 24564 L10762 25284" stroke-width="27"/>
+<path d="M10762 26364 L10762 27084" stroke-width="27"/>
+<path d="M10762 25284 L10762 26364" stroke-width="27"/>
+</g>
+</g>
+<g class="measure" id="uts9phq">
+<g class="staff" id="g1uor553">
+<path d="M10775 24564 L12722 24564" stroke-width="13"/>
+<path d="M10775 24744 L12722 24744" stroke-width="13"/>
+<path d="M10775 24924 L12722 24924" stroke-width="13"/>
+<path d="M10775 25104 L12722 25104" stroke-width="13"/>
+<path d="M10775 25284 L12722 25284" stroke-width="13"/>
+<g class="layer" id="f1tq863t">
+<g class="mRest" id="d11zun31">
+<use height="720px" width="720px" x="11627" xlink:href="#E4E3-he87jmy" y="24744"/>
+</g>
+</g>
+</g>
+<g class="staff" id="wznl4xc">
+<path d="M10775 26364 L12722 26364" stroke-width="13"/>
+<path d="M10775 26544 L12722 26544" stroke-width="13"/>
+<path d="M10775 26724 L12722 26724" stroke-width="13"/>
+<path d="M10775 26904 L12722 26904" stroke-width="13"/>
+<path d="M10775 27084 L12722 27084" stroke-width="13"/>
+<g class="layer" id="hf8mptl">
+<g class="mRest" id="khajdfm">
+<use height="720px" width="720px" x="11627" xlink:href="#E4E3-he87jmy" y="26544"/>
+</g>
+</g>
+</g>
+<g class="barLine" id="p1x68ag0">
+<path d="M12709 24564 L12709 25284" stroke-width="27"/>
+<path d="M12709 26364 L12709 27084" stroke-width="27"/>
+<path d="M12709 25284 L12709 26364" stroke-width="27"/>
+</g>
+</g>
+<g class="measure" id="gborr0">
+<g class="staff" id="f11zqtdv">
+<path d="M12722 24564 L14669 24564" stroke-width="13"/>
+<path d="M12722 24744 L14669 24744" stroke-width="13"/>
+<path d="M12722 24924 L14669 24924" stroke-width="13"/>
+<path d="M12722 25104 L14669 25104" stroke-width="13"/>
+<path d="M12722 25284 L14669 25284" stroke-width="13"/>
+<g class="layer" id="k4akuj7">
+<g class="mRest" id="np4eor">
+<use height="720px" width="720px" x="13574" xlink:href="#E4E3-he87jmy" y="24744"/>
+</g>
+</g>
+</g>
+<g class="staff" id="e161zgbs">
+<path d="M12722 26364 L14669 26364" stroke-width="13"/>
+<path d="M12722 26544 L14669 26544" stroke-width="13"/>
+<path d="M12722 26724 L14669 26724" stroke-width="13"/>
+<path d="M12722 26904 L14669 26904" stroke-width="13"/>
+<path d="M12722 27084 L14669 27084" stroke-width="13"/>
+<g class="layer" id="fh1d5do">
+<g class="mRest" id="k7szk1y">
+<use height="720px" width="720px" x="13574" xlink:href="#E4E3-he87jmy" y="26544"/>
+</g>
+</g>
+</g>
+<g class="barLine" id="m16l3iqe">
+<path d="M14656 24564 L14656 25284" stroke-width="27"/>
+<path d="M14656 26364 L14656 27084" stroke-width="27"/>
+<path d="M14656 25284 L14656 26364" stroke-width="27"/>
+</g>
+</g>
+<g class="measure" id="r6qyds7">
+<g class="staff" id="p1rcakfx">
+<path d="M14669 24564 L16616 24564" stroke-width="13"/>
+<path d="M14669 24744 L16616 24744" stroke-width="13"/>
+<path d="M14669 24924 L16616 24924" stroke-width="13"/>
+<path d="M14669 25104 L16616 25104" stroke-width="13"/>
+<path d="M14669 25284 L16616 25284" stroke-width="13"/>
+<g class="layer" id="c1vxegbn">
+<g class="mRest" id="nfxvp7b">
+<use height="720px" width="720px" x="15521" xlink:href="#E4E3-he87jmy" y="24744"/>
+</g>
+</g>
+</g>
+<g class="staff" id="q10ijxkm">
+<path d="M14669 26364 L16616 26364" stroke-width="13"/>
+<path d="M14669 26544 L16616 26544" stroke-width="13"/>
+<path d="M14669 26724 L16616 26724" stroke-width="13"/>
+<path d="M14669 26904 L16616 26904" stroke-width="13"/>
+<path d="M14669 27084 L16616 27084" stroke-width="13"/>
+<g class="layer" id="cmbmxxz">
+<g class="mRest" id="vnf5crt">
+<use height="720px" width="720px" x="15521" xlink:href="#E4E3-he87jmy" y="26544"/>
+</g>
+</g>
+</g>
+<g class="barLine" id="t1k1bm0i">
+<path d="M16603 24564 L16603 25284" stroke-width="27"/>
+<path d="M16603 26364 L16603 27084" stroke-width="27"/>
+<path d="M16603 25284 L16603 26364" stroke-width="27"/>
+</g>
+</g>
+<g class="sb" id="tes0u1l"/>
+<g class="measure" id="h1l5sdpf">
+<g class="staff" id="c1nrtqq4">
+<path d="M16616 24564 L20005 24564" stroke-width="13"/>
+<path d="M16616 24744 L20005 24744" stroke-width="13"/>
+<path d="M16616 24924 L20005 24924" stroke-width="13"/>
+<path d="M16616 25104 L20005 25104" stroke-width="13"/>
+<path d="M16616 25284 L20005 25284" stroke-width="13"/>
+<g class="ledgerLines below">
+<path d="M17539 25464 L17861 25464" stroke-width="22"/>
+</g>
+<g class="layer" id="fciiguf">
+<g class="note" id="on0m2b">
+<title class="labelAttr">D:4</title>
+<g class="stem" id="rpfh8vo">
+<path d="M17003 25346 L17003 24744" stroke-width="18"/>
+</g><g class="notehead">
+<use height="720px" width="720px" x="16786" xlink:href="#D-filled-stem-up" y="25374"/>
+</g>
+
+</g>
+<g class="note" id="qibcblv">
+<title class="labelAttr">C:4</title>
+<g class="stem" id="w18y9l20">
+<path d="M17804 25436 L17804 24834" stroke-width="18"/>
+</g><g class="notehead">
+<use height="720px" width="720px" x="17587" xlink:href="#C-filled-stem-up" y="25464"/>
+</g>
+
+<g class="accid" id="gpgjvbx">
+<use height="720px" width="720px" x="17375" xlink:href="#E262-he87jmy" y="25464"/>
+</g>
+</g>
+<g class="note" id="ik9g6ol">
+<title class="labelAttr">D:4</title>
+<g class="stem" id="mjzsxdu">
+<path d="M18606 25346 L18606 24744" stroke-width="18"/>
+</g><g class="notehead">
+<use height="720px" width="720px" x="18389" xlink:href="#D-filled-stem-up" y="25374"/>
+</g>
+
+</g>
+<g class="note" id="dr7di5m">
+<title class="labelAttr">E:4</title>
+<g class="stem" id="f9khsrq">
+<path d="M19407 25256 L19407 24654" stroke-width="18"/>
+</g><g class="notehead">
+<use height="720px" width="720px" x="19190" xlink:href="#E-filled-stem-up" y="25284"/>
+</g>
+
+</g>
+</g>
+</g>
+<g class="staff" id="u1c369iq">
+<path d="M16616 26364 L20005 26364" stroke-width="13"/>
+<path d="M16616 26544 L20005 26544" stroke-width="13"/>
+<path d="M16616 26724 L20005 26724" stroke-width="13"/>
+<path d="M16616 26904 L20005 26904" stroke-width="13"/>
+<path d="M16616 27084 L20005 27084" stroke-width="13"/>
+<g class="layer" id="qsw4055">
+<g class="note" id="u1fj6v51">
+<title class="labelAttr">D:4</title>
+<g class="stem" id="o8jaib3">
+<path d="M16795 26752 L16795 27324" stroke-width="18"/>
+</g><g class="notehead">
+<use height="720px" width="720px" x="16786" xlink:href="#D-filled-stem-down" y="26724"/>
+</g>
+
+</g>
+<g class="note" id="v6slcx8">
+<title class="labelAttr">C:4</title>
+<g class="stem" id="j167nj47">
+<path d="M17804 26786 L17804 26184" stroke-width="18"/>
+</g><g class="notehead">
+<use height="720px" width="720px" x="17587" xlink:href="#C-filled-stem-up" y="26814"/>
+</g>
+
+<g class="accid" id="o1sbx3el">
+<use height="720px" width="720px" x="17401" xlink:href="#E262-he87jmy" y="26814"/>
+</g>
+</g>
+<g class="note" id="b422qtb">
+<title class="labelAttr">D:4</title>
+<g class="stem" id="l1pkql93">
+<path d="M18398 26752 L18398 27324" stroke-width="18"/>
+</g><g class="notehead">
+<use height="720px" width="720px" x="18389" xlink:href="#D-filled-stem-down" y="26724"/>
+</g>
+
+</g>
+<g class="note" id="xhrwvig">
+<title class="labelAttr">E:4</title>
+<g class="stem" id="u1v7i1x">
+<path d="M19199 26662 L19199 27264" stroke-width="18"/>
+</g><g class="notehead">
+<use height="720px" width="720px" x="19190" xlink:href="#E-filled-stem-down" y="26634"/>
+</g>
+
+</g>
+</g>
+</g>
+<g class="barLine" id="t66g2g4">
+<path d="M19992 24564 L19992 25284" stroke-width="27"/>
+<path d="M19992 26364 L19992 27084" stroke-width="27"/>
+<path d="M19992 25284 L19992 26364" stroke-width="27"/>
+</g>
+</g>
+</g>
+<g class="pgFoot autogenerated" id="b14lqtd4">
+<g class="fig" id="g9pjnh2">
+<g class="svg" transform="translate(7750, 28099) scale(10.000000, 10.000000)">
+<g>
+<path d="M 17.11278,49.26451 V 10.367554 h 12.696511 c 3.288815,7.336676 6.71267,14.610456 10.127281,21.888976 3.419998,-7.484684 6.255515,-14.204887 9.58887,-21.909915 2.436207,0.103726 4.316952,0.08453 6.484294,-0.05808 V 49.264423 H 50.274275 C 50.145222,38.35639 50.016136,27.448368 49.887066,16.540329 45.003488,27.315459 39.967448,38.433564 35.083854,49.208695 34.678996,49.343717 34.426583,49.135619 34.021726,49.270644 29.46588,39.330716 24.910049,29.390805 20.354201,19.450876 20.224341,29.388756 20.09461,39.326619 19.964815,49.264497 H 17.11278 Z M 36.754144,39.324695 C 32.721221,30.512695 28.6883,21.700679 24.655394,12.888662 22.530527,12.750737 22.656775,12.71031 20.714356,12.813974 v 0.966497 c 4.612938,9.99784 9.609439,20.748709 13.87298,30.081745 0.722248,-1.512523 1.444528,-3.025014 2.166808,-4.537521 z m 25.738417,9.939815 c 0,-12.965651 0,-25.931305 0,-38.896956 10.084388,0 20.168791,0 30.253178,0 0,0.960416 0,1.920849 0,2.881265 -6.482825,0 -12.965652,0 -19.448478,0 0,4.802097 0,9.604178 0,14.406277 5.52241,0 11.044819,0 16.567229,0 0,0.960415 0,1.920832 0,2.881248 -5.52241,0 -11.044819,0 -16.567229,0 0,5.282306 0,10.564611 0,15.846917 6.963035,0 13.926068,0 20.889103,0 0,0.960416 0,1.920832 0,2.881249 -10.564597,0 -21.129207,0 -31.693803,0 z m 4.321874,-2.160937 c 0,-11.765131 0,-23.530263 0,-35.295394 -0.720312,0 -1.440625,0 -2.160937,0 0,11.765131 0,23.530263 0,35.295394 0.720312,0 1.440625,0 2.160937,0 z m 32.41413,2.160937 c 0,-12.965651 0,-25.931305 0,-38.896956 2.401045,0 4.802095,0 7.203135,0 0,12.965651 0,25.931305 0,38.896956 -2.40104,0 -4.80209,0 -7.203135,0 z m 2.881265,-2.160937 c 0,-11.765131 0,-23.530263 0,-35.295394 -0.72031,0 -1.44064,0 -2.160953,0 0,11.765131 0,23.530263 0,35.295394 0.720313,0 1.440643,0 2.160953,0 z" fill="#00000"/>
+<path d="m 346.3,6.7 c -3.1,0.5 -4.9,4.4 -2.7,6.8 1.2,1.4 2.7,2.4 4.1,3.5 -2.4,5.3 -7.7,8.3 -11.9,12.1 -3.7,2.8 -7,6.2 -9.7,9.9 -2.2,-0.8 -0.91472,-7.718806 -0.62677,-9.5 0.28796,-1.781194 0.72677,-6.4 2.92677,-8.7 1.3,-1.9 3,-3.5 4.5,-5.2 1.2,-3.4 -3.2,-4.9 -5.8,-4.6 -7.3,-0.5 -14.6,2 -20,6.8 -5,4.6 -10,10.1 -11.5,17 -0.9,3.5 -0.2,7.5 2.8,9.9 2.5,2.8 7.4,2.9 9.8,-0.2 1.7,-2.3 3.2,-4.8 3.8,-7.6 -0.1,-2.6 -4.4,-2.3 -4.3,0.2 1.2,2.4 -0.9,4.7 -2.7,6.2 -1.7,0.9 -4.7,0.7 -4.8,-1.7 -1,-5.8 2.1,-11.3 5.2,-16.1 4,-5.8 9.8,-11.2 17.2,-11.8 1.6,0 8.1,-1.2 6.8,1.4 -2.8,2.8 -5.6,6.1 -6,10.3 -1.6,7.7 0.1,15.7 -2.3,23.2 -1.1,3.9 2,2.6 2.5,0.2 3.3,-7.4 8.9,-13.4 15.1,-18.5 4.2,-3.9 9.5,-7.1 11.9,-12.6 1.3,-3.6 1.2,-9 -2.7,-10.9 -0.50431,-0.1767056 -1.06965,-0.1654404 -1.6,-0.1 z m 66,14.5 c -2,0.8 -1.8,4.9 0.8,4.4 3.4,0.4 2.9,-6.2 -0.8,-4.4 z m 0.6,7.3 c -1.3,0.5 -7.6,0.5 -5.4,2.2 4,-0.3 0.7,4.5 0.6,6.7 -0.4,2.9 -2.4,5.9 -1.2,8.8 2.7,1.7 5.6,-0.8 6.8,-3.2 1.6,-1.4 -0.5,-3 -1.2,-0.9 -0.4,0.8 -2.4,3.5 -2.6,1.8 1.1,-5 2.7,-9.9 3.9,-14.9 l -0.1,-0.5 h -0.9 z m -65.1,0.2 c -6.5,1.6 -10.5,9.5 -8.2,15.7 2.1,3.4 7.4,2.9 10.1,0.4 2,-0.2 3.6,-5.3 1,-3.4 -1.4,2 -4,4.2 -6.5,2.8 -2.2,-1.9 -1.9,-5.7 1.7,-5.3 3.1,-0.9 6.9,-2.1 8.1,-5.5 0.9,-2.7 -1.6,-5.2 -4.3,-4.8 h -1.1 -0.7 z m 13.6,0 c -2.2,0 -8.5,1.8 -2.9,2.3 0.9,1.9 -1,4.9 -1.1,7.2 -0.5,2.9 -1.4,5.7 -1.7,8.7 3.7,0.7 3.8,-2.6 4.4,-5.3 0.9,-3.3 1.6,-7 4.1,-9.5 2.4,1.6 6.8,-0.7 3.7,-3.4 -2.9,-0.5 -4.8,2.4 -6.2,4.3 0,-1.2 2.4,-5 -0.2,-4.3 z m 15.8,0 c -6.4,1.3 -9.6,9.1 -7.7,14.9 1.9,4 7.7,3.9 11,1.7 4.1,-3 6,-8.9 4.4,-13.7 -1.3,-3 -4.8,-3.2 -7.6,-3 z m 17,0 c -2.3,0 -8.8,1.9 -3,2.4 0.4,2.5 -1,5.7 -1.4,8.4 -0.7,2.4 -1.8,7.5 2.1,7.2 3.8,-0.1 6.5,-3.5 8.5,-6.3 2,-3.2 4.5,-7 3.3,-10.9 -3.7,-3 -3.6,2.6 -3.1,5.1 -0.7,3.8 -2.7,7.9 -6.2,9.8 -3.6,0.6 -1,-4.3 -0.8,-6.1 0.6,-3.2 1.6,-6.3 1.9,-9.5 h -1.1 z m 30.6,0 c -6.3,1.2 -9.5,8.9 -7.8,14.7 1.5,4 7.2,4.2 10.5,2.4 4.6,-2.8 6.6,-9.3 4.8,-14.3 -1.4,-2.8 -4.8,-3 -7.5,-2.8 z m -75.4,1.7 c 2.1,1.5 0.2,4.7 -1.6,5.7 -1.1,0.4 -5.5,3.4 -4.6,0.7 0.8,-2.7 2.2,-6.2 5.3,-6.6 l 0.9,0.1 z m 30.8,0 c 2.6,1.5 1.3,5.2 0.8,7.6 -0.8,2.7 -1.9,5.9 -4.7,7.1 -5.1,0.8 -4,-5.8 -2.8,-8.8 1,-2.8 3,-6.8 6.7,-5.8 z m 47.1,-0.1 c 2.9,0.7 2,4.7 1.5,6.8 -0.7,3 -1.8,6.7 -5,8 -4.7,0.8 -4,-5.1 -3,-7.9 0.9,-3 2.7,-7.3 6.5,-6.8 z" fill="#00000"/>
+<text fill="#00000" style="font-style:italic;font-weight:normal;font-size:30px;line-height:125%;font-family:Times;text-anchor:middle" x="201" y="41">engraved with</text>
+</g>
+</g>
+</g>
+</g>
+</g>
+</svg></g><comment>
+            Generated and modified using the following libraries:
+            - BeautifulSoup: For parsing and manipulating the SVG.
+            - Verovio: For rendering MEI files to SVG. Visit Verovio at https://www.verovio.org
+        </comment></svg>
