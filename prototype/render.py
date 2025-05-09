@@ -23,13 +23,15 @@ SQUARE_PITCHES = ["Ab", "G#", "Bb", "A#", "C", "D", "E", "Gb", "F#"]
 
 # Test selection
 TESTS = [
-    {"song": "Sight Reading Practice - Evan Ramsey", "mei_filename": "SightReadingPractice"},
-    {"song": "Shake It Off - Taylor Swift", "mei_filename": "ShakeItOff"},
-    {"song": "Can you feel the love tonight? - Elton John", "mei_filename": "CanYouFeelTheLoveTonight"},
-    {"song": "Moonlight Sonata - Beethoven", "mei_filename": "MoonlightSonata"},
-    {"song": "Mad World - Gary Jules", "mei_filename": "MadWorld"},
+    {"song": "Sight Reading Practice - Evan Ramsey", "mei_filename": "SightReadingPractice"}, # 0
+    {"song": "Shake It Off - Taylor Swift", "mei_filename": "ShakeItOff"}, # 1
+    {"song": "Can you feel the love tonight? - Elton John", "mei_filename": "CanYouFeelTheLoveTonight"}, # 2
+    {"song": "Moonlight Sonata - Beethoven", "mei_filename": "MoonlightSonata"}, # 3
+    {"song": "Mad World - Gary Jules", "mei_filename": "MadWorld"}, # 4
+    {"song": "Creep - Radiohead", "mei_filename": "Creep"}, # 5
+    {"song": "Because of You - Kelly Clarkson", "mei_filename": "BecauseOfYou"}, # 6
 ]
-TEST_NO = 4
+TEST_NO = 6
 SONG = TESTS[TEST_NO]["song"]
 FILENAME = TESTS[TEST_NO]["mei_filename"]
 
