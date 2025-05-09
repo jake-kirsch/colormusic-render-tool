@@ -27,8 +27,9 @@ TESTS = [
     {"song": "Shake It Off - Taylor Swift", "mei_filename": "ShakeItOff"},
     {"song": "Can you feel the love tonight? - Elton John", "mei_filename": "CanYouFeelTheLoveTonight"},
     {"song": "Moonlight Sonata - Beethoven", "mei_filename": "MoonlightSonata"},
+    {"song": "Mad World - Gary Jules", "mei_filename": "MadWorld"},
 ]
-TEST_NO = 3
+TEST_NO = 4
 SONG = TESTS[TEST_NO]["song"]
 FILENAME = TESTS[TEST_NO]["mei_filename"]
 
