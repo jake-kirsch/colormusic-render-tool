@@ -3,7 +3,7 @@ from fastapi.responses import HTMLResponse
 from fastapi.staticfiles import StaticFiles
 from fastapi.templating import Jinja2Templates
 import os
-from .renderer import render_color_music
+from app.renderer import render_color_music
 
 app = FastAPI()
 
