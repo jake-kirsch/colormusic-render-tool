@@ -1,6 +1,7 @@
 beautifulsoup4
 fastapi
 jinja2
+lxml
 python-multipart
 uvicorn
 verovio
