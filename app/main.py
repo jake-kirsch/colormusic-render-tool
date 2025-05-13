@@ -8,6 +8,8 @@ import zipfile
 
 from .renderer import render_color_music
 
+last_uploaded_filename = ""
+
 app = FastAPI()
 
 app.mount("/static", StaticFiles(directory="app/static"), name="static")
@@ -32,6 +34,10 @@ async def upload(request: Request, file: UploadFile = File(...), title: str = Fo
     output_svg_paths = render_color_music(mei_path, title)
     relative_paths = [p.replace("app/static/", "") for p in output_svg_paths]
 
+    # Save out the last uploaded filename
+    global last_uploaded_filename
+    last_uploaded_filename = os.path.splitext(filename)[0]  # No extension
+
     return templates.TemplateResponse("index.html", {
         "request": request,
         "svgs": relative_paths,
@@ -40,6 +46,8 @@ async def upload(request: Request, file: UploadFile = File(...), title: str = Fo
 
 @app.get("/download-all")
 def download_all():
+    global last_uploaded_filename
+
     svg_dir = "app/static/rendered_svgs"
     zip_path = tempfile.NamedTemporaryFile(delete=False, suffix=".zip").name
 
@@ -51,4 +59,4 @@ def download_all():
                     arcname = os.path.relpath(full_path, svg_dir)
                     zipf.write(full_path, arcname=arcname)
 
-    return FileResponse(zip_path, media_type="application/zip", filename="ColorMusic_SVGs.zip")
+    return FileResponse(zip_path, media_type="application/zip", filename=f"ColorMusic_{last_uploaded_filename}.zip")
