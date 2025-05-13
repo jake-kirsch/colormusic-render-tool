@@ -11,6 +11,9 @@
     </form>
 
     {% if uploaded %}
+        <a href="/download-all">
+            <button>Download All as ZIP</button>
+        </a>
         <h2>Rendered SVGs:</h2>
         {% for svg in svgs %}
             <div>
