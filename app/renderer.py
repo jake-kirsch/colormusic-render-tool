@@ -285,7 +285,7 @@ def render_color_music(mei_file_path):
     svg_files = []
     for page in range(1, tk.getPageCount() + 1):
         svg = BeautifulSoup(tk.renderToSVG(page), "xml")
-        tk.renderToSVGFile(f"{BASE_DIR}\\{filename}-{page}-original.svg", page)
+        tk.renderToSVGFile(os.path.join(BASE_DIR, f"{filename}-{page}-original.svg"), page)
 
         add_symbols_to_defs(svg.find("defs"))
         shift_svg_content(svg)
@@ -305,11 +305,15 @@ def render_color_music(mei_file_path):
         """
         svg.find("svg").append(footer)
 
-        svg_file = f"{BASE_DIR}\\{filename}-{page}-colormusic.svg"
+        svg_file = os.path.join(BASE_DIR, f"{filename}-{page}-colormusic.svg")
         with open(svg_file, "w", encoding="utf-8") as out:
             out.write(str(svg))
 
         svg_files.append(svg_file)
+
+    print("Rendered SVG paths:")
+    for path in svg_files:
+        print("  →", path, "Exists?", os.path.exists(path))
 
     return svg_files
 
