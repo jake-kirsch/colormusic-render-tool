@@ -278,6 +278,7 @@ if __name__ == "__main__":
 
     tk.loadData(mei_data)
 
+    svg_files = []
     for page in range(1, tk.getPageCount() + 1):
         svg = BeautifulSoup(tk.renderToSVG(page), "xml")
         tk.renderToSVGFile(f"{BASE_DIR}\\{FILENAME}-{page}-original.svg", page)
@@ -300,5 +301,8 @@ if __name__ == "__main__":
         """
         svg.find("svg").append(footer)
 
-        with open(f"{BASE_DIR}\\{FILENAME}-{page}-colormusic.svg", "w", encoding="utf-8") as out:
+        svg_file = f"{BASE_DIR}\\{FILENAME}-{page}-colormusic.svg"
+        with open(svg_file, "w", encoding="utf-8") as out:
             out.write(str(svg))
+
+        svg_files.append(svg_file)

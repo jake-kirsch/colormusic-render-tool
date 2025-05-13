@@ -23,6 +23,11 @@ Note prototype was done in a speedily manner for POC, structure/formatting was l
 
 <br>
 
+
+#### Running Thoughts
+
+* Add functionality to detect metadata from the song (ex. key, mode) that can then be used to determine reference ColorMusic material for further learning
+
 ### *Acknowledgements*
 
 ColorMusic - Mike George - https://www.mycolormusic.com
