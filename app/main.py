@@ -18,7 +18,7 @@ async def index(request: Request):
     return templates.TemplateResponse("index.html", {"request": request})
 
 @app.post("/upload", response_class=HTMLResponse)
-async def upload(request: Request, file: UploadFile = File(...)):
+async def upload(request: Request, file: UploadFile = File(...), title: str = Form(...)):
     content = await file.read()
     filename = file.filename
     mei_path = f"app/static/uploads/{filename}"
@@ -29,7 +29,7 @@ async def upload(request: Request, file: UploadFile = File(...)):
         f.write(content)
 
     # Render SVG(s)
-    output_svg_paths = render_color_music(mei_path)
+    output_svg_paths = render_color_music(mei_path, title)
     relative_paths = [p.replace("app/static/", "") for p in output_svg_paths]
 
     return templates.TemplateResponse("index.html", {

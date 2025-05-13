@@ -38,7 +38,7 @@ SQUARE_PITCHES = ["Ab", "G#", "Bb", "A#", "C", "D", "E", "Gb", "F#"]
 # ORIGINAL_FILE = os.path.join(BASE_DIR, f"{FILENAME}.mei")
 # MODIFIED_FILE = os.path.join(BASE_DIR, f"{FILENAME}-mod.mei")
 
-SONG = "TBD"
+# SONG = "TBD"
 
 tk = verovio.toolkit()
 
@@ -217,7 +217,7 @@ def shift_svg_content(soup):
         svg["height"] = str(int(svg["height"].replace("px", "")) + 180)
 
 
-def add_logo_and_title(soup, page_num):
+def add_logo_and_title(soup, page_num, page_title):
     """Create and Add ColorMusic Logo and Song Title"""
     svg = soup.find("svg")
     group = soup.new_tag("g", id="logo-group")
@@ -260,12 +260,12 @@ def add_logo_and_title(soup, page_num):
 
     title_group = soup.new_tag("g", id="song-title-group")
     title = soup.new_tag("text", x="210", y="105", fill="Black", **{"font-size": "30"})
-    title.string = f"{SONG} - Page {page_num}"
+    title.string = f"{page_title} - Page {page_num}"
     title_group.append(title)
     svg.insert(0, title_group)
 
 
-def render_color_music(mei_file_path):
+def render_color_music(mei_file_path, title):
     """Render MEI to ColorMusic"""
     # Label notes in MEI
     soup = parse_mei(mei_file_path)
@@ -294,7 +294,7 @@ def render_color_music(mei_file_path):
             render_note_to_colormusic(note, note.find_parent("g", class_="chord"))
             reorder_note(note)
 
-        add_logo_and_title(svg, page)
+        add_logo_and_title(svg, page, title)
 
         # Footer
         footer = svg.new_tag("comment")
