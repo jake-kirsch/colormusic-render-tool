@@ -22,21 +22,23 @@ PITCH_COLORS = {
 SQUARE_PITCHES = ["Ab", "G#", "Bb", "A#", "C", "D", "E", "Gb", "F#"]
 
 # Test selection
-TESTS = [
-    {"song": "Sight Reading Practice - Evan Ramsey", "mei_filename": "SightReadingPractice"}, # 0
-    {"song": "Shake It Off - Taylor Swift", "mei_filename": "ShakeItOff"}, # 1
-    {"song": "Can you feel the love tonight? - Elton John", "mei_filename": "CanYouFeelTheLoveTonight"}, # 2
-    {"song": "Moonlight Sonata - Beethoven", "mei_filename": "MoonlightSonata"}, # 3
-    {"song": "Mad World - Gary Jules", "mei_filename": "MadWorld"}, # 4
-    {"song": "Creep - Radiohead", "mei_filename": "Creep"}, # 5
-    {"song": "Because of You - Kelly Clarkson", "mei_filename": "BecauseOfYou"}, # 6
-]
-TEST_NO = 6
-SONG = TESTS[TEST_NO]["song"]
-FILENAME = TESTS[TEST_NO]["mei_filename"]
+# TESTS = [
+#     {"song": "Sight Reading Practice - Evan Ramsey", "mei_filename": "SightReadingPractice"}, # 0
+#     {"song": "Shake It Off - Taylor Swift", "mei_filename": "ShakeItOff"}, # 1
+#     {"song": "Can you feel the love tonight? - Elton John", "mei_filename": "CanYouFeelTheLoveTonight"}, # 2
+#     {"song": "Moonlight Sonata - Beethoven", "mei_filename": "MoonlightSonata"}, # 3
+#     {"song": "Mad World - Gary Jules", "mei_filename": "MadWorld"}, # 4
+#     {"song": "Creep - Radiohead", "mei_filename": "Creep"}, # 5
+#     {"song": "Because of You - Kelly Clarkson", "mei_filename": "BecauseOfYou"}, # 6
+# ]
+# TEST_NO = 6
+# SONG = TESTS[TEST_NO]["song"]
+# FILENAME = TESTS[TEST_NO]["mei_filename"]
 
-ORIGINAL_FILE = os.path.join(BASE_DIR, f"{FILENAME}.mei")
-MODIFIED_FILE = os.path.join(BASE_DIR, f"{FILENAME}-mod.mei")
+# ORIGINAL_FILE = os.path.join(BASE_DIR, f"{FILENAME}.mei")
+# MODIFIED_FILE = os.path.join(BASE_DIR, f"{FILENAME}-mod.mei")
+
+SONG = "TBD"
 
 tk = verovio.toolkit()
 
@@ -266,13 +268,16 @@ def add_logo_and_title(soup, page_num):
 def render_color_music(mei_file_path):
     """Render MEI to ColorMusic"""
     # Label notes in MEI
-    soup = parse_mei(ORIGINAL_FILE)
+    soup = parse_mei(mei_file_path)
     labeled_soup = label_notes(soup)
 
-    with open(MODIFIED_FILE, "w", encoding="utf-8") as f:
+    filename = mei_file_path.split("/")[-1].split(".mei")[0]
+    modified_mei_file_path = os.path.join(BASE_DIR, f"{filename}-mod.mei")
+
+    with open(modified_mei_file_path, "w", encoding="utf-8") as f:
         f.write(str(labeled_soup))
 
-    with open(MODIFIED_FILE, "r", encoding="utf-8") as f:
+    with open(modified_mei_file_path, "r", encoding="utf-8") as f:
         mei_data = f.read()
 
     tk.loadData(mei_data)
@@ -280,7 +285,7 @@ def render_color_music(mei_file_path):
     svg_files = []
     for page in range(1, tk.getPageCount() + 1):
         svg = BeautifulSoup(tk.renderToSVG(page), "xml")
-        tk.renderToSVGFile(f"{BASE_DIR}\\{FILENAME}-{page}-original.svg", page)
+        tk.renderToSVGFile(f"{BASE_DIR}\\{filename}-{page}-original.svg", page)
 
         add_symbols_to_defs(svg.find("defs"))
         shift_svg_content(svg)
@@ -300,7 +305,7 @@ def render_color_music(mei_file_path):
         """
         svg.find("svg").append(footer)
 
-        svg_file = f"{BASE_DIR}\\{FILENAME}-{page}-colormusic.svg"
+        svg_file = f"{BASE_DIR}\\{filename}-{page}-colormusic.svg"
         with open(svg_file, "w", encoding="utf-8") as out:
             out.write(str(svg))
 
