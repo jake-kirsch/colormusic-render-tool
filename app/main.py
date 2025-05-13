@@ -1,8 +1,11 @@
 from fastapi import FastAPI, UploadFile, File, Request
-from fastapi.responses import HTMLResponse
+from fastapi.responses import FileResponse, HTMLResponse
 from fastapi.staticfiles import StaticFiles
 from fastapi.templating import Jinja2Templates
 import os
+import tempfile
+import zipfile
+
 from .renderer import render_color_music
 
 app = FastAPI()
@@ -34,3 +37,18 @@ async def upload(request: Request, file: UploadFile = File(...)):
         "svgs": relative_paths,
         "uploaded": True
     })
+
+@app.get("/download-all")
+def download_all():
+    svg_dir = "app/static/rendered_svgs"
+    zip_path = tempfile.NamedTemporaryFile(delete=False, suffix=".zip").name
+
+    with zipfile.ZipFile(zip_path, "w") as zipf:
+        for root, _, files in os.walk(svg_dir):
+            for file in files:
+                if file.endswith(".svg"):
+                    full_path = os.path.join(root, file)
+                    arcname = os.path.relpath(full_path, svg_dir)
+                    zipf.write(full_path, arcname=arcname)
+
+    return FileResponse(zip_path, media_type="application/zip", filename="ColorMusic_SVGs.zip")
