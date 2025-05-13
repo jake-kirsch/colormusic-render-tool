@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ColorMusic Renderer</title>
+</head>
+<body>
+    <h1>Upload MEI File</h1>
+    <form action="/upload" method="post" enctype="multipart/form-data">
+        <input type="file" name="file" accept=".mei">
+        <input type="submit" value="Render">
+    </form>
+
+    {% if uploaded %}
+        <h2>Rendered SVGs:</h2>
+        {% for svg in svgs %}
+            <div>
+                <img src="/static/{{ svg }}" alt="SVG Output" style="max-width: 100%;">
+                <br>
+                <a href="/static/{{ svg }}" download>Download</a>
+            </div>
+        {% endfor %}
+    {% endif %}
+</body>
+</html>
