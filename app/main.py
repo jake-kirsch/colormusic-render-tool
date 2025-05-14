@@ -4,6 +4,7 @@ from fastapi.staticfiles import StaticFiles
 from fastapi.templating import Jinja2Templates
 import os
 import tempfile
+import verovio
 import zipfile
 
 from .renderer import render_color_music
@@ -20,16 +21,33 @@ async def index(request: Request):
     return templates.TemplateResponse("index.html", {"request": request})
 
 @app.post("/upload", response_class=HTMLResponse)
-async def upload(request: Request, file: UploadFile = File(...), title: str = Form(...)):
+async def upload(request: Request, file: UploadFile = File(...), title: str = Form(...), input_format: str = Form(...)):
     content = await file.read()
     filename = file.filename
-    mei_path = f"app/static/uploads/{filename}"
+    file_path = f"app/static/uploads/{filename}"
 
-    # Save uploaded MEI file
-    os.makedirs(os.path.dirname(mei_path), exist_ok=True)
-    with open(mei_path, "wb") as f:
+    # Save uploaded file
+    os.makedirs(os.path.dirname(file_path), exist_ok=True)
+    with open(file_path, "wb") as f:
         f.write(content)
+    
+    mei_path = ""
+    if input_format == "musicxml":
+        tk = verovio.toolkit()
 
+        tk.loadFile(file_path)
+
+        mei_data = tk.getMEI()
+
+        mei_path = f"app/static/uploads/{os.path.splitext(filename)[0]}.mei"
+        
+        # Save the MEI data to a file
+        with open(mei_path, 'w') as file:
+            file.write(mei_data)
+    
+    elif input_format == "mei":
+        mei_path = file_path
+        
     # Render SVG(s)
     output_svg_paths = render_color_music(mei_path, title)
     relative_paths = [p.replace("app/static/", "") for p in output_svg_paths]
