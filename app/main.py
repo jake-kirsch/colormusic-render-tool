@@ -3,6 +3,7 @@ from fastapi.responses import FileResponse, HTMLResponse
 from fastapi.staticfiles import StaticFiles
 from fastapi.templating import Jinja2Templates
 import os
+import shutil
 import tempfile
 import verovio
 import zipfile
@@ -15,6 +16,25 @@ app = FastAPI()
 
 app.mount("/static", StaticFiles(directory="app/static"), name="static")
 templates = Jinja2Templates(directory="app/templates")
+
+def extract_xml_from_zip(zip_path, extract_dir="app/static/extract/"):
+    # Remove existing extract directory
+    if os.path.exists(extract_dir):
+        shutil.rmtree(extract_dir)
+    
+    os.makedirs(extract_dir, exist_ok=True)
+
+    with zipfile.ZipFile(zip_path, 'r') as zip_ref:
+        zip_ref.extractall(extract_dir)
+    
+    # Search for .xml file in the extracted directory
+    for root, _, files in os.walk(extract_dir):
+        for file in files:
+            if file.lower().endswith(".xml"):
+                return os.path.join(root, file)
+    
+    raise FileNotFoundError("No .xml file found in the ZIP archive.")
+
 
 @app.get("/", response_class=HTMLResponse)
 async def index(request: Request):
@@ -31,8 +51,11 @@ async def upload(request: Request, file: UploadFile = File(...), title: str = Fo
     with open(file_path, "wb") as f:
         f.write(content)
     
+    if input_format == "musicxml_compressed":
+        file_path = extract_xml_from_zip(file_path)
+
     mei_path = ""
-    if input_format == "musicxml":
+    if input_format in ["musicxml", "musicxml_compressed", ]:
         tk = verovio.toolkit()
 
         tk.loadFile(file_path)
@@ -44,7 +67,6 @@ async def upload(request: Request, file: UploadFile = File(...), title: str = Fo
         # Save the MEI data to a file
         with open(mei_path, 'w') as file:
             file.write(mei_data)
-    
     elif input_format == "mei":
         mei_path = file_path
         
