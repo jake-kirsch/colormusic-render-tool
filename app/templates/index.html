@@ -8,7 +8,14 @@
     <form action="/upload" method="post" enctype="multipart/form-data">
         <label for="title">Song Title - Author:</label><br>
         <input type="text" name="title" required><br><br>
-        <input type="file" name="file" accept=".mei" required><br><br>
+        <label for="input_format">Input File Format:</label><br>
+        <select name="input_format" required>
+            <option value="mei">MEI</option>
+            <option value="musicxml">MusicXML</option>
+            <option value="musicxml_compressed">MusicXML (compressed)</option>
+        </select><br><br>
+
+        <input type="file" name="file" required><br><br>
         <input type="submit" value="Render">
     </form>
 
