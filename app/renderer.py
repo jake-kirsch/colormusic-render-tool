@@ -12,11 +12,23 @@ STROKE_WIDTH = 20
 
 # Pitch color mapping
 PITCH_COLORS = {
-    "A": "#fdbb13", "B": "#A6CE39", "C": "#DA1E48", "D": "#F58220",
-    "E": "#F3DC0B", "F": "#AB218E", "G": "#F04E23",
-    "G#": "#0098DD", "Ab": "#0098DD", "A#": "#823F98", "Bb": "#823F98",
-    "C#": "#00A995", "Db": "#00A995", "D#": "#3763AF", "Eb": "#3763AF",
-    "F#": "#39B54A", "Gb": "#39B54A"
+    "A": "#fdbb13",
+    "B": "#A6CE39",
+    "C": "#DA1E48",
+    "D": "#F58220",
+    "E": "#F3DC0B",
+    "F": "#AB218E",
+    "G": "#F04E23",
+    "G#": "#0098DD",
+    "Ab": "#0098DD",
+    "A#": "#823F98",
+    "Bb": "#823F98",
+    "C#": "#00A995",
+    "Db": "#00A995",
+    "D#": "#3763AF",
+    "Eb": "#3763AF",
+    "F#": "#39B54A",
+    "Gb": "#39B54A",
 }
 
 SQUARE_PITCHES = ["Ab", "G#", "Bb", "A#", "C", "D", "E", "Gb", "F#"]
@@ -45,6 +57,7 @@ tk = verovio.toolkit()
 
 # ====== Processing Functions ======
 
+
 def parse_mei(file_path):
     """Parse MEI file"""
     with open(file_path, "r", encoding="utf-8") as f:
@@ -58,7 +71,18 @@ def label_notes(soup):
         dur = note.get("dur")
 
         accid_tag = note.find("accid")
-        accid_val = accid_tag.get("accid.ges") if accid_tag else None
+
+        accid_val = None
+        if accid_tag:
+            # Attempt to get accid value
+            for element_name in [
+                "accid.ges",
+                "accid",
+            ]:
+                accid_val = accid_tag.get(element_name)
+
+                if accid_val:
+                    break
 
         if accid_val == "s":
             accid = "#"
@@ -90,7 +114,7 @@ def render_note_to_colormusic(note, chord):
     """Render note to ColorMusic-style"""
     # Get the pitch and dur value (e.g., 'C', '4')
     pitch, dur = note.find("title", class_="labelAttr").text.split(":")
-    
+
     notehead = note.find("g", class_="notehead")
     stem = note.find("g", class_="stem")
 
@@ -108,7 +132,7 @@ def render_note_to_colormusic(note, chord):
 
         # Determine direction and side
         stem_direction = "up" if y2 < y1 else "down"
-    
+
     if pitch in SQUARE_PITCHES:
         # Find the <use> tag that contains the x and y position
         notehead_use = notehead.find("use")
@@ -225,36 +249,63 @@ def add_logo_and_title(soup, page_num, page_title):
     radius = 65
 
     for pitch, angle in [
-        ("Eb", 0), ("D", 30), ("Db", 60), ("C", 90), ("B", 120), ("Bb", 150),
-        ("A", 180), ("Ab", 210), ("G", 240), ("Gb", 270), ("F", 300), ("E", 330)
+        ("Eb", 0),
+        ("D", 30),
+        ("Db", 60),
+        ("C", 90),
+        ("B", 120),
+        ("Bb", 150),
+        ("A", 180),
+        ("Ab", 210),
+        ("G", 240),
+        ("Gb", 270),
+        ("F", 300),
+        ("E", 330),
     ]:
         if pitch in SQUARE_PITCHES:
             width = 15
             x = (radius * math.cos(math.radians(angle))) + x_offset - (width / 2)
             y = -(radius * math.sin(math.radians(angle))) + y_offset - (width / 2)
             cx, cy = x + width / 2, y + width / 2
-            shape = soup.new_tag("rect", x=x, y=y, width=width, height=width,
-                                 fill=PITCH_COLORS[pitch], stroke="black",
-                                 stroke_width=STROKE_WIDTH,
-                                 transform=f"rotate({90 - angle} {cx} {cy})")
+            shape = soup.new_tag(
+                "rect",
+                x=x,
+                y=y,
+                width=width,
+                height=width,
+                fill=PITCH_COLORS[pitch],
+                stroke="black",
+                stroke_width=STROKE_WIDTH,
+                transform=f"rotate({90 - angle} {cx} {cy})",
+            )
         else:
-            shape = soup.new_tag("circle",
-                                 cx=(radius * math.cos(math.radians(angle))) + x_offset,
-                                 cy=-(radius * math.sin(math.radians(angle))) + y_offset,
-                                 r="8.5", fill=PITCH_COLORS[pitch],
-                                 stroke="black", stroke_width=STROKE_WIDTH)
+            shape = soup.new_tag(
+                "circle",
+                cx=(radius * math.cos(math.radians(angle))) + x_offset,
+                cy=-(radius * math.sin(math.radians(angle))) + y_offset,
+                r="8.5",
+                fill=PITCH_COLORS[pitch],
+                stroke="black",
+                stroke_width=STROKE_WIDTH,
+            )
         group.append(shape)
 
     # Text
     color = soup.new_tag("text", x="55", y="105", fill="#FDB813", **{"font-size": "20"})
     color.string = "color"
-    music = soup.new_tag("text", x="97.5", y="105", fill="#939598", **{"font-size": "20"})
+    music = soup.new_tag(
+        "text", x="97.5", y="105", fill="#939598", **{"font-size": "20"}
+    )
     music.string = "music"
     group.append(color)
     group.append(music)
 
-    link = soup.new_tag("a", href="https://www.mycolormusic.com/", target="_blank",
-                        **{"xmlns:xlink": "http://www.w3.org/1999/xlink"})
+    link = soup.new_tag(
+        "a",
+        href="https://www.mycolormusic.com/",
+        target="_blank",
+        **{"xmlns:xlink": "http://www.w3.org/1999/xlink"},
+    )
     link.append(group)
     svg.insert(0, link)
 
@@ -271,7 +322,7 @@ def render_color_music(mei_file_path, title):
     for f in os.listdir(BASE_DIR):
         if f.endswith(".svg"):
             os.remove(os.path.join(BASE_DIR, f))
-    
+
     # Label notes in MEI
     soup = parse_mei(mei_file_path)
     labeled_soup = label_notes(soup)
@@ -290,7 +341,9 @@ def render_color_music(mei_file_path, title):
     svg_files = []
     for page in range(1, tk.getPageCount() + 1):
         svg = BeautifulSoup(tk.renderToSVG(page), "xml")
-        tk.renderToSVGFile(os.path.join(BASE_DIR, f"{filename}-{page}-original.svg"), page)
+        tk.renderToSVGFile(
+            os.path.join(BASE_DIR, f"{filename}-{page}-original.svg"), page
+        )
 
         add_symbols_to_defs(svg.find("defs"))
         shift_svg_content(svg)
@@ -321,7 +374,6 @@ def render_color_music(mei_file_path, title):
         print("  →", path, "Exists?", os.path.exists(path))
 
     return svg_files
-
 
 
 # def render_color_music(mei_file_path):
