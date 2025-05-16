@@ -12,26 +12,26 @@ STROKE_WIDTH = 20
 
 # Pitch color mapping
 PITCH_COLORS = {
-    "A": "#fdbb13",
-    "B": "#A6CE39",
-    "C": "#DA1E48",
+    "A": "#fdbb13", 
+    "B": "#A6CE39", "Cb": "#A6CE39", 
+    "C": "#DA1E48", "B#": "#DA1E48", 
     "D": "#F58220",
-    "E": "#F3DC0B",
-    "F": "#AB218E",
+    "E": "#F3DC0B", "Fb": "#F3DC0B",
+    "F": "#AB218E", "E#": "#AB218E",
     "G": "#F04E23",
-    "G#": "#0098DD",
-    "Ab": "#0098DD",
-    "A#": "#823F98",
-    "Bb": "#823F98",
-    "C#": "#00A995",
-    "Db": "#00A995",
-    "D#": "#3763AF",
-    "Eb": "#3763AF",
-    "F#": "#39B54A",
-    "Gb": "#39B54A",
+    "G#": "#0098DD", "Ab": "#0098DD", 
+    "A#": "#823F98", "Bb": "#823F98",
+    "C#": "#00A995", "Db": "#00A995", 
+    "D#": "#3763AF", "Eb": "#3763AF",
+    "F#": "#39B54A", "Gb": "#39B54A",
 }
 
-SQUARE_PITCHES = ["Ab", "G#", "Bb", "A#", "C", "D", "E", "Gb", "F#"]
+SQUARE_PITCHES = ["Ab", "G#", 
+                  "Bb", "A#", 
+                  "C", "B#", 
+                  "D", 
+                  "E", "Fb", 
+                  "Gb", "F#", ]
 
 tk = verovio.toolkit()
 
