@@ -61,16 +61,7 @@ def label_notes(soup):
 
             clef_shape = clef.get("shape")
 
-            print(f"Signature: {sig}")
-            print(f"Mode: {mode}")
-            print(f"Staff #: {staff_num}")
-            # G -> RH, F -> LH
-            print(f"Clef Shape: {clef_shape}")
-
-            keysigs_by_staff_num[staff_num] = {
-                "sig": sig,
-                "mode": mode,
-            }
+            keysigs_by_staff_num[staff_num] = {"sig": sig, "mode": mode, }
         else:
             scoredef = keysig.find_parent("scoreDef")
 
@@ -78,14 +69,8 @@ def label_notes(soup):
 
             measure_num = int(next_measure.get("n"))
 
-            keysigs_by_measure[measure_num] = {
-                "sig": sig,
-                "mode": mode,
-            }
-
-    print(keysigs_by_staff_num)
-    print(keysigs_by_measure)
-
+            keysigs_by_measure[measure_num] = {"sig": sig, "mode": mode, }
+    
     accid_tracker = {}
     for note in soup.find_all("note"):
         pname = note.get("pname")
@@ -110,46 +95,39 @@ def label_notes(soup):
                 sorted_keysigs_by_measure = sorted(keysigs_by_measure)
 
                 for i in range(len(sorted_keysigs_by_measure) - 1):
-                    if (
-                        sorted_keysigs_by_measure[i]
-                        <= measure_num
-                        < sorted_keysigs_by_measure[i + 1]
-                    ):
+                    if sorted_keysigs_by_measure[i] <= measure_num < sorted_keysigs_by_measure[i+1]:
                         sig = keysigs_by_measure[sorted_keysigs_by_measure[i]]["sig"]
                         mode = keysigs_by_measure[sorted_keysigs_by_measure[i]]["mode"]
-
+        
         accid_tag = note.find("accid")
 
+        element_name = ""
         accid_val = ""
         if accid_tag:
             # Attempt to get accid value
-            for element_name in [
+            for _element_name in [
                 "accid.ges",
                 "accid",
             ]:
-                accid_val = accid_tag.get(element_name)
+                accid_val = accid_tag.get(_element_name)
 
                 if accid_val:
+                    element_name = _element_name
                     break
         else:
-            for element_name in [
+            for _element_name in [
                 "accid.ges",
                 "accid",
             ]:
-                accid_val = note.get(element_name)
+                accid_val = note.get(_element_name)
 
                 if accid_val:
+                    element_name = _element_name
                     break
-
+        
         if element_name == "accid":  # Visible-only
             # If accid_val is set need to propagate this through for a given note in the same measure in the same octave
-            accid_tracker_key = ":::".join(
-                [
-                    str(measure_num),
-                    pname.upper(),
-                    octave,
-                ]
-            )
+            accid_tracker_key = ":::".join([str(measure_num), pname.upper(), octave, ])
             if accid_val:
                 accid_tracker[accid_tracker_key] = accid_val
             else:
@@ -170,26 +148,22 @@ def label_notes(soup):
                 # C Major -> C - D - E - F - G - A - B - (C)
                 # A Minor -> A - B - C - D - E - F - G - (A)
                 accid = ""
-            elif sig == "1s" and pname.upper() == "F":
+            elif sig == "1s" and  pname.upper() == "F":
                 # 1s - 1 sharp
                 # G Major -> G - A - B - C - D - E - F♯ - (G)
                 # E Minor -> E - F♯ - G - A - B - C - D - (E)
                 accid = "#"
-            elif sig == "1f" and pname.upper() == "B":
+            elif sig == "1f" and  pname.upper() == "B":
                 # 1f - 1 flat
                 # F Major -> F - G - A - B♭ - C - D - E - (F)
                 # D Minor -> D - E - F - G - A - B♭ - C - (D)
                 accid = "b"
-            elif sig == "3s" and pname.upper() in [
-                "C",
-                "F",
-                "G",
-            ]:
+            elif sig == "3s" and pname.upper() in ["C", "F", "G", ]:
                 # 3s - 3 sharps
                 # A Major -> A - B - C♯ - D - E - F♯ - G♯ - (A)
                 # F# Minor -> F♯ - G♯ - A - B - C♯ - D - E - (F♯)
                 accid = "#"
-            else:
+            else:    
                 accid = ""
 
         if dur is None:

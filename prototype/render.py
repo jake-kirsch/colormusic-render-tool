@@ -120,25 +120,28 @@ def label_notes(soup):
         
         accid_tag = note.find("accid")
 
+        element_name = ""
         accid_val = ""
         if accid_tag:
             # Attempt to get accid value
-            for element_name in [
+            for _element_name in [
                 "accid.ges",
                 "accid",
             ]:
-                accid_val = accid_tag.get(element_name)
+                accid_val = accid_tag.get(_element_name)
 
                 if accid_val:
+                    element_name = _element_name
                     break
         else:
-            for element_name in [
+            for _element_name in [
                 "accid.ges",
                 "accid",
             ]:
-                accid_val = note.get(element_name)
+                accid_val = note.get(_element_name)
 
                 if accid_val:
+                    element_name = _element_name
                     break
         
         if element_name == "accid":  # Visible-only
