@@ -33,7 +33,7 @@ TESTS = [
     {"song": "Bridge Over Troubled Water - Paul Simon", "mei_filename": "BridgeOverTroubledWater"}, # 7
     {"song": "Bare Necessities - Terry Gilkyson", "mei_filename": "BareNecessities"}, # 8
 ]
-TEST_NO = 6
+TEST_NO = 4
 SONG = TESTS[TEST_NO]["song"]
 FILENAME = TESTS[TEST_NO]["mei_filename"]
 
@@ -58,6 +58,7 @@ def label_notes(soup):
     # Get the key signature per staff
     keysigs_by_staff_num = {}
     keysigs_by_measure = {}
+
     for keysig in soup.find_all("keySig"):
         sig = keysig.get("sig")
         mode = keysig.get("mode", "major")
@@ -70,13 +71,7 @@ def label_notes(soup):
             clef = staffdef.find("clef")
 
             clef_shape = clef.get("shape")
-
-            print(f"Signature: {sig}")
-            print(f"Mode: {mode}")
-            print(f"Staff #: {staff_num}")
-            # G -> RH, F -> LH
-            print(f"Clef Shape: {clef_shape}")
-
+            
             keysigs_by_staff_num[staff_num] = {"sig": sig, "mode": mode, }
         else:
             scoredef = keysig.find_parent("scoreDef")
@@ -87,6 +82,15 @@ def label_notes(soup):
 
             keysigs_by_measure[measure_num] = {"sig": sig, "mode": mode, }
     
+    if not keysigs_by_staff_num:
+        for staffdef in soup.find_all("staffDef"):
+            sig = staffdef.get("keysig")
+            staff_num = staffdef.get("n")
+            clef_shape = staffdef.get("clef.shape")
+
+            if sig and staff_num:
+                keysigs_by_staff_num[staff_num] = {"sig": sig, }
+
     print(keysigs_by_staff_num)
     print(keysigs_by_measure)
 
@@ -185,6 +189,11 @@ def label_notes(soup):
                 # 1f - 1 flat
                 # F Major -> F - G - A - B♭ - C - D - E - (F)
                 # D Minor -> D - E - F - G - A - B♭ - C - (D)
+                accid = "b"
+            elif sig == "4f" and  pname.upper() in ["A", "B", "D", "E", ]:
+                # 4f - 4 flats
+                # A♭ Major -> A♭ – B♭ – C – D♭ – E♭ – F – G – (A♭)
+                # F Minor -> F – G – A♭ – B♭ – C – D♭ – E♭ – (F)
                 accid = "b"
             else:    
                 accid = ""
