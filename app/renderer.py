@@ -46,33 +46,57 @@ def parse_mei(file_path):
 def label_notes(soup):
     """Label MEI notes with pitch and duration to preserve info during SVG rendering"""
     # Get the key signature per staff
-    keysigs = {}
+    keysigs_by_staff_num = {}
+    keysigs_by_measure = {}
     for keysig in soup.find_all("keySig"):
         sig = keysig.get("sig")
         mode = keysig.get("mode", "major")
 
-        staffdeff = keysig.find_parent("staffDef")
+        staffdef = keysig.find_parent("staffDef")
 
-        staff_num = staffdeff.get("n")
-        clef = staffdeff.find("clef")
+        # Because of You good example changing
+        if staffdef:
+            staff_num = staffdef.get("n")
+            clef = staffdef.find("clef")
 
-        clef_shape = clef.get("shape")
+            clef_shape = clef.get("shape")
 
-        keysigs[staff_num] = {
-            "sig": sig,
-            "mode": mode,
-        }
+            keysigs_by_staff_num[staff_num] = {"sig": sig, "mode": mode, }
+        else:
+            scoredef = keysig.find_parent("scoreDef")
 
+            next_measure = scoredef.find_next("measure")
+
+            measure_num = next_measure.get("n")
+
+            keysigs_by_measure[measure_num] = {"sig": sig, "mode": mode, }
+    
     for note in soup.find_all("note"):
         pname = note.get("pname")
         dur = note.get("dur")
 
-        staff = note.find_parent("staff")
-        staff_num = staff.get("n")
+        measure = note.find_parent("measure")
+        measure_num = measure.get("n")
 
-        sig = keysigs[staff_num]["sig"]
-        mode = keysigs[staff_num]["mode"]
+        if keysigs_by_measure and measure_num < min(keysigs_by_measure.keys()):
+            staff = note.find_parent("staff")
+            staff_num = staff.get("n")
 
+            sig = keysigs_by_staff_num[staff_num]["sig"]
+            mode = keysigs_by_staff_num[staff_num]["mode"]
+        else:
+            # Determine sig based on measure position
+            if len(keysigs_by_measure) == 1:
+                sig = list(keysigs_by_measure.values())[0]["sig"]
+                mode = list(keysigs_by_measure.values())[0]["mode"]
+            else:
+                sorted_keysigs_by_measure = sorted(keysigs_by_measure)
+
+                for i in range(len(sorted_keysigs_by_measure) - 1):
+                    if sorted_keysigs_by_measure[i] <= measure_num < sorted_keysigs_by_measure[i+1]:
+                        sig = keysigs_by_measure[sorted_keysigs_by_measure[i]]["sig"]
+                        mode = keysigs_by_measure[sorted_keysigs_by_measure[i]]["mode"]
+        
         accid_tag = note.find("accid")
 
         accid_val = ""
@@ -95,7 +119,7 @@ def label_notes(soup):
 
                 if accid_val:
                     break
-
+        
         if accid_val == "s":
             # Sharp
             accid = "#"
@@ -111,17 +135,22 @@ def label_notes(soup):
                 # C Major -> C - D - E - F - G - A - B - (C)
                 # A Minor -> A - B - C - D - E - F - G - (A)
                 accid = ""
-            elif sig == "1s" and pname.upper() == "F":
+            elif sig == "1s" and  pname.upper() == "F":
                 # 1s - 1 sharp
                 # G Major -> G - A - B - C - D - E - F♯ - (G)
                 # E Minor -> E - F♯ - G - A - B - C - D - (E)
                 accid = "#"
-            elif sig == "1f" and pname.upper() == "B":
+            elif sig == "1f" and  pname.upper() == "B":
                 # 1f - 1 flat
                 # F Major -> F - G - A - B♭ - C - D - E - (F)
                 # D Minor -> D - E - F - G - A - B♭ - C - (D)
                 accid = "b"
-            else:
+            elif sig == "3s" and pname.upper() in ["C", "F", "G", ]:
+                # 3s - 3 sharps
+                # A Major -> A - B - C♯ - D - E - F♯ - G♯ - (A)
+                # F# Minor -> F♯ - G♯ - A - B - C♯ - D - E - (F♯)
+                accid = "#"
+            else:    
                 accid = ""
 
         if dur is None:
