@@ -61,6 +61,12 @@ def label_notes(soup):
 
             clef_shape = clef.get("shape")
 
+            print(f"Signature: {sig}")
+            print(f"Mode: {mode}")
+            print(f"Staff #: {staff_num}")
+            # G -> RH, F -> LH
+            print(f"Clef Shape: {clef_shape}")
+
             keysigs_by_staff_num[staff_num] = {
                 "sig": sig,
                 "mode": mode,
@@ -76,6 +82,9 @@ def label_notes(soup):
                 "sig": sig,
                 "mode": mode,
             }
+
+    print(keysigs_by_staff_num)
+    print(keysigs_by_measure)
 
     accid_tracker = {}
     for note in soup.find_all("note"):
@@ -132,18 +141,19 @@ def label_notes(soup):
                 if accid_val:
                     break
 
-        # If accid_val is set need to propagate this through for a given note in the same measure in the same octave
-        accid_tracker_key = ":::".join(
-            [
-                str(measure_num),
-                pname.upper(),
-                octave,
-            ]
-        )
-        if accid_val:
-            accid_tracker[accid_tracker_key] = accid_val
-        else:
-            accid_val = accid_tracker.get(accid_tracker_key, accid_val)
+        if element_name == "accid":  # Visible-only
+            # If accid_val is set need to propagate this through for a given note in the same measure in the same octave
+            accid_tracker_key = ":::".join(
+                [
+                    str(measure_num),
+                    pname.upper(),
+                    octave,
+                ]
+            )
+            if accid_val:
+                accid_tracker[accid_tracker_key] = accid_val
+            else:
+                accid_val = accid_tracker.get(accid_tracker_key, accid_val)
 
         if accid_val == "s":
             # Sharp
