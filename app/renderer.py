@@ -92,17 +92,27 @@ def label_notes(soup):
     accid_tracker = {}
     for note in soup.find_all("note"):
         note_id = note.get("xml:id")
+        
+        # Get duration
+        dur = note.get("dur")
+        if dur is None:
+            chord = note.find_parent("chord")
 
+            dur = chord.get("dur")
+        
+        # Get tied note
         tied_note_id = ties.get(note_id)
         
         # Check if note is part of a tie, if it is then persist with label of leading note
         if tied_note_id:
             tied_note = soup.find("note", attrs={"xml:id": tied_note_id})
-            label = tied_note.get("label")
-            note["label"] = label
+            # f"{pname.upper()}{accid}:{dur}"
+            # Split out duration, use note and accid from tied start note
+            prefix_label = tied_note.get("label").split(":")[0]
+            
+            note["label"] = f"{prefix_label}:{dur}"
         else:
             pname = note.get("pname")
-            dur = note.get("dur")
             octave = note.get("oct")
 
             measure = note.find_parent("measure")
@@ -251,12 +261,7 @@ def label_notes(soup):
                     accid = "b"
                 else:    
                     accid = ""
-
-            if dur is None:
-                chord = note.find_parent("chord")
-
-                dur = chord.get("dur")
-
+            
             if pname:
                 note["label"] = f"{pname.upper()}{accid}:{dur}"
     return soup
