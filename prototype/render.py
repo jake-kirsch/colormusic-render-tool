@@ -12,52 +12,28 @@ STROKE_WIDTH = 20
 
 # Pitch color mapping
 PITCH_COLORS = {
-    "A": "#fdbb13",
-    "B": "#A6CE39",
-    "C": "#DA1E48",
-    "D": "#F58220",
-    "E": "#F3DC0B",
-    "F": "#AB218E",
-    "G": "#F04E23",
-    "G#": "#0098DD",
-    "Ab": "#0098DD",
-    "A#": "#823F98",
-    "Bb": "#823F98",
-    "C#": "#00A995",
-    "Db": "#00A995",
-    "D#": "#3763AF",
-    "Eb": "#3763AF",
-    "F#": "#39B54A",
-    "Gb": "#39B54A",
+    "A": "#fdbb13", "B": "#A6CE39", "C": "#DA1E48", "D": "#F58220",
+    "E": "#F3DC0B", "F": "#AB218E", "G": "#F04E23",
+    "G#": "#0098DD", "Ab": "#0098DD", "A#": "#823F98", "Bb": "#823F98",
+    "C#": "#00A995", "Db": "#00A995", "D#": "#3763AF", "Eb": "#3763AF",
+    "F#": "#39B54A", "Gb": "#39B54A"
 }
 
 SQUARE_PITCHES = ["Ab", "G#", "Bb", "A#", "C", "D", "E", "Gb", "F#"]
 
 # Test selection
 TESTS = [
-    {
-        "song": "Sight Reading Practice - Evan Ramsey",
-        "mei_filename": "SightReadingPractice",
-    },  # 0
-    {"song": "Shake It Off - Taylor Swift", "mei_filename": "ShakeItOff"},  # 1
-    {
-        "song": "Can you feel the love tonight? - Elton John",
-        "mei_filename": "CanYouFeelTheLoveTonight",
-    },  # 2
-    {"song": "Moonlight Sonata - Beethoven", "mei_filename": "MoonlightSonata"},  # 3
-    {"song": "Mad World - Gary Jules", "mei_filename": "MadWorld"},  # 4
-    {"song": "Creep - Radiohead", "mei_filename": "Creep"},  # 5
-    {"song": "Because of You - Kelly Clarkson", "mei_filename": "BecauseOfYou"},  # 6
-    {
-        "song": "Bridge Over Troubled Water - Paul Simon",
-        "mei_filename": "BridgeOverTroubledWater",
-    },  # 7
-    {
-        "song": "Bare Necessities - Terry Gilkyson",
-        "mei_filename": "BareNecessities",
-    },  # 8
+    {"song": "Sight Reading Practice - Evan Ramsey", "mei_filename": "SightReadingPractice"}, # 0
+    {"song": "Shake It Off - Taylor Swift", "mei_filename": "ShakeItOff"}, # 1
+    {"song": "Can you feel the love tonight? - Elton John", "mei_filename": "CanYouFeelTheLoveTonight"}, # 2
+    {"song": "Moonlight Sonata - Beethoven", "mei_filename": "MoonlightSonata"}, # 3
+    {"song": "Mad World - Gary Jules", "mei_filename": "MadWorld"}, # 4
+    {"song": "Creep - Radiohead", "mei_filename": "Creep"}, # 5
+    {"song": "Because of You - Kelly Clarkson", "mei_filename": "BecauseOfYou"}, # 6
+    {"song": "Bridge Over Troubled Water - Paul Simon", "mei_filename": "BridgeOverTroubledWater"}, # 7
+    {"song": "Bare Necessities - Terry Gilkyson", "mei_filename": "BareNecessities"}, # 8
 ]
-TEST_NO = 5
+TEST_NO = 6
 SONG = TESTS[TEST_NO]["song"]
 FILENAME = TESTS[TEST_NO]["mei_filename"]
 
@@ -71,7 +47,6 @@ tk = verovio.toolkit()
 
 # ====== Processing Functions ======
 
-
 def parse_mei(file_path):
     """Parse MEI file"""
     with open(file_path, "r", encoding="utf-8") as f:
@@ -80,43 +55,67 @@ def parse_mei(file_path):
 
 def label_notes(soup):
     """Label MEI notes with pitch and duration to preserve info during SVG rendering"""
-
-    # Creep has keySig in multiple clefs
-    # Bare Necessities only has 1 keySig
-    # Get the key signature
-    keysigs = {}
+    # Get the key signature per staff
+    keysigs_by_staff_num = {}
+    keysigs_by_measure = {}
     for keysig in soup.find_all("keySig"):
         sig = keysig.get("sig")
         mode = keysig.get("mode", "major")
 
-        staffdeff = keysig.find_parent("staffDef")
+        staffdef = keysig.find_parent("staffDef")
 
-        staff_num = staffdeff.get("n")
-        clef = staffdeff.find("clef")
+        # Because of You good example changing
+        if staffdef:
+            staff_num = staffdef.get("n")
+            clef = staffdef.find("clef")
 
-        clef_shape = clef.get("shape")
+            clef_shape = clef.get("shape")
 
-        print(f"Signature: {sig}")
-        print(f"Mode: {mode}")
-        print(f"Staff #: {staff_num}")
-        # G -> RH, F -> LH
-        print(f"Clef Shape: {clef_shape}")
+            print(f"Signature: {sig}")
+            print(f"Mode: {mode}")
+            print(f"Staff #: {staff_num}")
+            # G -> RH, F -> LH
+            print(f"Clef Shape: {clef_shape}")
 
-        keysigs[staff_num] = {
-            "sig": sig,
-            "mode": mode,
-        }
+            keysigs_by_staff_num[staff_num] = {"sig": sig, "mode": mode, }
+        else:
+            scoredef = keysig.find_parent("scoreDef")
+
+            next_measure = scoredef.find_next("measure")
+
+            measure_num = next_measure.get("n")
+
+            keysigs_by_measure[measure_num] = {"sig": sig, "mode": mode, }
+    
+    print(keysigs_by_staff_num)
+    print(keysigs_by_measure)
 
     for note in soup.find_all("note"):
         pname = note.get("pname")
         dur = note.get("dur")
 
-        staff = note.find_parent("staff")
-        staff_num = staff.get("n")
+        measure = note.find_parent("measure")
+        measure_num = measure.get("n")
 
-        sig = keysigs[staff_num]["sig"]
-        mode = keysigs[staff_num]["mode"]
+        if keysigs_by_measure and measure_num < min(keysigs_by_measure.keys()):
+            staff = note.find_parent("staff")
+            staff_num = staff.get("n")
 
+            sig = keysigs_by_staff_num[staff_num]["sig"]
+            mode = keysigs_by_staff_num[staff_num]["mode"]
+        else:
+            # Determine sig based on measure position
+            if len(keysigs_by_measure) == 1:
+                sig = list(keysigs_by_measure.values())[0]["sig"]
+                mode = list(keysigs_by_measure.values())[0]["mode"]
+            else:
+                sorted_keysigs_by_measure = sorted(keysigs_by_measure)
+
+                for i in range(len(sorted_keysigs_by_measure) - 1):
+                    if sorted_keysigs_by_measure[i] <= measure_num < sorted_keysigs_by_measure[i+1]:
+                        sig = keysigs_by_measure[sorted_keysigs_by_measure[i]]["sig"]
+                        mode = keysigs_by_measure[sorted_keysigs_by_measure[i]]["mode"]
+        
         accid_tag = note.find("accid")
 
         accid_val = ""
@@ -139,7 +138,7 @@ def label_notes(soup):
 
                 if accid_val:
                     break
-
+        
         if accid_val == "s":
             # Sharp
             accid = "#"
@@ -155,17 +154,22 @@ def label_notes(soup):
                 # C Major -> C - D - E - F - G - A - B - (C)
                 # A Minor -> A - B - C - D - E - F - G - (A)
                 accid = ""
-            elif sig == "1s" and pname.upper() == "F":
+            elif sig == "1s" and  pname.upper() == "F":
                 # 1s - 1 sharp
                 # G Major -> G - A - B - C - D - E - F♯ - (G)
                 # E Minor -> E - F♯ - G - A - B - C - D - (E)
                 accid = "#"
-            elif sig == "1f" and pname.upper() == "B":
+            elif sig == "1f" and  pname.upper() == "B":
                 # 1f - 1 flat
                 # F Major -> F - G - A - B♭ - C - D - E - (F)
                 # D Minor -> D - E - F - G - A - B♭ - C - (D)
                 accid = "b"
-            else:
+            elif sig == "3s" and pname.upper() in ["C", "F", "G", ]:
+                # 3s - 3 sharps
+                # A Major -> A - B - C♯ - D - E - F♯ - G♯ - (A)
+                # F# Minor -> F♯ - G♯ - A - B - C♯ - D - E - (F♯)
+                accid = "#"
+            else:    
                 accid = ""
 
         if dur is None:
@@ -191,7 +195,7 @@ def render_note_to_colormusic(note, chord):
     """Render note to ColorMusic-style"""
     # Get the pitch and dur value (e.g., 'C', '4')
     pitch, dur = note.find("title", class_="labelAttr").text.split(":")
-
+    
     notehead = note.find("g", class_="notehead")
     stem = note.find("g", class_="stem")
 
@@ -209,7 +213,7 @@ def render_note_to_colormusic(note, chord):
 
         # Determine direction and side
         stem_direction = "up" if y2 < y1 else "down"
-
+    
     if pitch in SQUARE_PITCHES:
         # Find the <use> tag that contains the x and y position
         notehead_use = notehead.find("use")
@@ -326,63 +330,36 @@ def add_logo_and_title(soup, page_num):
     radius = 65
 
     for pitch, angle in [
-        ("Eb", 0),
-        ("D", 30),
-        ("Db", 60),
-        ("C", 90),
-        ("B", 120),
-        ("Bb", 150),
-        ("A", 180),
-        ("Ab", 210),
-        ("G", 240),
-        ("Gb", 270),
-        ("F", 300),
-        ("E", 330),
+        ("Eb", 0), ("D", 30), ("Db", 60), ("C", 90), ("B", 120), ("Bb", 150),
+        ("A", 180), ("Ab", 210), ("G", 240), ("Gb", 270), ("F", 300), ("E", 330)
     ]:
         if pitch in SQUARE_PITCHES:
             width = 15
             x = (radius * math.cos(math.radians(angle))) + x_offset - (width / 2)
             y = -(radius * math.sin(math.radians(angle))) + y_offset - (width / 2)
             cx, cy = x + width / 2, y + width / 2
-            shape = soup.new_tag(
-                "rect",
-                x=x,
-                y=y,
-                width=width,
-                height=width,
-                fill=PITCH_COLORS[pitch],
-                stroke="black",
-                stroke_width=STROKE_WIDTH,
-                transform=f"rotate({90 - angle} {cx} {cy})",
-            )
+            shape = soup.new_tag("rect", x=x, y=y, width=width, height=width,
+                                 fill=PITCH_COLORS[pitch], stroke="black",
+                                 stroke_width=STROKE_WIDTH,
+                                 transform=f"rotate({90 - angle} {cx} {cy})")
         else:
-            shape = soup.new_tag(
-                "circle",
-                cx=(radius * math.cos(math.radians(angle))) + x_offset,
-                cy=-(radius * math.sin(math.radians(angle))) + y_offset,
-                r="8.5",
-                fill=PITCH_COLORS[pitch],
-                stroke="black",
-                stroke_width=STROKE_WIDTH,
-            )
+            shape = soup.new_tag("circle",
+                                 cx=(radius * math.cos(math.radians(angle))) + x_offset,
+                                 cy=-(radius * math.sin(math.radians(angle))) + y_offset,
+                                 r="8.5", fill=PITCH_COLORS[pitch],
+                                 stroke="black", stroke_width=STROKE_WIDTH)
         group.append(shape)
 
     # Text
     color = soup.new_tag("text", x="55", y="105", fill="#FDB813", **{"font-size": "20"})
     color.string = "color"
-    music = soup.new_tag(
-        "text", x="97.5", y="105", fill="#939598", **{"font-size": "20"}
-    )
+    music = soup.new_tag("text", x="97.5", y="105", fill="#939598", **{"font-size": "20"})
     music.string = "music"
     group.append(color)
     group.append(music)
 
-    link = soup.new_tag(
-        "a",
-        href="https://www.mycolormusic.com/",
-        target="_blank",
-        **{"xmlns:xlink": "http://www.w3.org/1999/xlink"},
-    )
+    link = soup.new_tag("a", href="https://www.mycolormusic.com/", target="_blank",
+                        **{"xmlns:xlink": "http://www.w3.org/1999/xlink"})
     link.append(group)
     svg.insert(0, link)
 
