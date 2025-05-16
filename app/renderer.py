@@ -170,6 +170,10 @@ def label_notes(soup):
                 # If natural skip adding accid
                 accid = ""
             else:
+                if sig and sig not in ["0", "1s", "2s", "3s", "4s", "5s", "6s", "7s",
+                                    "1f", "2f", "3f", "4f", "5f", "6f", "7f", ]:
+                    raise ValueError(f"Unhandled key signature: {sig}!")
+
                 if sig == "0":
                     # 0 - No sharps or flats
                     # C Major -> C - D - E - F - G - A - B - (C)
@@ -195,15 +199,55 @@ def label_notes(soup):
                     # E Major -> E – F♯ – G♯ – A – B – C♯ – D♯ – (E)
                     # C# Minor -> C♯ – D♯ – E – F♯ – G♯ – A – B – (C♯)
                     accid = "#"
-                elif sig == "1f" and  pname.upper() == "B":
+                elif sig == "5s" and pname.upper() in ["A", "C", "D", "F", "G", ]:
+                    # 5 sharps
+                    # B Major -> B – C♯ – D♯ – E – F♯ – G♯ – A♯ – (B)
+                    # G♯ Minor -> G♯ – A♯ – B – C♯ – D♯ – E – F♯ – (G♯)
+                    accid = "#"
+                elif sig == "6s" and pname.upper() in ["A", "C", "D", "E", "F", "G", ]:
+                    # 6 sharps
+                    # F♯ Major -> F♯ – G♯ – A♯ – B – C♯ – D♯ – E♯ – (F♯)
+                    # D♯ Minor -> D♯ – E♯ – F♯ – G♯ – A♯ – B – C♯ – (D♯)
+                    accid = "#"
+                elif sig == "7s" and pname.upper() in ["A", "B", "C", "D", "E", "F", "G", ]:
+                    # 7 sharps
+                    # C♯ Major -> C♯ – D♯ – E♯ – F♯ – G♯ – A♯ – B♯ – (C♯)
+                    # A♯ Minor -> A♯ – B♯ – C♯ – D♯ – E♯ – F♯ – G♯ – (A♯)
+                    accid = "#"
+                elif sig == "1f" and pname.upper() == "B":
                     # 1f - 1 flat
                     # F Major -> F - G - A - B♭ - C - D - E - (F)
                     # D Minor -> D - E - F - G - A - B♭ - C - (D)
                     accid = "b"
-                elif sig == "4f" and  pname.upper() in ["A", "B", "D", "E", ]:
+                elif sig == "2f" and pname.upper() in ["B", "E", ]:
+                    # 2f - 2 flats
+                    # B♭ Major -> B♭ – C – D – E♭ – F – G – A – (B♭)
+                    # G Minor -> G – A – B♭ – C – D – E♭ – F – (G)
+                    accid = "b"
+                elif sig == "3f" and pname.upper() in ["A", "B", "E", ]:
+                    # 3f - 3 flats
+                    # E♭ Major -> E♭ – F – G – A♭ – B♭ – C – D – (E♭)
+                    # C Minor -> C – D – E♭ – F – G – A♭ – B♭ – (C)
+                    accid = "b"
+                elif sig == "4f" and pname.upper() in ["A", "B", "D", "E", ]:
                     # 4f - 4 flats
                     # A♭ Major -> A♭ – B♭ – C – D♭ – E♭ – F – G – (A♭)
                     # F Minor -> F – G – A♭ – B♭ – C – D♭ – E♭ – (F)
+                    accid = "b"
+                elif sig == "5f" and pname.upper() in ["A", "B", "D", "E", "G", ]:
+                    # 5 flats
+                    # D♭ Major -> D♭ – E♭ – F – G♭ – A♭ – B♭ – C – (D♭)
+                    # B♭ Minor -> B♭ – C – D♭ – E♭ – F – G♭ – A♭ – (B♭)
+                    accid = "b"
+                elif sig == "6f" and pname.upper() in ["A", "B", "C", "D", "E", "G", ]:
+                    # 6 flats
+                    # G♭ Major -> G♭ – A♭ – B♭ – C♭ – D♭ – E♭ – F – (G♭)
+                    # E♭ Minor -> E♭ – F – G♭ – A♭ – B♭ – C♭ – D♭ – (E♭)
+                    accid = "b"
+                elif sig == "7f" and pname.upper() in ["A", "B", "C", "D", "E", "F", "G", ]:
+                    # 7 flats
+                    # C♭ Major -> C♭ – D♭ – E♭ – F♭ – G♭ – A♭ – B♭ – (C♭)
+                    # A♭ Minor -> A♭ – B♭ – C♭ – D♭ – E♭ – F♭ – G♭ – (A♭)
                     accid = "b"
                 else:    
                     accid = ""
