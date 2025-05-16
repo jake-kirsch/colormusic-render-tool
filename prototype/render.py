@@ -83,7 +83,7 @@ def label_notes(soup):
 
             next_measure = scoredef.find_next("measure")
 
-            measure_num = next_measure.get("n")
+            measure_num = int(next_measure.get("n"))
 
             keysigs_by_measure[measure_num] = {"sig": sig, "mode": mode, }
     
@@ -95,7 +95,7 @@ def label_notes(soup):
         dur = note.get("dur")
 
         measure = note.find_parent("measure")
-        measure_num = measure.get("n")
+        measure_num = int(measure.get("n"))
 
         if keysigs_by_measure and measure_num < min(keysigs_by_measure.keys()):
             staff = note.find_parent("staff")
