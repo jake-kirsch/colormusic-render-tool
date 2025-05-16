@@ -144,13 +144,12 @@ def label_notes(soup):
                     element_name = _element_name
                     break
         
+        accid_tracker_key = ":::".join([str(measure_num), pname.upper(), octave, ])
         if element_name == "accid":  # Visible-only
             # If accid_val is set need to propagate this through for a given note in the same measure in the same octave
-            accid_tracker_key = ":::".join([str(measure_num), pname.upper(), octave, ])
-            if accid_val:
-                accid_tracker[accid_tracker_key] = accid_val
-            else:
-                accid_val = accid_tracker.get(accid_tracker_key, accid_val)
+            accid_tracker[accid_tracker_key] = accid_val
+        elif not accid_val:
+            accid_val = accid_tracker.get(accid_tracker_key, accid_val)
 
         if accid_val == "s":
             # Sharp
