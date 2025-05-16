@@ -171,16 +171,21 @@ def label_notes(soup):
                 # G Major -> G - A - B - C - D - E - F♯ - (G)
                 # E Minor -> E - F♯ - G - A - B - C - D - (E)
                 accid = "#"
-            elif sig == "1f" and  pname.upper() == "B":
-                # 1f - 1 flat
-                # F Major -> F - G - A - B♭ - C - D - E - (F)
-                # D Minor -> D - E - F - G - A - B♭ - C - (D)
-                accid = "b"
+            elif sig == "2s" and pname.upper() in ["C", "F", ]:
+                # 2s - 2 sharps
+                # D Major -> D – E – F♯ – G – A – B – C♯ – (D)
+                # B Minor -> B – C♯ – D – E – F♯ – G – A – (B)
+                accid = "#"
             elif sig == "3s" and pname.upper() in ["C", "F", "G", ]:
                 # 3s - 3 sharps
                 # A Major -> A - B - C♯ - D - E - F♯ - G♯ - (A)
                 # F# Minor -> F♯ - G♯ - A - B - C♯ - D - E - (F♯)
                 accid = "#"
+            elif sig == "1f" and  pname.upper() == "B":
+                # 1f - 1 flat
+                # F Major -> F - G - A - B♭ - C - D - E - (F)
+                # D Minor -> D - E - F - G - A - B♭ - C - (D)
+                accid = "b"
             else:    
                 accid = ""
 
