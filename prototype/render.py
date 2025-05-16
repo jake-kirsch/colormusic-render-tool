@@ -45,7 +45,7 @@ TESTS = [
     {"song": "Bridge Over Troubled Water - Paul Simon", "mei_filename": "BridgeOverTroubledWater"}, # 7
     {"song": "Bare Necessities - Terry Gilkyson", "mei_filename": "BareNecessities"}, # 8
 ]
-TEST_NO = 4
+TEST_NO = 3
 SONG = TESTS[TEST_NO]["song"]
 FILENAME = TESTS[TEST_NO]["mei_filename"]
 
@@ -216,6 +216,11 @@ def label_notes(soup):
                     # 3s - 3 sharps
                     # A Major -> A - B - C♯ - D - E - F♯ - G♯ - (A)
                     # F# Minor -> F♯ - G♯ - A - B - C♯ - D - E - (F♯)
+                    accid = "#"
+                elif sig == "4s" and pname.upper() in ["C", "D", "F", "G", ]:
+                    # 4s - 4 sharps
+                    # E Major -> E – F♯ – G♯ – A – B – C♯ – D♯ – (E)
+                    # C# Minor -> C♯ – D♯ – E – F♯ – G♯ – A – B – (C♯)
                     accid = "#"
                 elif sig == "1f" and  pname.upper() == "B":
                     # 1f - 1 flat

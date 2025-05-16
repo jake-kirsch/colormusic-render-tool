@@ -190,6 +190,11 @@ def label_notes(soup):
                     # A Major -> A - B - C♯ - D - E - F♯ - G♯ - (A)
                     # F# Minor -> F♯ - G♯ - A - B - C♯ - D - E - (F♯)
                     accid = "#"
+                elif sig == "4s" and pname.upper() in ["C", "D", "F", "G", ]:
+                    # 4s - 4 sharps
+                    # E Major -> E – F♯ – G♯ – A – B – C♯ – D♯ – (E)
+                    # C# Minor -> C♯ – D♯ – E – F♯ – G♯ – A – B – (C♯)
+                    accid = "#"
                 elif sig == "1f" and  pname.upper() == "B":
                     # 1f - 1 flat
                     # F Major -> F - G - A - B♭ - C - D - E - (F)
@@ -211,7 +216,6 @@ def label_notes(soup):
             if pname:
                 note["label"] = f"{pname.upper()}{accid}:{dur}"
     return soup
-
 
 def reorder_note(note):
     """Reorder notehead and stem so notehead is in front"""
