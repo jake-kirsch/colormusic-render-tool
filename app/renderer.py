@@ -61,22 +61,28 @@ def label_notes(soup):
 
             clef_shape = clef.get("shape")
 
-            keysigs_by_staff_num[staff_num] = {"sig": sig, "mode": mode, }
+            keysigs_by_staff_num[staff_num] = {
+                "sig": sig,
+                "mode": mode,
+            }
         else:
             scoredef = keysig.find_parent("scoreDef")
 
             next_measure = scoredef.find_next("measure")
 
-            measure_num = next_measure.get("n")
+            measure_num = int(next_measure.get("n"))
 
-            keysigs_by_measure[measure_num] = {"sig": sig, "mode": mode, }
-    
+            keysigs_by_measure[measure_num] = {
+                "sig": sig,
+                "mode": mode,
+            }
+
     for note in soup.find_all("note"):
         pname = note.get("pname")
         dur = note.get("dur")
 
         measure = note.find_parent("measure")
-        measure_num = measure.get("n")
+        measure_num = int(measure.get("n"))
 
         if keysigs_by_measure and measure_num < min(keysigs_by_measure.keys()):
             staff = note.find_parent("staff")
@@ -93,10 +99,14 @@ def label_notes(soup):
                 sorted_keysigs_by_measure = sorted(keysigs_by_measure)
 
                 for i in range(len(sorted_keysigs_by_measure) - 1):
-                    if sorted_keysigs_by_measure[i] <= measure_num < sorted_keysigs_by_measure[i+1]:
+                    if (
+                        sorted_keysigs_by_measure[i]
+                        <= measure_num
+                        < sorted_keysigs_by_measure[i + 1]
+                    ):
                         sig = keysigs_by_measure[sorted_keysigs_by_measure[i]]["sig"]
                         mode = keysigs_by_measure[sorted_keysigs_by_measure[i]]["mode"]
-        
+
         accid_tag = note.find("accid")
 
         accid_val = ""
@@ -119,7 +129,7 @@ def label_notes(soup):
 
                 if accid_val:
                     break
-        
+
         if accid_val == "s":
             # Sharp
             accid = "#"
@@ -135,22 +145,26 @@ def label_notes(soup):
                 # C Major -> C - D - E - F - G - A - B - (C)
                 # A Minor -> A - B - C - D - E - F - G - (A)
                 accid = ""
-            elif sig == "1s" and  pname.upper() == "F":
+            elif sig == "1s" and pname.upper() == "F":
                 # 1s - 1 sharp
                 # G Major -> G - A - B - C - D - E - F♯ - (G)
                 # E Minor -> E - F♯ - G - A - B - C - D - (E)
                 accid = "#"
-            elif sig == "1f" and  pname.upper() == "B":
+            elif sig == "1f" and pname.upper() == "B":
                 # 1f - 1 flat
                 # F Major -> F - G - A - B♭ - C - D - E - (F)
                 # D Minor -> D - E - F - G - A - B♭ - C - (D)
                 accid = "b"
-            elif sig == "3s" and pname.upper() in ["C", "F", "G", ]:
+            elif sig == "3s" and pname.upper() in [
+                "C",
+                "F",
+                "G",
+            ]:
                 # 3s - 3 sharps
                 # A Major -> A - B - C♯ - D - E - F♯ - G♯ - (A)
                 # F# Minor -> F♯ - G♯ - A - B - C♯ - D - E - (F♯)
                 accid = "#"
-            else:    
+            else:
                 accid = ""
 
         if dur is None:
