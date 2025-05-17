@@ -517,6 +517,10 @@ def render_color_music(mei_file_path, title):
             render_note_to_colormusic(note, note.find_parent("g", class_="chord"))
             reorder_note(note)
 
+        # Adjust opacity for visible accids
+        for accid in svg.find_all(class_="accid"):
+            accid["opacity"] = 0.5
+
         add_logo_and_title(svg, page, title)
 
         # Footer
