@@ -86,6 +86,7 @@ def label_notes(soup):
             
             keysigs_by_staff_num[staff_num] = {"sig": sig, "mode": mode, }
         else:
+            # TODO Does this need to account for staff number?
             scoredef = keysig.find_parent("scoreDef")
 
             next_measure = scoredef.find_next("measure")
@@ -508,6 +509,10 @@ if __name__ == "__main__":
         for note in svg.find_all(class_="note"):
             render_note_to_colormusic(note, note.find_parent("g", class_="chord"))
             reorder_note(note)
+
+        # Adjust opacity for visible accids
+        for accid in svg.find_all(class_="accid"):
+            accid["opacity"] = 0.5
 
         add_logo_and_title(svg, page)
 
