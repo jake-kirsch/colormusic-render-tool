@@ -2,35 +2,80 @@
 <html>
 <head>
     <title>ColorMusic Renderer</title>
+    <style>
+        .tool-banner {
+            width: 100%;            /* full viewport width */
+            height: 8rem;
+            background-color: #686868;
+
+            position: sticky;
+            z-index: 1000; /* High enough to be above all */
+        }
+        .plain-banner {
+            max-width: 100%;
+            display: flex;
+            justify-content: flex-end;
+            gap: 1rem;
+            padding: 1rem;
+            overflow-x: auto;
+            white-space: nowrap;
+            background-color: #B9B3A5;
+                                    
+            position: sticky;
+        }
+        .page-link {
+            text-decoration: none;
+            color: #000000; /* classic link color */
+            font-weight: 500;
+        }
+        .page-link:hover {
+            text-decoration: underline;
+        }
+        .page-link.active {
+            font-weight: bold;
+            color: #0056b3;
+        }
+      </style>
 </head>
 <body>
-    <h1>Upload File</h1>
-    <form action="/upload" method="post" enctype="multipart/form-data">
-        <label for="title">Song Title - Author:</label><br>
-        <input type="text" name="title" required><br><br>
-        <label for="input_format">Input File Format:</label><br>
-        <select name="input_format" required>
-            <option value="musicxml_compressed">MusicXML (compressed)</option>
-            <option value="musicxml">MusicXML</option>
-            <option value="mei">MEI</option>
-        </select><br><br>
+    <div class="tool-banner"></div>
+    <div class="plain-banner">
+        <a href="/faq.html" class="page-link">Render</a>
+        <a href="/faq.html" class="page-link">Theory</a>
+        <a href="/faq.html" class="page-link">FAQ</a>
+    </div>
+    <div style="width: 400px; margin: 0 auto;">
+        <h1>Upload File</h1>
+        <form action="/upload" method="post" enctype="multipart/form-data">
+            <label for="title">Song Title - Author:</label><br>
+            <input type="text" name="title" required><br><br>
+            <label for="input_format">Input File Format:</label><br>
+            <select name="input_format" required>
+                <option value="musicxml_compressed">MusicXML (compressed)</option>
+                <option value="musicxml">MusicXML</option>
+                <option value="mei">MEI</option>
+            </select><br><br>
 
-        <input type="file" name="file" required><br><br>
-        <input type="submit" value="Render">
-    </form>
+            <input type="file" name="file" required><br><br>
+            <input type="submit" value="Render" style="background-color: #37B646; color: #ffffff; text-align: center;"><br><br>
+            {% if uploaded %}
+                <a href="/download-all">
+                    <button>Download All as ZIP</button>
+                </a>
+            {% endif %}
 
-    {% if uploaded %}
-        <a href="/download-all">
-            <button>Download All as ZIP</button>
-        </a>
-        <h2>Rendered SVGs:</h2>
-        {% for svg in svgs %}
-            <div>
-                <img src="/static/{{ svg }}" alt="SVG Output" style="max-width: 100%;">
-                <br>
-                <a href="/static/{{ svg }}" download>Download</a>
-            </div>
-        {% endfor %}
-    {% endif %}
+        </form>
+    </div>
+    <div style="width: 100%">
+        {% if uploaded %}
+            <h2>Rendered SVGs:</h2>
+            {% for svg in svgs %}
+                <div>
+                    <img src="/static/{{ svg }}" alt="SVG Output" style="max-width: 100%;">
+                    <br>
+                </div>
+            {% endfor %}
+        {% endif %}
+    </div>
 </body>
 </html>
