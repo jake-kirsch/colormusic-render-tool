@@ -4,4 +4,4 @@ jinja2
 lxml
 python-multipart
 uvicorn
-verovio==5.1.0
+verovio==5.2.0
