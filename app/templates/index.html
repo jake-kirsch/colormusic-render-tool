@@ -51,10 +51,10 @@
   </header>
 
   <nav>
-    <a href="#" onclick="loadPage('pages/render.html')">Render</a>
-    <a href="#" onclick="loadPage('pages/theory.html')">Theory</a>
-    <a href="#" onclick="loadPage('pages/about.html')">About</a>
-    <a href="#" onclick="loadPage('pages/faq.html')">FAQ</a>
+    <a href="#" onclick="loadPage('render.html')">Render</a>
+    <a href="#" onclick="loadPage('theory.html')">Theory</a>
+    <a href="#" onclick="loadPage('about.html')">About</a>
+    <a href="#" onclick="loadPage('faq.html')">FAQ</a>
   </nav>
 
   <div id="content">
@@ -63,16 +63,16 @@
 
   <script>
     function loadPage(page) {
-        fetch(page)
+      fetch(`/pages/${page}`)
         .then(response => response.text())
         .then(html => {
-            document.getElementById('content').innerHTML = html;
+          document.getElementById('content').innerHTML = html;
         });
     }
 
-    // 👇 Automatically load the default page when the page loads
+    // Load default page on load
     window.addEventListener('DOMContentLoaded', () => {
-        loadPage('pages/render.html'); // default page
+      loadPage('render.html');
     });
   </script>
 </body>
