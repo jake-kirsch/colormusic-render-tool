@@ -6,6 +6,7 @@ import os
 from pathlib import Path
 import shutil
 import tempfile
+from typing import List
 import verovio
 import zipfile
 
@@ -42,14 +43,26 @@ def extract_xml_from_zip(zip_path, extract_dir="app/static/extract/"):
 async def index(request: Request):
     return templates.TemplateResponse("index.html", {"request": request})
 
+# Pages
+@app.get("/pages/about", response_class=HTMLResponse)
+async def about_page(request: Request):
+    return templates.TemplateResponse("pages/about.html", {"request": request})
 
-@app.get("/pages/{page_name}", response_class=HTMLResponse)
-async def serve_page(request: Request, page_name: str):
-    page_path = Path(f"app/templates/pages/{page_name}")
-    if not page_path.exists():
-        return PlainTextResponse("Page not found", status_code=404)
-    return templates.TemplateResponse(f"pages/{page_name}", {"request": request})
+@app.get("/pages/faq", response_class=HTMLResponse)
+async def faq_page(request: Request):
+    return templates.TemplateResponse("pages/faq.html", {"request": request})
 
+@app.get("/pages/theory", response_class=HTMLResponse)
+async def theory_page(request: Request):
+    return templates.TemplateResponse("pages/theory.html", {"request": request})
+
+@app.get("/pages/render", response_class=HTMLResponse)
+async def render_page(request: Request, uploaded: bool = False, svgs: List[str] = []):
+    return templates.TemplateResponse("pages/render.html", {
+        "request": request,
+        "uploaded": uploaded,
+        "svgs": svgs,
+    })
 
 @app.post("/upload", response_class=HTMLResponse)
 async def upload(request: Request, file: UploadFile = File(...), title: str = Form(...), input_format: str = Form(...)):
@@ -89,7 +102,7 @@ async def upload(request: Request, file: UploadFile = File(...), title: str = Fo
     global last_uploaded_filename
     last_uploaded_filename = os.path.splitext(filename)[0]  # No extension
 
-    return templates.TemplateResponse("index.html", {
+    return templates.TemplateResponse("pages/render.html", {
         "request": request,
         "svgs": relative_paths,
         "uploaded": True
