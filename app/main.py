@@ -1,8 +1,9 @@
 from fastapi import FastAPI, UploadFile, File, Form, Request
-from fastapi.responses import FileResponse, HTMLResponse
+from fastapi.responses import FileResponse, HTMLResponse, PlainTextResponse
 from fastapi.staticfiles import StaticFiles
 from fastapi.templating import Jinja2Templates
 import os
+from pathlib import Path
 import shutil
 import tempfile
 import verovio
@@ -16,6 +17,7 @@ app = FastAPI()
 
 app.mount("/static", StaticFiles(directory="app/static"), name="static")
 templates = Jinja2Templates(directory="app/templates")
+
 
 def extract_xml_from_zip(zip_path, extract_dir="app/static/extract/"):
     # Remove existing extract directory
@@ -39,6 +41,15 @@ def extract_xml_from_zip(zip_path, extract_dir="app/static/extract/"):
 @app.get("/", response_class=HTMLResponse)
 async def index(request: Request):
     return templates.TemplateResponse("index.html", {"request": request})
+
+
+@app.get("/pages/{page_name}", response_class=HTMLResponse)
+async def serve_page(request: Request, page_name: str):
+    page_path = Path(f"app/templates/pages/{page_name}")
+    if not page_path.exists():
+        return PlainTextResponse("Page not found", status_code=404)
+    return templates.TemplateResponse(f"pages/{page_name}", {"request": request})
+
 
 @app.post("/upload", response_class=HTMLResponse)
 async def upload(request: Request, file: UploadFile = File(...), title: str = Form(...), input_format: str = Form(...)):
@@ -83,6 +94,7 @@ async def upload(request: Request, file: UploadFile = File(...), title: str = Fo
         "svgs": relative_paths,
         "uploaded": True
     })
+
 
 @app.get("/download-all")
 def download_all():
