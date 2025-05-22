@@ -38,7 +38,6 @@ def extract_xml_from_zip(zip_path, extract_dir="app/static/extract/"):
     
     raise FileNotFoundError("No .xml file found in the ZIP archive.")
 
-
 @app.get("/", response_class=HTMLResponse)
 async def index(request: Request):
     return templates.TemplateResponse("index.html", {"request": request})
@@ -89,8 +88,9 @@ async def upload(request: Request, file: UploadFile = File(...), title: str = Fo
         mei_path = f"app/static/uploads/{os.path.splitext(filename)[0]}.mei"
         
         # Save the MEI data to a file
-        with open(mei_path, 'w') as file:
+        with open(mei_path, 'w', encoding='utf-8') as file:
             file.write(mei_data)
+    
     elif input_format == "mei":
         mei_path = file_path
         
