@@ -1,0 +1,1 @@
+# Read colormusic svg and parse down to just the first line

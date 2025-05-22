@@ -1,36 +1,79 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>ColorMusic Renderer</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ColorMusic Notation Tool</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    header {
+      background-color: #686868;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav {
+      background-color: #B9B3A5;
+      display: flex;
+      justify-content: center;
+    }
+
+    nav a {
+      color: white;
+      padding: 14px 20px;
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    nav a:hover {
+      background-color: #1abc9c;
+    }
+
+    #content {
+      padding: 0px;
+    }
+  </style>
 </head>
 <body>
-    <h1>Upload File</h1>
-    <form action="/upload" method="post" enctype="multipart/form-data">
-        <label for="title">Song Title - Author:</label><br>
-        <input type="text" name="title" required><br><br>
-        <label for="input_format">Input File Format:</label><br>
-        <select name="input_format" required>
-            <option value="musicxml_compressed">MusicXML (compressed)</option>
-            <option value="musicxml">MusicXML</option>
-            <option value="mei">MEI</option>
-        </select><br><br>
+  <header>
+    <div style="display: flex; justify-content: center; align-items: center;">
+        <img src="assets/colormusic-text-logo.svg" width="200px" height="auto" style="position: relative; top: -4px; left: 10px;">
+        <img src="assets/colormusic-circle-logo.svg" width="100px" height="auto" style="position: relative; top: 0px;">
+    </div>
+    <div style="justify-content: center; align-items: center;">
+        <img src="assets/colormusic-tool-text.svg" width="200px" height="auto" style="position: relative; top: 00px; left: -39px;">
+    </div>
+  </header>
 
-        <input type="file" name="file" required><br><br>
-        <input type="submit" value="Render">
-    </form>
+  <nav>
+    <a href="#" onclick="loadPage('pages/render.html')">Render</a>
+    <a href="#" onclick="loadPage('pages/theory.html')">Theory</a>
+    <a href="#" onclick="loadPage('pages/about.html')">About</a>
+    <a href="#" onclick="loadPage('pages/faq.html')">FAQ</a>
+  </nav>
 
-    {% if uploaded %}
-        <a href="/download-all">
-            <button>Download All as ZIP</button>
-        </a>
-        <h2>Rendered SVGs:</h2>
-        {% for svg in svgs %}
-            <div>
-                <img src="/static/{{ svg }}" alt="SVG Output" style="max-width: 100%;">
-                <br>
-                <a href="/static/{{ svg }}" download>Download</a>
-            </div>
-        {% endfor %}
-    {% endif %}
+  <div id="content">
+    <!-- Content will load here -->
+  </div>
+
+  <script>
+    function loadPage(page) {
+        fetch(page)
+        .then(response => response.text())
+        .then(html => {
+            document.getElementById('content').innerHTML = html;
+        });
+    }
+
+    // 👇 Automatically load the default page when the page loads
+    window.addEventListener('DOMContentLoaded', () => {
+        loadPage('pages/render.html'); // default page
+    });
+  </script>
 </body>
 </html>
