@@ -1,0 +1,27 @@
+<div>
+    <h1>Upload File</h1>
+    <form action="/upload" method="post" enctype="multipart/form-data">
+        <label for="title">Song Title - Author:</label><br>
+        <input type="text" name="title" required><br><br>
+        <label for="input_format">Input File Format:</label><br>
+        <select name="input_format" required>
+            <option value="musicxml_compressed">MusicXML (compressed)</option>
+            <option value="musicxml">MusicXML</option>
+            <option value="mei">MEI</option>
+        </select><br><br>
+
+        <input type="file" name="file" required><br><br>
+        <input type="submit" value="Render" style="background-color: #37B646; color: #ffffff; text-align: center;">
+    </form>
+</div>
+<div style="width: 100%">
+    {% if uploaded %}
+        <h2>Rendered SVGss:</h2>
+        {% for svg in svgs %}
+            <div>
+                <img src="/static/{{ svg }}" alt="SVG Output" style="max-width: 100%;">
+                <br>
+            </div>
+        {% endfor %}
+    {% endif %}
+</div>
