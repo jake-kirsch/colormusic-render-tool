@@ -39,7 +39,9 @@ tk = verovio.toolkit()
 # ====== Processing Functions ======
 def parse_mei(file_path):
     """Parse MEI file"""
-    with open(file_path, "r", encoding="utf-8") as f:
+    print(file_path)
+
+    with open(file_path, "r", encoding="utf-8", errors="ignore") as f:
         return BeautifulSoup(f.read(), "xml")
 
 
@@ -540,7 +542,8 @@ def render_color_music(mei_file_path, title):
 
     print("Rendered SVG paths:")
     for path in svg_files:
-        print("  →", path, "Exists?", os.path.exists(path))
+        print(path, "Exists?", os.path.exists(path))
+        # print("  →", path, "Exists?", os.path.exists(path))
 
     return svg_files
 

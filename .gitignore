@@ -1,0 +1,5 @@
+app/static/extract/
+app/static/rendered_svgs/*.svg
+app/static/rendered_svgs/*.mei
+app/static/uploads
+app/__pycache__/
