@@ -11,16 +11,26 @@
     }
 
     header {
+      position: fixed;
+      top: 0;
+      z-index: 1000;
       background-color: #686868;
       color: white;
       padding: 20px;
       text-align: center;
+      width: 100%;
+      margin: 1px;
     }
 
     nav {
+      top: 205px; /* Adjust based on header height */
+      z-index: 999;
+      position: fixed;
       background-color: #B9B3A5;
       display: flex;
       justify-content: center;
+      width: 100%;
+      margin: 1px;
     }
 
     nav a {
@@ -33,17 +43,13 @@
     nav a:hover {
       background-color: #1abc9c;
     }
-
-    #content {
-      padding: 0px;
-    }
   </style>
 </head>
 <body>
   <header>
     <div style="display: flex; justify-content: center; align-items: center;">
-        <img src="/static/assets/colormusic-text-logo.svg" width="200px" height="auto" style="position: relative; top: -4px; left: 10px;">
-        <img src="/static/assets/colormusic-circle-logo.svg" width="100px" height="auto" style="position: relative; top: 0px;">
+        <img src="/static/assets/colormusic-text-logo.svg" width="230px" height="auto" style="position: relative; top: -4px; left: 10px;">
+        <img src="/static/assets/colormusic-circle-logo.svg" width="120px" height="auto" style="position: relative; top: 0px;">
     </div>
     <div style="justify-content: center; align-items: center;">
         <img src="/static/assets/colormusic-tool-text.svg" width="200px" height="auto" style="position: relative; top: 00px; left: -39px;">
@@ -54,21 +60,50 @@
     <a href="#" onclick="loadPage('render')" style="color: black; font-weight: bold;">Render</a>
     <a href="#" onclick="loadPage('theory')" style="color: black; font-weight: bold;">Theory</a>
     <a href="#" onclick="loadPage('faq')" style="color: black; font-weight: bold;">FAQ</a>
+    <a href="#" onclick="loadPage('about')" style="color: black; font-weight: bold;">About</a>
   </nav>
 
-  <div id="content">
+  <div id="content" style="padding-top: 265px;">
     <!-- Content will load here -->
   </div>
 
   <script>
+    function setupRenderPage() {
+      const maxAttempts = 20;
+      let attempts = 0;
+      const interval = setInterval(() => {
+        const form = document.getElementById("uploadForm");
+        if (form) {
+          clearInterval(interval);
+          form.addEventListener("submit", async (e) => {
+            e.preventDefault();
+            const formData = new FormData(form);
+            const res = await fetch("/upload", {
+              method: "POST",
+              body: formData
+            });
+            const html = await res.text();
+            document.getElementById("results").innerHTML = html;
+          });
+        } else if (++attempts > maxAttempts) {
+          clearInterval(interval);
+          console.warn("uploadForm not found in time");
+        }
+      }, 100);
+    }
+
     function loadPage(page) {
       fetch(`/pages/${page}`)
         .then(response => response.text())
         .then(html => {
           document.getElementById('content').innerHTML = html;
         });
+      
+        if (page === "render") {
+          setupRenderPage(); 
+        }
     }
-
+    
     // Load default page on load
     window.addEventListener('DOMContentLoaded', () => {
       loadPage('render');

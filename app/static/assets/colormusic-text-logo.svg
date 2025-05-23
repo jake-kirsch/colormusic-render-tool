@@ -1,9 +1,8 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 50" width="220" height="50">
   <text x="10" y="40" font-family="Arial" font-size="40" fill="none" stroke="black" stroke-width="4">color</text>
   <text x="10" y="40" font-family="Arial" font-size="40" fill="none" stroke="white" stroke-width="1">color</text>
-  <text x="10" y="40" font-family="Arial" font-size="40" fill="orange">color</text>
+  <text x="10" y="40" font-family="Arial" font-size="40" fill="#FFC110">color</text>
 
   <text x="100" y="40" font-family="Arial" font-size="40" fill="none" stroke="black" stroke-width="4">music</text>
-  <text x="100" y="40" font-family="Arial" font-size="40" fill="none" stroke="white" stroke-width="1">music</text>
-  <text x="100" y="40" font-family="Arial" font-size="40" fill="grey">music</text>
+  <text x="100" y="40" font-family="Arial" font-size="40" fill="#E6E6E6" stroke="#E6E6E6" stroke-width="1">music</text>
 </svg>

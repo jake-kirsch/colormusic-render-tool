@@ -38,6 +38,30 @@ def extract_xml_from_zip(zip_path, extract_dir="app/static/extract/"):
     
     raise FileNotFoundError("No .xml file found in the ZIP archive.")
 
+def generate_svg_results_html(svgs: list[str]) -> str:
+    # static/rendered_svgs/BareNecessities-1-colormusic.svg
+
+    if not svgs:
+        return ""
+
+    html_parts = [
+        '<a href="/download-all">',
+        '  <button>Download All as ZIP</button>',
+        '</a>',
+        '<div style="width: 100%; margin: 0 auto;">',
+        '  <h2>Rendered SVGs:</h2>'
+    ]
+
+    for svg in svgs:
+        svg_filename = os.path.basename(svg)
+        html_parts.append('  <div>')
+        html_parts.append(f'    <img src="/static/rendered_svgs/{svg_filename}" alt="SVG Output" style="max-width: 100%;">')
+        html_parts.append('  </div>')
+
+    html_parts.append('</div>')
+
+    return " ".join(html_parts)
+
 @app.get("/", response_class=HTMLResponse)
 async def index(request: Request):
     return templates.TemplateResponse("index.html", {"request": request})
@@ -63,11 +87,16 @@ async def render_page(request: Request, uploaded: bool = False, svgs: List[str] 
         "svgs": svgs,
     })
 
-@app.post("/upload", response_class=HTMLResponse)
+@app.post("/upload")
 async def upload(request: Request, file: UploadFile = File(...), title: str = Form(...), input_format: str = Form(...)):
     content = await file.read()
     filename = file.filename
-    file_path = f"app/static/uploads/{filename}"
+    UPLOAD_DIR = "app/static/uploads"
+    file_path = f"{UPLOAD_DIR}/{filename}"
+
+    # Clear out existing files in Uploads dir
+    for f in os.listdir(UPLOAD_DIR):
+        os.remove(os.path.join(UPLOAD_DIR, f))
 
     # Save uploaded file
     os.makedirs(os.path.dirname(file_path), exist_ok=True)
@@ -102,12 +131,7 @@ async def upload(request: Request, file: UploadFile = File(...), title: str = Fo
     global last_uploaded_filename
     last_uploaded_filename = os.path.splitext(filename)[0]  # No extension
 
-    return templates.TemplateResponse("pages/render.html", {
-        "request": request,
-        "svgs": relative_paths,
-        "uploaded": True
-    })
-
+    return HTMLResponse(generate_svg_results_html(relative_paths))
 
 @app.get("/download-all")
 def download_all():

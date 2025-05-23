@@ -268,6 +268,7 @@ def label_notes(soup):
                 note["label"] = f"{pname.upper()}{accid}:{dur}"
     return soup
 
+
 def reorder_note(note):
     """Reorder notehead and stem so notehead is in front"""
     notehead = note.find("g", class_="notehead")
@@ -487,8 +488,8 @@ def render_color_music(mei_file_path, title):
     """Render MEI to ColorMusic"""
     # Clear out existing SVGs
     for f in os.listdir(BASE_DIR):
-        if f.endswith(".svg"):
-            os.remove(os.path.join(BASE_DIR, f))
+        # if f.endswith(".svg"):
+        os.remove(os.path.join(BASE_DIR, f))
 
     # Label notes in MEI
     soup = parse_mei(mei_file_path)
@@ -543,35 +544,5 @@ def render_color_music(mei_file_path, title):
     print("Rendered SVG paths:")
     for path in svg_files:
         print(path, "Exists?", os.path.exists(path))
-        # print("  →", path, "Exists?", os.path.exists(path))
-
+    
     return svg_files
-
-
-# def render_color_music(mei_file_path):
-#     """
-#     Placeholder function to simulate MEI -> SVG rendering.
-#     Replace this with your actual rendering logic.
-#     """
-#     import shutil
-#     import os
-#     from pathlib import Path
-
-#     output_dir = "app/static/rendered_svgs"
-#     os.makedirs(output_dir, exist_ok=True)
-
-#     dummy_1_svg_path = os.path.join(output_dir, "example_1.svg")
-#     with open(dummy_1_svg_path, "w") as f:
-#         f.write("""<svg xmlns='http://www.w3.org/2000/svg' width='200' height='100'>
-#         <rect width='200' height='100' fill='lightblue'/>
-#         <text x='10' y='50' font-size='20'>ColorMusic Output</text>
-#         </svg>""")
-
-#     dummy_2_svg_path = os.path.join(output_dir, "example_2.svg")
-#     with open(dummy_2_svg_path, "w") as f:
-#         f.write("""<svg xmlns='http://www.w3.org/2000/svg' width='200' height='100'>
-#         <rect width='200' height='100' fill='lightgreen'/>
-#         <text x='10' y='50' font-size='20'>ColorMusic Output</text>
-#         </svg>""")
-
-#     return [dummy_1_svg_path, dummy_2_svg_path]
