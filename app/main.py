@@ -95,8 +95,9 @@ async def upload(request: Request, file: UploadFile = File(...), title: str = Fo
     file_path = f"{UPLOAD_DIR}/{filename}"
 
     # Clear out existing files in Uploads dir
-    for f in os.listdir(UPLOAD_DIR):
-        os.remove(os.path.join(UPLOAD_DIR, f))
+    if os.path.isdir(UPLOAD_DIR):
+        for f in os.listdir(UPLOAD_DIR):
+            os.remove(os.path.join(UPLOAD_DIR, f))
 
     # Save uploaded file
     os.makedirs(os.path.dirname(file_path), exist_ok=True)
