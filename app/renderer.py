@@ -486,10 +486,11 @@ def add_logo_and_title(soup, page_num, page_title):
 
 def render_color_music(mei_file_path, title):
     """Render MEI to ColorMusic"""
-    # Clear out existing SVGs
-    for f in os.listdir(BASE_DIR):
-        # if f.endswith(".svg"):
-        os.remove(os.path.join(BASE_DIR, f))
+    # Clear out existing files
+    if os.path.isdir(BASE_DIR):
+        for f in os.listdir(BASE_DIR):
+            if not f.endswith(".keep"):
+                os.remove(os.path.join(BASE_DIR, f))
 
     # Label notes in MEI
     soup = parse_mei(mei_file_path)
