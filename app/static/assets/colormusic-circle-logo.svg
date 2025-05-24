@@ -1,16 +1,2 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 170 170" width="170px" height="170px">
-  <g>
-    <circle cx="150" cy="85" r="8.5" fill="#3763AF" stroke="black" stroke-width="2"/>
-    <rect x="133.79" y="45" width="15" height="15" fill="#F58220" stroke="black" stroke-width="2" transform="rotate(60,141.29,52.5)"/>
-    <circle cx="117.5" cy="28.71" r="8.5" fill="#00A995" stroke="black" stroke-width="2"/>
-    <rect x="77.5" y="12.5" width="15" height="15" fill="#DA1E48" stroke="black" stroke-width="2" transform="rotate(0,85,20)"/>
-    <circle cx="52.5" cy="28.71" r="8.5" fill="#A6CE39" stroke="black" stroke-width="2"/>
-    <rect x="21.21" y="45" width="15" height="15" fill="#823F98" stroke="black" stroke-width="2" transform="rotate(-60,28.71,52.5)"/>
-    <circle cx="20" cy="85" r="8.5" fill="#fdbb13" stroke="black" stroke-width="2"/>
-    <rect x="21.21" y="110" width="15" height="15" fill="#0098DD" stroke="black" stroke-width="2" transform="rotate(-120,28.71,117.5)"/>
-    <circle cx="52.5" cy="141.29" r="8.5" fill="#F04E23" stroke="black" stroke-width="2"/>
-    <rect x="77.5" y="142.5" width="15" height="15" fill="#39B54A" stroke="black" stroke-width="2" transform="rotate(-180,85,150)"/>
-    <circle cx="117.5" cy="141.29" r="8.5" fill="#AB218E" stroke="black" stroke-width="2"/>
-    <rect x="133.79" y="110" width="15" height="15" fill="#F3DC0B" stroke="black" stroke-width="2" transform="rotate(-240,141.29,117.5)"/>
-  </g>
-</svg>
+<?xml version="1.0" encoding="utf-8" ?> 
+<svg baseProfile="full" height="170px" version="1.1" viewBox="15,15,170,170" width="170px" xmlns="http://www.w3.org/2000/svg" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xlink="http://www.w3.org/1999/xlink"><defs /><g><circle cx="165.0" cy="100.0" fill="#3763AF" r="14.7329" stroke="black" stroke-width="2.6" /><rect fill="#F58220" height="26.0" stroke="black" stroke-width="2.6" transform="rotate(60,156.29165124598853,67.5)" width="26.0" x="143.29165124598853" y="54.5" /><circle cx="132.5" cy="43.70834875401149" fill="#00A995" r="14.7329" stroke="black" stroke-width="2.6" /><rect fill="#DA1E48" height="26.0" stroke="black" stroke-width="2.6" transform="rotate(0,100.0,35.0)" width="26.0" x="87.0" y="22.0" /><circle cx="67.50000000000001" cy="43.70834875401148" fill="#A6CE39" r="14.7329" stroke="black" stroke-width="2.6" /><rect fill="#823F98" height="26.0" stroke="black" stroke-width="2.6" transform="rotate(-60,43.70834875401148,67.5)" width="26.0" x="30.70834875401148" y="54.5" /><circle cx="35.0" cy="99.99999999999999" fill="#fdbb13" r="14.7329" stroke="black" stroke-width="2.6" /><rect fill="#0098DD" height="26.0" stroke="black" stroke-width="2.6" transform="rotate(-120,43.70834875401149,132.5)" width="26.0" x="30.70834875401149" y="119.5" /><circle cx="67.49999999999997" cy="156.2916512459885" fill="#F04E23" r="14.7329" stroke="black" stroke-width="2.6" /><rect fill="#39B54A" height="26.0" stroke="black" stroke-width="2.6" transform="rotate(-180,99.99999999999999,165.0)" width="26.0" x="86.99999999999999" y="152.0" /><circle cx="132.5" cy="156.2916512459885" fill="#AB218E" r="14.7329" stroke="black" stroke-width="2.6" /><rect fill="#F3DC0B" height="26.0" stroke="black" stroke-width="2.6" transform="rotate(-240,156.2916512459885,132.50000000000003)" width="26.0" x="143.2916512459885" y="119.50000000000003" /></g></svg>

@@ -14,16 +14,20 @@
       position: fixed;
       top: 0;
       z-index: 1000;
-      background-color: #686868;
       color: white;
       padding: 20px;
       text-align: center;
       width: 100%;
       margin: 1px;
+      background-color: #686868;
+      background-image: url('/static/assets/notation-colormusic-header.svg');
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
     }
-
+    
     nav {
-      top: 205px; /* Adjust based on header height */
+      top: 280px; /* Adjust based on header height */
       z-index: 999;
       position: fixed;
       background-color: #B9B3A5;
@@ -48,11 +52,11 @@
 <body>
   <header>
     <div style="display: flex; justify-content: center; align-items: center;">
-        <img src="/static/assets/colormusic-text-logo.svg" width="230px" height="auto" style="position: relative; top: -4px; left: 10px;">
-        <img src="/static/assets/colormusic-circle-logo.svg" width="120px" height="auto" style="position: relative; top: 0px;">
+        <img src="/static/assets/colormusic-text-logo.svg"  width="360px" height="auto" style="position: relative; top: 10px; left: 10px;">
+        <img src="/static/assets/colormusic-circle-logo.svg" width="160px" height="auto" style="position: relative; top:10px;">
     </div>
     <div style="justify-content: center; align-items: center;">
-        <img src="/static/assets/colormusic-tool-text.svg" width="200px" height="auto" style="position: relative; top: 00px; left: -39px;">
+        <img src="/static/assets/colormusic-tool-text.svg" width="360px" height="auto" style="position: relative; top: -50px; left: -71px;">
     </div>
   </header>
 
@@ -63,7 +67,7 @@
     <a href="#" onclick="loadPage('about')" style="color: black; font-weight: bold;">About</a>
   </nav>
 
-  <div id="content" style="padding-top: 265px;">
+  <div id="content" style="padding-top: 330px;">
     <!-- Content will load here -->
   </div>
 
