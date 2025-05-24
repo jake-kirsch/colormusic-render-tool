@@ -96,6 +96,15 @@
       }, 100);
     }
 
+    function setupFAQPage() {
+      document.getElementById('content').addEventListener('click', (e) => {
+        const question = e.target.closest('.faq-question');
+        if (question) {
+          question.parentElement.classList.toggle('open');
+        }
+      });
+    }
+    
     function loadPage(page) {
       fetch(`/pages/${page}`)
         .then(response => response.text())
@@ -106,11 +115,14 @@
         if (page === "render") {
           setupRenderPage(); 
         }
+        
     }
     
     // Load default page on load
     window.addEventListener('DOMContentLoaded', () => {
       loadPage('render');
+
+      setupFAQPage();
     });
   </script>
 </body>

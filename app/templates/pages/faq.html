@@ -1,4 +1,95 @@
-<div style="width: 400px; margin: 0 auto;">
-    <h2>FAQ</h2>
-    <p>Add FAQ here.</p>
-</div>
+<div id="faq-container">
+    <h1>Frequently Asked Questions</h1>
+  
+    <div class="faq">
+      <div class="faq-question">
+        <p dir="ltr" style="line-height: 1.656;">
+            <span style="color: #000000; font-family: Arial; font-size: 13.999999999999998pt; font-weight: 700; vertical-align: baseline;">Topic 1</span>
+            <span style="color: #000000; font-family: Arial; font-size: 13.999999999999998pt; font-weight: 400; vertical-align: baseline;"> – question 1?</span>
+        </p>
+        <span class="arrow">▼</span>
+      </div>
+      <div class="faq-answer">
+        Answer 1.
+      </div>
+    </div>
+  
+    <div class="faq">
+      <div class="faq-question">
+        <p dir="ltr" style="line-height: 1.656;">
+            <span style="color: #000000; font-family: Arial; font-size: 13.999999999999998pt; font-weight: 700; vertical-align: baseline;">Topic 2</span>
+            <span style="color: #000000; font-family: Arial; font-size: 13.999999999999998pt; font-weight: 400; vertical-align: baseline;"> – question 2?</span>
+        </p>
+        <span class="arrow">▼</span>
+      </div>
+      <div class="faq-answer">
+        Answer 2.
+      </div>
+    </div>
+  
+    <div class="faq">
+      <div class="faq-question">
+        <p dir="ltr" style="line-height: 1.656;">
+            <span style="color: #000000; font-family: Arial; font-size: 13.999999999999998pt; font-weight: 700; vertical-align: baseline;">Topic 3</span>
+            <span style="color: #000000; font-family: Arial; font-size: 13.999999999999998pt; font-weight: 400; vertical-align: baseline;"> – question 3?</span>
+        </p>
+        <span class="arrow">▼</span>
+      </div>
+      <div class="faq-answer">
+        Answer 3.
+      </div>
+    </div>
+  </div>
+  
+  <style>
+    #faq-container {
+      font-family: sans-serif;
+      max-width: 700px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+      background: #f9f9f9;
+    }
+  
+    #faq-container h1 {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+  
+    #faq-container .faq {
+      border-bottom: 1px solid #ddd;
+      padding: 1rem 0;
+    }
+  
+    #faq-container .faq-question {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      cursor: pointer;
+      font-weight: bold;
+      position: relative;
+    }
+  
+    #faq-container .arrow {
+      transition: transform 0.3s ease;
+    }
+  
+    #faq-container .faq.open .arrow {
+      transform: rotate(180deg);
+    }
+  
+    #faq-container .faq-answer {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease, opacity 0.3s ease;
+      opacity: 0;
+      padding-right: 1.5rem;
+    }
+  
+    #faq-container .faq.open .faq-answer {
+      max-height: 500px;
+      opacity: 1;
+      margin-top: 0.5rem;
+    }
+  </style>
+
+  
