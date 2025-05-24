@@ -1,7 +1,12 @@
 import math
 import svgwrite
 
-BASE_DIR = "D:\\music_project\\Conversion"
+BASE_DIR = "C:\\Users\\josep\\Desktop\\personal\\colormusic-render-tool\\app\\static\\assets"
+
+factor = 1.3
+
+SQUARE = 20 * factor
+CIRCLE = 11.333 * factor
 
 x_offset, y_offset = 100, 100
 radius = 65
@@ -14,12 +19,12 @@ width = max_x - min_x
 height = max_y - min_y
 
 # Create a new SVG canvas
-dwg = svgwrite.Drawing(f"{BASE_DIR}/website_files/colormusic-circle-logo.svg", size=(f"{width}px", f"{height}px"))
+dwg = svgwrite.Drawing(f"{BASE_DIR}/colormusic-circle-logo.svg", size=(f"{width}px", f"{height}px"))
 dwg.viewbox(minx=min_x, miny=min_y, width=width, height=height)
 
 # dwg.add(dwg.rect(insert=(0, 0), size=("100%", "100%"), fill="#f0f0f0"))
 
-STROKE_WIDTH = 2  # svgwrite uses user units; 20 may be too thick depending on scale
+STROKE_WIDTH = 2 * factor  # svgwrite uses user units; 20 may be too thick depending on scale
 
 # Pitch color mapping
 PITCH_COLORS = {
@@ -54,7 +59,7 @@ for pitch, angle in [
     y = -radius * math.sin(angle_rad) + y_offset  # flip Y for SVG coord
 
     if pitch in SQUARE_PITCHES:
-        width = 15
+        width = SQUARE
         rect_x = x - width / 2
         rect_y = y - width / 2
         rect = dwg.rect(
@@ -70,7 +75,7 @@ for pitch, angle in [
     else:
         circle = dwg.circle(
             center=(x, y),
-            r=8.5,
+            r=CIRCLE,
             fill=color,
             stroke="black",
             stroke_width=STROKE_WIDTH
