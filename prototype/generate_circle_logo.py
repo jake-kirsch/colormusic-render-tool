@@ -3,17 +3,17 @@ import svgwrite
 
 BASE_DIR = "C:\\Users\\josep\\Desktop\\personal\\colormusic-render-tool\\app\\static\\assets"
 
-factor = 1.6
+factor = 1.8
 
 SQUARE = 20 * factor
 CIRCLE = 11.333 * factor
 
-x_offset, y_offset = 100, 100
+x_offset, y_offset = 150, 150
 radius = 95
 
-min_x = x_offset - radius - 20
+min_x = x_offset - radius - 22.5
 min_y = y_offset - radius - 20
-max_x = x_offset + radius + 20
+max_x = x_offset + radius + 22.5
 max_y = y_offset + radius + 20
 width = max_x - min_x
 height = max_y - min_y
