@@ -2,16 +2,15 @@
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
-   width="4809.6172mm"
-   height="903.23877mm"
-   viewBox="0 0 4809.6172 903.23879"
+   width="507.19254mm"
+   height="95.249985mm"
+   viewBox="0 0 507.19253 95.249987"
    version="1.1"
    id="svg1"
    inkscape:version="1.4.2 (f4327f4, 2025-05-13)"
    sodipodi:docname="notation-colormusic.svg"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:svg="http://www.w3.org/2000/svg">
   <sodipodi:namedview
@@ -24,35 +23,34 @@
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="mm"
-     inkscape:zoom="0.071929924"
-     inkscape:cx="1716.9488"
-     inkscape:cy="-5720.8457"
+     inkscape:zoom="0.81071757"
+     inkscape:cx="1013.9166"
+     inkscape:cy="115.32993"
      inkscape:window-width="3840"
      inkscape:window-height="2066"
      inkscape:window-x="2869"
      inkscape:window-y="-11"
      inkscape:window-maximized="1"
-     inkscape:current-layer="layer1" />
+     inkscape:current-layer="y1q3d5f" />
   <defs
      id="defs1" />
   <g
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(2208.7582,50.245607)">
+     transform="translate(300.60318,-78.518067)">
     <g
        class="system"
-       id="l1dc0tfe"
-       transform="matrix(0.25089966,0,0,0.25089966,-2417.7615,-6327.7551)"
-       style="opacity:1">
+       id="y1q3d5f"
+       transform="matrix(0.02645833,0,0,0.02645833,-322.64338,-583.46935)">
       <path
-         d="M 1099.6697,25462.263 V 27996.61"
-         stroke-width="20.6802"
+         d="M 1107,25475.451 V 27990"
+         stroke-width="20.5993"
          id="path1020"
          style="stroke:currentColor" />
       <g
          class="grpSym"
-         id="yfwcewl">
+         id="b16y3xt2">
         <path
            d="m 1022,27972 c -360,-540 90,-1062 -180,-1242 333,180 -117,702 180,1242"
            stroke-linecap="round"
@@ -70,10 +68,10 @@
       </g>
       <g
          class="measure"
-         id="m1h3va8o">
+         id="n1mxtd65">
         <g
            class="staff"
-           id="i6om7va">
+           id="pfncfi0">
           <path
              d="M 1094,25470 H 8368"
              stroke-width="13"
@@ -101,82 +99,82 @@
              style="stroke:currentColor" />
           <g
              class="clef"
-             id="j1i2f7ee">
+             id="i1l1b6ln">
             <g
                id="use1034"
                transform="matrix(0.72,0,0,0.72,1211,26010)">
               <path
                  d="m 441,-245 c -23,-4 -48,-6 -76,-6 -59,0 -102,7 -130,20 C 147,-189 85,-138 48,-77 22,-33 5,26 0,99 c 0,6 -1,13 -1,19 0,54 15,111 45,170 29,57 65,106 110,148 45,42 96,85 153,127 -3,16 -8,46 -13,92 -4,43 -5,73 -5,89 0,117 16,172 69,257 34,54 64,82 89,82 21,0 43,-30 69,-92 26,-62 39,-115 41,-159 V 817 C 557,708 536,655 490,576 477,556 427,486 392,458 379,449 367,439 355,429 l 31,-181 c 8,1 18,2 28,2 58,0 102,-12 133,-35 59,-43 92,-104 98,-184 1,-7 1,-15 1,-22 0,-123 -87,-209 -181,-248 8,-57 17,-110 25,-162 5,-31 6,-58 6,-80 0,-30 -5,-53 -14,-70 -35,-64 -88,-99 -158,-103 -5,0 -11,-1 -16,-1 -37,0 -72,10 -108,27 -50,24 -77,59 -80,105 v 11 c 0,29 7,55 20,76 18,28 45,42 79,44 h 6 c 49,0 93,-42 97,-87 v -9 c 0,-51 -34,-86 -105,-106 17,-24 51,-36 102,-36 62,0 116,43 140,85 9,16 13,41 13,74 0,20 -1,42 -5,67 -8,53 -18,106 -26,159 z m 20,1184 c -95,0 -135,-175 -135,-286 0,-24 2,-48 5,-71 50,39 92,82 127,128 40,53 60,100 60,140 v 8 c -4,53 -22,81 -55,81 z m -55,-820 54,-326 c 73,25 110,78 110,161 0,7 0,15 -1,23 -7,95 -57,142 -151,142 z m -24,-2 C 310,115 254,70 254,-3 v -7 c 2,-46 43,-99 75,-115 -3,-2 -7,-5 -10,-10 -70,33 -116,88 -123,172 v 11 c 0,68 44,126 88,159 23,17 49,29 78,36 L 333,413 C 312,400 281,376 241,340 191,296 155,256 132,221 87,152 65,91 65,39 V 26 c 5,-68 35,-127 93,-176 58,-49 125,-73 203,-73 25,0 50,3 75,9 -19,111 -36,221 -54,331 z"
                  transform="scale(1,-1)"
-                 id="path9"
+                 id="path101"
                  style="stroke:currentColor" />
             </g>
           </g>
           <g
              class="keySig"
-             id="f1g6d62g">
+             id="h4is933">
             <g
                class="keyAccid"
-               id="z1pw7jto">
+               id="zvn47xi">
               <g
                  id="use1035"
                  transform="matrix(0.72,0,0,0.72,1892,25830)">
                 <path
                    d="m 20,110 c 32,16 54,27 93,27 26,0 35,-3 54,-13 13,-7 24,-20 27,-38 l 4,-25 C 198,33 182,4 153,-28 130,-53 114,-72 88,-96 L 0,-175 v 644 h 20 z m 70,-4 C 58,106 42,96 20,77 v -194 c 31,31 54,59 71,84 21,32 32,59 32,84 0,9 1,16 1,20 0,14 -3,21 -11,30 l -8,3 z"
                    transform="scale(1,-1)"
-                   id="path63"
+                   id="path104"
                    style="stroke:currentColor" />
               </g>
             </g>
             <g
                class="keyAccid"
-               id="i10grcei">
+               id="q1bd57sf">
               <g
                  id="use1036"
                  transform="matrix(0.72,0,0,0.72,2072,25560)">
                 <path
                    d="m 20,110 c 32,16 54,27 93,27 26,0 35,-3 54,-13 13,-7 24,-20 27,-38 l 4,-25 C 198,33 182,4 153,-28 130,-53 114,-72 88,-96 L 0,-175 v 644 h 20 z m 70,-4 C 58,106 42,96 20,77 v -194 c 31,31 54,59 71,84 21,32 32,59 32,84 0,9 1,16 1,20 0,14 -3,21 -11,30 l -8,3 z"
                    transform="scale(1,-1)"
-                   id="path64"
+                   id="path105"
                    style="stroke:currentColor" />
               </g>
             </g>
           </g>
           <g
              class="layer"
-             id="z1ivm0l4">
+             id="l1tgowxb">
             <g
                class="beam"
-               id="jyukeby">
+               id="r1hjr6l2">
               <polygon
                  fill-opacity="1"
-                 points="2484,26415 3817,26415 3817,26325 2484,26325 "
+                 points="3817,26325 2484,26325 2484,26415 3817,26415 "
                  stroke-opacity="1"
                  id="polygon1036" />
               <polygon
                  fill-opacity="1"
-                 points="2484,26280 2996,26280 2996,26190 2484,26190 "
+                 points="2996,26190 2484,26190 2484,26280 2996,26280 "
                  stroke-opacity="1"
                  id="polygon1037" />
               <polygon
                  fill-opacity="1"
-                 points="2996,26280 3470,26280 3470,26190 2996,26190 "
+                 points="3470,26190 2996,26190 2996,26280 3470,26280 "
                  stroke-opacity="1"
                  id="polygon1038" />
               <polygon
                  fill-opacity="1"
-                 points="3470,26280 3817,26280 3817,26190 3470,26190 "
+                 points="3817,26190 3470,26190 3470,26280 3817,26280 "
                  stroke-opacity="1"
                  id="polygon1039" />
               <g
                  class="note"
-                 id="o14aidw2">
+                 id="z1h39i7k">
                 <title
                    class="labelAttr"
                    id="title1039">D:16</title>
                 <g
                    class="stem"
-                   id="i304e61">
+                   id="w1q9bv52">
                   <path
                      d="m 2493,25678 v 719"
                      stroke-width="18"
@@ -196,7 +194,7 @@
                        stroke-width="20"
                        transform="translate(10,-120)"
                        width="300"
-                       id="rect68"
+                       id="rect111"
                        x="0"
                        y="0" />
                   </g>
@@ -204,13 +202,13 @@
               </g>
               <g
                  class="note"
-                 id="w10g4stq">
+                 id="siweios">
                 <title
                    class="labelAttr"
                    id="title1040">C:16</title>
                 <g
                    class="stem"
-                   id="mcpw8au">
+                   id="n179bcra">
                   <path
                      d="m 2996,25768 v 629"
                      stroke-width="18"
@@ -230,7 +228,7 @@
                        stroke-width="20"
                        transform="translate(10,-120)"
                        width="300"
-                       id="rect77"
+                       id="rect89"
                        x="0"
                        y="0" />
                   </g>
@@ -238,13 +236,13 @@
               </g>
               <g
                  class="note"
-                 id="f1rbqs5u">
+                 id="xhvavh5">
                 <title
                    class="labelAttr"
                    id="title1041">B:16</title>
                 <g
                    class="stem"
-                   id="k1lsvicb">
+                   id="bq195o2">
                   <path
                      d="m 3470,25858 v 539"
                      stroke-width="18"
@@ -263,13 +261,13 @@
                     <path
                        d="m 0,-39 c 0,68 73,172 200,172 66,0 114,-37 114,-95 0,-84 -106,-171 -218,-171 -64,0 -96,30 -96,94 z"
                        transform="scale(1,-1)"
-                       id="path10"
+                       id="path42"
                        style="stroke:currentColor" />
                   </g>
                 </g>
                 <g
                    class="accid"
-                   id="w6nevly"
+                   id="w1axnyvi"
                    opacity="0.5">
                   <g
                      id="use1042"
@@ -277,20 +275,20 @@
                     <path
                        d="M 0,-188 V 351 H 18 V 160 l 139,22 v -533 h -17 v 186 z m 18,88 122,17 V 93 L 18,74 Z"
                        transform="scale(1,-1)"
-                       id="path58"
+                       id="path39"
                        style="stroke:currentColor" />
                   </g>
                 </g>
               </g>
               <g
                  class="note"
-                 id="o1yn3w2e">
+                 id="dad9pqm">
                 <title
                    class="labelAttr"
                    id="title1042">C:16</title>
                 <g
                    class="stem"
-                   id="vef6myl">
+                   id="b1odar0y">
                   <path
                      d="m 3808,25768 v 629"
                      stroke-width="18"
@@ -310,7 +308,7 @@
                        stroke-width="20"
                        transform="translate(10,-120)"
                        width="300"
-                       id="rect78"
+                       id="rect90"
                        x="0"
                        y="0" />
                   </g>
@@ -319,36 +317,36 @@
             </g>
             <g
                class="beam"
-               id="g279hif">
+               id="z1ml1rg7">
               <polygon
                  fill-opacity="1"
-                 points="4301,26595 5333,26550 5333,26460 4301,26505 "
+                 points="5333,26460 4301,26505 4301,26595 5333,26550 "
                  stroke-opacity="1"
                  id="polygon1043" />
               <polygon
                  fill-opacity="1"
-                 points="4301,26460 4648,26445 4648,26355 4301,26370 "
+                 points="4648,26355 4301,26370 4301,26460 4648,26445 "
                  stroke-opacity="1"
                  id="polygon1044" />
               <polygon
                  fill-opacity="1"
-                 points="4648,26445 4986,26430 4986,26340 4648,26355 "
+                 points="4986,26340 4648,26355 4648,26445 4986,26430 "
                  stroke-opacity="1"
                  id="polygon1045" />
               <polygon
                  fill-opacity="1"
-                 points="4986,26430 5333,26415 5333,26325 4986,26340 "
+                 points="5333,26325 4986,26340 4986,26430 5333,26415 "
                  stroke-opacity="1"
                  id="polygon1046" />
               <g
                  class="note"
-                 id="f154roop">
+                 id="xjfclcc">
                 <title
                    class="labelAttr"
-                   id="title1046">Ab:16</title>
+                   id="title1046">Af:16</title>
                 <g
                    class="stem"
-                   id="d62j080">
+                   id="h3sksrj">
                   <path
                      d="m 4310,25948 v 629"
                      stroke-width="18"
@@ -368,14 +366,14 @@
                        stroke-width="20"
                        transform="translate(10,-120)"
                        width="300"
-                       id="rect57"
+                       id="rect110"
                        x="0"
                        y="0" />
                   </g>
                 </g>
                 <g
                    class="accid"
-                   id="vdml24l"
+                   id="x6br8y8"
                    opacity="0.5">
                   <g
                      id="use1047"
@@ -383,20 +381,20 @@
                     <path
                        d="m 20,110 c 32,16 54,27 93,27 26,0 35,-3 54,-13 13,-7 24,-20 27,-38 l 4,-25 C 198,33 182,4 153,-28 130,-53 114,-72 88,-96 L 0,-175 v 644 h 20 z m 70,-4 C 58,106 42,96 20,77 v -194 c 31,31 54,59 71,84 21,32 32,59 32,84 0,9 1,16 1,20 0,14 -3,21 -11,30 l -8,3 z"
                        transform="scale(1,-1)"
-                       id="path65"
+                       id="path106"
                        style="stroke:currentColor" />
                   </g>
                 </g>
               </g>
               <g
                  class="note"
-                 id="nhrt8j1">
+                 id="h8960ph">
                 <title
                    class="labelAttr"
                    id="title1047">C:16</title>
                 <g
                    class="stem"
-                   id="u150nvru">
+                   id="w1h8hfih">
                   <path
                      d="m 4648,25768 v 794"
                      stroke-width="18"
@@ -416,7 +414,7 @@
                        stroke-width="20"
                        transform="translate(10,-120)"
                        width="300"
-                       id="rect79"
+                       id="rect91"
                        x="0"
                        y="0" />
                   </g>
@@ -424,13 +422,13 @@
               </g>
               <g
                  class="note"
-                 id="p1ieio9w">
+                 id="aigdlpg">
                 <title
                    class="labelAttr"
                    id="title1048">B:16</title>
                 <g
                    class="stem"
-                   id="t139btam">
+                   id="z1fqe297">
                   <path
                      d="m 4986,25858 v 689"
                      stroke-width="18"
@@ -449,20 +447,20 @@
                     <path
                        d="m 0,-39 c 0,68 73,172 200,172 66,0 114,-37 114,-95 0,-84 -106,-171 -218,-171 -64,0 -96,30 -96,94 z"
                        transform="scale(1,-1)"
-                       id="path13"
+                       id="path43"
                        style="stroke:currentColor" />
                   </g>
                 </g>
               </g>
               <g
                  class="note"
-                 id="nv0sxni">
+                 id="iw4lzoq">
                 <title
                    class="labelAttr"
                    id="title1049">C:16</title>
                 <g
                    class="stem"
-                   id="e1j60j8r">
+                   id="bsk62ts">
                   <path
                      d="m 5324,25768 v 764"
                      stroke-width="18"
@@ -482,7 +480,7 @@
                        stroke-width="20"
                        transform="translate(10,-120)"
                        width="300"
-                       id="rect80"
+                       id="rect92"
                        x="0"
                        y="0" />
                   </g>
@@ -491,36 +489,36 @@
             </g>
             <g
                class="beam"
-               id="h1cszb7j">
+               id="q1uyhyru">
               <polygon
                  fill-opacity="1"
-                 points="5653,26415 6684,26415 6684,26325 5653,26325 "
+                 points="6684,26325 5653,26325 5653,26415 6684,26415 "
                  stroke-opacity="1"
                  id="polygon1050" />
               <polygon
                  fill-opacity="1"
-                 points="5653,26280 6000,26280 6000,26190 5653,26190 "
+                 points="6000,26190 5653,26190 5653,26280 6000,26280 "
                  stroke-opacity="1"
                  id="polygon1051" />
               <polygon
                  fill-opacity="1"
-                 points="6000,26280 6337,26280 6337,26190 6000,26190 "
+                 points="6337,26190 6000,26190 6000,26280 6337,26280 "
                  stroke-opacity="1"
                  id="polygon1052" />
               <polygon
                  fill-opacity="1"
-                 points="6337,26280 6684,26280 6684,26190 6337,26190 "
+                 points="6684,26190 6337,26190 6337,26280 6684,26280 "
                  stroke-opacity="1"
                  id="polygon1053" />
               <g
                  class="note"
-                 id="nehpx55">
+                 id="n1f60ao">
                 <title
                    class="labelAttr"
                    id="title1053">D:16</title>
                 <g
                    class="stem"
-                   id="dj35db1">
+                   id="h16jydhb">
                   <path
                      d="m 5662,25678 v 719"
                      stroke-width="18"
@@ -540,7 +538,7 @@
                        stroke-width="20"
                        transform="translate(10,-120)"
                        width="300"
-                       id="rect70"
+                       id="rect112"
                        x="0"
                        y="0" />
                   </g>
@@ -548,13 +546,13 @@
               </g>
               <g
                  class="note"
-                 id="uqbjeyh">
+                 id="x92fk5r">
                 <title
                    class="labelAttr"
                    id="title1054">C:16</title>
                 <g
                    class="stem"
-                   id="ijhbyim">
+                   id="x1mpq5md">
                   <path
                      d="m 6000,25768 v 629"
                      stroke-width="18"
@@ -574,7 +572,7 @@
                        stroke-width="20"
                        transform="translate(10,-120)"
                        width="300"
-                       id="rect81"
+                       id="rect93"
                        x="0"
                        y="0" />
                   </g>
@@ -582,13 +580,13 @@
               </g>
               <g
                  class="note"
-                 id="k5459">
+                 id="y1jy7env">
                 <title
                    class="labelAttr"
                    id="title1055">B:16</title>
                 <g
                    class="stem"
-                   id="s18gtmip">
+                   id="z10bcfsm">
                   <path
                      d="m 6337,25858 v 539"
                      stroke-width="18"
@@ -607,20 +605,20 @@
                     <path
                        d="m 0,-39 c 0,68 73,172 200,172 66,0 114,-37 114,-95 0,-84 -106,-171 -218,-171 -64,0 -96,30 -96,94 z"
                        transform="scale(1,-1)"
-                       id="path14"
+                       id="path44"
                        style="stroke:currentColor" />
                   </g>
                 </g>
               </g>
               <g
                  class="note"
-                 id="mmlosmc">
+                 id="zdk3b17">
                 <title
                    class="labelAttr"
                    id="title1056">C:16</title>
                 <g
                    class="stem"
-                   id="r16dpdhg">
+                   id="x1vw343j">
                   <path
                      d="m 6675,25768 v 629"
                      stroke-width="18"
@@ -640,7 +638,7 @@
                        stroke-width="20"
                        transform="translate(10,-120)"
                        width="300"
-                       id="rect82"
+                       id="rect94"
                        x="0"
                        y="0" />
                   </g>
@@ -649,36 +647,36 @@
             </g>
             <g
                class="beam"
-               id="g5ggiv0">
+               id="e1a7jh0a">
               <polygon
                  fill-opacity="1"
-                 points="7004,26415 8036,26415 8036,26325 7004,26325 "
+                 points="8036,26325 7004,26325 7004,26415 8036,26415 "
                  stroke-opacity="1"
                  id="polygon1056" />
               <polygon
                  fill-opacity="1"
-                 points="7004,26280 7351,26280 7351,26190 7004,26190 "
+                 points="7351,26190 7004,26190 7004,26280 7351,26280 "
                  stroke-opacity="1"
                  id="polygon1057" />
               <polygon
                  fill-opacity="1"
-                 points="7351,26280 7689,26280 7689,26190 7351,26190 "
+                 points="7689,26190 7351,26190 7351,26280 7689,26280 "
                  stroke-opacity="1"
                  id="polygon1058" />
               <polygon
                  fill-opacity="1"
-                 points="7689,26280 8036,26280 8036,26190 7689,26190 "
+                 points="8036,26190 7689,26190 7689,26280 8036,26280 "
                  stroke-opacity="1"
                  id="polygon1059" />
               <g
                  class="note"
-                 id="u1bruo5q">
+                 id="kjuwx0x">
                 <title
                    class="labelAttr"
-                   id="title1059">Eb:16</title>
+                   id="title1059">Ef:16</title>
                 <g
                    class="stem"
-                   id="ttirlqg">
+                   id="ce0s2u8">
                   <path
                      d="m 7013,25588 v 809"
                      stroke-width="18"
@@ -697,24 +695,24 @@
                     <path
                        d="m 0,-39 c 0,68 73,172 200,172 66,0 114,-37 114,-95 0,-84 -106,-171 -218,-171 -64,0 -96,30 -96,94 z"
                        transform="scale(1,-1)"
-                       id="path15"
+                       id="path45"
                        style="stroke:currentColor" />
                   </g>
                 </g>
                 <g
                    class="accid"
-                   id="a870699"
+                   id="h6bwab7"
                    opacity="0.5" />
               </g>
               <g
                  class="note"
-                 id="n1ljo5at">
+                 id="n1fhsm0z">
                 <title
                    class="labelAttr"
                    id="title1060">C:16</title>
                 <g
                    class="stem"
-                   id="djq92gc">
+                   id="mv0xi5q">
                   <path
                      d="m 7351,25768 v 629"
                      stroke-width="18"
@@ -734,7 +732,7 @@
                        stroke-width="20"
                        transform="translate(10,-120)"
                        width="300"
-                       id="rect83"
+                       id="rect95"
                        x="0"
                        y="0" />
                   </g>
@@ -742,13 +740,13 @@
               </g>
               <g
                  class="note"
-                 id="shg6xua">
+                 id="r1l23gqu">
                 <title
                    class="labelAttr"
                    id="title1061">B:16</title>
                 <g
                    class="stem"
-                   id="n1a9negp">
+                   id="j6o3nhw">
                   <path
                      d="m 7689,25858 v 539"
                      stroke-width="18"
@@ -767,20 +765,20 @@
                     <path
                        d="m 0,-39 c 0,68 73,172 200,172 66,0 114,-37 114,-95 0,-84 -106,-171 -218,-171 -64,0 -96,30 -96,94 z"
                        transform="scale(1,-1)"
-                       id="path16"
+                       id="path46"
                        style="stroke:currentColor" />
                   </g>
                 </g>
               </g>
               <g
                  class="note"
-                 id="q15j4n20">
+                 id="s8ffmfe">
                 <title
                    class="labelAttr"
                    id="title1062">C:16</title>
                 <g
                    class="stem"
-                   id="v1iolx0q">
+                   id="j810hoq">
                   <path
                      d="m 8027,25768 v 629"
                      stroke-width="18"
@@ -800,7 +798,7 @@
                        stroke-width="20"
                        transform="translate(10,-120)"
                        width="300"
-                       id="rect84"
+                       id="rect96"
                        x="0"
                        y="0" />
                   </g>
@@ -811,7 +809,7 @@
         </g>
         <g
            class="staff"
-           id="l15bsr79">
+           id="k1pdqwdf">
           <path
              d="M 1094,27270 H 8368"
              stroke-width="13"
@@ -839,43 +837,43 @@
              style="stroke:currentColor" />
           <g
              class="clef"
-             id="w11v6721">
+             id="dgrx260">
             <g
                id="use1067"
                transform="matrix(0.72,0,0,0.72,1211,27450)">
               <path
                  d="m 582,-120 c 0,32 26,58 58,58 32,0 58,-26 58,-58 0,-32 -26,-58 -58,-58 -32,0 -58,26 -58,58 z m 0,240 c 0,32 26,58 58,58 32,0 58,-26 58,-58 0,-32 -26,-58 -58,-58 -32,0 -58,26 -58,58 z M 158,96 c 51,0 73,-14 88,-49 L 262,8 c 0,-17 -2,-30 -7,-40 -3,-11 -10,-21 -19,-31 -17,-18 -49,-43 -84,-43 -55,0 -77,13 -112,44 C 16,-41 5,-7 5,38 c 0,46 14,81 32,112 30,52 71,79 137,93 l 36,6 26,2 C 390,251 471,183 510,69 521,37 528,1 528,-38 528,-141 502,-220 460,-288 371,-433 226,-518 48,-576 l -30,-5 c -9,0 -14,3 -14,8 3,10 5,11 10,16 35,15 70,30 96,44 l 78,43 c 96,57 162,136 197,258 9,33 17,60 22,100 3,22 5,35 6,39 -7,69 -16,115 -23,140 -7,25 -4,22 -16,40 -8,12 -19,23 -31,34 -24,21 -62,44 -118,44 -48,0 -84,-8 -113,-28 C 84,138 70,113 70,84 V 68 c 2,-5 3,-9 4,-11 24,22 52,39 84,39 z"
                  transform="scale(1,-1)"
-                 id="path5"
+                 id="path110"
                  style="stroke:currentColor" />
             </g>
           </g>
           <g
              class="keySig"
-             id="b13051aw">
+             id="x1p9igzt">
             <g
                class="keyAccid"
-               id="a1hj13cm">
+               id="zom3rzy">
               <g
                  id="use1068"
                  transform="matrix(0.72,0,0,0.72,1892,27810)">
                 <path
                    d="m 20,110 c 32,16 54,27 93,27 26,0 35,-3 54,-13 13,-7 24,-20 27,-38 l 4,-25 C 198,33 182,4 153,-28 130,-53 114,-72 88,-96 L 0,-175 v 644 h 20 z m 70,-4 C 58,106 42,96 20,77 v -194 c 31,31 54,59 71,84 21,32 32,59 32,84 0,9 1,16 1,20 0,14 -3,21 -11,30 l -8,3 z"
                    transform="scale(1,-1)"
-                   id="path66"
+                   id="path107"
                    style="stroke:currentColor" />
               </g>
             </g>
             <g
                class="keyAccid"
-               id="p15rgmyf">
+               id="c1r89h3a">
               <g
                  id="use1069"
                  transform="matrix(0.72,0,0,0.72,2072,27540)">
                 <path
                    d="m 20,110 c 32,16 54,27 93,27 26,0 35,-3 54,-13 13,-7 24,-20 27,-38 l 4,-25 C 198,33 182,4 153,-28 130,-53 114,-72 88,-96 L 0,-175 v 644 h 20 z m 70,-4 C 58,106 42,96 20,77 v -194 c 31,31 54,59 71,84 21,32 32,59 32,84 0,9 1,16 1,20 0,14 -3,21 -11,30 l -8,3 z"
                    transform="scale(1,-1)"
-                   id="path67"
+                   id="path108"
                    style="stroke:currentColor" />
               </g>
             </g>
@@ -896,39 +894,39 @@
           </g>
           <g
              class="layer"
-             id="e1vjkpor">
+             id="f1x2utey">
             <g
                class="beam"
-               id="xe73vh5">
+               id="zusc2d6">
               <polygon
                  fill-opacity="1"
-                 points="2692,27270 4025,26910 4025,27000 2692,27360 "
+                 points="4025,27000 2692,27360 2692,27270 4025,26910 "
                  stroke-opacity="1"
                  id="polygon1070" />
               <polygon
                  fill-opacity="1"
-                 points="2692,27405 3204,27268 3204,27358 2692,27495 "
+                 points="3204,27358 2692,27495 2692,27405 3204,27268 "
                  stroke-opacity="1"
                  id="polygon1071" />
               <polygon
                  fill-opacity="1"
-                 points="3204,27268 3678,27138 3678,27228 3204,27358 "
+                 points="3678,27228 3204,27358 3204,27268 3678,27138 "
                  stroke-opacity="1"
                  id="polygon1072" />
               <polygon
                  fill-opacity="1"
-                 points="3678,27138 4025,27045 4025,27135 3678,27228 "
+                 points="4025,27135 3678,27228 3678,27138 4025,27045 "
                  stroke-opacity="1"
                  id="polygon1073" />
               <g
                  class="note"
-                 id="h1iuft00">
+                 id="vjctmw9">
                 <title
                    class="labelAttr"
                    id="title1073">D:16</title>
                 <g
                    class="stem"
-                   id="w9tgx2w">
+                   id="j3p0h76">
                   <path
                      d="m 2701,28232 v -944"
                      stroke-width="18"
@@ -948,7 +946,7 @@
                        stroke-width="20"
                        transform="translate(5,-120)"
                        width="300"
-                       id="rect98"
+                       id="rect9"
                        x="0"
                        y="0" />
                   </g>
@@ -956,13 +954,13 @@
               </g>
               <g
                  class="note"
-                 id="l1yoqm2m">
+                 id="pp15uoy">
                 <title
                    class="labelAttr"
-                   id="title1074">Ab:16</title>
+                   id="title1074">Af:16</title>
                 <g
                    class="stem"
-                   id="s1i77i2o">
+                   id="kfs7dya">
                   <path
                      d="m 3204,27872 v -721"
                      stroke-width="18"
@@ -982,14 +980,14 @@
                        stroke-width="20"
                        transform="translate(5,-120)"
                        width="300"
-                       id="rect85"
+                       id="rect2"
                        x="0"
                        y="0" />
                   </g>
                 </g>
                 <g
                    class="accid"
-                   id="c10a2c9r"
+                   id="r18qp0ya"
                    opacity="0.5">
                   <g
                      id="use1075"
@@ -997,20 +995,20 @@
                     <path
                        d="m 20,110 c 32,16 54,27 93,27 26,0 35,-3 54,-13 13,-7 24,-20 27,-38 l 4,-25 C 198,33 182,4 153,-28 130,-53 114,-72 88,-96 L 0,-175 v 644 h 20 z m 70,-4 C 58,106 42,96 20,77 v -194 c 31,31 54,59 71,84 21,32 32,59 32,84 0,9 1,16 1,20 0,14 -3,21 -11,30 l -8,3 z"
                        transform="scale(1,-1)"
-                       id="path68"
+                       id="path109"
                        style="stroke:currentColor" />
                   </g>
                 </g>
               </g>
               <g
                  class="note"
-                 id="pqc8dtu">
+                 id="h1nhr2tc">
                 <title
                    class="labelAttr"
                    id="title1075">D:16</title>
                 <g
                    class="stem"
-                   id="eni6459">
+                   id="g1rpccnz">
                   <path
                      d="m 3678,27602 v -581"
                      stroke-width="18"
@@ -1030,7 +1028,7 @@
                        stroke-width="20"
                        transform="translate(5,-120)"
                        width="300"
-                       id="rect99"
+                       id="rect10"
                        x="0"
                        y="0" />
                   </g>
@@ -1038,13 +1036,13 @@
               </g>
               <g
                  class="note"
-                 id="y98lg6g">
+                 id="g1te93u5">
                 <title
                    class="labelAttr"
-                   id="title1076">Eb:16</title>
+                   id="title1076">Ef:16</title>
                 <g
                    class="stem"
-                   id="xf0yye9">
+                   id="uvh8vp8">
                   <path
                      d="m 4016,27512 v -584"
                      stroke-width="18"
@@ -1063,45 +1061,45 @@
                     <path
                        d="m 0,-39 c 0,68 73,172 200,172 66,0 114,-37 114,-95 0,-84 -106,-171 -218,-171 -64,0 -96,30 -96,94 z"
                        transform="scale(1,-1)"
-                       id="path17"
+                       id="path47"
                        style="stroke:currentColor" />
                   </g>
                 </g>
                 <g
                    class="accid"
-                   id="txi1hg0"
+                   id="n1lzbv8r"
                    opacity="0.5" />
               </g>
             </g>
             <g
                class="beam"
-               id="bz8lfbg">
+               id="f1iqjiti">
               <polygon
                  fill-opacity="1"
-                 points="4509,26865 5541,26865 5541,26955 4509,26955 "
+                 points="5541,26955 4509,26955 4509,26865 5541,26865 "
                  stroke-opacity="1"
                  id="polygon1077" />
               <polygon
                  fill-opacity="1"
-                 points="4509,27000 4856,27000 4856,27090 4509,27090 "
+                 points="4856,27090 4509,27090 4509,27000 4856,27000 "
                  stroke-opacity="1"
                  id="polygon1078" />
               <polygon
                  fill-opacity="1"
-                 points="4856,27000 5194,27000 5194,27090 4856,27090 "
+                 points="5194,27090 4856,27090 4856,27000 5194,27000 "
                  stroke-opacity="1"
                  id="polygon1079" />
               <polygon
                  fill-opacity="1"
-                 points="5194,27000 5541,27000 5541,27090 5194,27090 "
+                 points="5541,27090 5194,27090 5194,27000 5541,27000 "
                  stroke-opacity="1"
                  id="polygon1080" />
               <g
                  class="chord"
-                 id="i1tj4s0s">
+                 id="v1pebzny">
                 <g
                    class="stem"
-                   id="t3s21v4">
+                   id="a16o6hfv">
                   <path
                      d="m 4518,27872 v -989"
                      stroke-width="18"
@@ -1110,10 +1108,10 @@
                 </g>
                 <g
                    class="note"
-                   id="o1txwmiz">
+                   id="u19804pf">
                   <title
                      class="labelAttr"
-                     id="title1080">Ab:16</title>
+                     id="title1080">Af:16</title>
                   <g
                      class="notehead"
                      id="g1080">
@@ -1127,19 +1125,19 @@
                          stroke-width="20"
                          transform="translate(5,-120)"
                          width="300"
-                         id="rect86"
+                         id="rect3"
                          x="0"
                          y="0" />
                     </g>
                   </g>
                   <g
                      class="accid"
-                     id="z1xflqk9"
+                     id="a1cpre83"
                      opacity="0.5" />
                 </g>
                 <g
                    class="note"
-                   id="l16mrop">
+                   id="rzzqp8h">
                   <title
                      class="labelAttr"
                      id="title1081">D:16</title>
@@ -1156,7 +1154,7 @@
                          stroke-width="20"
                          transform="translate(5,-120)"
                          width="300"
-                         id="rect100"
+                         id="rect11"
                          x="0"
                          y="0" />
                     </g>
@@ -1165,13 +1163,13 @@
               </g>
               <g
                  class="note"
-                 id="qhtrj8a">
+                 id="i16qbedy">
                 <title
                    class="labelAttr"
                    id="title1082">F:16</title>
                 <g
                    class="stem"
-                   id="lbh506p">
+                   id="aeloj5a">
                   <path
                      d="m 4856,27422 v -539"
                      stroke-width="18"
@@ -1190,20 +1188,20 @@
                     <path
                        d="m 0,-39 c 0,68 73,172 200,172 66,0 114,-37 114,-95 0,-84 -106,-171 -218,-171 -64,0 -96,30 -96,94 z"
                        transform="scale(1,-1)"
-                       id="path18"
+                       id="path48"
                        style="stroke:currentColor" />
                   </g>
                 </g>
               </g>
               <g
                  class="note"
-                 id="oj73uf7">
+                 id="udd77p8">
                 <title
                    class="labelAttr"
                    id="title1083">D:16</title>
                 <g
                    class="stem"
-                   id="r8b4h08">
+                   id="j1bfld0x">
                   <path
                      d="m 5194,27602 v -719"
                      stroke-width="18"
@@ -1223,7 +1221,7 @@
                        stroke-width="20"
                        transform="translate(5,-120)"
                        width="300"
-                       id="rect101"
+                       id="rect12"
                        x="0"
                        y="0" />
                   </g>
@@ -1231,13 +1229,13 @@
               </g>
               <g
                  class="note"
-                 id="s1iaatcy">
+                 id="z1aoqizf">
                 <title
                    class="labelAttr"
-                   id="title1084">Ab:16</title>
+                   id="title1084">Af:16</title>
                 <g
                    class="stem"
-                   id="n14m8fzl">
+                   id="f1ekpria">
                   <path
                      d="m 5532,27872 v -989"
                      stroke-width="18"
@@ -1257,49 +1255,49 @@
                        stroke-width="20"
                        transform="translate(5,-120)"
                        width="300"
-                       id="rect87"
+                       id="rect4"
                        x="0"
                        y="0" />
                   </g>
                 </g>
                 <g
                    class="accid"
-                   id="l1fop6nt"
+                   id="u17w03q4"
                    opacity="0.5" />
               </g>
             </g>
             <g
                class="beam"
-               id="bfrunrh">
+               id="ofuwr0u">
               <polygon
                  fill-opacity="1"
-                 points="5861,27090 6892,26910 6892,27000 5861,27180 "
+                 points="6892,27000 5861,27180 5861,27090 6892,26910 "
                  stroke-opacity="1"
                  id="polygon1084" />
               <polygon
                  fill-opacity="1"
-                 points="5861,27225 6208,27165 6208,27255 5861,27315 "
+                 points="6208,27255 5861,27315 5861,27225 6208,27165 "
                  stroke-opacity="1"
                  id="polygon1085" />
               <polygon
                  fill-opacity="1"
-                 points="6208,27165 6545,27106 6545,27196 6208,27255 "
+                 points="6545,27196 6208,27255 6208,27165 6545,27106 "
                  stroke-opacity="1"
                  id="polygon1086" />
               <polygon
                  fill-opacity="1"
-                 points="6545,27106 6892,27045 6892,27135 6545,27196 "
+                 points="6892,27135 6545,27196 6545,27106 6892,27045 "
                  stroke-opacity="1"
                  id="polygon1087" />
               <g
                  class="note"
-                 id="hmyv48r">
+                 id="gx3j6sw">
                 <title
                    class="labelAttr"
                    id="title1087">D:16</title>
                 <g
                    class="stem"
-                   id="y1rqwji3">
+                   id="jg1f6bt">
                   <path
                      d="M 5870,28232 V 27108"
                      stroke-width="18"
@@ -1319,7 +1317,7 @@
                        stroke-width="20"
                        transform="translate(5,-120)"
                        width="300"
-                       id="rect102"
+                       id="rect13"
                        x="0"
                        y="0" />
                   </g>
@@ -1327,13 +1325,13 @@
               </g>
               <g
                  class="note"
-                 id="y3s0pdw">
+                 id="w1hnivzp">
                 <title
                    class="labelAttr"
-                   id="title1088">Ab:16</title>
+                   id="title1088">Af:16</title>
                 <g
                    class="stem"
-                   id="a1qfpus0">
+                   id="pwn1bkp">
                   <path
                      d="m 6208,27872 v -824"
                      stroke-width="18"
@@ -1353,25 +1351,25 @@
                        stroke-width="20"
                        transform="translate(5,-120)"
                        width="300"
-                       id="rect88"
+                       id="rect5"
                        x="0"
                        y="0" />
                   </g>
                 </g>
                 <g
                    class="accid"
-                   id="z1w8ptzz"
+                   id="r2khpsq"
                    opacity="0.5" />
               </g>
               <g
                  class="note"
-                 id="x14dz701">
+                 id="p5jk7vq">
                 <title
                    class="labelAttr"
                    id="title1089">D:16</title>
                 <g
                    class="stem"
-                   id="fwjrvmj">
+                   id="aqucv13">
                   <path
                      d="m 6545,27602 v -613"
                      stroke-width="18"
@@ -1391,7 +1389,7 @@
                        stroke-width="20"
                        transform="translate(5,-120)"
                        width="300"
-                       id="rect103"
+                       id="rect14"
                        x="0"
                        y="0" />
                   </g>
@@ -1399,13 +1397,13 @@
               </g>
               <g
                  class="note"
-                 id="u12qwuq8">
+                 id="qac2fqs">
                 <title
                    class="labelAttr"
-                   id="title1090">Eb:16</title>
+                   id="title1090">Ef:16</title>
                 <g
                    class="stem"
-                   id="b85wtnk">
+                   id="f1c76mwo">
                   <path
                      d="m 6883,27512 v -584"
                      stroke-width="18"
@@ -1424,45 +1422,45 @@
                     <path
                        d="m 0,-39 c 0,68 73,172 200,172 66,0 114,-37 114,-95 0,-84 -106,-171 -218,-171 -64,0 -96,30 -96,94 z"
                        transform="scale(1,-1)"
-                       id="path19"
+                       id="path49"
                        style="stroke:currentColor" />
                   </g>
                 </g>
                 <g
                    class="accid"
-                   id="usjm1gf"
+                   id="r1j1y6pq"
                    opacity="0.5" />
               </g>
             </g>
             <g
                class="beam"
-               id="jzu3vki">
+               id="a1oia51k">
               <polygon
                  fill-opacity="1"
-                 points="7212,26865 8244,26865 8244,26955 7212,26955 "
+                 points="8244,26955 7212,26955 7212,26865 8244,26865 "
                  stroke-opacity="1"
                  id="polygon1090" />
               <polygon
                  fill-opacity="1"
-                 points="7212,27000 7559,27000 7559,27090 7212,27090 "
+                 points="7559,27090 7212,27090 7212,27000 7559,27000 "
                  stroke-opacity="1"
                  id="polygon1091" />
               <polygon
                  fill-opacity="1"
-                 points="7559,27000 7897,27000 7897,27090 7559,27090 "
+                 points="7897,27090 7559,27090 7559,27000 7897,27000 "
                  stroke-opacity="1"
                  id="polygon1092" />
               <polygon
                  fill-opacity="1"
-                 points="7897,27000 8244,27000 8244,27090 7897,27090 "
+                 points="8244,27090 7897,27090 7897,27000 8244,27000 "
                  stroke-opacity="1"
                  id="polygon1093" />
               <g
                  class="chord"
-                 id="qp92ul1">
+                 id="oc4l061">
                 <g
                    class="stem"
-                   id="i1fcbn5d">
+                   id="w1585rf7">
                   <path
                      d="m 7221,27872 v -989"
                      stroke-width="18"
@@ -1471,10 +1469,10 @@
                 </g>
                 <g
                    class="note"
-                   id="c1pgqbag">
+                   id="ykrd31s">
                   <title
                      class="labelAttr"
-                     id="title1093">Ab:16</title>
+                     id="title1093">Af:16</title>
                   <g
                      class="notehead"
                      id="g1093">
@@ -1488,19 +1486,19 @@
                          stroke-width="20"
                          transform="translate(5,-120)"
                          width="300"
-                         id="rect89"
+                         id="rect6"
                          x="0"
                          y="0" />
                     </g>
                   </g>
                   <g
                      class="accid"
-                     id="uvubvgq"
+                     id="m5dvyxi"
                      opacity="0.5" />
                 </g>
                 <g
                    class="note"
-                   id="p16m8pr4">
+                   id="psmm6t2">
                   <title
                      class="labelAttr"
                      id="title1094">D:16</title>
@@ -1517,7 +1515,7 @@
                          stroke-width="20"
                          transform="translate(5,-120)"
                          width="300"
-                         id="rect104"
+                         id="rect16"
                          x="0"
                          y="0" />
                     </g>
@@ -1526,13 +1524,13 @@
               </g>
               <g
                  class="note"
-                 id="js776px">
+                 id="i1m3am04">
                 <title
                    class="labelAttr"
                    id="title1095">F:16</title>
                 <g
                    class="stem"
-                   id="t1h52fmp">
+                   id="h1q5yt11">
                   <path
                      d="m 7559,27422 v -539"
                      stroke-width="18"
@@ -1551,20 +1549,20 @@
                     <path
                        d="m 0,-39 c 0,68 73,172 200,172 66,0 114,-37 114,-95 0,-84 -106,-171 -218,-171 -64,0 -96,30 -96,94 z"
                        transform="scale(1,-1)"
-                       id="path20"
+                       id="path50"
                        style="stroke:currentColor" />
                   </g>
                 </g>
               </g>
               <g
                  class="note"
-                 id="i1opooc5">
+                 id="vz82pt9">
                 <title
                    class="labelAttr"
                    id="title1096">D:16</title>
                 <g
                    class="stem"
-                   id="w15g93f3">
+                   id="g1e9zg24">
                   <path
                      d="m 7897,27602 v -719"
                      stroke-width="18"
@@ -1584,7 +1582,7 @@
                        stroke-width="20"
                        transform="translate(5,-120)"
                        width="300"
-                       id="rect105"
+                       id="rect17"
                        x="0"
                        y="0" />
                   </g>
@@ -1592,13 +1590,13 @@
               </g>
               <g
                  class="note"
-                 id="tbrsf6n">
+                 id="u26nfvd">
                 <title
                    class="labelAttr"
-                   id="title1097">Ab:16</title>
+                   id="title1097">Af:16</title>
                 <g
                    class="stem"
-                   id="qfndsf3">
+                   id="j1qx2p0o">
                   <path
                      d="m 8235,27872 v -989"
                      stroke-width="18"
@@ -1618,14 +1616,14 @@
                        stroke-width="20"
                        transform="translate(5,-120)"
                        width="300"
-                       id="rect90"
+                       id="rect7"
                        x="0"
                        y="0" />
                   </g>
                 </g>
                 <g
                    class="accid"
-                   id="a1bagtkk"
+                   id="i175b7ue"
                    opacity="0.5" />
               </g>
             </g>
@@ -1633,7 +1631,7 @@
         </g>
         <g
            class="barLine"
-           id="w1sxkr9l">
+           id="sxm1bma">
           <path
              d="m 8355,25470 v 720"
              stroke-width="27"
@@ -1653,13 +1651,13 @@
       </g>
       <g
          class="sb"
-         id="p1xinrsy" />
+         id="y42dlfz" />
       <g
          class="measure"
-         id="t1b70vro">
+         id="j1vy6536">
         <g
            class="staff"
-           id="qh1otgd">
+           id="lj5jcnu">
           <path
              d="m 8368,25470 h 5735"
              stroke-width="13"
@@ -1687,39 +1685,39 @@
              style="stroke:currentColor" />
           <g
              class="layer"
-             id="c4binfr">
+             id="z1m3ml8r">
             <g
                class="beam"
-               id="f10vkxvl">
+               id="o1uyelhn">
               <polygon
                  fill-opacity="1"
-                 points="8756,25020 9788,25200 9788,25290 8756,25110 "
+                 points="9788,25290 8756,25110 8756,25020 9788,25200 "
                  stroke-opacity="1"
                  id="polygon1111" />
               <polygon
                  fill-opacity="1"
-                 points="8756,25155 9103,25215 9103,25305 8756,25245 "
+                 points="9103,25305 8756,25245 8756,25155 9103,25215 "
                  stroke-opacity="1"
                  id="polygon1112" />
               <polygon
                  fill-opacity="1"
-                 points="9103,25215 9441,25275 9441,25365 9103,25305 "
+                 points="9441,25365 9103,25305 9103,25215 9441,25275 "
                  stroke-opacity="1"
                  id="polygon1113" />
               <polygon
                  fill-opacity="1"
-                 points="9441,25275 9788,25335 9788,25425 9441,25365 "
+                 points="9788,25425 9441,25365 9441,25275 9788,25335 "
                  stroke-opacity="1"
                  id="polygon1114" />
               <g
                  class="note"
-                 id="z1f4vfjg">
+                 id="m1582tkv">
                 <title
                    class="labelAttr"
                    id="title1114">D:16</title>
                 <g
                    class="stem"
-                   id="f1k907w3">
+                   id="p3gbps">
                   <path
                      d="m 8765,25622 v -584"
                      stroke-width="18"
@@ -1739,7 +1737,7 @@
                        stroke-width="20"
                        transform="translate(5,-120)"
                        width="300"
-                       id="rect106"
+                       id="rect18"
                        x="0"
                        y="0" />
                   </g>
@@ -1747,13 +1745,13 @@
               </g>
               <g
                  class="note"
-                 id="pyo1nma">
+                 id="s132edso">
                 <title
                    class="labelAttr"
                    id="title1115">G:16</title>
                 <g
                    class="stem"
-                   id="iuozuqy">
+                   id="n1lmybgo">
                   <path
                      d="m 9103,25982 v -884"
                      stroke-width="18"
@@ -1772,20 +1770,20 @@
                     <path
                        d="m 0,-39 c 0,68 73,172 200,172 66,0 114,-37 114,-95 0,-84 -106,-171 -218,-171 -64,0 -96,30 -96,94 z"
                        transform="scale(1,-1)"
-                       id="path21"
+                       id="path51"
                        style="stroke:currentColor" />
                   </g>
                 </g>
               </g>
               <g
                  class="note"
-                 id="isev0kp">
+                 id="qqxu675">
                 <title
                    class="labelAttr"
                    id="title1116">F:16</title>
                 <g
                    class="stem"
-                   id="n1ts2cmn">
+                   id="u7cqv0b">
                   <path
                      d="m 9441,26072 v -914"
                      stroke-width="18"
@@ -1804,20 +1802,20 @@
                     <path
                        d="m 0,-39 c 0,68 73,172 200,172 66,0 114,-37 114,-95 0,-84 -106,-171 -218,-171 -64,0 -96,30 -96,94 z"
                        transform="scale(1,-1)"
-                       id="path22"
+                       id="path52"
                        style="stroke:currentColor" />
                   </g>
                 </g>
               </g>
               <g
                  class="note"
-                 id="i1j0bdo1">
+                 id="svayws6">
                 <title
                    class="labelAttr"
                    id="title1117">G:16</title>
                 <g
                    class="stem"
-                   id="kt05v2b">
+                   id="bl2t7ka">
                   <path
                      d="m 9779,25982 v -764"
                      stroke-width="18"
@@ -1836,7 +1834,7 @@
                     <path
                        d="m 0,-39 c 0,68 73,172 200,172 66,0 114,-37 114,-95 0,-84 -106,-171 -218,-171 -64,0 -96,30 -96,94 z"
                        transform="scale(1,-1)"
-                       id="path23"
+                       id="path53"
                        style="stroke:currentColor" />
                   </g>
                 </g>
@@ -1844,36 +1842,36 @@
             </g>
             <g
                class="beam"
-               id="pfhx11e">
+               id="s1aq82h0">
               <polygon
                  fill-opacity="1"
-                 points="10108,25425 11275,25425 11275,25515 10108,25515 "
+                 points="11275,25515 10108,25515 10108,25425 11275,25425 "
                  stroke-opacity="1"
                  id="polygon1117" />
               <polygon
                  fill-opacity="1"
-                 points="10108,25560 10590,25560 10590,25650 10108,25650 "
+                 points="10590,25650 10108,25650 10108,25560 10590,25560 "
                  stroke-opacity="1"
                  id="polygon1118" />
               <polygon
                  fill-opacity="1"
-                 points="10590,25560 10928,25560 10928,25650 10590,25650 "
+                 points="10928,25650 10590,25650 10590,25560 10928,25560 "
                  stroke-opacity="1"
                  id="polygon1119" />
               <polygon
                  fill-opacity="1"
-                 points="10928,25560 11275,25560 11275,25650 10928,25650 "
+                 points="11275,25650 10928,25650 10928,25560 11275,25560 "
                  stroke-opacity="1"
                  id="polygon1120" />
               <g
                  class="note"
-                 id="tv5a4jj">
+                 id="wb9l4g5">
                 <title
                    class="labelAttr"
                    id="title1120">D:16</title>
                 <g
                    class="stem"
-                   id="fp1yi6o">
+                   id="i2euqgu">
                   <path
                      d="m 10117,26252 v -809"
                      stroke-width="18"
@@ -1893,7 +1891,7 @@
                        stroke-width="20"
                        transform="translate(5,-120)"
                        width="300"
-                       id="rect107"
+                       id="rect19"
                        x="0"
                        y="0" />
                   </g>
@@ -1901,13 +1899,13 @@
               </g>
               <g
                  class="note"
-                 id="fm7m2co">
+                 id="w8sfhs5">
                 <title
                    class="labelAttr"
                    id="title1121">G:16</title>
                 <g
                    class="stem"
-                   id="g19ht5n0">
+                   id="t1awt8ky">
                   <path
                      d="m 10590,25982 v -539"
                      stroke-width="18"
@@ -1926,20 +1924,20 @@
                     <path
                        d="m 0,-39 c 0,68 73,172 200,172 66,0 114,-37 114,-95 0,-84 -106,-171 -218,-171 -64,0 -96,30 -96,94 z"
                        transform="scale(1,-1)"
-                       id="path24"
+                       id="path54"
                        style="stroke:currentColor" />
                   </g>
                 </g>
               </g>
               <g
                  class="note"
-                 id="kj1lw75">
+                 id="u178gm0i">
                 <title
                    class="labelAttr"
                    id="title1122">F:16</title>
                 <g
                    class="stem"
-                   id="q1jqyly8">
+                   id="z14zo3pr">
                   <path
                      d="m 10928,26072 v -629"
                      stroke-width="18"
@@ -1958,20 +1956,20 @@
                     <path
                        d="m 0,-39 c 0,68 73,172 200,172 66,0 114,-37 114,-95 0,-84 -106,-171 -218,-171 -64,0 -96,30 -96,94 z"
                        transform="scale(1,-1)"
-                       id="path25"
+                       id="path55"
                        style="stroke:currentColor" />
                   </g>
                 </g>
               </g>
               <g
                  class="note"
-                 id="q144mure">
+                 id="korneqr">
                 <title
                    class="labelAttr"
                    id="title1123">G:16</title>
                 <g
                    class="stem"
-                   id="i9cksue">
+                   id="myi1yi2">
                   <path
                      d="m 11266,25982 v -539"
                      stroke-width="18"
@@ -1990,7 +1988,7 @@
                     <path
                        d="m 0,-39 c 0,68 73,172 200,172 66,0 114,-37 114,-95 0,-84 -106,-171 -218,-171 -64,0 -96,30 -96,94 z"
                        transform="scale(1,-1)"
-                       id="path26"
+                       id="path56"
                        style="stroke:currentColor" />
                   </g>
                 </g>
@@ -1998,36 +1996,36 @@
             </g>
             <g
                class="beam"
-               id="rrer61w">
+               id="g5ncjea">
               <polygon
                  fill-opacity="1"
-                 points="11595,25020 12626,25200 12626,25290 11595,25110 "
+                 points="12626,25290 11595,25110 11595,25020 12626,25200 "
                  stroke-opacity="1"
                  id="polygon1123" />
               <polygon
                  fill-opacity="1"
-                 points="11595,25155 11942,25216 11942,25306 11595,25245 "
+                 points="11942,25306 11595,25245 11595,25155 11942,25216 "
                  stroke-opacity="1"
                  id="polygon1124" />
               <polygon
                  fill-opacity="1"
-                 points="11942,25216 12280,25276 12280,25366 11942,25306 "
+                 points="12280,25366 11942,25306 11942,25216 12280,25276 "
                  stroke-opacity="1"
                  id="polygon1125" />
               <polygon
                  fill-opacity="1"
-                 points="12280,25276 12626,25335 12626,25425 12280,25366 "
+                 points="12626,25425 12280,25366 12280,25276 12626,25335 "
                  stroke-opacity="1"
                  id="polygon1126" />
               <g
                  class="note"
-                 id="oyp0cbf">
+                 id="m11pfdzo">
                 <title
                    class="labelAttr"
                    id="title1126">D:16</title>
                 <g
                    class="stem"
-                   id="psaaulv">
+                   id="b1sk3gly">
                   <path
                      d="m 11604,25622 v -584"
                      stroke-width="18"
@@ -2047,7 +2045,7 @@
                        stroke-width="20"
                        transform="translate(5,-120)"
                        width="300"
-                       id="rect108"
+                       id="rect20"
                        x="0"
                        y="0" />
                   </g>
@@ -2055,13 +2053,13 @@
               </g>
               <g
                  class="note"
-                 id="h177imf8">
+                 id="f16wx5hw">
                 <title
                    class="labelAttr"
                    id="title1127">G:16</title>
                 <g
                    class="stem"
-                   id="kiy50xi">
+                   id="p1wek085">
                   <path
                      d="m 11942,25982 v -883"
                      stroke-width="18"
@@ -2080,20 +2078,20 @@
                     <path
                        d="m 0,-39 c 0,68 73,172 200,172 66,0 114,-37 114,-95 0,-84 -106,-171 -218,-171 -64,0 -96,30 -96,94 z"
                        transform="scale(1,-1)"
-                       id="path27"
+                       id="path57"
                        style="stroke:currentColor" />
                   </g>
                 </g>
               </g>
               <g
                  class="note"
-                 id="jbb18fd">
+                 id="u1omblsy">
                 <title
                    class="labelAttr"
                    id="title1128">F:16</title>
                 <g
                    class="stem"
-                   id="z133m7u5">
+                   id="fsqmejz">
                   <path
                      d="m 12280,26072 v -913"
                      stroke-width="18"
@@ -2112,20 +2110,20 @@
                     <path
                        d="m 0,-39 c 0,68 73,172 200,172 66,0 114,-37 114,-95 0,-84 -106,-171 -218,-171 -64,0 -96,30 -96,94 z"
                        transform="scale(1,-1)"
-                       id="path28"
+                       id="path58"
                        style="stroke:currentColor" />
                   </g>
                 </g>
               </g>
               <g
                  class="note"
-                 id="e14bqoh3">
+                 id="d5kq84o">
                 <title
                    class="labelAttr"
                    id="title1129">G:16</title>
                 <g
                    class="stem"
-                   id="k18jhcgp">
+                   id="d1sa6hep">
                   <path
                      d="m 12617,25982 v -764"
                      stroke-width="18"
@@ -2144,7 +2142,7 @@
                     <path
                        d="m 0,-39 c 0,68 73,172 200,172 66,0 114,-37 114,-95 0,-84 -106,-171 -218,-171 -64,0 -96,30 -96,94 z"
                        transform="scale(1,-1)"
-                       id="path29"
+                       id="path59"
                        style="stroke:currentColor" />
                   </g>
                 </g>
@@ -2152,36 +2150,36 @@
             </g>
             <g
                class="beam"
-               id="q1tdn983">
+               id="tal59wn">
               <polygon
                  fill-opacity="1"
-                 points="12946,25425 13978,25425 13978,25515 12946,25515 "
+                 points="13978,25515 12946,25515 12946,25425 13978,25425 "
                  stroke-opacity="1"
                  id="polygon1129" />
               <polygon
                  fill-opacity="1"
-                 points="12946,25560 13293,25560 13293,25650 12946,25650 "
+                 points="13293,25650 12946,25650 12946,25560 13293,25560 "
                  stroke-opacity="1"
                  id="polygon1130" />
               <polygon
                  fill-opacity="1"
-                 points="13293,25560 13631,25560 13631,25650 13293,25650 "
+                 points="13631,25650 13293,25650 13293,25560 13631,25560 "
                  stroke-opacity="1"
                  id="polygon1131" />
               <polygon
                  fill-opacity="1"
-                 points="13631,25560 13978,25560 13978,25650 13631,25650 "
+                 points="13978,25650 13631,25650 13631,25560 13978,25560 "
                  stroke-opacity="1"
                  id="polygon1132" />
               <g
                  class="note"
-                 id="rujwyc8">
+                 id="g1kp337f">
                 <title
                    class="labelAttr"
                    id="title1132">D:16</title>
                 <g
                    class="stem"
-                   id="nibmjsg">
+                   id="rfj1pf7">
                   <path
                      d="m 12955,26252 v -809"
                      stroke-width="18"
@@ -2201,7 +2199,7 @@
                        stroke-width="20"
                        transform="translate(5,-120)"
                        width="300"
-                       id="rect109"
+                       id="rect22"
                        x="0"
                        y="0" />
                   </g>
@@ -2209,13 +2207,13 @@
               </g>
               <g
                  class="note"
-                 id="z1slgu64">
+                 id="s19t1t3h">
                 <title
                    class="labelAttr"
                    id="title1133">G:16</title>
                 <g
                    class="stem"
-                   id="nepkmqe">
+                   id="grzpneh">
                   <path
                      d="m 13293,25982 v -539"
                      stroke-width="18"
@@ -2234,20 +2232,20 @@
                     <path
                        d="m 0,-39 c 0,68 73,172 200,172 66,0 114,-37 114,-95 0,-84 -106,-171 -218,-171 -64,0 -96,30 -96,94 z"
                        transform="scale(1,-1)"
-                       id="path30"
+                       id="path60"
                        style="stroke:currentColor" />
                   </g>
                 </g>
               </g>
               <g
                  class="note"
-                 id="y129qxox">
+                 id="w1uy8crt">
                 <title
                    class="labelAttr"
                    id="title1134">F:16</title>
                 <g
                    class="stem"
-                   id="h19l6b94">
+                   id="h1pwhbmo">
                   <path
                      d="m 13631,26072 v -629"
                      stroke-width="18"
@@ -2266,20 +2264,20 @@
                     <path
                        d="m 0,-39 c 0,68 73,172 200,172 66,0 114,-37 114,-95 0,-84 -106,-171 -218,-171 -64,0 -96,30 -96,94 z"
                        transform="scale(1,-1)"
-                       id="path31"
+                       id="path61"
                        style="stroke:currentColor" />
                   </g>
                 </g>
               </g>
               <g
                  class="note"
-                 id="g1hqvfsc">
+                 id="yc77df4">
                 <title
                    class="labelAttr"
                    id="title1135">G:16</title>
                 <g
                    class="stem"
-                   id="m1nzco7a">
+                   id="y1cynesf">
                   <path
                      d="m 13969,25982 v -539"
                      stroke-width="18"
@@ -2298,7 +2296,7 @@
                     <path
                        d="m 0,-39 c 0,68 73,172 200,172 66,0 114,-37 114,-95 0,-84 -106,-171 -218,-171 -64,0 -96,30 -96,94 z"
                        transform="scale(1,-1)"
-                       id="path32"
+                       id="path62"
                        style="stroke:currentColor" />
                   </g>
                 </g>
@@ -2308,7 +2306,7 @@
         </g>
         <g
            class="staff"
-           id="g1szj1ci">
+           id="rz3xeub">
           <path
              d="m 8368,27270 h 5735"
              stroke-width="13"
@@ -2336,39 +2334,39 @@
              style="stroke:currentColor" />
           <g
              class="layer"
-             id="g1mepejx">
+             id="hlp4xtb">
             <g
                class="beam"
-               id="jwp5tsk">
+               id="yxoq6bv">
               <polygon
                  fill-opacity="1"
-                 points="8548,28620 9580,28260 9580,28170 8548,28530 "
+                 points="9580,28170 8548,28530 8548,28620 9580,28260 "
                  stroke-opacity="1"
                  id="polygon1140" />
               <polygon
                  fill-opacity="1"
-                 points="8548,28485 8895,28365 8895,28275 8548,28395 "
+                 points="8895,28275 8548,28395 8548,28485 8895,28365 "
                  stroke-opacity="1"
                  id="polygon1141" />
               <polygon
                  fill-opacity="1"
-                 points="8895,28365 9233,28245 9233,28155 8895,28275 "
+                 points="9233,28155 8895,28275 8895,28365 9233,28245 "
                  stroke-opacity="1"
                  id="polygon1142" />
               <polygon
                  fill-opacity="1"
-                 points="9233,28245 9580,28125 9580,28035 9233,28155 "
+                 points="9580,28035 9233,28155 9233,28245 9580,28125 "
                  stroke-opacity="1"
                  id="polygon1143" />
               <g
                  class="note"
-                 id="p1ttpfs6">
+                 id="xbzkzko">
                 <title
                    class="labelAttr"
                    id="title1143">G:16</title>
                 <g
                    class="stem"
-                   id="h12fv8uc">
+                   id="u10n612u">
                   <path
                      d="m 8557,28018 v 584"
                      stroke-width="18"
@@ -2387,20 +2385,20 @@
                     <path
                        d="m 0,-39 c 0,68 73,172 200,172 66,0 114,-37 114,-95 0,-84 -106,-171 -218,-171 -64,0 -96,30 -96,94 z"
                        transform="scale(1,-1)"
-                       id="path33"
+                       id="path63"
                        style="stroke:currentColor" />
                   </g>
                 </g>
               </g>
               <g
                  class="note"
-                 id="n11no3ex">
+                 id="a1k59hi8">
                 <title
                    class="labelAttr"
                    id="title1144">D:16</title>
                 <g
                    class="stem"
-                   id="obv6rz8">
+                   id="w14l5xzw">
                   <path
                      d="m 8895,27658 v 824"
                      stroke-width="18"
@@ -2420,7 +2418,7 @@
                        stroke-width="20"
                        transform="translate(10,-120)"
                        width="300"
-                       id="rect71"
+                       id="rect113"
                        x="0"
                        y="0" />
                   </g>
@@ -2428,13 +2426,13 @@
               </g>
               <g
                  class="note"
-                 id="vahoglt">
+                 id="zuw9l60">
                 <title
                    class="labelAttr"
                    id="title1145">G:16</title>
                 <g
                    class="stem"
-                   id="lqylel0">
+                   id="k5howxi">
                   <path
                      d="m 9233,27388 v 974"
                      stroke-width="18"
@@ -2453,20 +2451,20 @@
                     <path
                        d="m 0,-39 c 0,68 73,172 200,172 66,0 114,-37 114,-95 0,-84 -106,-171 -218,-171 -64,0 -96,30 -96,94 z"
                        transform="scale(1,-1)"
-                       id="path34"
+                       id="path64"
                        style="stroke:currentColor" />
                   </g>
                 </g>
               </g>
               <g
                  class="note"
-                 id="xrprfdh">
+                 id="qc1qsqx">
                 <title
                    class="labelAttr"
                    id="title1146">A:16</title>
                 <g
                    class="stem"
-                   id="b1v6lmvz">
+                   id="i10lbr0q">
                   <path
                      d="m 9571,27298 v 944"
                      stroke-width="18"
@@ -2485,7 +2483,7 @@
                     <path
                        d="m 0,-39 c 0,68 73,172 200,172 66,0 114,-37 114,-95 0,-84 -106,-171 -218,-171 -64,0 -96,30 -96,94 z"
                        transform="scale(1,-1)"
-                       id="path35"
+                       id="path65"
                        style="stroke:currentColor" />
                   </g>
                 </g>
@@ -2493,33 +2491,33 @@
             </g>
             <g
                class="beam"
-               id="ggu3zbh">
+               id="t7x6xre">
               <polygon
                  fill-opacity="1"
-                 points="9900,28215 11067,28215 11067,28125 9900,28125 "
+                 points="11067,28125 9900,28125 9900,28215 11067,28215 "
                  stroke-opacity="1"
                  id="polygon1146" />
               <polygon
                  fill-opacity="1"
-                 points="9900,28080 10382,28080 10382,27990 9900,27990 "
+                 points="10382,27990 9900,27990 9900,28080 10382,28080 "
                  stroke-opacity="1"
                  id="polygon1147" />
               <polygon
                  fill-opacity="1"
-                 points="10382,28080 10720,28080 10720,27990 10382,27990 "
+                 points="10720,27990 10382,27990 10382,28080 10720,28080 "
                  stroke-opacity="1"
                  id="polygon1148" />
               <polygon
                  fill-opacity="1"
-                 points="10720,28080 11067,28080 11067,27990 10720,27990 "
+                 points="11067,27990 10720,27990 10720,28080 11067,28080 "
                  stroke-opacity="1"
                  id="polygon1149" />
               <g
                  class="chord"
-                 id="qv5g3cl">
+                 id="e1kx37ab">
                 <g
                    class="stem"
-                   id="ziip7tg">
+                   id="l6n4ki5">
                   <path
                      d="m 9909,27388 v 809"
                      stroke-width="18"
@@ -2528,7 +2526,7 @@
                 </g>
                 <g
                    class="note"
-                   id="kai038o">
+                   id="lhiw0ii">
                   <title
                      class="labelAttr"
                      id="title1149">D:16</title>
@@ -2545,7 +2543,7 @@
                          stroke-width="20"
                          transform="translate(10,-120)"
                          width="300"
-                         id="rect72"
+                         id="rect114"
                          x="0"
                          y="0" />
                     </g>
@@ -2553,7 +2551,7 @@
                 </g>
                 <g
                    class="note"
-                   id="nhx4crh">
+                   id="d1swpjuh">
                   <title
                      class="labelAttr"
                      id="title1150">G:16</title>
@@ -2569,7 +2567,7 @@
                       <path
                          d="m 0,-39 c 0,68 73,172 200,172 66,0 114,-37 114,-95 0,-84 -106,-171 -218,-171 -64,0 -96,30 -96,94 z"
                          transform="scale(1,-1)"
-                         id="path36"
+                         id="path66"
                          style="stroke:currentColor" />
                     </g>
                   </g>
@@ -2577,13 +2575,13 @@
               </g>
               <g
                  class="note"
-                 id="ou86efb">
+                 id="q9mbwgy">
                 <title
                    class="labelAttr"
                    id="title1151">B:16</title>
                 <g
                    class="stem"
-                   id="d1u1ucj8">
+                   id="l13zwbd9">
                   <path
                      d="m 10382,27208 v 989"
                      stroke-width="18"
@@ -2602,13 +2600,13 @@
                     <path
                        d="m 0,-39 c 0,68 73,172 200,172 66,0 114,-37 114,-95 0,-84 -106,-171 -218,-171 -64,0 -96,30 -96,94 z"
                        transform="scale(1,-1)"
-                       id="path37"
+                       id="path67"
                        style="stroke:currentColor" />
                   </g>
                 </g>
                 <g
                    class="accid"
-                   id="xn0ggp4"
+                   id="ze04gx5"
                    opacity="0.5">
                   <g
                      id="use1152"
@@ -2616,20 +2614,20 @@
                     <path
                        d="M 0,-188 V 351 H 18 V 160 l 139,22 v -533 h -17 v 186 z m 18,88 122,17 V 93 L 18,74 Z"
                        transform="scale(1,-1)"
-                       id="path59"
+                       id="path40"
                        style="stroke:currentColor" />
                   </g>
                 </g>
               </g>
               <g
                  class="note"
-                 id="o1sjyk3u">
+                 id="wad6amr">
                 <title
                    class="labelAttr"
                    id="title1152">G:16</title>
                 <g
                    class="stem"
-                   id="owk70ws">
+                   id="w13inu8z">
                   <path
                      d="m 10720,27388 v 809"
                      stroke-width="18"
@@ -2648,20 +2646,20 @@
                     <path
                        d="m 0,-39 c 0,68 73,172 200,172 66,0 114,-37 114,-95 0,-84 -106,-171 -218,-171 -64,0 -96,30 -96,94 z"
                        transform="scale(1,-1)"
-                       id="path38"
+                       id="path68"
                        style="stroke:currentColor" />
                   </g>
                 </g>
               </g>
               <g
                  class="note"
-                 id="edpoh61">
+                 id="uukcja8">
                 <title
                    class="labelAttr"
                    id="title1153">D:16</title>
                 <g
                    class="stem"
-                   id="z166s8ki">
+                   id="qgyxk01">
                   <path
                      d="m 11058,27658 v 539"
                      stroke-width="18"
@@ -2681,7 +2679,7 @@
                        stroke-width="20"
                        transform="translate(10,-120)"
                        width="300"
-                       id="rect73"
+                       id="rect115"
                        x="0"
                        y="0" />
                   </g>
@@ -2690,36 +2688,36 @@
             </g>
             <g
                class="beam"
-               id="f13g2bl3">
+               id="i1eomr4r">
               <polygon
                  fill-opacity="1"
-                 points="11387,28620 12418,28260 12418,28170 11387,28530 "
+                 points="12418,28170 11387,28530 11387,28620 12418,28260 "
                  stroke-opacity="1"
                  id="polygon1154" />
               <polygon
                  fill-opacity="1"
-                 points="11387,28485 11734,28365 11734,28275 11387,28395 "
+                 points="11734,28275 11387,28395 11387,28485 11734,28365 "
                  stroke-opacity="1"
                  id="polygon1155" />
               <polygon
                  fill-opacity="1"
-                 points="11734,28365 12072,28245 12072,28155 11734,28275 "
+                 points="12072,28155 11734,28275 11734,28365 12072,28245 "
                  stroke-opacity="1"
                  id="polygon1156" />
               <polygon
                  fill-opacity="1"
-                 points="12072,28245 12418,28125 12418,28035 12072,28155 "
+                 points="12418,28035 12072,28155 12072,28245 12418,28125 "
                  stroke-opacity="1"
                  id="polygon1157" />
               <g
                  class="note"
-                 id="w171noj6">
+                 id="b1m12xrq">
                 <title
                    class="labelAttr"
                    id="title1157">G:16</title>
                 <g
                    class="stem"
-                   id="fo2negb">
+                   id="z1ehrgff">
                   <path
                      d="m 11396,28018 v 584"
                      stroke-width="18"
@@ -2738,20 +2736,20 @@
                     <path
                        d="m 0,-39 c 0,68 73,172 200,172 66,0 114,-37 114,-95 0,-84 -106,-171 -218,-171 -64,0 -96,30 -96,94 z"
                        transform="scale(1,-1)"
-                       id="path39"
+                       id="path69"
                        style="stroke:currentColor" />
                   </g>
                 </g>
               </g>
               <g
                  class="note"
-                 id="t19jzdlz">
+                 id="x10foztz">
                 <title
                    class="labelAttr"
                    id="title1158">D:16</title>
                 <g
                    class="stem"
-                   id="v1x4lt9n">
+                   id="kzkgy26">
                   <path
                      d="m 11734,27658 v 824"
                      stroke-width="18"
@@ -2771,7 +2769,7 @@
                        stroke-width="20"
                        transform="translate(10,-120)"
                        width="300"
-                       id="rect74"
+                       id="rect116"
                        x="0"
                        y="0" />
                   </g>
@@ -2779,13 +2777,13 @@
               </g>
               <g
                  class="note"
-                 id="b1a3knwq">
+                 id="d6dzaq">
                 <title
                    class="labelAttr"
                    id="title1159">G:16</title>
                 <g
                    class="stem"
-                   id="a1nv6loa">
+                   id="uss3idz">
                   <path
                      d="m 12072,27388 v 974"
                      stroke-width="18"
@@ -2804,20 +2802,20 @@
                     <path
                        d="m 0,-39 c 0,68 73,172 200,172 66,0 114,-37 114,-95 0,-84 -106,-171 -218,-171 -64,0 -96,30 -96,94 z"
                        transform="scale(1,-1)"
-                       id="path40"
+                       id="path70"
                        style="stroke:currentColor" />
                   </g>
                 </g>
               </g>
               <g
                  class="note"
-                 id="c1cn7yq9">
+                 id="axgqk3j">
                 <title
                    class="labelAttr"
                    id="title1160">A:16</title>
                 <g
                    class="stem"
-                   id="n1jk78ha">
+                   id="dj9te1r">
                   <path
                      d="m 12409,27298 v 944"
                      stroke-width="18"
@@ -2836,7 +2834,7 @@
                     <path
                        d="m 0,-39 c 0,68 73,172 200,172 66,0 114,-37 114,-95 0,-84 -106,-171 -218,-171 -64,0 -96,30 -96,94 z"
                        transform="scale(1,-1)"
-                       id="path41"
+                       id="path71"
                        style="stroke:currentColor" />
                   </g>
                 </g>
@@ -2844,33 +2842,33 @@
             </g>
             <g
                class="beam"
-               id="fdtmteu">
+               id="bueh6ji">
               <polygon
                  fill-opacity="1"
-                 points="12738,28215 13770,28215 13770,28125 12738,28125 "
+                 points="13770,28125 12738,28125 12738,28215 13770,28215 "
                  stroke-opacity="1"
                  id="polygon1160" />
               <polygon
                  fill-opacity="1"
-                 points="12738,28080 13085,28080 13085,27990 12738,27990 "
+                 points="13085,27990 12738,27990 12738,28080 13085,28080 "
                  stroke-opacity="1"
                  id="polygon1161" />
               <polygon
                  fill-opacity="1"
-                 points="13085,28080 13423,28080 13423,27990 13085,27990 "
+                 points="13423,27990 13085,27990 13085,28080 13423,28080 "
                  stroke-opacity="1"
                  id="polygon1162" />
               <polygon
                  fill-opacity="1"
-                 points="13423,28080 13770,28080 13770,27990 13423,27990 "
+                 points="13770,27990 13423,27990 13423,28080 13770,28080 "
                  stroke-opacity="1"
                  id="polygon1163" />
               <g
                  class="chord"
-                 id="vzvz4zj">
+                 id="qz3mir6">
                 <g
                    class="stem"
-                   id="q1nsf4mj">
+                   id="m1sv1k7a">
                   <path
                      d="m 12747,27388 v 809"
                      stroke-width="18"
@@ -2879,7 +2877,7 @@
                 </g>
                 <g
                    class="note"
-                   id="rg71qc5">
+                   id="e9a0zn8">
                   <title
                      class="labelAttr"
                      id="title1163">D:16</title>
@@ -2896,7 +2894,7 @@
                          stroke-width="20"
                          transform="translate(10,-120)"
                          width="300"
-                         id="rect75"
+                         id="rect117"
                          x="0"
                          y="0" />
                     </g>
@@ -2904,7 +2902,7 @@
                 </g>
                 <g
                    class="note"
-                   id="u3i3hr5">
+                   id="a1ifgowf">
                   <title
                      class="labelAttr"
                      id="title1164">G:16</title>
@@ -2920,7 +2918,7 @@
                       <path
                          d="m 0,-39 c 0,68 73,172 200,172 66,0 114,-37 114,-95 0,-84 -106,-171 -218,-171 -64,0 -96,30 -96,94 z"
                          transform="scale(1,-1)"
-                         id="path42"
+                         id="path72"
                          style="stroke:currentColor" />
                     </g>
                   </g>
@@ -2928,13 +2926,13 @@
               </g>
               <g
                  class="note"
-                 id="z1r8dodk">
+                 id="gmawqvg">
                 <title
                    class="labelAttr"
                    id="title1165">B:16</title>
                 <g
                    class="stem"
-                   id="y1w27pu4">
+                   id="qo38f1j">
                   <path
                      d="m 13085,27208 v 989"
                      stroke-width="18"
@@ -2953,20 +2951,20 @@
                     <path
                        d="m 0,-39 c 0,68 73,172 200,172 66,0 114,-37 114,-95 0,-84 -106,-171 -218,-171 -64,0 -96,30 -96,94 z"
                        transform="scale(1,-1)"
-                       id="path43"
+                       id="path73"
                        style="stroke:currentColor" />
                   </g>
                 </g>
               </g>
               <g
                  class="note"
-                 id="e1o5ntxx">
+                 id="ywbu44w">
                 <title
                    class="labelAttr"
                    id="title1166">G:16</title>
                 <g
                    class="stem"
-                   id="dtlg7sd">
+                   id="d2lroqg">
                   <path
                      d="m 13423,27388 v 809"
                      stroke-width="18"
@@ -2985,20 +2983,20 @@
                     <path
                        d="m 0,-39 c 0,68 73,172 200,172 66,0 114,-37 114,-95 0,-84 -106,-171 -218,-171 -64,0 -96,30 -96,94 z"
                        transform="scale(1,-1)"
-                       id="path44"
+                       id="path74"
                        style="stroke:currentColor" />
                   </g>
                 </g>
               </g>
               <g
                  class="note"
-                 id="y1joirr3">
+                 id="a1i7hew2">
                 <title
                    class="labelAttr"
                    id="title1167">D:16</title>
                 <g
                    class="stem"
-                   id="x1l5mtmz">
+                   id="tyn8576">
                   <path
                      d="m 13761,27658 v 539"
                      stroke-width="18"
@@ -3018,7 +3016,7 @@
                        stroke-width="20"
                        transform="translate(10,-120)"
                        width="300"
-                       id="rect76"
+                       id="rect118"
                        x="0"
                        y="0" />
                   </g>
@@ -3029,7 +3027,7 @@
         </g>
         <g
            class="barLine"
-           id="g26fzp">
+           id="o1ne766d">
           <path
              d="m 14090,25470 v 720"
              stroke-width="27"
@@ -3049,10 +3047,10 @@
       </g>
       <g
          class="measure"
-         id="vjmp953">
+         id="e4qmx0">
         <g
            class="staff"
-           id="w1ove8va">
+           id="x9ry45e">
           <path
              d="m 14103,25470 h 5899"
              stroke-width="13"
@@ -3109,39 +3107,39 @@
           </g>
           <g
              class="layer"
-             id="b1dsnqgd">
+             id="lbd6cav">
             <g
                class="beam"
-               id="i1f0yry3">
+               id="c1gbb648">
               <polygon
                  fill-opacity="1"
-                 points="14491,25110 15523,25470 15523,25560 14491,25200 "
+                 points="15523,25560 14491,25200 14491,25110 15523,25470 "
                  stroke-opacity="1"
                  id="polygon1186" />
               <polygon
                  fill-opacity="1"
-                 points="14491,25245 14838,25365 14838,25455 14491,25335 "
+                 points="14838,25455 14491,25335 14491,25245 14838,25365 "
                  stroke-opacity="1"
                  id="polygon1187" />
               <polygon
                  fill-opacity="1"
-                 points="14838,25365 15176,25485 15176,25575 14838,25455 "
+                 points="15176,25575 14838,25455 14838,25365 15176,25485 "
                  stroke-opacity="1"
                  id="polygon1188" />
               <polygon
                  fill-opacity="1"
-                 points="15176,25485 15523,25605 15523,25695 15176,25575 "
+                 points="15523,25695 15176,25575 15176,25485 15523,25605 "
                  stroke-opacity="1"
                  id="polygon1189" />
               <g
                  class="note"
-                 id="k1e53h9p">
+                 id="ztzfhi7">
                 <title
                    class="labelAttr"
                    id="title1189">C:16</title>
                 <g
                    class="stem"
-                   id="g1xgo1wk">
+                   id="w1tsx9fl">
                   <path
                      d="m 14500,25712 v -584"
                      stroke-width="18"
@@ -3161,7 +3159,7 @@
                        stroke-width="20"
                        transform="translate(5,-120)"
                        width="300"
-                       id="rect92"
+                       id="rect36"
                        x="0"
                        y="0" />
                   </g>
@@ -3169,13 +3167,13 @@
               </g>
               <g
                  class="note"
-                 id="q1rp83aw">
+                 id="jm3oxl1">
                 <title
                    class="labelAttr"
-                   id="title1190">Eb:16</title>
+                   id="title1190">Ef:16</title>
                 <g
                    class="stem"
-                   id="t1pnexdb">
+                   id="ci754o0">
                   <path
                      d="m 14838,26162 v -914"
                      stroke-width="18"
@@ -3194,24 +3192,24 @@
                     <path
                        d="m 0,-39 c 0,68 73,172 200,172 66,0 114,-37 114,-95 0,-84 -106,-171 -218,-171 -64,0 -96,30 -96,94 z"
                        transform="scale(1,-1)"
-                       id="path45"
+                       id="path75"
                        style="stroke:currentColor" />
                   </g>
                 </g>
                 <g
                    class="accid"
-                   id="zrmzv6c"
+                   id="druuaxk"
                    opacity="0.5" />
               </g>
               <g
                  class="note"
-                 id="h1on7t0q">
+                 id="o126mbe4">
                 <title
                    class="labelAttr"
                    id="title1191">D:16</title>
                 <g
                    class="stem"
-                   id="k1hap9iv">
+                   id="g18tn905">
                   <path
                      d="m 15176,26252 v -884"
                      stroke-width="18"
@@ -3231,7 +3229,7 @@
                        stroke-width="20"
                        transform="translate(5,-120)"
                        width="300"
-                       id="rect110"
+                       id="rect23"
                        x="0"
                        y="0" />
                   </g>
@@ -3239,13 +3237,13 @@
               </g>
               <g
                  class="note"
-                 id="e1rkjuw1">
+                 id="n1sq02p2">
                 <title
                    class="labelAttr"
-                   id="title1192">Eb:16</title>
+                   id="title1192">Ef:16</title>
                 <g
                    class="stem"
-                   id="l1kef6m2">
+                   id="f170pasy">
                   <path
                      d="m 15514,26162 v -674"
                      stroke-width="18"
@@ -3264,48 +3262,48 @@
                     <path
                        d="m 0,-39 c 0,68 73,172 200,172 66,0 114,-37 114,-95 0,-84 -106,-171 -218,-171 -64,0 -96,30 -96,94 z"
                        transform="scale(1,-1)"
-                       id="path46"
+                       id="path76"
                        style="stroke:currentColor" />
                   </g>
                 </g>
                 <g
                    class="accid"
-                   id="x1bbvpit"
+                   id="ke6lq3e"
                    opacity="0.5" />
               </g>
             </g>
             <g
                class="beam"
-               id="p1nr5sfm">
+               id="yp4csj1">
               <polygon
                  fill-opacity="1"
-                 points="15843,25605 16874,25605 16874,25695 15843,25695 "
+                 points="16874,25695 15843,25695 15843,25605 16874,25605 "
                  stroke-opacity="1"
                  id="polygon1192" />
               <polygon
                  fill-opacity="1"
-                 points="15843,25740 16190,25740 16190,25830 15843,25830 "
+                 points="16190,25830 15843,25830 15843,25740 16190,25740 "
                  stroke-opacity="1"
                  id="polygon1193" />
               <polygon
                  fill-opacity="1"
-                 points="16190,25740 16527,25740 16527,25830 16190,25830 "
+                 points="16527,25830 16190,25830 16190,25740 16527,25740 "
                  stroke-opacity="1"
                  id="polygon1194" />
               <polygon
                  fill-opacity="1"
-                 points="16527,25740 16874,25740 16874,25830 16527,25830 "
+                 points="16874,25830 16527,25830 16527,25740 16874,25740 "
                  stroke-opacity="1"
                  id="polygon1195" />
               <g
                  class="note"
-                 id="a12b2pzt">
+                 id="o41otix">
                 <title
                    class="labelAttr"
                    id="title1195">C:16</title>
                 <g
                    class="stem"
-                   id="z1bp26am">
+                   id="q2om58n">
                   <path
                      d="m 15852,26342 v -719"
                      stroke-width="18"
@@ -3325,7 +3323,7 @@
                        stroke-width="20"
                        transform="translate(5,-120)"
                        width="300"
-                       id="rect93"
+                       id="rect37"
                        x="0"
                        y="0" />
                   </g>
@@ -3333,13 +3331,13 @@
               </g>
               <g
                  class="note"
-                 id="ujl86rs">
+                 id="zh887yh">
                 <title
                    class="labelAttr"
-                   id="title1196">Eb:16</title>
+                   id="title1196">Ef:16</title>
                 <g
                    class="stem"
-                   id="a121nfgp">
+                   id="s1aj7m3t">
                   <path
                      d="m 16190,26162 v -539"
                      stroke-width="18"
@@ -3358,24 +3356,24 @@
                     <path
                        d="m 0,-39 c 0,68 73,172 200,172 66,0 114,-37 114,-95 0,-84 -106,-171 -218,-171 -64,0 -96,30 -96,94 z"
                        transform="scale(1,-1)"
-                       id="path47"
+                       id="path77"
                        style="stroke:currentColor" />
                   </g>
                 </g>
                 <g
                    class="accid"
-                   id="k1b1zlf1"
+                   id="yyc4dja"
                    opacity="0.5" />
               </g>
               <g
                  class="note"
-                 id="ewezxx">
+                 id="mpus8">
                 <title
                    class="labelAttr"
                    id="title1197">D:16</title>
                 <g
                    class="stem"
-                   id="t1w8lvo8">
+                   id="w1hkkgmr">
                   <path
                      d="m 16527,26252 v -629"
                      stroke-width="18"
@@ -3395,7 +3393,7 @@
                        stroke-width="20"
                        transform="translate(5,-120)"
                        width="300"
-                       id="rect111"
+                       id="rect24"
                        x="0"
                        y="0" />
                   </g>
@@ -3403,13 +3401,13 @@
               </g>
               <g
                  class="note"
-                 id="a1tv0xh6">
+                 id="v1fdfzh1">
                 <title
                    class="labelAttr"
-                   id="title1198">Eb:16</title>
+                   id="title1198">Ef:16</title>
                 <g
                    class="stem"
-                   id="q5lxpif">
+                   id="k1nxvuv2">
                   <path
                      d="m 16865,26162 v -539"
                      stroke-width="18"
@@ -3428,48 +3426,48 @@
                     <path
                        d="m 0,-39 c 0,68 73,172 200,172 66,0 114,-37 114,-95 0,-84 -106,-171 -218,-171 -64,0 -96,30 -96,94 z"
                        transform="scale(1,-1)"
-                       id="path48"
+                       id="path78"
                        style="stroke:currentColor" />
                   </g>
                 </g>
                 <g
                    class="accid"
-                   id="zajc4at"
+                   id="ctpyo4i"
                    opacity="0.5" />
               </g>
             </g>
             <g
                class="beam"
-               id="z1ki0npq">
+               id="j13g0ki2">
               <polygon
                  fill-opacity="1"
-                 points="17194,25200 18361,25560 18361,25650 17194,25290 "
+                 points="18361,25650 17194,25290 17194,25200 18361,25560 "
                  stroke-opacity="1"
                  id="polygon1198" />
               <polygon
                  fill-opacity="1"
-                 points="17194,25335 17541,25441 17541,25531 17194,25425 "
+                 points="17541,25531 17194,25425 17194,25335 17541,25441 "
                  stroke-opacity="1"
                  id="polygon1199" />
               <polygon
                  fill-opacity="1"
-                 points="17541,25441 17879,25547 17879,25637 17541,25531 "
+                 points="17879,25637 17541,25531 17541,25441 17879,25547 "
                  stroke-opacity="1"
                  id="polygon1200" />
               <polygon
                  fill-opacity="1"
-                 points="17879,25547 18361,25695 18361,25785 17879,25637 "
+                 points="18361,25785 17879,25637 17879,25547 18361,25695 "
                  stroke-opacity="1"
                  id="polygon1201" />
               <g
                  class="note"
-                 id="w500lex">
+                 id="u62mfkc">
                 <title
                    class="labelAttr"
-                   id="title1201">Bb:16</title>
+                   id="title1201">Bf:16</title>
                 <g
                    class="stem"
-                   id="n18g4sjb">
+                   id="vy72pgh">
                   <path
                      d="m 17203,25802 v -584"
                      stroke-width="18"
@@ -3489,25 +3487,25 @@
                        stroke-width="20"
                        transform="translate(5,-120)"
                        width="300"
-                       id="rect96"
+                       id="rect34"
                        x="0"
                        y="0" />
                   </g>
                 </g>
                 <g
                    class="accid"
-                   id="f1dp67z6"
+                   id="dk5gfj6"
                    opacity="0.5" />
               </g>
               <g
                  class="note"
-                 id="f1nmfcq3">
+                 id="y1xcfbz6">
                 <title
                    class="labelAttr"
                    id="title1202">D:16</title>
                 <g
                    class="stem"
-                   id="tc234qw">
+                   id="nco89jx">
                   <path
                      d="m 17541,26252 v -928"
                      stroke-width="18"
@@ -3527,7 +3525,7 @@
                        stroke-width="20"
                        transform="translate(5,-120)"
                        width="300"
-                       id="rect112"
+                       id="rect25"
                        x="0"
                        y="0" />
                   </g>
@@ -3535,13 +3533,13 @@
               </g>
               <g
                  class="note"
-                 id="u3ck8wn">
+                 id="cglya2y">
                 <title
                    class="labelAttr"
                    id="title1203">C:16</title>
                 <g
                    class="stem"
-                   id="a16j19kc">
+                   id="i1vscseo">
                   <path
                      d="m 17879,26342 v -912"
                      stroke-width="18"
@@ -3561,7 +3559,7 @@
                        stroke-width="20"
                        transform="translate(5,-120)"
                        width="300"
-                       id="rect94"
+                       id="rect38"
                        x="0"
                        y="0" />
                   </g>
@@ -3569,13 +3567,13 @@
               </g>
               <g
                  class="note"
-                 id="c1pyxtqe">
+                 id="riuihgc">
                 <title
                    class="labelAttr"
                    id="title1204">D:16</title>
                 <g
                    class="stem"
-                   id="c1cdhlp6">
+                   id="w3zy9pt">
                   <path
                      d="m 18352,26252 v -674"
                      stroke-width="18"
@@ -3595,7 +3593,7 @@
                        stroke-width="20"
                        transform="translate(5,-120)"
                        width="300"
-                       id="rect113"
+                       id="rect26"
                        x="0"
                        y="0" />
                   </g>
@@ -3604,36 +3602,36 @@
             </g>
             <g
                class="beam"
-               id="c1d02h4i">
+               id="cf4xlj1">
               <polygon
                  fill-opacity="1"
-                 points="18845,25650 19877,25650 19877,25740 18845,25740 "
+                 points="19877,25740 18845,25740 18845,25650 19877,25650 "
                  stroke-opacity="1"
                  id="polygon1204" />
               <polygon
                  fill-opacity="1"
-                 points="18845,25785 19192,25785 19192,25875 18845,25875 "
+                 points="19192,25875 18845,25875 18845,25785 19192,25785 "
                  stroke-opacity="1"
                  id="polygon1205" />
               <polygon
                  fill-opacity="1"
-                 points="19192,25785 19530,25785 19530,25875 19192,25875 "
+                 points="19530,25875 19192,25875 19192,25785 19530,25785 "
                  stroke-opacity="1"
                  id="polygon1206" />
               <polygon
                  fill-opacity="1"
-                 points="19530,25785 19877,25785 19877,25875 19530,25875 "
+                 points="19877,25875 19530,25875 19530,25785 19877,25785 "
                  stroke-opacity="1"
                  id="polygon1207" />
               <g
                  class="note"
-                 id="t1hh96uc">
+                 id="g4w3oy5">
                 <title
                    class="labelAttr"
                    id="title1207">A:16</title>
                 <g
                    class="stem"
-                   id="i1gvy2p5">
+                   id="t15h0lzc">
                   <path
                      d="m 18854,26522 v -854"
                      stroke-width="18"
@@ -3652,20 +3650,20 @@
                     <path
                        d="m 0,-39 c 0,68 73,172 200,172 66,0 114,-37 114,-95 0,-84 -106,-171 -218,-171 -64,0 -96,30 -96,94 z"
                        transform="scale(1,-1)"
-                       id="path49"
+                       id="path79"
                        style="stroke:currentColor" />
                   </g>
                 </g>
               </g>
               <g
                  class="note"
-                 id="unurhip">
+                 id="sjcjv5b">
                 <title
                    class="labelAttr"
                    id="title1208">D:16</title>
                 <g
                    class="stem"
-                   id="k1yloivu">
+                   id="wgxebqt">
                   <path
                      d="m 19192,26252 v -584"
                      stroke-width="18"
@@ -3685,7 +3683,7 @@
                        stroke-width="20"
                        transform="translate(5,-120)"
                        width="300"
-                       id="rect114"
+                       id="rect28"
                        x="0"
                        y="0" />
                   </g>
@@ -3693,13 +3691,13 @@
               </g>
               <g
                  class="note"
-                 id="gccunqx">
+                 id="zcegcdc">
                 <title
                    class="labelAttr"
                    id="title1209">C:16</title>
                 <g
                    class="stem"
-                   id="ontljyy">
+                   id="xl0r113">
                   <path
                      d="m 19530,26342 v -674"
                      stroke-width="18"
@@ -3719,7 +3717,7 @@
                        stroke-width="20"
                        transform="translate(5,-120)"
                        width="300"
-                       id="rect95"
+                       id="rect39"
                        x="0"
                        y="0" />
                   </g>
@@ -3727,13 +3725,13 @@
               </g>
               <g
                  class="note"
-                 id="bg3wpdl">
+                 id="y8yqv3p">
                 <title
                    class="labelAttr"
                    id="title1210">D:16</title>
                 <g
                    class="stem"
-                   id="rm3vaqy">
+                   id="j18e71gt">
                   <path
                      d="m 19868,26252 v -584"
                      stroke-width="18"
@@ -3753,7 +3751,7 @@
                        stroke-width="20"
                        transform="translate(5,-120)"
                        width="300"
-                       id="rect115"
+                       id="rect29"
                        x="0"
                        y="0" />
                   </g>
@@ -3764,7 +3762,7 @@
         </g>
         <g
            class="staff"
-           id="s1xlddl8">
+           id="jqj4suh">
           <path
              d="m 14103,27270 h 5899"
              stroke-width="13"
@@ -3806,39 +3804,39 @@
           </g>
           <g
              class="layer"
-             id="va7u5pv">
+             id="egndpcc">
             <g
                class="beam"
-               id="bqj4abd">
+               id="v1aktkm">
               <polygon
                  fill-opacity="1"
-                 points="14491,27000 15523,26820 15523,26910 14491,27090 "
+                 points="15523,26910 14491,27090 14491,27000 15523,26820 "
                  stroke-opacity="1"
                  id="polygon1217" />
               <polygon
                  fill-opacity="1"
-                 points="14491,27135 14838,27075 14838,27165 14491,27225 "
+                 points="14838,27165 14491,27225 14491,27135 14838,27075 "
                  stroke-opacity="1"
                  id="polygon1218" />
               <polygon
                  fill-opacity="1"
-                 points="14838,27075 15176,27015 15176,27105 14838,27165 "
+                 points="15176,27105 14838,27165 14838,27075 15176,27015 "
                  stroke-opacity="1"
                  id="polygon1219" />
               <polygon
                  fill-opacity="1"
-                 points="15176,27015 15523,26955 15523,27045 15176,27105 "
+                 points="15523,27045 15176,27105 15176,27015 15523,26955 "
                  stroke-opacity="1"
                  id="polygon1220" />
               <g
                  class="note"
-                 id="tdun2we">
+                 id="qrznk4h">
                 <title
                    class="labelAttr"
-                   id="title1220">Eb:16</title>
+                   id="title1220">Ef:16</title>
                 <g
                    class="stem"
-                   id="y13837gt">
+                   id="svj9x7s">
                   <path
                      d="M 14500,28142 V 27018"
                      stroke-width="18"
@@ -3857,24 +3855,24 @@
                     <path
                        d="m 0,-39 c 0,68 73,172 200,172 66,0 114,-37 114,-95 0,-84 -106,-171 -218,-171 -64,0 -96,30 -96,94 z"
                        transform="scale(1,-1)"
-                       id="path50"
+                       id="path80"
                        style="stroke:currentColor" />
                   </g>
                 </g>
                 <g
                    class="accid"
-                   id="ytkiop8"
+                   id="xuhpnus"
                    opacity="0.5" />
               </g>
               <g
                  class="note"
-                 id="v1nd4nbx">
+                 id="z1od72pe">
                 <title
                    class="labelAttr"
-                   id="title1221">Bb:16</title>
+                   id="title1221">Bf:16</title>
                 <g
                    class="stem"
-                   id="ag3end1">
+                   id="d1497dkd">
                   <path
                      d="m 14838,27782 v -824"
                      stroke-width="18"
@@ -3894,25 +3892,25 @@
                        stroke-width="20"
                        transform="translate(5,-120)"
                        width="300"
-                       id="rect97"
+                       id="rect35"
                        x="0"
                        y="0" />
                   </g>
                 </g>
                 <g
                    class="accid"
-                   id="j7alaw8"
+                   id="pkfg28e"
                    opacity="0.5" />
               </g>
               <g
                  class="note"
-                 id="cmn1x87">
+                 id="vhgbt2i">
                 <title
                    class="labelAttr"
-                   id="title1222">Eb:16</title>
+                   id="title1222">Ef:16</title>
                 <g
                    class="stem"
-                   id="uiej3bk">
+                   id="nnnpxtw">
                   <path
                      d="m 15176,27512 v -614"
                      stroke-width="18"
@@ -3931,24 +3929,24 @@
                     <path
                        d="m 0,-39 c 0,68 73,172 200,172 66,0 114,-37 114,-95 0,-84 -106,-171 -218,-171 -64,0 -96,30 -96,94 z"
                        transform="scale(1,-1)"
-                       id="path51"
+                       id="path81"
                        style="stroke:currentColor" />
                   </g>
                 </g>
                 <g
                    class="accid"
-                   id="bwpbu1s"
+                   id="g1wtis5s"
                    opacity="0.5" />
               </g>
               <g
                  class="note"
-                 id="my8rye5">
+                 id="fdgkl03">
                 <title
                    class="labelAttr"
                    id="title1223">F:16</title>
                 <g
                    class="stem"
-                   id="z19ggfw5">
+                   id="t1e9mmlp">
                   <path
                      d="m 15514,27422 v -584"
                      stroke-width="18"
@@ -3967,7 +3965,7 @@
                     <path
                        d="m 0,-39 c 0,68 73,172 200,172 66,0 114,-37 114,-95 0,-84 -106,-171 -218,-171 -64,0 -96,30 -96,94 z"
                        transform="scale(1,-1)"
-                       id="path52"
+                       id="path82"
                        style="stroke:currentColor" />
                   </g>
                 </g>
@@ -3975,33 +3973,33 @@
             </g>
             <g
                class="beam"
-               id="b1r1dy89">
+               id="nnnu1wf">
               <polygon
                  fill-opacity="1"
-                 points="15635,28395 16666,28395 16666,28305 15635,28305 "
+                 points="16666,28305 15635,28305 15635,28395 16666,28395 "
                  stroke-opacity="1"
                  id="polygon1223" />
               <polygon
                  fill-opacity="1"
-                 points="15635,28260 15982,28260 15982,28170 15635,28170 "
+                 points="15982,28170 15635,28170 15635,28260 15982,28260 "
                  stroke-opacity="1"
                  id="polygon1224" />
               <polygon
                  fill-opacity="1"
-                 points="15982,28260 16319,28260 16319,28170 15982,28170 "
+                 points="16319,28170 15982,28170 15982,28260 16319,28260 "
                  stroke-opacity="1"
                  id="polygon1225" />
               <polygon
                  fill-opacity="1"
-                 points="16319,28260 16666,28260 16666,28170 16319,28170 "
+                 points="16666,28170 16319,28170 16319,28260 16666,28260 "
                  stroke-opacity="1"
                  id="polygon1226" />
               <g
                  class="chord"
-                 id="c1xlb64w">
+                 id="hruwtvy">
                 <g
                    class="stem"
-                   id="f9fr5ad">
+                   id="khnh4x3">
                   <path
                      d="m 15644,27568 v 809"
                      stroke-width="18"
@@ -4010,10 +4008,10 @@
                 </g>
                 <g
                    class="note"
-                   id="p1hh42ga">
+                   id="u1htv83a">
                   <title
                      class="labelAttr"
-                     id="title1226">Bb:16</title>
+                     id="title1226">Bf:16</title>
                   <g
                      class="notehead"
                      id="g1226">
@@ -4027,22 +4025,22 @@
                          stroke-width="20"
                          transform="translate(10,-120)"
                          width="300"
-                         id="rect4"
+                         id="rect87"
                          x="0"
                          y="0" />
                     </g>
                   </g>
                   <g
                      class="accid"
-                     id="g144lyai"
+                     id="u18tvoox"
                      opacity="0.5" />
                 </g>
                 <g
                    class="note"
-                   id="epdrh7k">
+                   id="j1jsulpm">
                   <title
                      class="labelAttr"
-                     id="title1227">Eb:16</title>
+                     id="title1227">Ef:16</title>
                   <g
                      class="notehead"
                      fill="#3763af"
@@ -4055,25 +4053,25 @@
                       <path
                          d="m 0,-39 c 0,68 73,172 200,172 66,0 114,-37 114,-95 0,-84 -106,-171 -218,-171 -64,0 -96,30 -96,94 z"
                          transform="scale(1,-1)"
-                         id="path53"
+                         id="path83"
                          style="stroke:currentColor" />
                     </g>
                   </g>
                   <g
                      class="accid"
-                     id="u1px6p1m"
+                     id="h9yhq58"
                      opacity="0.5" />
                 </g>
               </g>
               <g
                  class="note"
-                 id="y1y2uklw">
+                 id="y14z378k">
                 <title
                    class="labelAttr"
                    id="title1228">G:16</title>
                 <g
                    class="stem"
-                   id="lmooz7b">
+                   id="y160spb9">
                   <path
                      d="m 15982,27388 v 989"
                      stroke-width="18"
@@ -4092,20 +4090,20 @@
                     <path
                        d="m 0,-39 c 0,68 73,172 200,172 66,0 114,-37 114,-95 0,-84 -106,-171 -218,-171 -64,0 -96,30 -96,94 z"
                        transform="scale(1,-1)"
-                       id="path54"
+                       id="path84"
                        style="stroke:currentColor" />
                   </g>
                 </g>
               </g>
               <g
                  class="note"
-                 id="u1iueeb">
+                 id="a1y3duww">
                 <title
                    class="labelAttr"
-                   id="title1229">Eb:16</title>
+                   id="title1229">Ef:16</title>
                 <g
                    class="stem"
-                   id="y3eebr6">
+                   id="c8fgoom">
                   <path
                      d="m 16319,27568 v 809"
                      stroke-width="18"
@@ -4124,24 +4122,24 @@
                     <path
                        d="m 0,-39 c 0,68 73,172 200,172 66,0 114,-37 114,-95 0,-84 -106,-171 -218,-171 -64,0 -96,30 -96,94 z"
                        transform="scale(1,-1)"
-                       id="path55"
+                       id="path85"
                        style="stroke:currentColor" />
                   </g>
                 </g>
                 <g
                    class="accid"
-                   id="rs2vpib"
+                   id="u1get7vq"
                    opacity="0.5" />
               </g>
               <g
                  class="note"
-                 id="a3880n9">
+                 id="skubp80">
                 <title
                    class="labelAttr"
-                   id="title1230">Bb:16</title>
+                   id="title1230">Bf:16</title>
                 <g
                    class="stem"
-                   id="k1p3kr3y">
+                   id="ztrzuwq">
                   <path
                      d="m 16657,27838 v 539"
                      stroke-width="18"
@@ -4161,49 +4159,49 @@
                        stroke-width="20"
                        transform="translate(10,-120)"
                        width="300"
-                       id="rect5"
+                       id="rect88"
                        x="0"
                        y="0" />
                   </g>
                 </g>
                 <g
                    class="accid"
-                   id="hy1n8xf"
+                   id="w3m2vye"
                    opacity="0.5" />
               </g>
             </g>
             <g
                class="beam"
-               id="b1ri2lpu">
+               id="rp9e6gu">
               <polygon
                  fill-opacity="1"
-                 points="17194,27090 18361,26910 18361,27000 17194,27180 "
+                 points="18361,27000 17194,27180 17194,27090 18361,26910 "
                  stroke-opacity="1"
                  id="polygon1230" />
               <polygon
                  fill-opacity="1"
-                 points="17194,27225 17541,27173 17541,27263 17194,27315 "
+                 points="17541,27263 17194,27315 17194,27225 17541,27173 "
                  stroke-opacity="1"
                  id="polygon1231" />
               <polygon
                  fill-opacity="1"
-                 points="17541,27173 17879,27120 17879,27210 17541,27263 "
+                 points="17879,27210 17541,27263 17541,27173 17879,27120 "
                  stroke-opacity="1"
                  id="polygon1232" />
               <polygon
                  fill-opacity="1"
-                 points="17879,27120 18361,27045 18361,27135 17879,27210 "
+                 points="18361,27135 17879,27210 17879,27120 18361,27045 "
                  stroke-opacity="1"
                  id="polygon1233" />
               <g
                  class="note"
-                 id="w1xnj4ka">
+                 id="df0shxg">
                 <title
                    class="labelAttr"
                    id="title1233">D:16</title>
                 <g
                    class="stem"
-                   id="g7mh71y">
+                   id="aka8q17">
                   <path
                      d="M 17203,28232 V 27108"
                      stroke-width="18"
@@ -4223,7 +4221,7 @@
                        stroke-width="20"
                        transform="translate(5,-120)"
                        width="300"
-                       id="rect116"
+                       id="rect30"
                        x="0"
                        y="0" />
                   </g>
@@ -4231,13 +4229,13 @@
               </g>
               <g
                  class="note"
-                 id="q14kvmg1">
+                 id="r35tdhb">
                 <title
                    class="labelAttr"
                    id="title1234">A:16</title>
                 <g
                    class="stem"
-                   id="amtl0sz">
+                   id="wh48bt">
                   <path
                      d="m 17541,27872 v -816"
                      stroke-width="18"
@@ -4256,20 +4254,20 @@
                     <path
                        d="m 0,-39 c 0,68 73,172 200,172 66,0 114,-37 114,-95 0,-84 -106,-171 -218,-171 -64,0 -96,30 -96,94 z"
                        transform="scale(1,-1)"
-                       id="path56"
+                       id="path86"
                        style="stroke:currentColor" />
                   </g>
                 </g>
               </g>
               <g
                  class="note"
-                 id="g14bp4nn">
+                 id="o16ctiay">
                 <title
                    class="labelAttr"
                    id="title1235">D:16</title>
                 <g
                    class="stem"
-                   id="artaxg">
+                   id="btertua">
                   <path
                      d="m 17879,27602 v -599"
                      stroke-width="18"
@@ -4289,7 +4287,7 @@
                        stroke-width="20"
                        transform="translate(5,-120)"
                        width="300"
-                       id="rect117"
+                       id="rect31"
                        x="0"
                        y="0" />
                   </g>
@@ -4297,13 +4295,13 @@
               </g>
               <g
                  class="note"
-                 id="s2urm4">
+                 id="c1ao0q7v">
                 <title
                    class="labelAttr"
                    id="title1236">E:16</title>
                 <g
                    class="stem"
-                   id="z13hv2zw">
+                   id="m1syae0i">
                   <path
                      d="m 18352,27512 v -584"
                      stroke-width="18"
@@ -4323,14 +4321,14 @@
                        stroke-width="20"
                        transform="translate(5,-120)"
                        width="300"
-                       id="rect91"
+                       id="rect8"
                        x="0"
                        y="0" />
                   </g>
                 </g>
                 <g
                    class="accid"
-                   id="uqqyvut"
+                   id="lzxckg9"
                    opacity="0.5">
                   <g
                      id="use1237"
@@ -4338,7 +4336,7 @@
                     <path
                        d="M 0,-188 V 351 H 18 V 160 l 139,22 v -533 h -17 v 186 z m 18,88 122,17 V 93 L 18,74 Z"
                        transform="scale(1,-1)"
-                       id="path60"
+                       id="path41"
                        style="stroke:currentColor" />
                   </g>
                 </g>
@@ -4346,10 +4344,10 @@
             </g>
             <g
                class="chord"
-               id="olmaozb">
+               id="r1iuty9v">
               <g
                  class="stem"
-                 id="y12ug8v7">
+                 id="ooi6pp2">
                 <path
                    d="m 18854,27872 v -962"
                    stroke-width="18"
@@ -4358,7 +4356,7 @@
               </g>
               <g
                  class="note"
-                 id="jtker85">
+                 id="ym8uprt">
                 <title
                    class="labelAttr"
                    id="title1237">A:4</title>
@@ -4374,14 +4372,14 @@
                     <path
                        d="m 0,-39 c 0,68 73,172 200,172 66,0 114,-37 114,-95 0,-84 -106,-171 -218,-171 -64,0 -96,30 -96,94 z"
                        transform="scale(1,-1)"
-                       id="path57"
+                       id="path87"
                        style="stroke:currentColor" />
                   </g>
                 </g>
               </g>
               <g
                  class="note"
-                 id="on6u8mi">
+                 id="d17sng70">
                 <title
                    class="labelAttr"
                    id="title1238">D:4</title>
@@ -4398,7 +4396,7 @@
                        stroke-width="20"
                        transform="translate(5,-120)"
                        width="300"
-                       id="rect118"
+                       id="rect32"
                        x="0"
                        y="0" />
                   </g>
@@ -4406,24 +4404,31 @@
               </g>
               <g
                  class="note"
-                 id="r1kys84z">
+                 id="uelyu1r">
                 <title
                    class="labelAttr"
-                   id="title1239">F#:4</title>
+                   id="title1239">Fs:4</title>
                 <g
                    class="notehead"
                    id="g1240">
-                  <use
-                     height="720"
-                     width="720"
-                     x="18637"
-                     xlink:href="#F#-filled-stem-up"
-                     y="27450"
-                     id="use1240" />
+                  <g
+                     id="use1240"
+                     transform="matrix(0.72,0,0,0.72,18637,27450)">
+                    <rect
+                       fill="#39b54a"
+                       height="240"
+                       stroke="#000000"
+                       stroke-width="20"
+                       transform="translate(5,-120)"
+                       width="300"
+                       id="rect1"
+                       x="0"
+                       y="0" />
+                  </g>
                 </g>
                 <g
                    class="accid"
-                   id="pfgybza"
+                   id="h1ds5uud"
                    opacity="0.5">
                   <g
                      id="use1241"
@@ -4431,7 +4436,7 @@
                     <path
                        d="m 136,186 v 169 h 17 V 191 l 44,14 V 114 L 153,100 V -65 l 44,12 v -91 l -44,-13 v -155 h -17 v 150 L 60,-184 V -339 H 43 v 149 L 0,-203 v 90 l 43,14 V 68 L 0,54 v 92 l 43,13 V 328 H 60 V 165 Z M 60,73 V -94 l 76,22 V 96 Z"
                        transform="scale(1,-1)"
-                       id="path4"
+                       id="path99"
                        style="stroke:currentColor" />
                   </g>
                 </g>
@@ -4441,7 +4446,7 @@
         </g>
         <g
            class="barLine"
-           id="c1rm7ri">
+           id="zbyzzta">
           <path
              d="m 19989,25470 v 720"
              stroke-width="27"

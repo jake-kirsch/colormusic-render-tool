@@ -13,25 +13,25 @@ STROKE_WIDTH = 20
 # Pitch color mapping
 PITCH_COLORS = {
     "A": "#fdbb13", 
-    "B": "#A6CE39", "Cb": "#A6CE39", 
-    "C": "#DA1E48", "B#": "#DA1E48", 
+    "B": "#A6CE39", "Cf": "#A6CE39", 
+    "C": "#DA1E48", "Bs": "#DA1E48", 
     "D": "#F58220",
-    "E": "#F3DC0B", "Fb": "#F3DC0B",
-    "F": "#AB218E", "E#": "#AB218E",
+    "E": "#F3DC0B", "Ff": "#F3DC0B",
+    "F": "#AB218E", "Es": "#AB218E",
     "G": "#F04E23",
-    "G#": "#0098DD", "Ab": "#0098DD", 
-    "A#": "#823F98", "Bb": "#823F98",
-    "C#": "#00A995", "Db": "#00A995", 
-    "D#": "#3763AF", "Eb": "#3763AF",
-    "F#": "#39B54A", "Gb": "#39B54A",
+    "Gs": "#0098DD", "Af": "#0098DD", 
+    "As": "#823F98", "Bf": "#823F98",
+    "Cs": "#00A995", "Df": "#00A995", 
+    "Ds": "#3763AF", "Ef": "#3763AF",
+    "Fs": "#39B54A", "Gf": "#39B54A",
 }
 
-SQUARE_PITCHES = ["Ab", "G#", 
-                  "Bb", "A#", 
-                  "C", "B#", 
+SQUARE_PITCHES = ["Af", "Gs", 
+                  "Bf", "As", 
+                  "C", "Bs", 
                   "D", 
-                  "E", "Fb", 
-                  "Gb", "F#", ]
+                  "E", "Ff", 
+                  "Gf", "Fs", ]
 
 tk = verovio.toolkit()
 
@@ -174,10 +174,10 @@ def label_notes(soup):
             
             if accid_val == "s":
                 # Sharp
-                accid = "#"
+                accid = "s"
             elif accid_val == "f":
                 # Flat
-                accid = "b"
+                accid = "f"
             elif accid_val == "n":
                 # If natural skip adding accid
                 accid = ""
@@ -195,72 +195,72 @@ def label_notes(soup):
                     # 1s - 1 sharp
                     # G Major -> G - A - B - C - D - E - F♯ - (G)
                     # E Minor -> E - F♯ - G - A - B - C - D - (E)
-                    accid = "#"
+                    accid = "s"
                 elif sig == "2s" and pname.upper() in ["C", "F", ]:
                     # 2s - 2 sharps
                     # D Major -> D – E – F♯ – G – A – B – C♯ – (D)
                     # B Minor -> B – C♯ – D – E – F♯ – G – A – (B)
-                    accid = "#"
+                    accid = "s"
                 elif sig == "3s" and pname.upper() in ["C", "F", "G", ]:
                     # 3s - 3 sharps
                     # A Major -> A - B - C♯ - D - E - F♯ - G♯ - (A)
                     # F# Minor -> F♯ - G♯ - A - B - C♯ - D - E - (F♯)
-                    accid = "#"
+                    accid = "s"
                 elif sig == "4s" and pname.upper() in ["C", "D", "F", "G", ]:
                     # 4s - 4 sharps
                     # E Major -> E – F♯ – G♯ – A – B – C♯ – D♯ – (E)
                     # C# Minor -> C♯ – D♯ – E – F♯ – G♯ – A – B – (C♯)
-                    accid = "#"
+                    accid = "s"
                 elif sig == "5s" and pname.upper() in ["A", "C", "D", "F", "G", ]:
                     # 5 sharps
                     # B Major -> B – C♯ – D♯ – E – F♯ – G♯ – A♯ – (B)
                     # G♯ Minor -> G♯ – A♯ – B – C♯ – D♯ – E – F♯ – (G♯)
-                    accid = "#"
+                    accid = "s"
                 elif sig == "6s" and pname.upper() in ["A", "C", "D", "E", "F", "G", ]:
                     # 6 sharps
                     # F♯ Major -> F♯ – G♯ – A♯ – B – C♯ – D♯ – E♯ – (F♯)
                     # D♯ Minor -> D♯ – E♯ – F♯ – G♯ – A♯ – B – C♯ – (D♯)
-                    accid = "#"
+                    accid = "s"
                 elif sig == "7s" and pname.upper() in ["A", "B", "C", "D", "E", "F", "G", ]:
                     # 7 sharps
                     # C♯ Major -> C♯ – D♯ – E♯ – F♯ – G♯ – A♯ – B♯ – (C♯)
                     # A♯ Minor -> A♯ – B♯ – C♯ – D♯ – E♯ – F♯ – G♯ – (A♯)
-                    accid = "#"
+                    accid = "s"
                 elif sig == "1f" and pname.upper() == "B":
                     # 1f - 1 flat
                     # F Major -> F - G - A - B♭ - C - D - E - (F)
                     # D Minor -> D - E - F - G - A - B♭ - C - (D)
-                    accid = "b"
+                    accid = "f"
                 elif sig == "2f" and pname.upper() in ["B", "E", ]:
                     # 2f - 2 flats
                     # B♭ Major -> B♭ – C – D – E♭ – F – G – A – (B♭)
                     # G Minor -> G – A – B♭ – C – D – E♭ – F – (G)
-                    accid = "b"
+                    accid = "f"
                 elif sig == "3f" and pname.upper() in ["A", "B", "E", ]:
                     # 3f - 3 flats
                     # E♭ Major -> E♭ – F – G – A♭ – B♭ – C – D – (E♭)
                     # C Minor -> C – D – E♭ – F – G – A♭ – B♭ – (C)
-                    accid = "b"
+                    accid = "f"
                 elif sig == "4f" and pname.upper() in ["A", "B", "D", "E", ]:
                     # 4f - 4 flats
                     # A♭ Major -> A♭ – B♭ – C – D♭ – E♭ – F – G – (A♭)
                     # F Minor -> F – G – A♭ – B♭ – C – D♭ – E♭ – (F)
-                    accid = "b"
+                    accid = "f"
                 elif sig == "5f" and pname.upper() in ["A", "B", "D", "E", "G", ]:
                     # 5 flats
                     # D♭ Major -> D♭ – E♭ – F – G♭ – A♭ – B♭ – C – (D♭)
                     # B♭ Minor -> B♭ – C – D♭ – E♭ – F – G♭ – A♭ – (B♭)
-                    accid = "b"
+                    accid = "f"
                 elif sig == "6f" and pname.upper() in ["A", "B", "C", "D", "E", "G", ]:
                     # 6 flats
                     # G♭ Major -> G♭ – A♭ – B♭ – C♭ – D♭ – E♭ – F – (G♭)
                     # E♭ Minor -> E♭ – F – G♭ – A♭ – B♭ – C♭ – D♭ – (E♭)
-                    accid = "b"
+                    accid = "f"
                 elif sig == "7f" and pname.upper() in ["A", "B", "C", "D", "E", "F", "G", ]:
                     # 7 flats
                     # C♭ Major -> C♭ – D♭ – E♭ – F♭ – G♭ – A♭ – B♭ – (C♭)
                     # A♭ Minor -> A♭ – B♭ – C♭ – D♭ – E♭ – F♭ – G♭ – (A♭)
-                    accid = "b"
+                    accid = "f"
                 else:    
                     accid = ""
             
@@ -417,16 +417,16 @@ def add_logo_and_title(soup, page_num, page_title):
     radius = 65
 
     for pitch, angle in [
-        ("Eb", 0),
+        ("Ef", 0),
         ("D", 30),
-        ("Db", 60),
+        ("Df", 60),
         ("C", 90),
         ("B", 120),
-        ("Bb", 150),
+        ("Bf", 150),
         ("A", 180),
-        ("Ab", 210),
+        ("Af", 210),
         ("G", 240),
-        ("Gb", 270),
+        ("Gf", 270),
         ("F", 300),
         ("E", 330),
     ]:

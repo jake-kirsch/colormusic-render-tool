@@ -3,13 +3,13 @@ import svgwrite
 
 BASE_DIR = "C:\\Users\\josep\\Desktop\\personal\\colormusic-render-tool\\app\\static\\assets"
 
-factor = 1.3
+factor = 1.6
 
 SQUARE = 20 * factor
 CIRCLE = 11.333 * factor
 
 x_offset, y_offset = 100, 100
-radius = 65
+radius = 95
 
 min_x = x_offset - radius - 20
 min_y = y_offset - radius - 20
@@ -50,8 +50,8 @@ group = dwg.g()  # create a group to hold all shapes
 
 
 for pitch, angle in [
-    ("Eb", 0), ("D", 30), ("Db", 60), ("C", 90), ("B", 120), ("Bb", 150),
-    ("A", 180), ("Ab", 210), ("G", 240), ("Gb", 270), ("F", 300), ("E", 330)
+    ("B", 120), ("Bb", 150), ("A", 180), ("Ab", 210), ("G", 240), 
+    ("Gb", 270), ("F", 300), ("E", 330), ("Eb", 0), ("D", 30), ("Db", 60), ("C", 90),
 ]:
     color = PITCH_COLORS[pitch]
     angle_rad = math.radians(angle)
