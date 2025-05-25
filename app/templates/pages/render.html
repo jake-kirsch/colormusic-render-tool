@@ -32,16 +32,26 @@
             max-width: 600px;
         }
 </style>
-<div style="width: 600px; margin: 0 auto;">
-    <div>Colorize sheet music from any score</div>
-    <p>This rendering tool converts traditional notation into ColorMusic&reg; - print to play and analyze any song.</p>
-    <a href="https://www.mycolormusic.com/" target="_blank" rel="noopener noreferrer" style="color: black;">see more examples ...</a>
+<div style="width: 100%; margin: 0 auto; background: #F8F8F8; display:flex; justify-content: center; align-items: center;" >
+    <div>
+        <div style="width: 280px;  font-weight: bold; background: #E5E5E5; padding: 0.5rem;">
+            Colorize sheet music from any score
+        </div>
+        <div style="width: 280px; padding: 0.5rem;">
+            <p>This rendering tool converts traditional notation into ColorMusic&reg; - print to play and analyze any song.</p>
+        </div>
+        <div style="width: 180px; padding: 0.5rem;">
+            <a href="https://www.mycolormusic.com/" target="_blank" rel="noopener noreferrer" style="color: black;">see more examples ...</a>
+        </div>
+    </div>
+
+<div style="display: flex; flex-direction: column; align-items: center; gap: 1rem; margin: 2rem;">
+    <img src="/static/assets/notation-original.svg"  style="width: 500px; height: auto;">
+    <img src="/static/assets/down-arrow.svg" style="width: 30px; height: auto;">
+    <img src="/static/assets/notation-colormusic.svg" style="width: 500px; height: auto;">
 </div>
-<div style="display: flex; justify-content: center; align-items: center;">
-    <img src="/static/assets/notation-original.svg"  width="500px" height="auto" style="position: relative; top: 10px; left: 10px; margin: 20px;">
-    <img src="/static/assets/right-arrow.svg" width="30px" height="auto" style="position: relative; top:10px;">
-    <img src="/static/assets/notation-colormusic.svg" width="500px" height="auto" style="position: relative; top:10px; left: 10px;">
 </div>
+<div style="width: 100%; height:4px; background: #CECECE;"></div>
 <div style="width: 600px; margin: 0 auto;">
     <h1>Upload File</h1>
     <form id="uploadForm" enctype="multipart/form-data"> <!--action="/upload"-->
