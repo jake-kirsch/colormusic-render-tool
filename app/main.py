@@ -45,18 +45,22 @@ def generate_svg_results_html(svgs: list[str]) -> str:
         return ""
 
     html_parts = [
-        '<a href="/download-all">',
-        '  <button>Download All as ZIP</button>',
-        '</a>',
-        '<div style="width: 100%; margin: 0 auto;">',
-        '  <h2>Rendered SVGs:</h2>'
+        '<div style="width: 600px; margin: 0 auto;">',
+        '  <a href="/download-all">',
+        '    <button>Download All as ZIP</button><br><br>',
+        '  </a>',
+        '</div',
+        # '<div style="width: 100%; margin: 0 auto;">',
+        # '  <h2>Rendered SVGs:</h2>'
     ]
 
+    html_parts.append('<div class="svg-document">')
     for svg in svgs:
         svg_filename = os.path.basename(svg)
-        html_parts.append('  <div>')
-        html_parts.append(f'    <img src="/static/rendered_svgs/{svg_filename}" alt="SVG Output" style="max-width: 100%;">')
-        html_parts.append('  </div>')
+        html_parts.append(f'<div class="svg-page"><object data="/static/rendered_svgs/{svg_filename}" type="image/svg+xml"></object></div>')
+        # html_parts.append('  <div>')
+        # html_parts.append(f'    <img src="/static/rendered_svgs/{svg_filename}" alt="SVG Output" style="max-width: 100%;">')
+        # html_parts.append('  </div>')
 
     html_parts.append('</div>')
 
