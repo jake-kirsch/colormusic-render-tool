@@ -10,7 +10,11 @@ import verovio
 BASE_DIR = "app/static/rendered_svgs"
 STROKE_WIDTH = 20
 
-# Pitch color mapping
+# Chromatic Scale (Flat Variant)
+CHROMATIC_SCALE = ["C", "Df", "D", "Ef", "E", "F", "Gf", "G", "Af", "A", "Bf", "B", ]
+CHROMATIC_SCALE_NOTE_COUNT = len(CHROMATIC_SCALE)
+
+# Pitch color mapping (exhaustive list containing both flat and sharp variants)
 PITCH_COLORS = {
     "A": "#fdbb13", 
     "B": "#A6CE39", "Cf": "#A6CE39", 
@@ -26,6 +30,7 @@ PITCH_COLORS = {
     "Fs": "#39B54A", "Gf": "#39B54A",
 }
 
+# Pitches that are Squares in ColorMusic (exhaustive list containing both flat and sharp variants)
 SQUARE_PITCHES = ["Af", "Gs", 
                   "Bf", "As", 
                   "C", "Bs", 
@@ -43,6 +48,23 @@ def parse_mei(file_path):
 
     with open(file_path, "r", encoding="utf-8", errors="ignore") as f:
         return BeautifulSoup(f.read(), "xml")
+
+
+def simplify_pitch(note_label):
+    """Determine simplified pitch based on note label.  In cases of double sharps, flats, etc."""
+    pitch_idx = CHROMATIC_SCALE.index(note_label[0])
+    
+    for accid in note_label[1:]:
+        if accid == "f":
+            pitch_idx -= 1
+        elif accid == "s":
+            pitch_idx += 1
+
+        # Reset pitch_idx
+        if pitch_idx >= CHROMATIC_SCALE_NOTE_COUNT:
+            pitch_idx = pitch_idx - CHROMATIC_SCALE_NOTE_COUNT
+
+    return CHROMATIC_SCALE[pitch_idx]
 
 
 def label_notes(soup):
@@ -175,15 +197,21 @@ def label_notes(soup):
             if accid_val == "s":
                 # Sharp
                 accid = "s"
+            elif accid_val == "ss":
+                # Double Sharp
+                accid = "ss"
             elif accid_val == "f":
                 # Flat
                 accid = "f"
+            elif accid_val == "ff":
+                # Double Flat
+                accid = "ff"
             elif accid_val == "n":
                 # If natural skip adding accid
                 accid = ""
             else:
                 if sig and sig not in ["0", "1s", "2s", "3s", "4s", "5s", "6s", "7s",
-                                    "1f", "2f", "3f", "4f", "5f", "6f", "7f", ]:
+                                       "1f", "2f", "3f", "4f", "5f", "6f", "7f", ]:
                     raise ValueError(f"Unhandled key signature: {sig}!")
 
                 if sig == "0":
@@ -281,8 +309,9 @@ def reorder_note(note):
 def render_note_to_colormusic(note, chord):
     """Render note to ColorMusic-style"""
     # Get the pitch and dur value (e.g., 'C', '4')
-    pitch, dur = note.find("title", class_="labelAttr").text.split(":")
+    note_label, dur = note.find("title", class_="labelAttr").text.split(":")
 
+    pitch = simplify_pitch(note_label)
     notehead = note.find("g", class_="notehead")
     stem = note.find("g", class_="stem")
 
