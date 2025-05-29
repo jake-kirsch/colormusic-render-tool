@@ -28,7 +28,7 @@
     }
     
     nav {
-      top: 203px; /* Adjust based on header height */
+      top: 200px; /* Adjust based on header height */
       z-index: 999;
       position: fixed;
       background-color: #B9B3A5;
@@ -58,11 +58,17 @@
     </a>
 
     <div style="display: flex; justify-content: center; align-items: center;">
-        <img src="/static/assets/colormusic-text-logo.svg"  width="360px" height="auto" style="position: relative; top: 10px; left: 10px;">
+      <a href="https://www.mycolormusic.com/" target="_blank" rel="noopener noreferrer">
+          <img src="/static/assets/colormusic-text-logo.svg" 
+              width="360px" 
+              height="auto" 
+              style="position: relative; top: 10px; left: 10px;" 
+              alt="ColorMusic Logo">
+      </a>
         <img src="/static/assets/colormusic-circle-logo.svg" style="position: relative; top:15px; display: block; width: 80px; height: auto;">
     </div>
     <div style="justify-content: center; align-items: center;">
-        <img src="/static/assets/colormusic-tool-text.svg" width="360px" height="auto" style="position: relative; top: -10px; left: -76.5px;">
+        <img src="/static/assets/colormusic-tool-text.svg" width="350px" height="auto" style="position: relative; top: -10px; left: -35.5px;">
     </div>
   </header>
 
@@ -78,16 +84,43 @@
   </div>
 
   <script>
+    let sessionReady = false;
+
+    // async function init() {
+    //   await startSession();
+    // }
+
+    async function startSession() {
+      const existing = localStorage.getItem('session_id');
+      if (existing) {
+        console.log('Session already exists:', existing);
+        return existing;
+      }
+
+      const resp = await fetch('/start-session');
+      const data = await resp.json();
+      localStorage.setItem('session_id', data.session_id);
+      console.log('New session started:', data.session_id);
+      return data.session_id;
+    }
+
+    async function initializeApp() {
+      await startSession(); // Wait until session is ready
+      sessionReady = true;
+    }
+
     function setupRenderPage() {
       const maxAttempts = 20;
       let attempts = 0;
       const interval = setInterval(() => {
         const form = document.getElementById("uploadForm");
-        if (form) {
+        const session_id = localStorage.getItem('session_id');
+        if (form && session_id) {
           clearInterval(interval);
           form.addEventListener("submit", async (e) => {
             e.preventDefault();
             const formData = new FormData(form);
+            formData.append('session_id', session_id);
             const res = await fetch("/upload", {
               method: "POST",
               body: formData
@@ -121,13 +154,25 @@
         if (page === "render") {
           setupRenderPage(); 
         }
-        
+    }
+    
+    function updateDownloadLink() {
+      const session_id = localStorage.getItem("session_id");
+      if (!session_id) return;
+
+      const link = document.getElementById("downloadLink");
+      if (link) {
+        link.href = `/download-all?session_id=${encodeURIComponent(session_id)}`;
+      }
     }
     
     // Load default page on load
     window.addEventListener('DOMContentLoaded', () => {
-      loadPage('render');
+      // Start everything
+      initializeApp();
 
+      loadPage('render');
+      console.warn(document.cookie);
       setupFAQPage();
     });
   </script>

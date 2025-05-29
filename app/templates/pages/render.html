@@ -1,30 +1,37 @@
 <style>
-    .svg-document {
-        background: #9e9e9e;
-        padding: 5rem;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 2rem;
+        .svg-wrapper {
+            display: flex;
+            justify-content: center;
+            padding: 0 1rem;
+            max-width: 2505px;
+        }
 
-        min-height: 200px;
+        .svg-document {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 2rem;
+            background: #9e9e9e;
+            padding: 4rem 2rem;
+            width: 100%;
+            box-sizing: border-box;
         }
 
         .svg-page {
-        /* max-width: 800px; */
-        max-width: 90%;
-        margin: 4rem auto;
-        background: white;
-        padding: 1rem;
-        box-shadow: 0 0 5px rgba(0,0,0,0.1);
-        border: 1px solid #ddd;
-        border-radius: 4px;
+            width: 100%;
+            max-width: 2500px;
+            background: white;
+            padding: 1rem;
+            box-shadow: 0 0 5px rgba(0,0,0,0.1);
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-sizing: border-box;
         }
 
-        .svg-page object {
-        width: 100%;
-        height: auto;
-        display: block;
+        .svg-page svg {
+            width: 100% !important;
+            height: auto !important;
+            display: block;
         }
 
         .file-input {
@@ -47,26 +54,57 @@
 
 <div style="display: flex; flex-direction: column; align-items: center; gap: 1rem; margin: 2rem;">
     <img src="/static/assets/notation-original.svg"  style="width: 500px; height: auto;">
-    <img src="/static/assets/down-arrow.svg" style="width: 30px; height: auto;">
+    <img src="/static/assets/hand-drawn-down-arrow.svg" style="width: 20px; height: auto;">
     <img src="/static/assets/notation-colormusic.svg" style="width: 500px; height: auto;">
 </div>
 </div>
 <div style="width: 100%; height:4px; background: #CECECE;"></div>
 <div style="width: 600px; margin: 0 auto;">
-    <h1>Upload File</h1>
-    <form id="uploadForm" enctype="multipart/form-data"> <!--action="/upload"-->
-    <label for="title">Song Title - Author:</label><br>
-    <input type="text" name="title" required><br><br>
+    <h1 style="font-family: sans-serif; color: #333; margin-bottom: 1rem;">Upload Score</h1>
 
-    <label for="input_format">Input File Format:</label><br>
-    <select name="input_format" required>
-        <option value="musicxml_compressed">MusicXML (compressed)</option>
-        <option value="musicxml">MusicXML</option>
-        <option value="mei">MEI</option>
-    </select><br><br>
+<form id="uploadForm" enctype="multipart/form-data" style="max-width: 600px; padding: 1.5rem; border: 1px solid #ccc; border-radius: 8px; background-color: #fefefe; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05); font-family: sans-serif;">
+    
+    <!-- Song Title & Artist -->
+    <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
+        <label for="title" style="width: 150px; text-align: right;">Song & Artist:</label>
+        <input type="text" name="title" required style="flex: 2; min-width: 250px; padding: 8px; border: 1px solid #ccc; border-radius: 4px;">
+    </div>
 
-    <input type="file" name="file" required class="file-input"><br><br>
-    <input type="submit" value="Render" style="background-color: #37B646; color: #ffffff; text-align: center;"><br><br>
-    </form>
+    <!-- File Format -->
+    <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
+        <label for="input_format" style="width: 150px; text-align: right;">Input File Format:</label>
+        <select name="input_format" required 
+            style="width: 250px; padding: 8px; border: 1px solid #ccc; border-radius: 4px;">
+            <option value="musicxml_compressed">MusicXML (Compressed)</option>
+            <option value="musicxml">MusicXML (Plain)</option>
+            <option value="mei">MEI</option>
+        </select>
+    </div>
+
+    <!-- File Upload -->
+    <div style="margin-bottom: 1.5rem;">
+        <input type="file" name="file" required class="file-input"
+               accept=".mxl,.musicxml,.xml,.mei"
+               style="font-size: 16px; 
+                      padding: 10px; 
+                      border: 1px solid #ccc; 
+                      border-radius: 6px; 
+                      background-color: #f9f9f9;
+                      width: 100%;">
+    </div>
+
+    <!-- Submit Button -->
+    <div style="text-align: center;">
+        <input type="submit" value="Render" 
+               style="background-color: #39B54A; 
+                      color: #ffffff; 
+                      font-size: 18px; 
+                      padding: 12px 24px; 
+                      border: none; 
+                      border-radius: 6px; 
+                      cursor: pointer;">
+    </div>
+</form>
+
 </div>
 <div id="results" style="margin: 15px;"></div>

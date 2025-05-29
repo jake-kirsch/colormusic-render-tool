@@ -44,10 +44,16 @@ tk = verovio.toolkit()
 # ====== Processing Functions ======
 def parse_mei(file_path):
     """Parse MEI file"""
-    print(file_path)
-
     with open(file_path, "r", encoding="utf-8", errors="ignore") as f:
         return BeautifulSoup(f.read(), "xml")
+
+def parse_mei2(mei_filename, bucket, session_id):
+    blob = bucket.blob(f"{session_id}/{mei_filename}")
+
+    # Download MEI content as string
+    mei_content = blob.download_as_text(encoding="utf-8")
+
+    return BeautifulSoup(mei_content, "xml")
 
 
 def simplify_pitch(note_label):
@@ -513,7 +519,7 @@ def add_logo_and_title(soup, page_num, page_title):
     svg.insert(0, title_group)
 
 
-def render_color_music(mei_file_path, title):
+def render_color_music(mei_file_path, title, bucket, session_id):
     """Render MEI to ColorMusic"""
     # Clear out existing files
     if os.path.isdir(BASE_DIR):
@@ -576,3 +582,63 @@ def render_color_music(mei_file_path, title):
         print(path, "Exists?", os.path.exists(path))
     
     return svg_files
+
+
+def render_color_music2(mei_filename, title, bucket, session_id):
+    """Render MEI to ColorMusic"""
+    
+    # Label notes in MEI
+    soup = parse_mei2(mei_filename, bucket, session_id)
+    labeled_soup = label_notes(soup)
+
+    filename = mei_filename.split(".mei")[0]
+    modified_mei_filename = f"{filename}-mod.mei"
+
+    blob = bucket.blob(f"{session_id}/{modified_mei_filename}")
+    blob.upload_from_string(str(labeled_soup))
+
+    mei_data = blob.download_as_text(encoding="utf-8")
+    
+    tk.loadData(mei_data)
+
+    svg_filenames = []
+    for page in range(1, tk.getPageCount() + 1):
+        svg = BeautifulSoup(tk.renderToSVG(page), "xml")
+        
+        # Load original for reference
+        blob = bucket.blob(f"{session_id}/{filename}-{page}-original.svg")
+        blob.upload_from_string(tk.renderToSVG(page))
+
+        add_symbols_to_defs(svg.find("defs"))
+        shift_svg_content(svg)
+
+        for note in svg.find_all(class_="note"):
+            render_note_to_colormusic(note, note.find_parent("g", class_="chord"))
+            reorder_note(note)
+
+        # Adjust opacity for visible accids
+        for accid in svg.find_all(class_="accid"):
+            accid["opacity"] = 0.5
+
+        add_logo_and_title(svg, page, title)
+
+        # Footer
+        footer = svg.new_tag("comment")
+        footer.string = """
+            Generated and modified using the following libraries:
+            - BeautifulSoup: For parsing and manipulating the SVG.
+            - Verovio: For rendering MEI files to SVG. Visit Verovio at https://www.verovio.org
+        """
+        svg.find("svg").append(footer)
+        
+        svg_filename = f"{filename}-{page}-colormusic.svg"
+        blob = bucket.blob(f"{session_id}/{svg_filename}")
+        blob.upload_from_string(str(svg))
+
+        svg_filenames.append(svg_filename)
+
+    print("Rendered SVG filenames:")
+    for svg_filename in svg_filenames:
+        print(svg_filename)
+    
+    return svg_filenames
