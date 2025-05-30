@@ -38,6 +38,16 @@
             width: 100%; /* or a fixed value like 400px */
             max-width: 600px;
         }
+
+        @keyframes spin {
+            from { transform: rotate(0deg); }
+            to   { transform: rotate(360deg); }
+        }
+
+        #colormusic-spinner.spinning {
+            animation: spin 10s linear infinite;
+            transform-origin: center center;
+        }
 </style>
 <div style="width: 100%; margin: 0 auto; background: #F8F8F8; display:flex; justify-content: center; align-items: center;" >
     <div>
@@ -94,7 +104,7 @@
     </div>
 
     <!-- Submit Button -->
-    <div style="text-align: center;">
+    <div style="text-align: center; margin-bottom: 1.5rem;">
         <input type="submit" value="Render" 
                style="background-color: #39B54A; 
                       color: #ffffff; 
@@ -103,6 +113,10 @@
                       border: none; 
                       border-radius: 6px; 
                       cursor: pointer;">
+    </div>
+
+    <div id="rendering-container" style="text-align: center; display: none;">
+        <img id="colormusic-spinner" src="/static/assets/colormusic-circle-logo.svg" style="width: 80px; height: auto;" alt="Loading spinner">
     </div>
 </form>
 

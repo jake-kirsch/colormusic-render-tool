@@ -5,9 +5,10 @@ from fastapi.templating import Jinja2Templates
 from google.cloud import storage
 import io
 import os
-import uuid
+import time
 from typing import List
 from urllib.parse import quote
+import uuid
 import verovio
 import zipfile
 
@@ -122,6 +123,8 @@ def start_session():
 
 @app.post("/upload")
 async def upload(request: Request, response: Response, file: UploadFile = File(...), title: str = Form(...), input_format: str = Form(...), session_id: str = Form(...)):
+    start_time = time.time()
+    
     content = await file.read()
     filename = file.filename
     
@@ -164,6 +167,14 @@ async def upload(request: Request, response: Response, file: UploadFile = File(.
         
     svg_filenames = render_color_music(mei_filename, title, bucket, session_id)
     
+    end_time = time.time()
+
+    elapsed = end_time - start_time
+
+    # Having rendering take at least 5 seconds for effect
+    if elapsed < 5:
+        time.sleep(5 - elapsed)
+
     return HTMLResponse(generate_svg_results_html(svg_filenames, session_id))
 
 
