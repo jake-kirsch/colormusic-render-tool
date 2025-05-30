@@ -115,18 +115,32 @@
       const interval = setInterval(() => {
         const form = document.getElementById("uploadForm");
         const session_id = localStorage.getItem('session_id');
-        if (form && session_id) {
+        const rendering_container = document.getElementById('rendering-container');
+        const colormusic_spinner = document.getElementById('colormusic-spinner');
+
+        if (form && session_id && rendering_container && colormusic_spinner) {
           clearInterval(interval);
           form.addEventListener("submit", async (e) => {
             e.preventDefault();
             const formData = new FormData(form);
             formData.append('session_id', session_id);
+            
+            // Show Rendering Status Visual
+            rendering_container.classList.add('active');
+            rendering_container.style.display = 'block';
+            colormusic_spinner.classList.add('spinning');
+
             const res = await fetch("/upload", {
               method: "POST",
               body: formData
             });
             const html = await res.text();
             document.getElementById("results").innerHTML = html;
+
+            // Hide Rendering Status Visual
+            rendering_container.classList.remove('active');
+            rendering_container.style.display = 'none';
+            colormusic_spinner.classList.remove('spinning');
           });
         } else if (++attempts > maxAttempts) {
           clearInterval(interval);
