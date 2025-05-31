@@ -1,10 +1,13 @@
 from fastapi import FastAPI, UploadFile, File, Form, Request, Response
-from fastapi.responses import HTMLResponse, StreamingResponse
+from fastapi.responses import HTMLResponse, JSONResponse, StreamingResponse
 from fastapi.staticfiles import StaticFiles
 from fastapi.templating import Jinja2Templates
 from google.cloud import storage
 import io
 import os
+from slowapi import Limiter, _rate_limit_exceeded_handler
+from slowapi.errors import RateLimitExceeded
+from slowapi.util import get_remote_address
 import time
 from typing import List
 from urllib.parse import quote
@@ -14,10 +17,29 @@ import zipfile
 
 from .renderer import render_color_music
 
+limiter = Limiter(key_func=get_remote_address)
 app = FastAPI()
+app.state.limiter = limiter
+
+retry_after = "60"
+rate_limit = "3/minute"
 
 app.mount("/static", StaticFiles(directory="app/static"), name="static")
 templates = Jinja2Templates(directory="app/templates")
+
+# Custom handler
+@app.exception_handler(RateLimitExceeded)
+async def custom_rate_limit_handler(request: Request, exc: RateLimitExceeded):
+    return HTMLResponse(
+        status_code=429,
+        content=f"""
+        <div style="width: 100%; margin: 0 auto;">
+            <h2>Rate limit exceeded!</h2>
+            <p>Please wait before rendering more scores.  Current allowed rate is {rate_limit}.</p>
+        </div>
+        """,
+        headers={"Retry-After": retry_after}
+    )
 
 
 def extract_xml_from_zip(filename, session_id):
@@ -122,6 +144,7 @@ def start_session():
 
 
 @app.post("/upload")
+@limiter.limit(rate_limit)
 async def upload(request: Request, response: Response, file: UploadFile = File(...), title: str = Form(...), input_format: str = Form(...), session_id: str = Form(...)):
     start_time = time.time()
     
