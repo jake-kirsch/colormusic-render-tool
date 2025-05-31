@@ -112,7 +112,7 @@ async def render_page(request: Request, uploaded: bool = False, svgs: List[str] 
 # Load the service account credentials
 sa_key_path = os.getenv("COLORMUSIC_SA_KEY")
 gcs_client = storage.Client.from_service_account_json(sa_key_path)
-bucket = gcs_client.bucket("colormusic-notation-tool-staging")
+bucket = gcs_client.bucket("colormusic-notation-tool-render-staging")
 
 
 @app.get("/start-session")
@@ -128,15 +128,6 @@ async def upload(request: Request, response: Response, file: UploadFile = File(.
     content = await file.read()
     filename = file.filename
     
-    # Clear out existing files in GCS
-    blobs = bucket.list_blobs(prefix=session_id)
-
-    # Batch up the deletes
-    with gcs_client.batch():
-        for blob in blobs:
-            print(f"Deleting {blob.name}...")
-            blob.delete()
-
     blob = bucket.blob(f"{session_id}/{filename}")
     
     # Save file to GCS
