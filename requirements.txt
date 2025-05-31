@@ -4,5 +4,6 @@ google-cloud-storage
 jinja2
 lxml
 python-multipart
+slowapi
 uvicorn
 verovio==5.2.0
