@@ -131,9 +131,11 @@ async def upload(request: Request, response: Response, file: UploadFile = File(.
     # Clear out existing files in GCS
     blobs = bucket.list_blobs(prefix=session_id)
 
-    for blob in blobs:
-        print(f"Deleting {blob.name}...")
-        blob.delete()
+    # Batch up the deletes
+    with gcs_client.batch():
+        for blob in blobs:
+            print(f"Deleting {blob.name}...")
+            blob.delete()
 
     blob = bucket.blob(f"{session_id}/{filename}")
     
