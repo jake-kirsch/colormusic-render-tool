@@ -514,12 +514,55 @@ def add_logo_and_title(soup, page_num, page_title):
     svg.insert(0, title_group)
 
 
+def extract_score_title(soup):
+    mei_head = soup.find("meiHead")
+    
+    song_name = None
+    composers_str = None
+    if mei_head:
+        file_desc = mei_head.find("fileDesc")
+
+        if file_desc:
+            title_statement = file_desc.find("titleStmt")
+
+            if title_statement:
+                title = title_statement.find("title")
+
+                if title:
+                    song_name = title.get_text(strip=True)
+            
+                resp_statement = title_statement.find("respStmt")
+
+                if resp_statement:
+                    composers = [tag.get_text(strip=True) for tag in resp_statement.find_all("persName")]
+                    composers_str = ", ".join(composers)
+
+    score_title = None
+    if song_name and composers_str:
+        score_title = f"{song_name} - {composers_str}"
+    elif song_name:
+        score_title = song_name
+    elif composers:
+        score_title = composers_str
+
+    return score_title
+
+
 def render_color_music(mei_filename, title, bucket, session_id):
     """Render MEI to ColorMusic"""
     
     # Label notes in MEI
     soup = parse_mei(mei_filename, bucket, session_id)
     labeled_soup = label_notes(soup)
+
+    score_title = extract_score_title(soup)
+
+    # User provided title overrides score title pulled from MEI
+    if not title and score_title:
+        title = score_title
+
+    if not title:
+        title = "Unknown"
 
     filename = mei_filename.split(".mei")[0]
     modified_mei_filename = f"{filename}-mod.mei"

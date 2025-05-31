@@ -12,7 +12,19 @@
         <p>After you click “Render,” the color notation appears below on the webpage. A button labeled “Download All as ZIP” also appears for you to download the rendered notation to your local device. The ZIP folder contains both black-and-white and colorized versions of each song page.</p>
       </div>
     </div>
-  
+    
+    <div class="faq">
+      <div class="faq-question">
+        <p dir="ltr" style="line-height: 1.656;">
+            <span style="color: #000000; font-family: Arial; font-size: 13.999999999999998pt; font-weight: 700; vertical-align: baseline;">Why is the score title not showing?</span>
+        </p>
+        <span class="arrow">▼</span>
+      </div>
+      <div class="faq-answer">
+        <p>If Song & Artist is <i>not</i> provided by the user then best attempt to extract these details from the uploaded file is performed.  In some cases these details were not provided in the original file.  Fill in the optional Song & Artist textbox if this occurs (or if the details are lacking/incorrect).</p>
+      </div>
+    </div>
+
     <div class="faq">
       <div class="faq-question">
         <p dir="ltr" style="line-height: 1.656;">
@@ -21,7 +33,7 @@
         <span class="arrow">▼</span>
       </div>
       <div class="faq-answer">
-        <p>The tool includes a drop-down that lists three (3) acceptable file types:</p>
+        <p>Currently the tool includes a drop-down that lists three (3) acceptable file types:</p>
             <ul>
                 <li>
                     <strong>MusicXML, Compressed (.mxl)</strong> — This is the standard file type for songs downloaded from sites like 
@@ -47,7 +59,9 @@
         <span class="arrow">▼</span>
       </div>
       <div class="faq-answer">
-        <p>A growing number of sites make downloadable sheet music in MusicXML format, or in formats that can be converted to MusicXML. This <a href="https://www.musicxml.com/music-in-musicxml/" target="_blank" rel="noopener noreferrer" style="color: black;">site</a> lists where you can download sheet music in MusicXML or compatible formats.</p>
+        <p>A growing number of sites make downloadable sheet music in MusicXML format, or in formats that can be converted to MusicXML.</p>
+           <br>
+        This <a href="https://www.musicxml.com/music-in-musicxml/" target="_blank" rel="noopener noreferrer" style="color: black;">site</a> lists where you can download sheet music in MusicXML or compatible formats.
       </div>
     </div>
 
@@ -83,7 +97,7 @@
           <span class="arrow">▼</span>
         </div>
         <div class="faq-answer">
-            <p>The ColorMusic Notation Tool was created by <strong><a href="https://www.linkedin.com/in/jake-kirsch-dataeng" target="_blank" rel="noopener noreferrer" style="color: black; text-decoration: none;">Jake Kirsch</a></strong> using Python (FastAPI) and JavaScript for development, Render for webhosting, and Google Cloud Storage for file storage. He is a data engineer based in Atlanta.</p>
+            <p>The ColorMusic Notation Tool was created by <strong><a href="https://www.linkedin.com/in/jake-kirsch-dataeng" target="_blank" rel="noopener noreferrer" style="color: black; text-decoration: none;">Jake Kirsch</a></strong> using Python (FastAPI) and JavaScript for development, Render for web hosting, and Google Cloud Storage for file storage. He is a data engineer based in Atlanta.</p>
         </div>
     </div>
 
@@ -120,7 +134,7 @@
         </div>
         <div class="faq-answer">
             <p>Yes. Although it’s not necessary, we’d appreciate it if you credited this site when sharing or publishing your colorized notation.</p>
-            <br><br>
+            <br>
             Note that any commercial use of the music you colorize may require a license from the source copyright holder, which can involve various factors (e.g., country of origin, country of use, etc.). So conduct your own due diligence; this site disclaims any liability for copyright infringement.
         </div>
     </div>
@@ -133,7 +147,7 @@
           <span class="arrow">▼</span>
         </div>
         <div class="faq-answer">
-            <p>All files are temporarily stored in a private bucket in Google Cloud Storage with max lifetime of 1-day.<p>
+            <p>All files are temporarily stored in a private bucket in Google Cloud Storage with max lifetime of approximately 1-day.<p>
         </div>
     </div>
 
