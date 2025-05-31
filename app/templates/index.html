@@ -114,15 +114,21 @@
       let attempts = 0;
       const interval = setInterval(() => {
         const form = document.getElementById("uploadForm");
-        const session_id = localStorage.getItem('session_id');
         const rendering_container = document.getElementById('rendering-container');
         const colormusic_spinner = document.getElementById('colormusic-spinner');
 
-        if (form && session_id && rendering_container && colormusic_spinner) {
+        if (form && rendering_container && colormusic_spinner) {
           clearInterval(interval);
           form.addEventListener("submit", async (e) => {
             e.preventDefault();
             const formData = new FormData(form);
+
+            // Fetch a new session id
+            const resp = await fetch('/start-session');
+            const data = await resp.json();
+            const session_id = data.session_id
+            localStorage.setItem('session_id', session_id);
+
             formData.append('session_id', session_id);
             
             // Show Rendering Status Visual
