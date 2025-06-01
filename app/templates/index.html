@@ -86,14 +86,10 @@
   <div id="content" style="padding-top: 250px;">
     <!-- Content will load here -->
   </div>
-
+    
   <script>
     let sessionReady = false;
-
-    // async function init() {
-    //   await startSession();
-    // }
-
+    
     async function startSession() {
       const existing = localStorage.getItem('session_id');
       if (existing) {

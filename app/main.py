@@ -1,4 +1,4 @@
-from fastapi import FastAPI, UploadFile, File, Form, Request, Response
+from fastapi import FastAPI, UploadFile, File, Form, Request, Response, HTTPException
 from fastapi.responses import HTMLResponse, JSONResponse, StreamingResponse
 from fastapi.staticfiles import StaticFiles
 from fastapi.templating import Jinja2Templates
@@ -16,6 +16,10 @@ import verovio
 import zipfile
 
 from .renderer import render_color_music
+
+
+from playwright.sync_api import sync_playwright
+
 
 limiter = Limiter(key_func=get_remote_address)
 app = FastAPI()
@@ -78,8 +82,8 @@ def generate_svg_results_html(svg_filenames: list[str], session_id: str) -> str:
 
     html_parts = [
         '<div style="width: 600px; margin: 0 auto; text-align: center;">',
-        f'  <a href="/download-all?session_id={safe_session_id}">',
-        '    <button style="background-color: #823F98; color: #ffffff; font-size: 18px; padding: 12px 24px; border: none; border-radius: 8px; cursor: pointer; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">Download All as ZIP</button><br><br>',
+        f'  <a href="/download-pdf?session_id={safe_session_id}">',
+        '    <button style="background-color: #823F98; color: #ffffff; font-size: 18px; padding: 12px 24px; border: none; border-radius: 8px; cursor: pointer; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">Download PDF</button><br><br>',
         '  </a>',
         '</div',
     ]
@@ -93,6 +97,31 @@ def generate_svg_results_html(svg_filenames: list[str], session_id: str) -> str:
 
         html_parts.append('<div class="svg-page">')
         html_parts.append(svg_content)  # inject inline SVG content
+        html_parts.append('</div>')
+
+    html_parts.append('</div>')
+    html_parts.append('</div>')
+
+    return " ".join(html_parts)
+
+
+def generate_svg_results_html2(svg_html_parts: list[str], session_id: str) -> str:
+    safe_session_id = quote(session_id, safe='')
+
+    html_parts = [
+        '<div style="width: 600px; margin: 0 auto; text-align: center;">',
+        f'  <a href="/download-pdf?session_id={safe_session_id}">',
+        '    <button style="background-color: #823F98; color: #ffffff; font-size: 18px; padding: 12px 24px; border: none; border-radius: 8px; cursor: pointer; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">Download PDF</button><br><br>',
+        '  </a>',
+        '</div',
+    ]
+
+    html_parts.append('<div class="svg-wrapper">')
+    html_parts.append('<div class="svg-document">')
+    
+    for svg_html_part in svg_html_parts:
+        html_parts.append('<div class="svg-page">')
+        html_parts.append(svg_html_part)  # inject inline SVG content
         html_parts.append('</div>')
 
     html_parts.append('</div>')
@@ -181,7 +210,8 @@ async def upload(request: Request, response: Response, file: UploadFile = File(.
     elif input_format == "mei":
         mei_filename = filename
         
-    svg_filenames = render_color_music(mei_filename, title, bucket, session_id)
+    # svg_filenames = await render_color_music(mei_filename, title, bucket, session_id)
+    svg_html_parts = await render_color_music(mei_filename, title, bucket, session_id)
     
     end_time = time.time()
 
@@ -191,7 +221,8 @@ async def upload(request: Request, response: Response, file: UploadFile = File(.
     if elapsed < 5:
         time.sleep(5 - elapsed)
 
-    return HTMLResponse(generate_svg_results_html(svg_filenames, session_id))
+    # return HTMLResponse(generate_svg_results_html(svg_filenames, session_id))
+    return HTMLResponse(generate_svg_results_html2(svg_html_parts, session_id))
 
 
 @app.get("/download-all")
@@ -217,3 +248,157 @@ def download_all(session_id: str):
         media_type="application/zip",
         headers={"Content-Disposition": f"attachment; filename=ColorMusic_{zip_filename}.zip"}
     )
+
+@app.get("/download-pdf")
+def download_pdf(session_id: str):
+    blobs = bucket.list_blobs(prefix=f"{session_id}/")
+
+    for blob in blobs:
+        if blob.name.endswith(".pdf"):
+            # Download the blob into memory
+            pdf_io = io.BytesIO()
+            blob.download_to_file(pdf_io)
+            pdf_io.seek(0)
+
+            return StreamingResponse(
+                pdf_io,
+                media_type="application/pdf",
+                headers={
+                    "Content-Disposition": f'attachment; filename="{blob.name.split("/")[-1]}"'
+                },
+            )
+    
+    raise HTTPException(status_code=404, detail="PDF not found in GCS!")
+
+# # Lots of limitations with svglib/reportlab
+# from svglib.svglib import svg2rlg
+# from reportlab.graphics import renderPDF
+# from reportlab.pdfgen import canvas
+
+# @app.get("/download-pdf")
+# def download_pdf(session_id: str):
+#     # List SVG blobs by prefix (session_id folder)
+#     blobs = list(bucket.list_blobs(prefix=f"{session_id}/"))
+#     svg_blobs = [b for b in blobs if b.name.endswith(".svg")]
+
+#     if not svg_blobs:
+#         return Response("No SVG files found", status_code=404)
+
+#     # Prepare PDF buffer
+#     pdf_buffer = io.BytesIO()
+#     page_size = (595, 842)  # A4 in points (width, height)
+#     c = canvas.Canvas(pdf_buffer, pagesize=page_size)
+#     width, height = page_size
+
+#     for blob in blobs:
+#         if blob.name.endswith("colormusic.svg"):
+#             # Download SVG into memory
+#             svg_bytes = blob.download_as_bytes()
+#             svg_str = svg_bytes.decode("utf-8")
+
+#             # Convert SVG string bytes to ReportLab drawing
+#             drawing = svg2rlg(io.BytesIO(svg_bytes))
+
+#             # Calculate scale to fit page, keep aspect ratio
+#             scale_x = width / drawing.width
+#             scale_y = height / drawing.height
+#             scale = min(scale_x, scale_y)
+
+#             # Center the SVG on the page
+#             x = (width - drawing.width * scale) / 2
+#             y = (height - drawing.height * scale) / 2
+
+#             drawing.scale(scale, scale)
+#             renderPDF.draw(drawing, c, x, y)
+#             c.showPage()  # Next page
+#         elif blob.name.endswith(".mei") and "-mod.mei" not in blob.name:
+#             pdf_filename = os.path.basename(blob.name).split(".")[0]
+
+#     c.save()
+#     pdf_buffer.seek(0)
+
+#     headers = {
+#         "Content-Disposition": f"inline; filename={pdf_filename}.pdf"
+#     }
+
+#     return StreamingResponse(pdf_buffer, media_type="application/pdf", headers=headers)
+
+# Cairo is cutting off top half of the noteheads
+# import cairosvg
+
+# @app.get("/download-pdf")
+# def download_pdf(session_id: str):
+#     blobs = bucket.list_blobs(prefix=f"{session_id}/")
+
+#     pdf_filename = None
+    
+#     for blob in blobs:
+#         if blob.name.endswith("colormusic.svg"):
+#             # Download SVG into memory
+#             svg_bytes = blob.download_as_bytes()
+
+#             # Convert SVG to PDF in memory
+#             pdf_io = io.BytesIO()
+#             cairosvg.svg2pdf(bytestring=svg_bytes, write_to=pdf_io)
+
+#             # Rewind and return as streaming response
+#             pdf_io.seek(0)
+#         elif blob.name.endswith(".mei") and "-mod.mei" not in blob.name:
+#             pdf_filename = os.path.basename(blob.name).split(".")[0]
+
+    
+#     return StreamingResponse(
+#         content=pdf_io,
+#         media_type="application/pdf",
+#         headers={ "Content-Disposition": f"inline; filename=ColorMusic_{pdf_filename}.pdf" }
+#         # headers={ "Content-Disposition": f"attachment; filename=ColorMusic_{pdf_filename}.pdf" }
+#     )
+
+# # This Works, moving this action to the renderer.py
+# @app.get("/download-pdf")
+# def download_pdf(session_id: str):
+#     blobs = bucket.list_blobs(prefix=f"{session_id}/")
+
+#     pdf_filename = None
+    
+#     svg_html_parts = []
+#     for blob in blobs:
+#         if blob.name.endswith("colormusic.svg"):
+#             # Download SVG into memory
+#             svg_bytes = blob.download_as_bytes()
+#             svg = svg_bytes.decode("utf-8")
+#             svg_html_parts.append(f"<div style='page-break-after: always'>{svg}</div>")
+#         elif blob.name.endswith(".mei") and "-mod.mei" not in blob.name:
+#             pdf_filename = os.path.basename(blob.name).split(".")[0]
+
+#     html_content = f"""
+#     <html>
+#       <head>
+#         <style>
+#           @page {{ size: Letter; margin: 0 }}
+#           body {{ margin: 0 }}
+#         </style>
+#       </head>
+#       <body>
+#         {''.join(svg_html_parts)}
+#       </body>
+#     </html>
+#     """
+
+#     pdf_io = io.BytesIO()
+
+#     with sync_playwright() as p:
+#         browser = p.chromium.launch()
+#         page = browser.new_page()
+#         page.set_content(html_content, wait_until="load")
+#         pdf_bytes = page.pdf(format="Letter", print_background=True)
+#         browser.close()
+
+#     pdf_io.write(pdf_bytes)
+#     pdf_io.seek(0)
+
+#     return StreamingResponse(
+#         pdf_io,
+#         media_type="application/pdf",
+#         headers={"Content-Disposition": f"inline; filename={pdf_filename}.pdf"}
+#     )
