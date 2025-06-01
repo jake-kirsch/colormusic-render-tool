@@ -1,9 +1,11 @@
 # Standard Libraries
+import io
 import math
 import os
 
 # Third-party Libraries
 from bs4 import BeautifulSoup
+from playwright.sync_api import sync_playwright
 import verovio
 
 # Constants
@@ -430,7 +432,7 @@ def add_symbols_to_defs(defs):
 def shift_svg_content(soup):
     """Shift SVG contents for Logo/Title Header"""
     svg = soup.find("svg")
-    shift_group = soup.new_tag("g", transform="translate(0, 50)")
+    shift_group = soup.new_tag("g", transform="translate(0, 40)")
     for child in list(svg.contents):
         if child.name:
             shift_group.append(child.extract())
@@ -443,9 +445,19 @@ def add_logo_and_title(soup, page_num, page_title):
     """Create and Add ColorMusic Logo and Song Title"""
     svg = soup.find("svg")
     group = soup.new_tag("g", id="logo-group")
-    x_offset, y_offset = 100, 100
-    radius = 65
+    x_offset, y_offset = 25, 25
+    shape_opacity = 1.0
+    shape_stroke_width = 0.2
 
+    radius = 15
+    ratio = radius / 65
+
+    print(f"Ratio: {ratio}")
+
+    shape_scale = 1.4
+    square_width = 15 * ratio * shape_scale
+    circle_radis = 8.5 * ratio * shape_scale
+    
     for pitch, angle in [
         ("Ef", 0),
         ("D", 30),
@@ -461,42 +473,39 @@ def add_logo_and_title(soup, page_num, page_title):
         ("E", 330),
     ]:
         if pitch in SQUARE_PITCHES:
-            width = 15
-            x = (radius * math.cos(math.radians(angle))) + x_offset - (width / 2)
-            y = -(radius * math.sin(math.radians(angle))) + y_offset - (width / 2)
-            cx, cy = x + width / 2, y + width / 2
+            x = (radius * math.cos(math.radians(angle))) + x_offset - (square_width / 2)
+            y = -(radius * math.sin(math.radians(angle))) + y_offset - (square_width / 2)
+            cx, cy = x + square_width / 2, y + square_width / 2
             shape = soup.new_tag(
                 "rect",
                 x=x,
                 y=y,
-                width=width,
-                height=width,
+                width=square_width,
+                height=square_width,
                 fill=PITCH_COLORS[pitch],
-                stroke="black",
-                stroke_width=STROKE_WIDTH,
                 transform=f"rotate({90 - angle} {cx} {cy})",
+                style=f"stroke:black; stroke-width:{shape_stroke_width}; opacity:{shape_opacity}",
             )
         else:
             shape = soup.new_tag(
                 "circle",
                 cx=(radius * math.cos(math.radians(angle))) + x_offset,
                 cy=-(radius * math.sin(math.radians(angle))) + y_offset,
-                r="8.5",
+                r=circle_radis,
                 fill=PITCH_COLORS[pitch],
-                stroke="black",
-                stroke_width=STROKE_WIDTH,
+                style=f"stroke:black; stroke-width:{shape_stroke_width}; opacity:{shape_opacity}",
             )
         group.append(shape)
 
-    # Text
-    color = soup.new_tag("text", x="55", y="105", fill="#FDB813", **{"font-size": "20"})
-    color.string = "color"
-    music = soup.new_tag(
-        "text", x="97.5", y="105", fill="#939598", **{"font-size": "20"}
-    )
-    music.string = "music"
-    group.append(color)
-    group.append(music)
+    # # Text
+    # color = soup.new_tag("text", x="55", y="35", fill="#FDB813", **{"font-size": "20"})
+    # color.string = "color"
+    # music = soup.new_tag(
+    #     "text", x="97.5", y="35", fill="#939598", **{"font-size": "20"}
+    # )
+    # music.string = "music"
+    # group.append(color)
+    # group.append(music)
 
     link = soup.new_tag(
         "a",
@@ -505,10 +514,18 @@ def add_logo_and_title(soup, page_num, page_title):
         **{"xmlns:xlink": "http://www.w3.org/1999/xlink"},
     )
     link.append(group)
-    svg.insert(0, link)
+
+    if page_num == 1:
+        svg.insert(0, link)
 
     title_group = soup.new_tag("g", id="song-title-group")
-    title = soup.new_tag("text", x="210", y="105", fill="Black", **{"font-size": "30"})
+    title = soup.new_tag(
+        "text",
+        x="98%", # Near the right edge
+        y="15",
+        fill="Black",
+        **{"font-size": "10", "text-anchor": "end"}  # Align text to the right
+    )
     title.string = f"{page_title} - Page {page_num}"
     title_group.append(title)
     svg.insert(0, title_group)
@@ -548,7 +565,7 @@ def extract_score_title(soup):
     return score_title
 
 
-def render_color_music(mei_filename, title, bucket, session_id):
+async def render_color_music(mei_filename, title, bucket, session_id):
     """Render MEI to ColorMusic"""
     
     # Label notes in MEI
@@ -572,9 +589,18 @@ def render_color_music(mei_filename, title, bucket, session_id):
 
     mei_data = blob.download_as_text(encoding="utf-8")
     
+    tk.setOptions({
+        "pageWidth": 2159,    # 210 mm * 10
+        "pageHeight": 2794,   # 297 mm * 10
+        "scale": 40,          # default is 40, adjust if needed (higher = bigger)
+        "adjustPageHeight": True,  # Automatically adjust page height to content
+        "svgViewBox": True,
+    })
+
     tk.loadData(mei_data)
 
     svg_filenames = []
+    svg_html_parts = []
     for page in range(1, tk.getPageCount() + 1):
         svg = BeautifulSoup(tk.renderToSVG(page), "xml")
         
@@ -583,7 +609,7 @@ def render_color_music(mei_filename, title, bucket, session_id):
         blob.upload_from_string(tk.renderToSVG(page))
 
         add_symbols_to_defs(svg.find("defs"))
-        shift_svg_content(svg)
+        # shift_svg_content(svg)
 
         for note in svg.find_all(class_="note"):
             render_note_to_colormusic(note, note.find_parent("g", class_="chord"))
@@ -607,11 +633,51 @@ def render_color_music(mei_filename, title, bucket, session_id):
         svg_filename = f"{filename}-{page}-colormusic.svg"
         blob = bucket.blob(f"{session_id}/{svg_filename}")
         blob.upload_from_string(str(svg))
-
+        svg_html_parts.append(f"<div style='page-break-after: always'>{str(svg)}</div>")
+        
         svg_filenames.append(svg_filename)
 
     print("Rendered SVG filenames:")
     for svg_filename in svg_filenames:
         print(svg_filename)
-    
-    return svg_filenames
+
+    # Generate PDF and upload to bucket
+    html_content = f"""
+    <html>
+      <head>
+        <style>
+          @page {{ size: Letter; margin: 0 }}
+          body {{ margin: 0 }}
+        </style>
+      </head>
+      <body>
+        {''.join(svg_html_parts)}
+      </body>
+    </html>
+    """
+
+    pdf_io = io.BytesIO()
+
+    from playwright.async_api import async_playwright
+
+    # Generate PDF using Playwright
+    async with async_playwright() as p:
+        browser = await p.chromium.launch()
+        page = await browser.new_page()
+        await page.set_content(html_content, wait_until="load")
+
+        pdf_bytes = await page.pdf(format="Letter", print_background=True)
+        await browser.close()
+
+    # Write to in-memory buffer
+    pdf_io.write(pdf_bytes)
+    pdf_io.seek(0)  # Reset to start of buffer
+
+    # Upload to GCS
+    pdf_filename = f"{filename}-colormusic.pdf"
+    blob = bucket.blob(f"{session_id}/{pdf_filename}")
+
+    blob.upload_from_file(pdf_io, content_type="application/pdf")
+
+    # return svg_filenames
+    return svg_html_parts

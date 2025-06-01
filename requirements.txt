@@ -3,6 +3,7 @@ fastapi
 google-cloud-storage
 jinja2
 lxml
+playwright
 python-multipart
 slowapi
 uvicorn
