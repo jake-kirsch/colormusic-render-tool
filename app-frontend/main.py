@@ -17,6 +17,14 @@ import zipfile
 
 from .renderer import render_color_music
 
+# For Cloud Run Service
+import json
+import requests
+from google.auth.transport.requests import Request as GoogleRequest
+from google.oauth2 import service_account
+from google.auth import jwt
+
+
 limiter = Limiter(key_func=get_remote_address)
 app = FastAPI()
 app.state.limiter = limiter
@@ -133,6 +141,14 @@ sa_key_path = os.getenv("COLORMUSIC_SA_KEY")
 gcs_client = storage.Client.from_service_account_json(sa_key_path)
 bucket = gcs_client.bucket("colormusic-notation-tool-render-staging")
 
+CLOUD_RUN_URL = "https://colormusic-render-svc-388982170722.us-east1.run.app/render-color-music"
+AUDIENCE = CLOUD_RUN_URL  # Must match your Cloud Run URL exactly
+
+# Create credentials from service account file
+credentials = service_account.IDTokenCredentials.from_service_account_file(
+    sa_key_path,
+    target_audience=AUDIENCE
+)
 
 @app.get("/start-session")
 def start_session():
@@ -177,7 +193,20 @@ async def upload(request: Request, response: Response, file: UploadFile = File(.
     
     elif input_format == "mei":
         mei_filename = filename
-        
+    
+    # Call Render Service
+    credentials.refresh(GoogleRequest())
+
+    headers = {"Authorization": f"Bearer {credentials.token}"}
+    payload = {"session_id": session_id, }
+
+    response = requests.post(CLOUD_RUN_URL, json=payload, headers=headers)
+
+    if response.ok:
+        print("Result:", response.json()["result"])
+    else:
+        print("Error:", response.status_code, response.text)
+
     # svg_filenames = await render_color_music(mei_filename, title, bucket, session_id)
     svg_html_parts = await render_color_music(mei_filename, title, bucket, session_id)
     
