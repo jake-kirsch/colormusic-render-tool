@@ -55,7 +55,7 @@ def extract_xml_from_zip(bucket, filename, session_id):
 def render_color_music(request: RenderRequest):
     """"""
     # Example processing: make it uppercase
-    result = f"filename: {request.filename}, input_format: {request.input_format}, title: {request.title}, bucket_name: {request.bucket_name}, session_id: {request.session_id}"
+    print(f"filename: {request.filename}, input_format: {request.input_format}, title: {request.title}, bucket_name: {request.bucket_name}, session_id: {request.session_id}")
 
     filename = request.filename
     input_format = request.input_format
