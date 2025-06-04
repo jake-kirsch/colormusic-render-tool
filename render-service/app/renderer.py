@@ -658,16 +658,14 @@ def render(mei_filename, title, bucket, session_id):
 
     pdf_io = io.BytesIO()
 
-    from playwright.async_api import async_playwright
-
     # Generate PDF using Playwright
-    async with async_playwright() as p:
-        browser = await p.chromium.launch()
-        page = await browser.new_page()
-        await page.set_content(html_content, wait_until="load")
+    with sync_playwright() as p:
+        browser = p.chromium.launch()
+        page = browser.new_page()
+        page.set_content(html_content, wait_until="load")
 
-        pdf_bytes = await page.pdf(format="Letter", print_background=True)
-        await browser.close()
+        pdf_bytes = page.pdf(format="Letter", print_background=True)
+        browser.close()
 
     # Write to in-memory buffer
     pdf_io.write(pdf_bytes)
