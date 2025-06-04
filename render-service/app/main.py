@@ -5,6 +5,7 @@ from fastapi import FastAPI
 from google.cloud import storage
 import io
 import os
+import time
 
 import verovio
 import zipfile
@@ -59,6 +60,7 @@ def extract_xml_from_zip(bucket, filename, session_id):
 def render_color_music(request: RenderRequest):
     """"""
     # Example processing: make it uppercase
+    time.sleep(2)
     message = f"filename: {request.filename}, input_format: {request.input_format}, title: {request.title}, bucket_name: {request.bucket_name}, session_id: {request.session_id}"
 
     logging.info(message)
@@ -75,6 +77,7 @@ def render_color_music(request: RenderRequest):
 
     mei_path = ""
     if input_format in ["musicxml", "musicxml_compressed", ]:
+        time.sleep(2)
         blob = bucket.blob(f"{session_id}/{filename}")
 
         # Download XML content as string
@@ -99,6 +102,9 @@ def render_color_music(request: RenderRequest):
         mei_filename = filename
     
     logging.info("Rendering ...")
+
+    time.sleep(2)
+    
     svg_html_parts = render(mei_filename, title, bucket, session_id)
 
     return {"result": svg_html_parts}
