@@ -1,0 +1,4038 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="507.19254mm"
+   height="95.249985mm"
+   viewBox="0 0 507.19253 95.249987"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.4.2 (f4327f4, 2025-05-13)"
+   sodipodi:docname="original-notation.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     inkscape:zoom="0.57543939"
+     inkscape:cx="996.62972"
+     inkscape:cy="-171.17354"
+     inkscape:window-width="3840"
+     inkscape:window-height="2066"
+     inkscape:window-x="2869"
+     inkscape:window-y="-11"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="vjmp953" />
+  <defs
+     id="defs1" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(287.6386,-36.184737)">
+    <g
+       id="l1dc0tfe"
+       class="system"
+       transform="matrix(0.02645833,0,0,0.02645833,-309.6788,-625.80268)">
+      <path
+         d="M 1102.6555,25464.281 V 27942.21"
+         stroke-width="20.4487"
+         id="path917"
+         style="stroke:currentColor" />
+      <g
+         id="yfwcewl"
+         class="grpSym">
+        <path
+           d="m 1022,27972 c -360,-540 90,-1062 -180,-1242 333,180 -117,702 180,1242"
+           stroke-linecap="round"
+           stroke-linejoin="round"
+           stroke-width="18"
+           id="path918"
+           style="stroke:currentColor" />
+        <path
+           d="m 1022,25488 c -297,540 153,1062 -180,1242 270,-180 -180,-702 180,-1242"
+           stroke-linecap="round"
+           stroke-linejoin="round"
+           stroke-width="18"
+           id="path919"
+           style="stroke:currentColor" />
+      </g>
+      <g
+         id="r1mvxzrj"
+         class="labelAbbr" />
+      <g
+         id="m1h3va8o"
+         class="measure">
+        <g
+           id="i6om7va"
+           class="staff">
+          <path
+             d="M 1094,25470 H 8368"
+             stroke-width="13"
+             id="path927"
+             style="stroke:currentColor" />
+          <path
+             d="M 1094,25650 H 8368"
+             stroke-width="13"
+             id="path928"
+             style="stroke:currentColor" />
+          <path
+             d="M 1094,25830 H 8368"
+             stroke-width="13"
+             id="path929"
+             style="stroke:currentColor" />
+          <path
+             d="M 1094,26010 H 8368"
+             stroke-width="13"
+             id="path930"
+             style="stroke:currentColor" />
+          <path
+             d="M 1094,26190 H 8368"
+             stroke-width="13"
+             id="path931"
+             style="stroke:currentColor" />
+          <g
+             id="j1i2f7ee"
+             class="clef">
+            <g
+               id="use931"
+               transform="matrix(0.72,0,0,0.72,1211,26010)">
+              <path
+                 transform="scale(1,-1)"
+                 d="m 441,-245 c -23,-4 -48,-6 -76,-6 -59,0 -102,7 -130,20 C 147,-189 85,-138 48,-77 22,-33 5,26 0,99 c 0,6 -1,13 -1,19 0,54 15,111 45,170 29,57 65,106 110,148 45,42 96,85 153,127 -3,16 -8,46 -13,92 -4,43 -5,73 -5,89 0,117 16,172 69,257 34,54 64,82 89,82 21,0 43,-30 69,-92 26,-62 39,-115 41,-159 V 817 C 557,708 536,655 490,576 477,556 427,486 392,458 379,449 367,439 355,429 l 31,-181 c 8,1 18,2 28,2 58,0 102,-12 133,-35 59,-43 92,-104 98,-184 1,-7 1,-15 1,-22 0,-123 -87,-209 -181,-248 8,-57 17,-110 25,-162 5,-31 6,-58 6,-80 0,-30 -5,-53 -14,-70 -35,-64 -88,-99 -158,-103 -5,0 -11,-1 -16,-1 -37,0 -72,10 -108,27 -50,24 -77,59 -80,105 v 11 c 0,29 7,55 20,76 18,28 45,42 79,44 h 6 c 49,0 93,-42 97,-87 v -9 c 0,-51 -34,-86 -105,-106 17,-24 51,-36 102,-36 62,0 116,43 140,85 9,16 13,41 13,74 0,20 -1,42 -5,67 -8,53 -18,106 -26,159 z m 20,1184 c -95,0 -135,-175 -135,-286 0,-24 2,-48 5,-71 50,39 92,82 127,128 40,53 60,100 60,140 v 8 c -4,53 -22,81 -55,81 z m -55,-820 54,-326 c 73,25 110,78 110,161 0,7 0,15 -1,23 -7,95 -57,142 -151,142 z m -24,-2 C 310,115 254,70 254,-3 v -7 c 2,-46 43,-99 75,-115 -3,-2 -7,-5 -10,-10 -70,33 -116,88 -123,172 v 11 c 0,68 44,126 88,159 23,17 49,29 78,36 L 333,413 C 312,400 281,376 241,340 191,296 155,256 132,221 87,152 65,91 65,39 V 26 c 5,-68 35,-127 93,-176 58,-49 125,-73 203,-73 25,0 50,3 75,9 -19,111 -36,221 -54,331 z"
+                 id="path125"
+                 style="stroke:currentColor" />
+            </g>
+          </g>
+          <g
+             id="f1g6d62g"
+             class="keySig">
+            <g
+               id="z1pw7jto"
+               class="keyAccid">
+              <g
+                 id="use932"
+                 transform="matrix(0.72,0,0,0.72,1892,25830)">
+                <path
+                   transform="scale(1,-1)"
+                   d="m 20,110 c 32,16 54,27 93,27 26,0 35,-3 54,-13 13,-7 24,-20 27,-38 l 4,-25 C 198,33 182,4 153,-28 130,-53 114,-72 88,-96 L 0,-175 v 644 h 20 z m 70,-4 C 58,106 42,96 20,77 v -194 c 31,31 54,59 71,84 21,32 32,59 32,84 0,9 1,16 1,20 0,14 -3,21 -11,30 l -8,3 z"
+                   id="path117"
+                   style="stroke:currentColor" />
+              </g>
+            </g>
+            <g
+               id="i10grcei"
+               class="keyAccid">
+              <g
+                 id="use933"
+                 transform="matrix(0.72,0,0,0.72,2072,25560)">
+                <path
+                   transform="scale(1,-1)"
+                   d="m 20,110 c 32,16 54,27 93,27 26,0 35,-3 54,-13 13,-7 24,-20 27,-38 l 4,-25 C 198,33 182,4 153,-28 130,-53 114,-72 88,-96 L 0,-175 v 644 h 20 z m 70,-4 C 58,106 42,96 20,77 v -194 c 31,31 54,59 71,84 21,32 32,59 32,84 0,9 1,16 1,20 0,14 -3,21 -11,30 l -8,3 z"
+                   id="path118"
+                   style="stroke:currentColor" />
+              </g>
+            </g>
+          </g>
+          <g
+             id="z1ivm0l4"
+             class="layer">
+            <g
+               id="jyukeby"
+               class="beam">
+              <polygon
+                 stroke-opacity="1"
+                 fill-opacity="1"
+                 points="3817,26325 2484,26325 2484,26415 3817,26415 "
+                 id="polygon933" />
+              <polygon
+                 stroke-opacity="1"
+                 fill-opacity="1"
+                 points="2996,26190 2484,26190 2484,26280 2996,26280 "
+                 id="polygon934" />
+              <polygon
+                 stroke-opacity="1"
+                 fill-opacity="1"
+                 points="3470,26190 2996,26190 2996,26280 3470,26280 "
+                 id="polygon935" />
+              <polygon
+                 stroke-opacity="1"
+                 fill-opacity="1"
+                 points="3817,26190 3470,26190 3470,26280 3817,26280 "
+                 id="polygon936" />
+              <g
+                 id="o14aidw2"
+                 class="note">
+                <title
+                   class="labelAttr"
+                   id="title936">D:16</title>
+                <g
+                   class="notehead"
+                   id="g936">
+                  <g
+                     id="use936"
+                     transform="matrix(0.72,0,0,0.72,2484,25650)">
+                    <path
+                       transform="scale(1,-1)"
+                       d="m 0,-39 c 0,68 73,172 200,172 66,0 114,-37 114,-95 0,-84 -106,-171 -218,-171 -64,0 -96,30 -96,94 z"
+                       id="path15"
+                       style="stroke:currentColor" />
+                  </g>
+                </g>
+                <g
+                   id="i304e61"
+                   class="stem">
+                  <path
+                     d="m 2493,25678 v 719"
+                     stroke-width="18"
+                     id="path936"
+                     style="stroke:currentColor" />
+                </g>
+              </g>
+              <g
+                 id="w10g4stq"
+                 class="note">
+                <title
+                   class="labelAttr"
+                   id="title937">C:16</title>
+                <g
+                   class="notehead"
+                   id="g937">
+                  <g
+                     id="use937"
+                     transform="matrix(0.72,0,0,0.72,2987,25740)">
+                    <path
+                       transform="scale(1,-1)"
+                       d="m 0,-39 c 0,68 73,172 200,172 66,0 114,-37 114,-95 0,-84 -106,-171 -218,-171 -64,0 -96,30 -96,94 z"
+                       id="path16"
+                       style="stroke:currentColor" />
+                  </g>
+                </g>
+                <g
+                   id="mcpw8au"
+                   class="stem">
+                  <path
+                     d="m 2996,25768 v 629"
+                     stroke-width="18"
+                     id="path937"
+                     style="stroke:currentColor" />
+                </g>
+              </g>
+              <g
+                 id="f1rbqs5u"
+                 class="note">
+                <title
+                   class="labelAttr"
+                   id="title938">B:16</title>
+                <g
+                   class="notehead"
+                   id="g938">
+                  <g
+                     id="use938"
+                     transform="matrix(0.72,0,0,0.72,3461,25830)">
+                    <path
+                       transform="scale(1,-1)"
+                       d="m 0,-39 c 0,68 73,172 200,172 66,0 114,-37 114,-95 0,-84 -106,-171 -218,-171 -64,0 -96,30 -96,94 z"
+                       id="path17"
+                       style="stroke:currentColor" />
+                  </g>
+                </g>
+                <g
+                   id="k1lsvicb"
+                   class="stem">
+                  <path
+                     d="m 3470,25858 v 539"
+                     stroke-width="18"
+                     id="path938"
+                     style="stroke:currentColor" />
+                </g>
+                <g
+                   id="w6nevly"
+                   class="accid">
+                  <g
+                     id="use939"
+                     transform="matrix(0.72,0,0,0.72,3303,25830)">
+                    <path
+                       transform="scale(1,-1)"
+                       d="M 0,-188 V 351 H 18 V 160 l 139,22 v -533 h -17 v 186 z m 18,88 122,17 V 93 L 18,74 Z"
+                       id="path9"
+                       style="stroke:currentColor" />
+                  </g>
+                </g>
+              </g>
+              <g
+                 id="o1yn3w2e"
+                 class="note">
+                <title
+                   class="labelAttr"
+                   id="title939">C:16</title>
+                <g
+                   class="notehead"
+                   id="g940">
+                  <g
+                     id="use940"
+                     transform="matrix(0.72,0,0,0.72,3799,25740)">
+                    <path
+                       transform="scale(1,-1)"
+                       d="m 0,-39 c 0,68 73,172 200,172 66,0 114,-37 114,-95 0,-84 -106,-171 -218,-171 -64,0 -96,30 -96,94 z"
+                       id="path18"
+                       style="stroke:currentColor" />
+                  </g>
+                </g>
+                <g
+                   id="vef6myl"
+                   class="stem">
+                  <path
+                     d="m 3808,25768 v 629"
+                     stroke-width="18"
+                     id="path940"
+                     style="stroke:currentColor" />
+                </g>
+              </g>
+            </g>
+            <g
+               id="g279hif"
+               class="beam">
+              <polygon
+                 stroke-opacity="1"
+                 fill-opacity="1"
+                 points="5333,26460 4301,26505 4301,26595 5333,26550 "
+                 id="polygon940" />
+              <polygon
+                 stroke-opacity="1"
+                 fill-opacity="1"
+                 points="4648,26355 4301,26370 4301,26460 4648,26445 "
+                 id="polygon941" />
+              <polygon
+                 stroke-opacity="1"
+                 fill-opacity="1"
+                 points="4986,26340 4648,26355 4648,26445 4986,26430 "
+                 id="polygon942" />
+              <polygon
+                 stroke-opacity="1"
+                 fill-opacity="1"
+                 points="5333,26325 4986,26340 4986,26430 5333,26415 "
+                 id="polygon943" />
+              <g
+                 id="f154roop"
+                 class="note">
+                <title
+                   class="labelAttr"
+                   id="title943">Ab:16</title>
+                <g
+                   class="notehead"
+                   id="g943">
+                  <g
+                     id="use943"
+                     transform="matrix(0.72,0,0,0.72,4301,25920)">
+                    <path
+                       transform="scale(1,-1)"
+                       d="m 0,-39 c 0,68 73,172 200,172 66,0 114,-37 114,-95 0,-84 -106,-171 -218,-171 -64,0 -96,30 -96,94 z"
+                       id="path19"
+                       style="stroke:currentColor" />
+                  </g>
+                </g>
+                <g
+                   id="d62j080"
+                   class="stem">
+                  <path
+                     d="m 4310,25948 v 629"
+                     stroke-width="18"
+                     id="path943"
+                     style="stroke:currentColor" />
+                </g>
+                <g
+                   id="vdml24l"
+                   class="accid">
+                  <g
+                     id="use944"
+                     transform="matrix(0.72,0,0,0.72,4114,25920)">
+                    <path
+                       transform="scale(1,-1)"
+                       d="m 20,110 c 32,16 54,27 93,27 26,0 35,-3 54,-13 13,-7 24,-20 27,-38 l 4,-25 C 198,33 182,4 153,-28 130,-53 114,-72 88,-96 L 0,-175 v 644 h 20 z m 70,-4 C 58,106 42,96 20,77 v -194 c 31,31 54,59 71,84 21,32 32,59 32,84 0,9 1,16 1,20 0,14 -3,21 -11,30 l -8,3 z"
+                       id="path119"
+                       style="stroke:currentColor" />
+                  </g>
+                </g>
+              </g>
+              <g
+                 id="nhrt8j1"
+                 class="note">
+                <title
+                   class="labelAttr"
+                   id="title944">C:16</title>
+                <g
+                   class="notehead"
+                   id="g945">
+                  <g
+                     id="use945"
+                     transform="matrix(0.72,0,0,0.72,4639,25740)">
+                    <path
+                       transform="scale(1,-1)"
+                       d="m 0,-39 c 0,68 73,172 200,172 66,0 114,-37 114,-95 0,-84 -106,-171 -218,-171 -64,0 -96,30 -96,94 z"
+                       id="path20"
+                       style="stroke:currentColor" />
+                  </g>
+                </g>
+                <g
+                   id="u150nvru"
+                   class="stem">
+                  <path
+                     d="m 4648,25768 v 794"
+                     stroke-width="18"
+                     id="path945"
+                     style="stroke:currentColor" />
+                </g>
+              </g>
+              <g
+                 id="p1ieio9w"
+                 class="note">
+                <title
+                   class="labelAttr"
+                   id="title945">B:16</title>
+                <g
+                   class="notehead"
+                   id="g946">
+                  <g
+                     id="use946"
+                     transform="matrix(0.72,0,0,0.72,4977,25830)">
+                    <path
+                       transform="scale(1,-1)"
+                       d="m 0,-39 c 0,68 73,172 200,172 66,0 114,-37 114,-95 0,-84 -106,-171 -218,-171 -64,0 -96,30 -96,94 z"
+                       id="path21"
+                       style="stroke:currentColor" />
+                  </g>
+                </g>
+                <g
+                   id="t139btam"
+                   class="stem">
+                  <path
+                     d="m 4986,25858 v 689"
+                     stroke-width="18"
+                     id="path946"
+                     style="stroke:currentColor" />
+                </g>
+              </g>
+              <g
+                 id="nv0sxni"
+                 class="note">
+                <title
+                   class="labelAttr"
+                   id="title946">C:16</title>
+                <g
+                   class="notehead"
+                   id="g947">
+                  <g
+                     id="use947"
+                     transform="matrix(0.72,0,0,0.72,5315,25740)">
+                    <path
+                       transform="scale(1,-1)"
+                       d="m 0,-39 c 0,68 73,172 200,172 66,0 114,-37 114,-95 0,-84 -106,-171 -218,-171 -64,0 -96,30 -96,94 z"
+                       id="path22"
+                       style="stroke:currentColor" />
+                  </g>
+                </g>
+                <g
+                   id="e1j60j8r"
+                   class="stem">
+                  <path
+                     d="m 5324,25768 v 764"
+                     stroke-width="18"
+                     id="path947"
+                     style="stroke:currentColor" />
+                </g>
+              </g>
+            </g>
+            <g
+               id="h1cszb7j"
+               class="beam">
+              <polygon
+                 stroke-opacity="1"
+                 fill-opacity="1"
+                 points="6684,26325 5653,26325 5653,26415 6684,26415 "
+                 id="polygon947" />
+              <polygon
+                 stroke-opacity="1"
+                 fill-opacity="1"
+                 points="6000,26190 5653,26190 5653,26280 6000,26280 "
+                 id="polygon948" />
+              <polygon
+                 stroke-opacity="1"
+                 fill-opacity="1"
+                 points="6337,26190 6000,26190 6000,26280 6337,26280 "
+                 id="polygon949" />
+              <polygon
+                 stroke-opacity="1"
+                 fill-opacity="1"
+                 points="6684,26190 6337,26190 6337,26280 6684,26280 "
+                 id="polygon950" />
+              <g
+                 id="nehpx55"
+                 class="note">
+                <title
+                   class="labelAttr"
+                   id="title950">D:16</title>
+                <g
+                   class="notehead"
+                   id="g950">
+                  <g
+                     id="use950"
+                     transform="matrix(0.72,0,0,0.72,5653,25650)">
+                    <path
+                       transform="scale(1,-1)"
+                       d="m 0,-39 c 0,68 73,172 200,172 66,0 114,-37 114,-95 0,-84 -106,-171 -218,-171 -64,0 -96,30 -96,94 z"
+                       id="path23"
+                       style="stroke:currentColor" />
+                  </g>
+                </g>
+                <g
+                   id="dj35db1"
+                   class="stem">
+                  <path
+                     d="m 5662,25678 v 719"
+                     stroke-width="18"
+                     id="path950"
+                     style="stroke:currentColor" />
+                </g>
+              </g>
+              <g
+                 id="uqbjeyh"
+                 class="note">
+                <title
+                   class="labelAttr"
+                   id="title951">C:16</title>
+                <g
+                   class="notehead"
+                   id="g951">
+                  <g
+                     id="use951"
+                     transform="matrix(0.72,0,0,0.72,5991,25740)">
+                    <path
+                       transform="scale(1,-1)"
+                       d="m 0,-39 c 0,68 73,172 200,172 66,0 114,-37 114,-95 0,-84 -106,-171 -218,-171 -64,0 -96,30 -96,94 z"
+                       id="path24"
+                       style="stroke:currentColor" />
+                  </g>
+                </g>
+                <g
+                   id="ijhbyim"
+                   class="stem">
+                  <path
+                     d="m 6000,25768 v 629"
+                     stroke-width="18"
+                     id="path951"
+                     style="stroke:currentColor" />
+                </g>
+              </g>
+              <g
+                 id="k5459"
+                 class="note">
+                <title
+                   class="labelAttr"
+                   id="title952">B:16</title>
+                <g
+                   class="notehead"
+                   id="g952">
+                  <g
+                     id="use952"
+                     transform="matrix(0.72,0,0,0.72,6328,25830)">
+                    <path
+                       transform="scale(1,-1)"
+                       d="m 0,-39 c 0,68 73,172 200,172 66,0 114,-37 114,-95 0,-84 -106,-171 -218,-171 -64,0 -96,30 -96,94 z"
+                       id="path25"
+                       style="stroke:currentColor" />
+                  </g>
+                </g>
+                <g
+                   id="s18gtmip"
+                   class="stem">
+                  <path
+                     d="m 6337,25858 v 539"
+                     stroke-width="18"
+                     id="path952"
+                     style="stroke:currentColor" />
+                </g>
+              </g>
+              <g
+                 id="mmlosmc"
+                 class="note">
+                <title
+                   class="labelAttr"
+                   id="title953">C:16</title>
+                <g
+                   class="notehead"
+                   id="g953">
+                  <g
+                     id="use953"
+                     transform="matrix(0.72,0,0,0.72,6666,25740)">
+                    <path
+                       transform="scale(1,-1)"
+                       d="m 0,-39 c 0,68 73,172 200,172 66,0 114,-37 114,-95 0,-84 -106,-171 -218,-171 -64,0 -96,30 -96,94 z"
+                       id="path26"
+                       style="stroke:currentColor" />
+                  </g>
+                </g>
+                <g
+                   id="r16dpdhg"
+                   class="stem">
+                  <path
+                     d="m 6675,25768 v 629"
+                     stroke-width="18"
+                     id="path953"
+                     style="stroke:currentColor" />
+                </g>
+              </g>
+            </g>
+            <g
+               id="g5ggiv0"
+               class="beam">
+              <polygon
+                 stroke-opacity="1"
+                 fill-opacity="1"
+                 points="8036,26325 7004,26325 7004,26415 8036,26415 "
+                 id="polygon953" />
+              <polygon
+                 stroke-opacity="1"
+                 fill-opacity="1"
+                 points="7351,26190 7004,26190 7004,26280 7351,26280 "
+                 id="polygon954" />
+              <polygon
+                 stroke-opacity="1"
+                 fill-opacity="1"
+                 points="7689,26190 7351,26190 7351,26280 7689,26280 "
+                 id="polygon955" />
+              <polygon
+                 stroke-opacity="1"
+                 fill-opacity="1"
+                 points="8036,26190 7689,26190 7689,26280 8036,26280 "
+                 id="polygon956" />
+              <g
+                 id="u1bruo5q"
+                 class="note">
+                <title
+                   class="labelAttr"
+                   id="title956">Eb:16</title>
+                <g
+                   class="notehead"
+                   id="g956">
+                  <g
+                     id="use956"
+                     transform="matrix(0.72,0,0,0.72,7004,25560)">
+                    <path
+                       transform="scale(1,-1)"
+                       d="m 0,-39 c 0,68 73,172 200,172 66,0 114,-37 114,-95 0,-84 -106,-171 -218,-171 -64,0 -96,30 -96,94 z"
+                       id="path27"
+                       style="stroke:currentColor" />
+                  </g>
+                </g>
+                <g
+                   id="ttirlqg"
+                   class="stem">
+                  <path
+                     d="m 7013,25588 v 809"
+                     stroke-width="18"
+                     id="path956"
+                     style="stroke:currentColor" />
+                </g>
+                <g
+                   id="a870699"
+                   class="accid" />
+              </g>
+              <g
+                 id="n1ljo5at"
+                 class="note">
+                <title
+                   class="labelAttr"
+                   id="title957">C:16</title>
+                <g
+                   class="notehead"
+                   id="g957">
+                  <g
+                     id="use957"
+                     transform="matrix(0.72,0,0,0.72,7342,25740)">
+                    <path
+                       transform="scale(1,-1)"
+                       d="m 0,-39 c 0,68 73,172 200,172 66,0 114,-37 114,-95 0,-84 -106,-171 -218,-171 -64,0 -96,30 -96,94 z"
+                       id="path28"
+                       style="stroke:currentColor" />
+                  </g>
+                </g>
+                <g
+                   id="djq92gc"
+                   class="stem">
+                  <path
+                     d="m 7351,25768 v 629"
+                     stroke-width="18"
+                     id="path957"
+                     style="stroke:currentColor" />
+                </g>
+              </g>
+              <g
+                 id="shg6xua"
+                 class="note">
+                <title
+                   class="labelAttr"
+                   id="title958">B:16</title>
+                <g
+                   class="notehead"
+                   id="g958">
+                  <g
+                     id="use958"
+                     transform="matrix(0.72,0,0,0.72,7680,25830)">
+                    <path
+                       transform="scale(1,-1)"
+                       d="m 0,-39 c 0,68 73,172 200,172 66,0 114,-37 114,-95 0,-84 -106,-171 -218,-171 -64,0 -96,30 -96,94 z"
+                       id="path29"
+                       style="stroke:currentColor" />
+                  </g>
+                </g>
+                <g
+                   id="n1a9negp"
+                   class="stem">
+                  <path
+                     d="m 7689,25858 v 539"
+                     stroke-width="18"
+                     id="path958"
+                     style="stroke:currentColor" />
+                </g>
+              </g>
+              <g
+                 id="q15j4n20"
+                 class="note">
+                <title
+                   class="labelAttr"
+                   id="title959">C:16</title>
+                <g
+                   class="notehead"
+                   id="g959">
+                  <g
+                     id="use959"
+                     transform="matrix(0.72,0,0,0.72,8018,25740)">
+                    <path
+                       transform="scale(1,-1)"
+                       d="m 0,-39 c 0,68 73,172 200,172 66,0 114,-37 114,-95 0,-84 -106,-171 -218,-171 -64,0 -96,30 -96,94 z"
+                       id="path30"
+                       style="stroke:currentColor" />
+                  </g>
+                </g>
+                <g
+                   id="v1iolx0q"
+                   class="stem">
+                  <path
+                     d="m 8027,25768 v 629"
+                     stroke-width="18"
+                     id="path959"
+                     style="stroke:currentColor" />
+                </g>
+              </g>
+            </g>
+          </g>
+        </g>
+        <g
+           id="l15bsr79"
+           class="staff">
+          <path
+             d="M 1094,27270 H 8368"
+             stroke-width="13"
+             id="path960"
+             style="stroke:currentColor" />
+          <path
+             d="M 1094,27450 H 8368"
+             stroke-width="13"
+             id="path961"
+             style="stroke:currentColor" />
+          <path
+             d="M 1094,27630 H 8368"
+             stroke-width="13"
+             id="path962"
+             style="stroke:currentColor" />
+          <path
+             d="M 1094,27810 H 8368"
+             stroke-width="13"
+             id="path963"
+             style="stroke:currentColor" />
+          <path
+             d="M 1094,27990 H 8368"
+             stroke-width="13"
+             id="path964"
+             style="stroke:currentColor" />
+          <g
+             id="w11v6721"
+             class="clef">
+            <g
+               id="use964"
+               transform="matrix(0.72,0,0,0.72,1211,27450)">
+              <path
+                 transform="scale(1,-1)"
+                 d="m 582,-120 c 0,32 26,58 58,58 32,0 58,-26 58,-58 0,-32 -26,-58 -58,-58 -32,0 -58,26 -58,58 z m 0,240 c 0,32 26,58 58,58 32,0 58,-26 58,-58 0,-32 -26,-58 -58,-58 -32,0 -58,26 -58,58 z M 158,96 c 51,0 73,-14 88,-49 L 262,8 c 0,-17 -2,-30 -7,-40 -3,-11 -10,-21 -19,-31 -17,-18 -49,-43 -84,-43 -55,0 -77,13 -112,44 C 16,-41 5,-7 5,38 c 0,46 14,81 32,112 30,52 71,79 137,93 l 36,6 26,2 C 390,251 471,183 510,69 521,37 528,1 528,-38 528,-141 502,-220 460,-288 371,-433 226,-518 48,-576 l -30,-5 c -9,0 -14,3 -14,8 3,10 5,11 10,16 35,15 70,30 96,44 l 78,43 c 96,57 162,136 197,258 9,33 17,60 22,100 3,22 5,35 6,39 -7,69 -16,115 -23,140 -7,25 -4,22 -16,40 -8,12 -19,23 -31,34 -24,21 -62,44 -118,44 -48,0 -84,-8 -113,-28 C 84,138 70,113 70,84 V 68 c 2,-5 3,-9 4,-11 24,22 52,39 84,39 z"
+                 id="path8"
+                 style="stroke:currentColor" />
+            </g>
+          </g>
+          <g
+             id="b13051aw"
+             class="keySig">
+            <g
+               id="a1hj13cm"
+               class="keyAccid">
+              <g
+                 id="use965"
+                 transform="matrix(0.72,0,0,0.72,1892,27810)">
+                <path
+                   transform="scale(1,-1)"
+                   d="m 20,110 c 32,16 54,27 93,27 26,0 35,-3 54,-13 13,-7 24,-20 27,-38 l 4,-25 C 198,33 182,4 153,-28 130,-53 114,-72 88,-96 L 0,-175 v 644 h 20 z m 70,-4 C 58,106 42,96 20,77 v -194 c 31,31 54,59 71,84 21,32 32,59 32,84 0,9 1,16 1,20 0,14 -3,21 -11,30 l -8,3 z"
+                   id="path120"
+                   style="stroke:currentColor" />
+              </g>
+            </g>
+            <g
+               id="p15rgmyf"
+               class="keyAccid">
+              <g
+                 id="use966"
+                 transform="matrix(0.72,0,0,0.72,2072,27540)">
+                <path
+                   transform="scale(1,-1)"
+                   d="m 20,110 c 32,16 54,27 93,27 26,0 35,-3 54,-13 13,-7 24,-20 27,-38 l 4,-25 C 198,33 182,4 153,-28 130,-53 114,-72 88,-96 L 0,-175 v 644 h 20 z m 70,-4 C 58,106 42,96 20,77 v -194 c 31,31 54,59 71,84 21,32 32,59 32,84 0,9 1,16 1,20 0,14 -3,21 -11,30 l -8,3 z"
+                   id="path121"
+                   style="stroke:currentColor" />
+              </g>
+            </g>
+          </g>
+          <g
+             class="ledgerLines below"
+             id="g967">
+            <path
+               d="m 2436,28170 h 322"
+               stroke-width="22"
+               id="path966"
+               style="stroke:currentColor" />
+            <path
+               d="m 5605,28170 h 322"
+               stroke-width="22"
+               id="path967"
+               style="stroke:currentColor" />
+          </g>
+          <g
+             id="e1vjkpor"
+             class="layer">
+            <g
+               id="xe73vh5"
+               class="beam">
+              <polygon
+                 stroke-opacity="1"
+                 fill-opacity="1"
+                 points="4025,27000 2692,27360 2692,27270 4025,26910 "
+                 id="polygon967" />
+              <polygon
+                 stroke-opacity="1"
+                 fill-opacity="1"
+                 points="3204,27358 2692,27495 2692,27405 3204,27268 "
+                 id="polygon968" />
+              <polygon
+                 stroke-opacity="1"
+                 fill-opacity="1"
+                 points="3678,27228 3204,27358 3204,27268 3678,27138 "
+                 id="polygon969" />
+              <polygon
+                 stroke-opacity="1"
+                 fill-opacity="1"
+                 points="4025,27135 3678,27228 3678,27138 4025,27045 "
+                 id="polygon970" />
+              <g
+                 id="h1iuft00"
+                 class="note">
+                <title
+                   class="labelAttr"
+                   id="title970">D:16</title>
+                <g
+                   class="notehead"
+                   id="g970">
+                  <g
+                     id="use970"
+                     transform="matrix(0.72,0,0,0.72,2484,28260)">
+                    <path
+                       transform="scale(1,-1)"
+                       d="m 0,-39 c 0,68 73,172 200,172 66,0 114,-37 114,-95 0,-84 -106,-171 -218,-171 -64,0 -96,30 -96,94 z"
+                       id="path31"
+                       style="stroke:currentColor" />
+                  </g>
+                </g>
+                <g
+                   id="w9tgx2w"
+                   class="stem">
+                  <path
+                     d="m 2701,28232 v -944"
+                     stroke-width="18"
+                     id="path970"
+                     style="stroke:currentColor" />
+                </g>
+              </g>
+              <g
+                 id="l1yoqm2m"
+                 class="note">
+                <title
+                   class="labelAttr"
+                   id="title971">Ab:16</title>
+                <g
+                   class="notehead"
+                   id="g971">
+                  <g
+                     id="use971"
+                     transform="matrix(0.72,0,0,0.72,2987,27900)">
+                    <path
+                       transform="scale(1,-1)"
+                       d="m 0,-39 c 0,68 73,172 200,172 66,0 114,-37 114,-95 0,-84 -106,-171 -218,-171 -64,0 -96,30 -96,94 z"
+                       id="path32"
+                       style="stroke:currentColor" />
+                  </g>
+                </g>
+                <g
+                   id="s1i77i2o"
+                   class="stem">
+                  <path
+                     d="m 3204,27872 v -721"
+                     stroke-width="18"
+                     id="path971"
+                     style="stroke:currentColor" />
+                </g>
+                <g
+                   id="c10a2c9r"
+                   class="accid">
+                  <g
+                     id="use972"
+                     transform="matrix(0.72,0,0,0.72,2800,27900)">
+                    <path
+                       transform="scale(1,-1)"
+                       d="m 20,110 c 32,16 54,27 93,27 26,0 35,-3 54,-13 13,-7 24,-20 27,-38 l 4,-25 C 198,33 182,4 153,-28 130,-53 114,-72 88,-96 L 0,-175 v 644 h 20 z m 70,-4 C 58,106 42,96 20,77 v -194 c 31,31 54,59 71,84 21,32 32,59 32,84 0,9 1,16 1,20 0,14 -3,21 -11,30 l -8,3 z"
+                       id="path122"
+                       style="stroke:currentColor" />
+                  </g>
+                </g>
+              </g>
+              <g
+                 id="pqc8dtu"
+                 class="note">
+                <title
+                   class="labelAttr"
+                   id="title972">D:16</title>
+                <g
+                   class="notehead"
+                   id="g973">
+                  <g
+                     id="use973"
+                     transform="matrix(0.72,0,0,0.72,3461,27630)">
+                    <path
+                       transform="scale(1,-1)"
+                       d="m 0,-39 c 0,68 73,172 200,172 66,0 114,-37 114,-95 0,-84 -106,-171 -218,-171 -64,0 -96,30 -96,94 z"
+                       id="path33"
+                       style="stroke:currentColor" />
+                  </g>
+                </g>
+                <g
+                   id="eni6459"
+                   class="stem">
+                  <path
+                     d="m 3678,27602 v -581"
+                     stroke-width="18"
+                     id="path973"
+                     style="stroke:currentColor" />
+                </g>
+              </g>
+              <g
+                 id="y98lg6g"
+                 class="note">
+                <title
+                   class="labelAttr"
+                   id="title973">Eb:16</title>
+                <g
+                   class="notehead"
+                   id="g974">
+                  <g
+                     id="use974"
+                     transform="matrix(0.72,0,0,0.72,3799,27540)">
+                    <path
+                       transform="scale(1,-1)"
+                       d="m 0,-39 c 0,68 73,172 200,172 66,0 114,-37 114,-95 0,-84 -106,-171 -218,-171 -64,0 -96,30 -96,94 z"
+                       id="path34"
+                       style="stroke:currentColor" />
+                  </g>
+                </g>
+                <g
+                   id="xf0yye9"
+                   class="stem">
+                  <path
+                     d="m 4016,27512 v -584"
+                     stroke-width="18"
+                     id="path974"
+                     style="stroke:currentColor" />
+                </g>
+                <g
+                   id="txi1hg0"
+                   class="accid" />
+              </g>
+            </g>
+            <g
+               id="bz8lfbg"
+               class="beam">
+              <polygon
+                 stroke-opacity="1"
+                 fill-opacity="1"
+                 points="5541,26955 4509,26955 4509,26865 5541,26865 "
+                 id="polygon974" />
+              <polygon
+                 stroke-opacity="1"
+                 fill-opacity="1"
+                 points="4856,27090 4509,27090 4509,27000 4856,27000 "
+                 id="polygon975" />
+              <polygon
+                 stroke-opacity="1"
+                 fill-opacity="1"
+                 points="5194,27090 4856,27090 4856,27000 5194,27000 "
+                 id="polygon976" />
+              <polygon
+                 stroke-opacity="1"
+                 fill-opacity="1"
+                 points="5541,27090 5194,27090 5194,27000 5541,27000 "
+                 id="polygon977" />
+              <g
+                 id="i1tj4s0s"
+                 class="chord">
+                <g
+                   id="t3s21v4"
+                   class="stem">
+                  <path
+                     d="m 4518,27872 v -989"
+                     stroke-width="18"
+                     id="path977"
+                     style="stroke:currentColor" />
+                </g>
+                <g
+                   id="o1txwmiz"
+                   class="note">
+                  <title
+                     class="labelAttr"
+                     id="title977">Ab:16</title>
+                  <g
+                     class="notehead"
+                     id="g977">
+                    <g
+                       id="use977"
+                       transform="matrix(0.72,0,0,0.72,4301,27900)">
+                      <path
+                         transform="scale(1,-1)"
+                         d="m 0,-39 c 0,68 73,172 200,172 66,0 114,-37 114,-95 0,-84 -106,-171 -218,-171 -64,0 -96,30 -96,94 z"
+                         id="path35"
+                         style="stroke:currentColor" />
+                    </g>
+                  </g>
+                  <g
+                     id="z1xflqk9"
+                     class="accid" />
+                </g>
+                <g
+                   id="l16mrop"
+                   class="note">
+                  <title
+                     class="labelAttr"
+                     id="title978">D:16</title>
+                  <g
+                     class="notehead"
+                     id="g978">
+                    <g
+                       id="use978"
+                       transform="matrix(0.72,0,0,0.72,4301,27630)">
+                      <path
+                         transform="scale(1,-1)"
+                         d="m 0,-39 c 0,68 73,172 200,172 66,0 114,-37 114,-95 0,-84 -106,-171 -218,-171 -64,0 -96,30 -96,94 z"
+                         id="path36"
+                         style="stroke:currentColor" />
+                    </g>
+                  </g>
+                </g>
+              </g>
+              <g
+                 id="qhtrj8a"
+                 class="note">
+                <title
+                   class="labelAttr"
+                   id="title979">F:16</title>
+                <g
+                   class="notehead"
+                   id="g979">
+                  <g
+                     id="use979"
+                     transform="matrix(0.72,0,0,0.72,4639,27450)">
+                    <path
+                       transform="scale(1,-1)"
+                       d="m 0,-39 c 0,68 73,172 200,172 66,0 114,-37 114,-95 0,-84 -106,-171 -218,-171 -64,0 -96,30 -96,94 z"
+                       id="path37"
+                       style="stroke:currentColor" />
+                  </g>
+                </g>
+                <g
+                   id="lbh506p"
+                   class="stem">
+                  <path
+                     d="m 4856,27422 v -539"
+                     stroke-width="18"
+                     id="path979"
+                     style="stroke:currentColor" />
+                </g>
+              </g>
+              <g
+                 id="oj73uf7"
+                 class="note">
+                <title
+                   class="labelAttr"
+                   id="title980">D:16</title>
+                <g
+                   class="notehead"
+                   id="g980">
+                  <g
+                     id="use980"
+                     transform="matrix(0.72,0,0,0.72,4977,27630)">
+                    <path
+                       transform="scale(1,-1)"
+                       d="m 0,-39 c 0,68 73,172 200,172 66,0 114,-37 114,-95 0,-84 -106,-171 -218,-171 -64,0 -96,30 -96,94 z"
+                       id="path38"
+                       style="stroke:currentColor" />
+                  </g>
+                </g>
+                <g
+                   id="r8b4h08"
+                   class="stem">
+                  <path
+                     d="m 5194,27602 v -719"
+                     stroke-width="18"
+                     id="path980"
+                     style="stroke:currentColor" />
+                </g>
+              </g>
+              <g
+                 id="s1iaatcy"
+                 class="note">
+                <title
+                   class="labelAttr"
+                   id="title981">Ab:16</title>
+                <g
+                   class="notehead"
+                   id="g981">
+                  <g
+                     id="use981"
+                     transform="matrix(0.72,0,0,0.72,5315,27900)">
+                    <path
+                       transform="scale(1,-1)"
+                       d="m 0,-39 c 0,68 73,172 200,172 66,0 114,-37 114,-95 0,-84 -106,-171 -218,-171 -64,0 -96,30 -96,94 z"
+                       id="path39"
+                       style="stroke:currentColor" />
+                  </g>
+                </g>
+                <g
+                   id="n14m8fzl"
+                   class="stem">
+                  <path
+                     d="m 5532,27872 v -989"
+                     stroke-width="18"
+                     id="path981"
+                     style="stroke:currentColor" />
+                </g>
+                <g
+                   id="l1fop6nt"
+                   class="accid" />
+              </g>
+            </g>
+            <g
+               id="bfrunrh"
+               class="beam">
+              <polygon
+                 stroke-opacity="1"
+                 fill-opacity="1"
+                 points="6892,27000 5861,27180 5861,27090 6892,26910 "
+                 id="polygon981" />
+              <polygon
+                 stroke-opacity="1"
+                 fill-opacity="1"
+                 points="6208,27255 5861,27315 5861,27225 6208,27165 "
+                 id="polygon982" />
+              <polygon
+                 stroke-opacity="1"
+                 fill-opacity="1"
+                 points="6545,27196 6208,27255 6208,27165 6545,27106 "
+                 id="polygon983" />
+              <polygon
+                 stroke-opacity="1"
+                 fill-opacity="1"
+                 points="6892,27135 6545,27196 6545,27106 6892,27045 "
+                 id="polygon984" />
+              <g
+                 id="hmyv48r"
+                 class="note">
+                <title
+                   class="labelAttr"
+                   id="title984">D:16</title>
+                <g
+                   class="notehead"
+                   id="g984">
+                  <g
+                     id="use984"
+                     transform="matrix(0.72,0,0,0.72,5653,28260)">
+                    <path
+                       transform="scale(1,-1)"
+                       d="m 0,-39 c 0,68 73,172 200,172 66,0 114,-37 114,-95 0,-84 -106,-171 -218,-171 -64,0 -96,30 -96,94 z"
+                       id="path40"
+                       style="stroke:currentColor" />
+                  </g>
+                </g>
+                <g
+                   id="y1rqwji3"
+                   class="stem">
+                  <path
+                     d="M 5870,28232 V 27108"
+                     stroke-width="18"
+                     id="path984"
+                     style="stroke:currentColor" />
+                </g>
+              </g>
+              <g
+                 id="y3s0pdw"
+                 class="note">
+                <title
+                   class="labelAttr"
+                   id="title985">Ab:16</title>
+                <g
+                   class="notehead"
+                   id="g985">
+                  <g
+                     id="use985"
+                     transform="matrix(0.72,0,0,0.72,5991,27900)">
+                    <path
+                       transform="scale(1,-1)"
+                       d="m 0,-39 c 0,68 73,172 200,172 66,0 114,-37 114,-95 0,-84 -106,-171 -218,-171 -64,0 -96,30 -96,94 z"
+                       id="path41"
+                       style="stroke:currentColor" />
+                  </g>
+                </g>
+                <g
+                   id="a1qfpus0"
+                   class="stem">
+                  <path
+                     d="m 6208,27872 v -824"
+                     stroke-width="18"
+                     id="path985"
+                     style="stroke:currentColor" />
+                </g>
+                <g
+                   id="z1w8ptzz"
+                   class="accid" />
+              </g>
+              <g
+                 id="x14dz701"
+                 class="note">
+                <title
+                   class="labelAttr"
+                   id="title986">D:16</title>
+                <g
+                   class="notehead"
+                   id="g986">
+                  <g
+                     id="use986"
+                     transform="matrix(0.72,0,0,0.72,6328,27630)">
+                    <path
+                       transform="scale(1,-1)"
+                       d="m 0,-39 c 0,68 73,172 200,172 66,0 114,-37 114,-95 0,-84 -106,-171 -218,-171 -64,0 -96,30 -96,94 z"
+                       id="path42"
+                       style="stroke:currentColor" />
+                  </g>
+                </g>
+                <g
+                   id="fwjrvmj"
+                   class="stem">
+                  <path
+                     d="m 6545,27602 v -613"
+                     stroke-width="18"
+                     id="path986"
+                     style="stroke:currentColor" />
+                </g>
+              </g>
+              <g
+                 id="u12qwuq8"
+                 class="note">
+                <title
+                   class="labelAttr"
+                   id="title987">Eb:16</title>
+                <g
+                   class="notehead"
+                   id="g987">
+                  <g
+                     id="use987"
+                     transform="matrix(0.72,0,0,0.72,6666,27540)">
+                    <path
+                       transform="scale(1,-1)"
+                       d="m 0,-39 c 0,68 73,172 200,172 66,0 114,-37 114,-95 0,-84 -106,-171 -218,-171 -64,0 -96,30 -96,94 z"
+                       id="path43"
+                       style="stroke:currentColor" />
+                  </g>
+                </g>
+                <g
+                   id="b85wtnk"
+                   class="stem">
+                  <path
+                     d="m 6883,27512 v -584"
+                     stroke-width="18"
+                     id="path987"
+                     style="stroke:currentColor" />
+                </g>
+                <g
+                   id="usjm1gf"
+                   class="accid" />
+              </g>
+            </g>
+            <g
+               id="jzu3vki"
+               class="beam">
+              <polygon
+                 stroke-opacity="1"
+                 fill-opacity="1"
+                 points="8244,26955 7212,26955 7212,26865 8244,26865 "
+                 id="polygon987" />
+              <polygon
+                 stroke-opacity="1"
+                 fill-opacity="1"
+                 points="7559,27090 7212,27090 7212,27000 7559,27000 "
+                 id="polygon988" />
+              <polygon
+                 stroke-opacity="1"
+                 fill-opacity="1"
+                 points="7897,27090 7559,27090 7559,27000 7897,27000 "
+                 id="polygon989" />
+              <polygon
+                 stroke-opacity="1"
+                 fill-opacity="1"
+                 points="8244,27090 7897,27090 7897,27000 8244,27000 "
+                 id="polygon990" />
+              <g
+                 id="qp92ul1"
+                 class="chord">
+                <g
+                   id="i1fcbn5d"
+                   class="stem">
+                  <path
+                     d="m 7221,27872 v -989"
+                     stroke-width="18"
+                     id="path990"
+                     style="stroke:currentColor" />
+                </g>
+                <g
+                   id="c1pgqbag"
+                   class="note">
+                  <title
+                     class="labelAttr"
+                     id="title990">Ab:16</title>
+                  <g
+                     class="notehead"
+                     id="g990">
+                    <g
+                       id="use990"
+                       transform="matrix(0.72,0,0,0.72,7004,27900)">
+                      <path
+                         transform="scale(1,-1)"
+                         d="m 0,-39 c 0,68 73,172 200,172 66,0 114,-37 114,-95 0,-84 -106,-171 -218,-171 -64,0 -96,30 -96,94 z"
+                         id="path44"
+                         style="stroke:currentColor" />
+                    </g>
+                  </g>
+                  <g
+                     id="uvubvgq"
+                     class="accid" />
+                </g>
+                <g
+                   id="p16m8pr4"
+                   class="note">
+                  <title
+                     class="labelAttr"
+                     id="title991">D:16</title>
+                  <g
+                     class="notehead"
+                     id="g991">
+                    <g
+                       id="use991"
+                       transform="matrix(0.72,0,0,0.72,7004,27630)">
+                      <path
+                         transform="scale(1,-1)"
+                         d="m 0,-39 c 0,68 73,172 200,172 66,0 114,-37 114,-95 0,-84 -106,-171 -218,-171 -64,0 -96,30 -96,94 z"
+                         id="path45"
+                         style="stroke:currentColor" />
+                    </g>
+                  </g>
+                </g>
+              </g>
+              <g
+                 id="js776px"
+                 class="note">
+                <title
+                   class="labelAttr"
+                   id="title992">F:16</title>
+                <g
+                   class="notehead"
+                   id="g992">
+                  <g
+                     id="use992"
+                     transform="matrix(0.72,0,0,0.72,7342,27450)">
+                    <path
+                       transform="scale(1,-1)"
+                       d="m 0,-39 c 0,68 73,172 200,172 66,0 114,-37 114,-95 0,-84 -106,-171 -218,-171 -64,0 -96,30 -96,94 z"
+                       id="path46"
+                       style="stroke:currentColor" />
+                  </g>
+                </g>
+                <g
+                   id="t1h52fmp"
+                   class="stem">
+                  <path
+                     d="m 7559,27422 v -539"
+                     stroke-width="18"
+                     id="path992"
+                     style="stroke:currentColor" />
+                </g>
+              </g>
+              <g
+                 id="i1opooc5"
+                 class="note">
+                <title
+                   class="labelAttr"
+                   id="title993">D:16</title>
+                <g
+                   class="notehead"
+                   id="g993">
+                  <g
+                     id="use993"
+                     transform="matrix(0.72,0,0,0.72,7680,27630)">
+                    <path
+                       transform="scale(1,-1)"
+                       d="m 0,-39 c 0,68 73,172 200,172 66,0 114,-37 114,-95 0,-84 -106,-171 -218,-171 -64,0 -96,30 -96,94 z"
+                       id="path47"
+                       style="stroke:currentColor" />
+                  </g>
+                </g>
+                <g
+                   id="w15g93f3"
+                   class="stem">
+                  <path
+                     d="m 7897,27602 v -719"
+                     stroke-width="18"
+                     id="path993"
+                     style="stroke:currentColor" />
+                </g>
+              </g>
+              <g
+                 id="tbrsf6n"
+                 class="note">
+                <title
+                   class="labelAttr"
+                   id="title994">Ab:16</title>
+                <g
+                   class="notehead"
+                   id="g994">
+                  <g
+                     id="use994"
+                     transform="matrix(0.72,0,0,0.72,8018,27900)">
+                    <path
+                       transform="scale(1,-1)"
+                       d="m 0,-39 c 0,68 73,172 200,172 66,0 114,-37 114,-95 0,-84 -106,-171 -218,-171 -64,0 -96,30 -96,94 z"
+                       id="path48"
+                       style="stroke:currentColor" />
+                  </g>
+                </g>
+                <g
+                   id="qfndsf3"
+                   class="stem">
+                  <path
+                     d="m 8235,27872 v -989"
+                     stroke-width="18"
+                     id="path994"
+                     style="stroke:currentColor" />
+                </g>
+                <g
+                   id="a1bagtkk"
+                   class="accid" />
+              </g>
+            </g>
+          </g>
+        </g>
+        <g
+           id="w1sxkr9l"
+           class="barLine">
+          <path
+             d="m 8355,25470 v 720"
+             stroke-width="27"
+             id="path996"
+             style="stroke:currentColor" />
+          <path
+             d="m 8355,27270 v 720"
+             stroke-width="27"
+             id="path997"
+             style="stroke:currentColor" />
+          <path
+             d="m 8355,26190 v 1080"
+             stroke-width="27"
+             id="path998"
+             style="stroke:currentColor" />
+        </g>
+      </g>
+      <g
+         id="p1xinrsy"
+         class="sb" />
+      <g
+         id="t1b70vro"
+         class="measure">
+        <g
+           id="qh1otgd"
+           class="staff">
+          <path
+             d="m 8368,25470 h 5735"
+             stroke-width="13"
+             id="path1004"
+             style="stroke:currentColor" />
+          <path
+             d="m 8368,25650 h 5735"
+             stroke-width="13"
+             id="path1005"
+             style="stroke:currentColor" />
+          <path
+             d="m 8368,25830 h 5735"
+             stroke-width="13"
+             id="path1006"
+             style="stroke:currentColor" />
+          <path
+             d="m 8368,26010 h 5735"
+             stroke-width="13"
+             id="path1007"
+             style="stroke:currentColor" />
+          <path
+             d="m 8368,26190 h 5735"
+             stroke-width="13"
+             id="path1008"
+             style="stroke:currentColor" />
+          <g
+             id="c4binfr"
+             class="layer">
+            <g
+               id="f10vkxvl"
+               class="beam">
+              <polygon
+                 stroke-opacity="1"
+                 fill-opacity="1"
+                 points="9788,25290 8756,25110 8756,25020 9788,25200 "
+                 id="polygon1008" />
+              <polygon
+                 stroke-opacity="1"
+                 fill-opacity="1"
+                 points="9103,25305 8756,25245 8756,25155 9103,25215 "
+                 id="polygon1009" />
+              <polygon
+                 stroke-opacity="1"
+                 fill-opacity="1"
+                 points="9441,25365 9103,25305 9103,25215 9441,25275 "
+                 id="polygon1010" />
+              <polygon
+                 stroke-opacity="1"
+                 fill-opacity="1"
+                 points="9788,25425 9441,25365 9441,25275 9788,25335 "
+                 id="polygon1011" />
+              <g
+                 id="z1f4vfjg"
+                 class="note">
+                <title
+                   class="labelAttr"
+                   id="title1011">D:16</title>
+                <g
+                   class="notehead"
+                   id="g1011">
+                  <g
+                     id="use1011"
+                     transform="matrix(0.72,0,0,0.72,8548,25650)">
+                    <path
+                       transform="scale(1,-1)"
+                       d="m 0,-39 c 0,68 73,172 200,172 66,0 114,-37 114,-95 0,-84 -106,-171 -218,-171 -64,0 -96,30 -96,94 z"
+                       id="path49"
+                       style="stroke:currentColor" />
+                  </g>
+                </g>
+                <g
+                   id="f1k907w3"
+                   class="stem">
+                  <path
+                     d="m 8765,25622 v -584"
+                     stroke-width="18"
+                     id="path1011"
+                     style="stroke:currentColor" />
+                </g>
+              </g>
+              <g
+                 id="pyo1nma"
+                 class="note">
+                <title
+                   class="labelAttr"
+                   id="title1012">G:16</title>
+                <g
+                   class="notehead"
+                   id="g1012">
+                  <g
+                     id="use1012"
+                     transform="matrix(0.72,0,0,0.72,8886,26010)">
+                    <path
+                       transform="scale(1,-1)"
+                       d="m 0,-39 c 0,68 73,172 200,172 66,0 114,-37 114,-95 0,-84 -106,-171 -218,-171 -64,0 -96,30 -96,94 z"
+                       id="path50"
+                       style="stroke:currentColor" />
+                  </g>
+                </g>
+                <g
+                   id="iuozuqy"
+                   class="stem">
+                  <path
+                     d="m 9103,25982 v -884"
+                     stroke-width="18"
+                     id="path1012"
+                     style="stroke:currentColor" />
+                </g>
+              </g>
+              <g
+                 id="isev0kp"
+                 class="note">
+                <title
+                   class="labelAttr"
+                   id="title1013">F:16</title>
+                <g
+                   class="notehead"
+                   id="g1013">
+                  <g
+                     id="use1013"
+                     transform="matrix(0.72,0,0,0.72,9224,26100)">
+                    <path
+                       transform="scale(1,-1)"
+                       d="m 0,-39 c 0,68 73,172 200,172 66,0 114,-37 114,-95 0,-84 -106,-171 -218,-171 -64,0 -96,30 -96,94 z"
+                       id="path51"
+                       style="stroke:currentColor" />
+                  </g>
+                </g>
+                <g
+                   id="n1ts2cmn"
+                   class="stem">
+                  <path
+                     d="m 9441,26072 v -914"
+                     stroke-width="18"
+                     id="path1013"
+                     style="stroke:currentColor" />
+                </g>
+              </g>
+              <g
+                 id="i1j0bdo1"
+                 class="note">
+                <title
+                   class="labelAttr"
+                   id="title1014">G:16</title>
+                <g
+                   class="notehead"
+                   id="g1014">
+                  <g
+                     id="use1014"
+                     transform="matrix(0.72,0,0,0.72,9562,26010)">
+                    <path
+                       transform="scale(1,-1)"
+                       d="m 0,-39 c 0,68 73,172 200,172 66,0 114,-37 114,-95 0,-84 -106,-171 -218,-171 -64,0 -96,30 -96,94 z"
+                       id="path52"
+                       style="stroke:currentColor" />
+                  </g>
+                </g>
+                <g
+                   id="kt05v2b"
+                   class="stem">
+                  <path
+                     d="m 9779,25982 v -764"
+                     stroke-width="18"
+                     id="path1014"
+                     style="stroke:currentColor" />
+                </g>
+              </g>
+            </g>
+            <g
+               id="pfhx11e"
+               class="beam">
+              <polygon
+                 stroke-opacity="1"
+                 fill-opacity="1"
+                 points="11275,25515 10108,25515 10108,25425 11275,25425 "
+                 id="polygon1014" />
+              <polygon
+                 stroke-opacity="1"
+                 fill-opacity="1"
+                 points="10590,25650 10108,25650 10108,25560 10590,25560 "
+                 id="polygon1015" />
+              <polygon
+                 stroke-opacity="1"
+                 fill-opacity="1"
+                 points="10928,25650 10590,25650 10590,25560 10928,25560 "
+                 id="polygon1016" />
+              <polygon
+                 stroke-opacity="1"
+                 fill-opacity="1"
+                 points="11275,25650 10928,25650 10928,25560 11275,25560 "
+                 id="polygon1017" />
+              <g
+                 id="tv5a4jj"
+                 class="note">
+                <title
+                   class="labelAttr"
+                   id="title1017">D:16</title>
+                <g
+                   class="notehead"
+                   id="g1017">
+                  <g
+                     id="use1017"
+                     transform="matrix(0.72,0,0,0.72,9900,26280)">
+                    <path
+                       transform="scale(1,-1)"
+                       d="m 0,-39 c 0,68 73,172 200,172 66,0 114,-37 114,-95 0,-84 -106,-171 -218,-171 -64,0 -96,30 -96,94 z"
+                       id="path53"
+                       style="stroke:currentColor" />
+                  </g>
+                </g>
+                <g
+                   id="fp1yi6o"
+                   class="stem">
+                  <path
+                     d="m 10117,26252 v -809"
+                     stroke-width="18"
+                     id="path1017"
+                     style="stroke:currentColor" />
+                </g>
+              </g>
+              <g
+                 id="fm7m2co"
+                 class="note">
+                <title
+                   class="labelAttr"
+                   id="title1018">G:16</title>
+                <g
+                   class="notehead"
+                   id="g1018">
+                  <g
+                     id="use1018"
+                     transform="matrix(0.72,0,0,0.72,10373,26010)">
+                    <path
+                       transform="scale(1,-1)"
+                       d="m 0,-39 c 0,68 73,172 200,172 66,0 114,-37 114,-95 0,-84 -106,-171 -218,-171 -64,0 -96,30 -96,94 z"
+                       id="path54"
+                       style="stroke:currentColor" />
+                  </g>
+                </g>
+                <g
+                   id="g19ht5n0"
+                   class="stem">
+                  <path
+                     d="m 10590,25982 v -539"
+                     stroke-width="18"
+                     id="path1018"
+                     style="stroke:currentColor" />
+                </g>
+              </g>
+              <g
+                 id="kj1lw75"
+                 class="note">
+                <title
+                   class="labelAttr"
+                   id="title1019">F:16</title>
+                <g
+                   class="notehead"
+                   id="g1019">
+                  <g
+                     id="use1019"
+                     transform="matrix(0.72,0,0,0.72,10711,26100)">
+                    <path
+                       transform="scale(1,-1)"
+                       d="m 0,-39 c 0,68 73,172 200,172 66,0 114,-37 114,-95 0,-84 -106,-171 -218,-171 -64,0 -96,30 -96,94 z"
+                       id="path55"
+                       style="stroke:currentColor" />
+                  </g>
+                </g>
+                <g
+                   id="q1jqyly8"
+                   class="stem">
+                  <path
+                     d="m 10928,26072 v -629"
+                     stroke-width="18"
+                     id="path1019"
+                     style="stroke:currentColor" />
+                </g>
+              </g>
+              <g
+                 id="q144mure"
+                 class="note">
+                <title
+                   class="labelAttr"
+                   id="title1020">G:16</title>
+                <g
+                   class="notehead"
+                   id="g1020">
+                  <g
+                     id="use1020"
+                     transform="matrix(0.72,0,0,0.72,11049,26010)">
+                    <path
+                       transform="scale(1,-1)"
+                       d="m 0,-39 c 0,68 73,172 200,172 66,0 114,-37 114,-95 0,-84 -106,-171 -218,-171 -64,0 -96,30 -96,94 z"
+                       id="path56"
+                       style="stroke:currentColor" />
+                  </g>
+                </g>
+                <g
+                   id="i9cksue"
+                   class="stem">
+                  <path
+                     d="m 11266,25982 v -539"
+                     stroke-width="18"
+                     id="path1020"
+                     style="stroke:currentColor" />
+                </g>
+              </g>
+            </g>
+            <g
+               id="rrer61w"
+               class="beam">
+              <polygon
+                 stroke-opacity="1"
+                 fill-opacity="1"
+                 points="12626,25290 11595,25110 11595,25020 12626,25200 "
+                 id="polygon1020" />
+              <polygon
+                 stroke-opacity="1"
+                 fill-opacity="1"
+                 points="11942,25306 11595,25245 11595,25155 11942,25216 "
+                 id="polygon1021" />
+              <polygon
+                 stroke-opacity="1"
+                 fill-opacity="1"
+                 points="12280,25366 11942,25306 11942,25216 12280,25276 "
+                 id="polygon1022" />
+              <polygon
+                 stroke-opacity="1"
+                 fill-opacity="1"
+                 points="12626,25425 12280,25366 12280,25276 12626,25335 "
+                 id="polygon1023" />
+              <g
+                 id="oyp0cbf"
+                 class="note">
+                <title
+                   class="labelAttr"
+                   id="title1023">D:16</title>
+                <g
+                   class="notehead"
+                   id="g1023">
+                  <g
+                     id="use1023"
+                     transform="matrix(0.72,0,0,0.72,11387,25650)">
+                    <path
+                       transform="scale(1,-1)"
+                       d="m 0,-39 c 0,68 73,172 200,172 66,0 114,-37 114,-95 0,-84 -106,-171 -218,-171 -64,0 -96,30 -96,94 z"
+                       id="path57"
+                       style="stroke:currentColor" />
+                  </g>
+                </g>
+                <g
+                   id="psaaulv"
+                   class="stem">
+                  <path
+                     d="m 11604,25622 v -584"
+                     stroke-width="18"
+                     id="path1023"
+                     style="stroke:currentColor" />
+                </g>
+              </g>
+              <g
+                 id="h177imf8"
+                 class="note">
+                <title
+                   class="labelAttr"
+                   id="title1024">G:16</title>
+                <g
+                   class="notehead"
+                   id="g1024">
+                  <g
+                     id="use1024"
+                     transform="matrix(0.72,0,0,0.72,11725,26010)">
+                    <path
+                       transform="scale(1,-1)"
+                       d="m 0,-39 c 0,68 73,172 200,172 66,0 114,-37 114,-95 0,-84 -106,-171 -218,-171 -64,0 -96,30 -96,94 z"
+                       id="path58"
+                       style="stroke:currentColor" />
+                  </g>
+                </g>
+                <g
+                   id="kiy50xi"
+                   class="stem">
+                  <path
+                     d="m 11942,25982 v -883"
+                     stroke-width="18"
+                     id="path1024"
+                     style="stroke:currentColor" />
+                </g>
+              </g>
+              <g
+                 id="jbb18fd"
+                 class="note">
+                <title
+                   class="labelAttr"
+                   id="title1025">F:16</title>
+                <g
+                   class="notehead"
+                   id="g1025">
+                  <g
+                     id="use1025"
+                     transform="matrix(0.72,0,0,0.72,12063,26100)">
+                    <path
+                       transform="scale(1,-1)"
+                       d="m 0,-39 c 0,68 73,172 200,172 66,0 114,-37 114,-95 0,-84 -106,-171 -218,-171 -64,0 -96,30 -96,94 z"
+                       id="path59"
+                       style="stroke:currentColor" />
+                  </g>
+                </g>
+                <g
+                   id="z133m7u5"
+                   class="stem">
+                  <path
+                     d="m 12280,26072 v -913"
+                     stroke-width="18"
+                     id="path1025"
+                     style="stroke:currentColor" />
+                </g>
+              </g>
+              <g
+                 id="e14bqoh3"
+                 class="note">
+                <title
+                   class="labelAttr"
+                   id="title1026">G:16</title>
+                <g
+                   class="notehead"
+                   id="g1026">
+                  <g
+                     id="use1026"
+                     transform="matrix(0.72,0,0,0.72,12400,26010)">
+                    <path
+                       transform="scale(1,-1)"
+                       d="m 0,-39 c 0,68 73,172 200,172 66,0 114,-37 114,-95 0,-84 -106,-171 -218,-171 -64,0 -96,30 -96,94 z"
+                       id="path60"
+                       style="stroke:currentColor" />
+                  </g>
+                </g>
+                <g
+                   id="k18jhcgp"
+                   class="stem">
+                  <path
+                     d="m 12617,25982 v -764"
+                     stroke-width="18"
+                     id="path1026"
+                     style="stroke:currentColor" />
+                </g>
+              </g>
+            </g>
+            <g
+               id="q1tdn983"
+               class="beam">
+              <polygon
+                 stroke-opacity="1"
+                 fill-opacity="1"
+                 points="13978,25515 12946,25515 12946,25425 13978,25425 "
+                 id="polygon1026" />
+              <polygon
+                 stroke-opacity="1"
+                 fill-opacity="1"
+                 points="13293,25650 12946,25650 12946,25560 13293,25560 "
+                 id="polygon1027" />
+              <polygon
+                 stroke-opacity="1"
+                 fill-opacity="1"
+                 points="13631,25650 13293,25650 13293,25560 13631,25560 "
+                 id="polygon1028" />
+              <polygon
+                 stroke-opacity="1"
+                 fill-opacity="1"
+                 points="13978,25650 13631,25650 13631,25560 13978,25560 "
+                 id="polygon1029" />
+              <g
+                 id="rujwyc8"
+                 class="note">
+                <title
+                   class="labelAttr"
+                   id="title1029">D:16</title>
+                <g
+                   class="notehead"
+                   id="g1029">
+                  <g
+                     id="use1029"
+                     transform="matrix(0.72,0,0,0.72,12738,26280)">
+                    <path
+                       transform="scale(1,-1)"
+                       d="m 0,-39 c 0,68 73,172 200,172 66,0 114,-37 114,-95 0,-84 -106,-171 -218,-171 -64,0 -96,30 -96,94 z"
+                       id="path61"
+                       style="stroke:currentColor" />
+                  </g>
+                </g>
+                <g
+                   id="nibmjsg"
+                   class="stem">
+                  <path
+                     d="m 12955,26252 v -809"
+                     stroke-width="18"
+                     id="path1029"
+                     style="stroke:currentColor" />
+                </g>
+              </g>
+              <g
+                 id="z1slgu64"
+                 class="note">
+                <title
+                   class="labelAttr"
+                   id="title1030">G:16</title>
+                <g
+                   class="notehead"
+                   id="g1030">
+                  <g
+                     id="use1030"
+                     transform="matrix(0.72,0,0,0.72,13076,26010)">
+                    <path
+                       transform="scale(1,-1)"
+                       d="m 0,-39 c 0,68 73,172 200,172 66,0 114,-37 114,-95 0,-84 -106,-171 -218,-171 -64,0 -96,30 -96,94 z"
+                       id="path62"
+                       style="stroke:currentColor" />
+                  </g>
+                </g>
+                <g
+                   id="nepkmqe"
+                   class="stem">
+                  <path
+                     d="m 13293,25982 v -539"
+                     stroke-width="18"
+                     id="path1030"
+                     style="stroke:currentColor" />
+                </g>
+              </g>
+              <g
+                 id="y129qxox"
+                 class="note">
+                <title
+                   class="labelAttr"
+                   id="title1031">F:16</title>
+                <g
+                   class="notehead"
+                   id="g1031">
+                  <g
+                     id="use1031"
+                     transform="matrix(0.72,0,0,0.72,13414,26100)">
+                    <path
+                       transform="scale(1,-1)"
+                       d="m 0,-39 c 0,68 73,172 200,172 66,0 114,-37 114,-95 0,-84 -106,-171 -218,-171 -64,0 -96,30 -96,94 z"
+                       id="path63"
+                       style="stroke:currentColor" />
+                  </g>
+                </g>
+                <g
+                   id="h19l6b94"
+                   class="stem">
+                  <path
+                     d="m 13631,26072 v -629"
+                     stroke-width="18"
+                     id="path1031"
+                     style="stroke:currentColor" />
+                </g>
+              </g>
+              <g
+                 id="g1hqvfsc"
+                 class="note">
+                <title
+                   class="labelAttr"
+                   id="title1032">G:16</title>
+                <g
+                   class="notehead"
+                   id="g1032">
+                  <g
+                     id="use1032"
+                     transform="matrix(0.72,0,0,0.72,13752,26010)">
+                    <path
+                       transform="scale(1,-1)"
+                       d="m 0,-39 c 0,68 73,172 200,172 66,0 114,-37 114,-95 0,-84 -106,-171 -218,-171 -64,0 -96,30 -96,94 z"
+                       id="path64"
+                       style="stroke:currentColor" />
+                  </g>
+                </g>
+                <g
+                   id="m1nzco7a"
+                   class="stem">
+                  <path
+                     d="m 13969,25982 v -539"
+                     stroke-width="18"
+                     id="path1032"
+                     style="stroke:currentColor" />
+                </g>
+              </g>
+            </g>
+          </g>
+        </g>
+        <g
+           id="g1szj1ci"
+           class="staff">
+          <path
+             d="m 8368,27270 h 5735"
+             stroke-width="13"
+             id="path1033"
+             style="stroke:currentColor" />
+          <path
+             d="m 8368,27450 h 5735"
+             stroke-width="13"
+             id="path1034"
+             style="stroke:currentColor" />
+          <path
+             d="m 8368,27630 h 5735"
+             stroke-width="13"
+             id="path1035"
+             style="stroke:currentColor" />
+          <path
+             d="m 8368,27810 h 5735"
+             stroke-width="13"
+             id="path1036"
+             style="stroke:currentColor" />
+          <path
+             d="m 8368,27990 h 5735"
+             stroke-width="13"
+             id="path1037"
+             style="stroke:currentColor" />
+          <g
+             id="g1mepejx"
+             class="layer">
+            <g
+               id="jwp5tsk"
+               class="beam">
+              <polygon
+                 stroke-opacity="1"
+                 fill-opacity="1"
+                 points="9580,28170 8548,28530 8548,28620 9580,28260 "
+                 id="polygon1037" />
+              <polygon
+                 stroke-opacity="1"
+                 fill-opacity="1"
+                 points="8895,28275 8548,28395 8548,28485 8895,28365 "
+                 id="polygon1038" />
+              <polygon
+                 stroke-opacity="1"
+                 fill-opacity="1"
+                 points="9233,28155 8895,28275 8895,28365 9233,28245 "
+                 id="polygon1039" />
+              <polygon
+                 stroke-opacity="1"
+                 fill-opacity="1"
+                 points="9580,28035 9233,28155 9233,28245 9580,28125 "
+                 id="polygon1040" />
+              <g
+                 id="p1ttpfs6"
+                 class="note">
+                <title
+                   class="labelAttr"
+                   id="title1040">G:16</title>
+                <g
+                   class="notehead"
+                   id="g1040">
+                  <g
+                     id="use1040"
+                     transform="matrix(0.72,0,0,0.72,8548,27990)">
+                    <path
+                       transform="scale(1,-1)"
+                       d="m 0,-39 c 0,68 73,172 200,172 66,0 114,-37 114,-95 0,-84 -106,-171 -218,-171 -64,0 -96,30 -96,94 z"
+                       id="path65"
+                       style="stroke:currentColor" />
+                  </g>
+                </g>
+                <g
+                   id="h12fv8uc"
+                   class="stem">
+                  <path
+                     d="m 8557,28018 v 584"
+                     stroke-width="18"
+                     id="path1040"
+                     style="stroke:currentColor" />
+                </g>
+              </g>
+              <g
+                 id="n11no3ex"
+                 class="note">
+                <title
+                   class="labelAttr"
+                   id="title1041">D:16</title>
+                <g
+                   class="notehead"
+                   id="g1041">
+                  <g
+                     id="use1041"
+                     transform="matrix(0.72,0,0,0.72,8886,27630)">
+                    <path
+                       transform="scale(1,-1)"
+                       d="m 0,-39 c 0,68 73,172 200,172 66,0 114,-37 114,-95 0,-84 -106,-171 -218,-171 -64,0 -96,30 -96,94 z"
+                       id="path66"
+                       style="stroke:currentColor" />
+                  </g>
+                </g>
+                <g
+                   id="obv6rz8"
+                   class="stem">
+                  <path
+                     d="m 8895,27658 v 824"
+                     stroke-width="18"
+                     id="path1041"
+                     style="stroke:currentColor" />
+                </g>
+              </g>
+              <g
+                 id="vahoglt"
+                 class="note">
+                <title
+                   class="labelAttr"
+                   id="title1042">G:16</title>
+                <g
+                   class="notehead"
+                   id="g1042">
+                  <g
+                     id="use1042"
+                     transform="matrix(0.72,0,0,0.72,9224,27360)">
+                    <path
+                       transform="scale(1,-1)"
+                       d="m 0,-39 c 0,68 73,172 200,172 66,0 114,-37 114,-95 0,-84 -106,-171 -218,-171 -64,0 -96,30 -96,94 z"
+                       id="path67"
+                       style="stroke:currentColor" />
+                  </g>
+                </g>
+                <g
+                   id="lqylel0"
+                   class="stem">
+                  <path
+                     d="m 9233,27388 v 974"
+                     stroke-width="18"
+                     id="path1042"
+                     style="stroke:currentColor" />
+                </g>
+              </g>
+              <g
+                 id="xrprfdh"
+                 class="note">
+                <title
+                   class="labelAttr"
+                   id="title1043">A:16</title>
+                <g
+                   class="notehead"
+                   id="g1043">
+                  <g
+                     id="use1043"
+                     transform="matrix(0.72,0,0,0.72,9562,27270)">
+                    <path
+                       transform="scale(1,-1)"
+                       d="m 0,-39 c 0,68 73,172 200,172 66,0 114,-37 114,-95 0,-84 -106,-171 -218,-171 -64,0 -96,30 -96,94 z"
+                       id="path68"
+                       style="stroke:currentColor" />
+                  </g>
+                </g>
+                <g
+                   id="b1v6lmvz"
+                   class="stem">
+                  <path
+                     d="m 9571,27298 v 944"
+                     stroke-width="18"
+                     id="path1043"
+                     style="stroke:currentColor" />
+                </g>
+              </g>
+            </g>
+            <g
+               id="ggu3zbh"
+               class="beam">
+              <polygon
+                 stroke-opacity="1"
+                 fill-opacity="1"
+                 points="11067,28125 9900,28125 9900,28215 11067,28215 "
+                 id="polygon1043" />
+              <polygon
+                 stroke-opacity="1"
+                 fill-opacity="1"
+                 points="10382,27990 9900,27990 9900,28080 10382,28080 "
+                 id="polygon1044" />
+              <polygon
+                 stroke-opacity="1"
+                 fill-opacity="1"
+                 points="10720,27990 10382,27990 10382,28080 10720,28080 "
+                 id="polygon1045" />
+              <polygon
+                 stroke-opacity="1"
+                 fill-opacity="1"
+                 points="11067,27990 10720,27990 10720,28080 11067,28080 "
+                 id="polygon1046" />
+              <g
+                 id="qv5g3cl"
+                 class="chord">
+                <g
+                   id="ziip7tg"
+                   class="stem">
+                  <path
+                     d="m 9909,27388 v 809"
+                     stroke-width="18"
+                     id="path1046"
+                     style="stroke:currentColor" />
+                </g>
+                <g
+                   id="kai038o"
+                   class="note">
+                  <title
+                     class="labelAttr"
+                     id="title1046">D:16</title>
+                  <g
+                     class="notehead"
+                     id="g1046">
+                    <g
+                       id="use1046"
+                       transform="matrix(0.72,0,0,0.72,9900,27630)">
+                      <path
+                         transform="scale(1,-1)"
+                         d="m 0,-39 c 0,68 73,172 200,172 66,0 114,-37 114,-95 0,-84 -106,-171 -218,-171 -64,0 -96,30 -96,94 z"
+                         id="path69"
+                         style="stroke:currentColor" />
+                    </g>
+                  </g>
+                </g>
+                <g
+                   id="nhx4crh"
+                   class="note">
+                  <title
+                     class="labelAttr"
+                     id="title1047">G:16</title>
+                  <g
+                     class="notehead"
+                     id="g1047">
+                    <g
+                       id="use1047"
+                       transform="matrix(0.72,0,0,0.72,9900,27360)">
+                      <path
+                         transform="scale(1,-1)"
+                         d="m 0,-39 c 0,68 73,172 200,172 66,0 114,-37 114,-95 0,-84 -106,-171 -218,-171 -64,0 -96,30 -96,94 z"
+                         id="path70"
+                         style="stroke:currentColor" />
+                    </g>
+                  </g>
+                </g>
+              </g>
+              <g
+                 id="ou86efb"
+                 class="note">
+                <title
+                   class="labelAttr"
+                   id="title1048">B:16</title>
+                <g
+                   class="notehead"
+                   id="g1048">
+                  <g
+                     id="use1048"
+                     transform="matrix(0.72,0,0,0.72,10373,27180)">
+                    <path
+                       transform="scale(1,-1)"
+                       d="m 0,-39 c 0,68 73,172 200,172 66,0 114,-37 114,-95 0,-84 -106,-171 -218,-171 -64,0 -96,30 -96,94 z"
+                       id="path71"
+                       style="stroke:currentColor" />
+                  </g>
+                </g>
+                <g
+                   id="d1u1ucj8"
+                   class="stem">
+                  <path
+                     d="m 10382,27208 v 989"
+                     stroke-width="18"
+                     id="path1048"
+                     style="stroke:currentColor" />
+                </g>
+                <g
+                   id="xn0ggp4"
+                   class="accid">
+                  <g
+                     id="use1049"
+                     transform="matrix(0.72,0,0,0.72,10215,27180)">
+                    <path
+                       transform="scale(1,-1)"
+                       d="M 0,-188 V 351 H 18 V 160 l 139,22 v -533 h -17 v 186 z m 18,88 122,17 V 93 L 18,74 Z"
+                       id="path10"
+                       style="stroke:currentColor" />
+                  </g>
+                </g>
+              </g>
+              <g
+                 id="o1sjyk3u"
+                 class="note">
+                <title
+                   class="labelAttr"
+                   id="title1049">G:16</title>
+                <g
+                   class="notehead"
+                   id="g1050">
+                  <g
+                     id="use1050"
+                     transform="matrix(0.72,0,0,0.72,10711,27360)">
+                    <path
+                       transform="scale(1,-1)"
+                       d="m 0,-39 c 0,68 73,172 200,172 66,0 114,-37 114,-95 0,-84 -106,-171 -218,-171 -64,0 -96,30 -96,94 z"
+                       id="path72"
+                       style="stroke:currentColor" />
+                  </g>
+                </g>
+                <g
+                   id="owk70ws"
+                   class="stem">
+                  <path
+                     d="m 10720,27388 v 809"
+                     stroke-width="18"
+                     id="path1050"
+                     style="stroke:currentColor" />
+                </g>
+              </g>
+              <g
+                 id="edpoh61"
+                 class="note">
+                <title
+                   class="labelAttr"
+                   id="title1050">D:16</title>
+                <g
+                   class="notehead"
+                   id="g1051">
+                  <g
+                     id="use1051"
+                     transform="matrix(0.72,0,0,0.72,11049,27630)">
+                    <path
+                       transform="scale(1,-1)"
+                       d="m 0,-39 c 0,68 73,172 200,172 66,0 114,-37 114,-95 0,-84 -106,-171 -218,-171 -64,0 -96,30 -96,94 z"
+                       id="path73"
+                       style="stroke:currentColor" />
+                  </g>
+                </g>
+                <g
+                   id="z166s8ki"
+                   class="stem">
+                  <path
+                     d="m 11058,27658 v 539"
+                     stroke-width="18"
+                     id="path1051"
+                     style="stroke:currentColor" />
+                </g>
+              </g>
+            </g>
+            <g
+               id="f13g2bl3"
+               class="beam">
+              <polygon
+                 stroke-opacity="1"
+                 fill-opacity="1"
+                 points="12418,28170 11387,28530 11387,28620 12418,28260 "
+                 id="polygon1051" />
+              <polygon
+                 stroke-opacity="1"
+                 fill-opacity="1"
+                 points="11734,28275 11387,28395 11387,28485 11734,28365 "
+                 id="polygon1052" />
+              <polygon
+                 stroke-opacity="1"
+                 fill-opacity="1"
+                 points="12072,28155 11734,28275 11734,28365 12072,28245 "
+                 id="polygon1053" />
+              <polygon
+                 stroke-opacity="1"
+                 fill-opacity="1"
+                 points="12418,28035 12072,28155 12072,28245 12418,28125 "
+                 id="polygon1054" />
+              <g
+                 id="w171noj6"
+                 class="note">
+                <title
+                   class="labelAttr"
+                   id="title1054">G:16</title>
+                <g
+                   class="notehead"
+                   id="g1054">
+                  <g
+                     id="use1054"
+                     transform="matrix(0.72,0,0,0.72,11387,27990)">
+                    <path
+                       transform="scale(1,-1)"
+                       d="m 0,-39 c 0,68 73,172 200,172 66,0 114,-37 114,-95 0,-84 -106,-171 -218,-171 -64,0 -96,30 -96,94 z"
+                       id="path74"
+                       style="stroke:currentColor" />
+                  </g>
+                </g>
+                <g
+                   id="fo2negb"
+                   class="stem">
+                  <path
+                     d="m 11396,28018 v 584"
+                     stroke-width="18"
+                     id="path1054"
+                     style="stroke:currentColor" />
+                </g>
+              </g>
+              <g
+                 id="t19jzdlz"
+                 class="note">
+                <title
+                   class="labelAttr"
+                   id="title1055">D:16</title>
+                <g
+                   class="notehead"
+                   id="g1055">
+                  <g
+                     id="use1055"
+                     transform="matrix(0.72,0,0,0.72,11725,27630)">
+                    <path
+                       transform="scale(1,-1)"
+                       d="m 0,-39 c 0,68 73,172 200,172 66,0 114,-37 114,-95 0,-84 -106,-171 -218,-171 -64,0 -96,30 -96,94 z"
+                       id="path75"
+                       style="stroke:currentColor" />
+                  </g>
+                </g>
+                <g
+                   id="v1x4lt9n"
+                   class="stem">
+                  <path
+                     d="m 11734,27658 v 824"
+                     stroke-width="18"
+                     id="path1055"
+                     style="stroke:currentColor" />
+                </g>
+              </g>
+              <g
+                 id="b1a3knwq"
+                 class="note">
+                <title
+                   class="labelAttr"
+                   id="title1056">G:16</title>
+                <g
+                   class="notehead"
+                   id="g1056">
+                  <g
+                     id="use1056"
+                     transform="matrix(0.72,0,0,0.72,12063,27360)">
+                    <path
+                       transform="scale(1,-1)"
+                       d="m 0,-39 c 0,68 73,172 200,172 66,0 114,-37 114,-95 0,-84 -106,-171 -218,-171 -64,0 -96,30 -96,94 z"
+                       id="path76"
+                       style="stroke:currentColor" />
+                  </g>
+                </g>
+                <g
+                   id="a1nv6loa"
+                   class="stem">
+                  <path
+                     d="m 12072,27388 v 974"
+                     stroke-width="18"
+                     id="path1056"
+                     style="stroke:currentColor" />
+                </g>
+              </g>
+              <g
+                 id="c1cn7yq9"
+                 class="note">
+                <title
+                   class="labelAttr"
+                   id="title1057">A:16</title>
+                <g
+                   class="notehead"
+                   id="g1057">
+                  <g
+                     id="use1057"
+                     transform="matrix(0.72,0,0,0.72,12400,27270)">
+                    <path
+                       transform="scale(1,-1)"
+                       d="m 0,-39 c 0,68 73,172 200,172 66,0 114,-37 114,-95 0,-84 -106,-171 -218,-171 -64,0 -96,30 -96,94 z"
+                       id="path77"
+                       style="stroke:currentColor" />
+                  </g>
+                </g>
+                <g
+                   id="n1jk78ha"
+                   class="stem">
+                  <path
+                     d="m 12409,27298 v 944"
+                     stroke-width="18"
+                     id="path1057"
+                     style="stroke:currentColor" />
+                </g>
+              </g>
+            </g>
+            <g
+               id="fdtmteu"
+               class="beam">
+              <polygon
+                 stroke-opacity="1"
+                 fill-opacity="1"
+                 points="13770,28125 12738,28125 12738,28215 13770,28215 "
+                 id="polygon1057" />
+              <polygon
+                 stroke-opacity="1"
+                 fill-opacity="1"
+                 points="13085,27990 12738,27990 12738,28080 13085,28080 "
+                 id="polygon1058" />
+              <polygon
+                 stroke-opacity="1"
+                 fill-opacity="1"
+                 points="13423,27990 13085,27990 13085,28080 13423,28080 "
+                 id="polygon1059" />
+              <polygon
+                 stroke-opacity="1"
+                 fill-opacity="1"
+                 points="13770,27990 13423,27990 13423,28080 13770,28080 "
+                 id="polygon1060" />
+              <g
+                 id="vzvz4zj"
+                 class="chord">
+                <g
+                   id="q1nsf4mj"
+                   class="stem">
+                  <path
+                     d="m 12747,27388 v 809"
+                     stroke-width="18"
+                     id="path1060"
+                     style="stroke:currentColor" />
+                </g>
+                <g
+                   id="rg71qc5"
+                   class="note">
+                  <title
+                     class="labelAttr"
+                     id="title1060">D:16</title>
+                  <g
+                     class="notehead"
+                     id="g1060">
+                    <g
+                       id="use1060"
+                       transform="matrix(0.72,0,0,0.72,12738,27630)">
+                      <path
+                         transform="scale(1,-1)"
+                         d="m 0,-39 c 0,68 73,172 200,172 66,0 114,-37 114,-95 0,-84 -106,-171 -218,-171 -64,0 -96,30 -96,94 z"
+                         id="path78"
+                         style="stroke:currentColor" />
+                    </g>
+                  </g>
+                </g>
+                <g
+                   id="u3i3hr5"
+                   class="note">
+                  <title
+                     class="labelAttr"
+                     id="title1061">G:16</title>
+                  <g
+                     class="notehead"
+                     id="g1061">
+                    <g
+                       id="use1061"
+                       transform="matrix(0.72,0,0,0.72,12738,27360)">
+                      <path
+                         transform="scale(1,-1)"
+                         d="m 0,-39 c 0,68 73,172 200,172 66,0 114,-37 114,-95 0,-84 -106,-171 -218,-171 -64,0 -96,30 -96,94 z"
+                         id="path79"
+                         style="stroke:currentColor" />
+                    </g>
+                  </g>
+                </g>
+              </g>
+              <g
+                 id="z1r8dodk"
+                 class="note">
+                <title
+                   class="labelAttr"
+                   id="title1062">B:16</title>
+                <g
+                   class="notehead"
+                   id="g1062">
+                  <g
+                     id="use1062"
+                     transform="matrix(0.72,0,0,0.72,13076,27180)">
+                    <path
+                       transform="scale(1,-1)"
+                       d="m 0,-39 c 0,68 73,172 200,172 66,0 114,-37 114,-95 0,-84 -106,-171 -218,-171 -64,0 -96,30 -96,94 z"
+                       id="path80"
+                       style="stroke:currentColor" />
+                  </g>
+                </g>
+                <g
+                   id="y1w27pu4"
+                   class="stem">
+                  <path
+                     d="m 13085,27208 v 989"
+                     stroke-width="18"
+                     id="path1062"
+                     style="stroke:currentColor" />
+                </g>
+              </g>
+              <g
+                 id="e1o5ntxx"
+                 class="note">
+                <title
+                   class="labelAttr"
+                   id="title1063">G:16</title>
+                <g
+                   class="notehead"
+                   id="g1063">
+                  <g
+                     id="use1063"
+                     transform="matrix(0.72,0,0,0.72,13414,27360)">
+                    <path
+                       transform="scale(1,-1)"
+                       d="m 0,-39 c 0,68 73,172 200,172 66,0 114,-37 114,-95 0,-84 -106,-171 -218,-171 -64,0 -96,30 -96,94 z"
+                       id="path81"
+                       style="stroke:currentColor" />
+                  </g>
+                </g>
+                <g
+                   id="dtlg7sd"
+                   class="stem">
+                  <path
+                     d="m 13423,27388 v 809"
+                     stroke-width="18"
+                     id="path1063"
+                     style="stroke:currentColor" />
+                </g>
+              </g>
+              <g
+                 id="y1joirr3"
+                 class="note">
+                <title
+                   class="labelAttr"
+                   id="title1064">D:16</title>
+                <g
+                   class="notehead"
+                   id="g1064">
+                  <g
+                     id="use1064"
+                     transform="matrix(0.72,0,0,0.72,13752,27630)">
+                    <path
+                       transform="scale(1,-1)"
+                       d="m 0,-39 c 0,68 73,172 200,172 66,0 114,-37 114,-95 0,-84 -106,-171 -218,-171 -64,0 -96,30 -96,94 z"
+                       id="path82"
+                       style="stroke:currentColor" />
+                  </g>
+                </g>
+                <g
+                   id="x1l5mtmz"
+                   class="stem">
+                  <path
+                     d="m 13761,27658 v 539"
+                     stroke-width="18"
+                     id="path1064"
+                     style="stroke:currentColor" />
+                </g>
+              </g>
+            </g>
+          </g>
+        </g>
+        <g
+           id="g26fzp"
+           class="barLine">
+          <path
+             d="m 14090,25470 v 720"
+             stroke-width="27"
+             id="path1066"
+             style="stroke:currentColor" />
+          <path
+             d="m 14090,27270 v 720"
+             stroke-width="27"
+             id="path1067"
+             style="stroke:currentColor" />
+          <path
+             d="m 14090,26190 v 1080"
+             stroke-width="27"
+             id="path1068"
+             style="stroke:currentColor" />
+        </g>
+      </g>
+      <g
+         id="vjmp953"
+         class="measure">
+        <g
+           id="w1ove8va"
+           class="staff">
+          <path
+             d="m 14103,25470 h 5899"
+             stroke-width="13"
+             id="path1074"
+             style="stroke:currentColor" />
+          <path
+             d="m 14103,25650 h 5899"
+             stroke-width="13"
+             id="path1075"
+             style="stroke:currentColor" />
+          <path
+             d="m 14103,25830 h 5899"
+             stroke-width="13"
+             id="path1076"
+             style="stroke:currentColor" />
+          <path
+             d="m 14103,26010 h 5899"
+             stroke-width="13"
+             id="path1077"
+             style="stroke:currentColor" />
+          <path
+             d="m 14103,26190 h 5899"
+             stroke-width="13"
+             id="path1078"
+             style="stroke:currentColor" />
+          <g
+             class="ledgerLines below"
+             id="g1083">
+            <path
+               d="m 15587,26370 h 322"
+               stroke-width="22"
+               id="path1079"
+               style="stroke:currentColor" />
+            <path
+               d="m 17614,26370 h 322"
+               stroke-width="22"
+               id="path1080"
+               style="stroke:currentColor" />
+            <path
+               d="m 18589,26370 h 322"
+               stroke-width="22"
+               id="path1081"
+               style="stroke:currentColor" />
+            <path
+               d="m 19265,26370 h 322"
+               stroke-width="22"
+               id="path1082"
+               style="stroke:currentColor" />
+            <path
+               d="m 18589,26550 h 322"
+               stroke-width="22"
+               id="path1083"
+               style="stroke:currentColor" />
+          </g>
+          <g
+             id="b1dsnqgd"
+             class="layer">
+            <g
+               id="i1f0yry3"
+               class="beam">
+              <polygon
+                 stroke-opacity="1"
+                 fill-opacity="1"
+                 points="15523,25560 14491,25200 14491,25110 15523,25470 "
+                 id="polygon1083" />
+              <polygon
+                 stroke-opacity="1"
+                 fill-opacity="1"
+                 points="14838,25455 14491,25335 14491,25245 14838,25365 "
+                 id="polygon1084" />
+              <polygon
+                 stroke-opacity="1"
+                 fill-opacity="1"
+                 points="15176,25575 14838,25455 14838,25365 15176,25485 "
+                 id="polygon1085" />
+              <polygon
+                 stroke-opacity="1"
+                 fill-opacity="1"
+                 points="15523,25695 15176,25575 15176,25485 15523,25605 "
+                 id="polygon1086" />
+              <g
+                 id="k1e53h9p"
+                 class="note">
+                <title
+                   class="labelAttr"
+                   id="title1086">C:16</title>
+                <g
+                   class="notehead"
+                   id="g1086">
+                  <g
+                     id="use1086"
+                     transform="matrix(0.72,0,0,0.72,14283,25740)">
+                    <path
+                       transform="scale(1,-1)"
+                       d="m 0,-39 c 0,68 73,172 200,172 66,0 114,-37 114,-95 0,-84 -106,-171 -218,-171 -64,0 -96,30 -96,94 z"
+                       id="path83"
+                       style="stroke:currentColor" />
+                  </g>
+                </g>
+                <g
+                   id="g1xgo1wk"
+                   class="stem">
+                  <path
+                     d="m 14500,25712 v -584"
+                     stroke-width="18"
+                     id="path1086"
+                     style="stroke:currentColor" />
+                </g>
+              </g>
+              <g
+                 id="q1rp83aw"
+                 class="note">
+                <title
+                   class="labelAttr"
+                   id="title1087">Eb:16</title>
+                <g
+                   class="notehead"
+                   id="g1087">
+                  <g
+                     id="use1087"
+                     transform="matrix(0.72,0,0,0.72,14621,26190)">
+                    <path
+                       transform="scale(1,-1)"
+                       d="m 0,-39 c 0,68 73,172 200,172 66,0 114,-37 114,-95 0,-84 -106,-171 -218,-171 -64,0 -96,30 -96,94 z"
+                       id="path84"
+                       style="stroke:currentColor" />
+                  </g>
+                </g>
+                <g
+                   id="t1pnexdb"
+                   class="stem">
+                  <path
+                     d="m 14838,26162 v -914"
+                     stroke-width="18"
+                     id="path1087"
+                     style="stroke:currentColor" />
+                </g>
+                <g
+                   id="zrmzv6c"
+                   class="accid" />
+              </g>
+              <g
+                 id="h1on7t0q"
+                 class="note">
+                <title
+                   class="labelAttr"
+                   id="title1088">D:16</title>
+                <g
+                   class="notehead"
+                   id="g1088">
+                  <g
+                     id="use1088"
+                     transform="matrix(0.72,0,0,0.72,14959,26280)">
+                    <path
+                       transform="scale(1,-1)"
+                       d="m 0,-39 c 0,68 73,172 200,172 66,0 114,-37 114,-95 0,-84 -106,-171 -218,-171 -64,0 -96,30 -96,94 z"
+                       id="path85"
+                       style="stroke:currentColor" />
+                  </g>
+                </g>
+                <g
+                   id="k1hap9iv"
+                   class="stem">
+                  <path
+                     d="m 15176,26252 v -884"
+                     stroke-width="18"
+                     id="path1088"
+                     style="stroke:currentColor" />
+                </g>
+              </g>
+              <g
+                 id="e1rkjuw1"
+                 class="note">
+                <title
+                   class="labelAttr"
+                   id="title1089">Eb:16</title>
+                <g
+                   class="notehead"
+                   id="g1089">
+                  <g
+                     id="use1089"
+                     transform="matrix(0.72,0,0,0.72,15297,26190)">
+                    <path
+                       transform="scale(1,-1)"
+                       d="m 0,-39 c 0,68 73,172 200,172 66,0 114,-37 114,-95 0,-84 -106,-171 -218,-171 -64,0 -96,30 -96,94 z"
+                       id="path86"
+                       style="stroke:currentColor" />
+                  </g>
+                </g>
+                <g
+                   id="l1kef6m2"
+                   class="stem">
+                  <path
+                     d="m 15514,26162 v -674"
+                     stroke-width="18"
+                     id="path1089"
+                     style="stroke:currentColor" />
+                </g>
+                <g
+                   id="x1bbvpit"
+                   class="accid" />
+              </g>
+            </g>
+            <g
+               id="p1nr5sfm"
+               class="beam">
+              <polygon
+                 stroke-opacity="1"
+                 fill-opacity="1"
+                 points="16874,25695 15843,25695 15843,25605 16874,25605 "
+                 id="polygon1089" />
+              <polygon
+                 stroke-opacity="1"
+                 fill-opacity="1"
+                 points="16190,25830 15843,25830 15843,25740 16190,25740 "
+                 id="polygon1090" />
+              <polygon
+                 stroke-opacity="1"
+                 fill-opacity="1"
+                 points="16527,25830 16190,25830 16190,25740 16527,25740 "
+                 id="polygon1091" />
+              <polygon
+                 stroke-opacity="1"
+                 fill-opacity="1"
+                 points="16874,25830 16527,25830 16527,25740 16874,25740 "
+                 id="polygon1092" />
+              <g
+                 id="a12b2pzt"
+                 class="note">
+                <title
+                   class="labelAttr"
+                   id="title1092">C:16</title>
+                <g
+                   class="notehead"
+                   id="g1092">
+                  <g
+                     id="use1092"
+                     transform="matrix(0.72,0,0,0.72,15635,26370)">
+                    <path
+                       transform="scale(1,-1)"
+                       d="m 0,-39 c 0,68 73,172 200,172 66,0 114,-37 114,-95 0,-84 -106,-171 -218,-171 -64,0 -96,30 -96,94 z"
+                       id="path87"
+                       style="stroke:currentColor" />
+                  </g>
+                </g>
+                <g
+                   id="z1bp26am"
+                   class="stem">
+                  <path
+                     d="m 15852,26342 v -719"
+                     stroke-width="18"
+                     id="path1092"
+                     style="stroke:currentColor" />
+                </g>
+              </g>
+              <g
+                 id="ujl86rs"
+                 class="note">
+                <title
+                   class="labelAttr"
+                   id="title1093">Eb:16</title>
+                <g
+                   class="notehead"
+                   id="g1093">
+                  <g
+                     id="use1093"
+                     transform="matrix(0.72,0,0,0.72,15973,26190)">
+                    <path
+                       transform="scale(1,-1)"
+                       d="m 0,-39 c 0,68 73,172 200,172 66,0 114,-37 114,-95 0,-84 -106,-171 -218,-171 -64,0 -96,30 -96,94 z"
+                       id="path88"
+                       style="stroke:currentColor" />
+                  </g>
+                </g>
+                <g
+                   id="a121nfgp"
+                   class="stem">
+                  <path
+                     d="m 16190,26162 v -539"
+                     stroke-width="18"
+                     id="path1093"
+                     style="stroke:currentColor" />
+                </g>
+                <g
+                   id="k1b1zlf1"
+                   class="accid" />
+              </g>
+              <g
+                 id="ewezxx"
+                 class="note">
+                <title
+                   class="labelAttr"
+                   id="title1094">D:16</title>
+                <g
+                   class="notehead"
+                   id="g1094">
+                  <g
+                     id="use1094"
+                     transform="matrix(0.72,0,0,0.72,16310,26280)">
+                    <path
+                       transform="scale(1,-1)"
+                       d="m 0,-39 c 0,68 73,172 200,172 66,0 114,-37 114,-95 0,-84 -106,-171 -218,-171 -64,0 -96,30 -96,94 z"
+                       id="path89"
+                       style="stroke:currentColor" />
+                  </g>
+                </g>
+                <g
+                   id="t1w8lvo8"
+                   class="stem">
+                  <path
+                     d="m 16527,26252 v -629"
+                     stroke-width="18"
+                     id="path1094"
+                     style="stroke:currentColor" />
+                </g>
+              </g>
+              <g
+                 id="a1tv0xh6"
+                 class="note">
+                <title
+                   class="labelAttr"
+                   id="title1095">Eb:16</title>
+                <g
+                   class="notehead"
+                   id="g1095">
+                  <g
+                     id="use1095"
+                     transform="matrix(0.72,0,0,0.72,16648,26190)">
+                    <path
+                       transform="scale(1,-1)"
+                       d="m 0,-39 c 0,68 73,172 200,172 66,0 114,-37 114,-95 0,-84 -106,-171 -218,-171 -64,0 -96,30 -96,94 z"
+                       id="path90"
+                       style="stroke:currentColor" />
+                  </g>
+                </g>
+                <g
+                   id="q5lxpif"
+                   class="stem">
+                  <path
+                     d="m 16865,26162 v -539"
+                     stroke-width="18"
+                     id="path1095"
+                     style="stroke:currentColor" />
+                </g>
+                <g
+                   id="zajc4at"
+                   class="accid" />
+              </g>
+            </g>
+            <g
+               id="z1ki0npq"
+               class="beam">
+              <polygon
+                 stroke-opacity="1"
+                 fill-opacity="1"
+                 points="18361,25650 17194,25290 17194,25200 18361,25560 "
+                 id="polygon1095" />
+              <polygon
+                 stroke-opacity="1"
+                 fill-opacity="1"
+                 points="17541,25531 17194,25425 17194,25335 17541,25441 "
+                 id="polygon1096" />
+              <polygon
+                 stroke-opacity="1"
+                 fill-opacity="1"
+                 points="17879,25637 17541,25531 17541,25441 17879,25547 "
+                 id="polygon1097" />
+              <polygon
+                 stroke-opacity="1"
+                 fill-opacity="1"
+                 points="18361,25785 17879,25637 17879,25547 18361,25695 "
+                 id="polygon1098" />
+              <g
+                 id="w500lex"
+                 class="note">
+                <title
+                   class="labelAttr"
+                   id="title1098">Bb:16</title>
+                <g
+                   class="notehead"
+                   id="g1098">
+                  <g
+                     id="use1098"
+                     transform="matrix(0.72,0,0,0.72,16986,25830)">
+                    <path
+                       transform="scale(1,-1)"
+                       d="m 0,-39 c 0,68 73,172 200,172 66,0 114,-37 114,-95 0,-84 -106,-171 -218,-171 -64,0 -96,30 -96,94 z"
+                       id="path91"
+                       style="stroke:currentColor" />
+                  </g>
+                </g>
+                <g
+                   id="n18g4sjb"
+                   class="stem">
+                  <path
+                     d="m 17203,25802 v -584"
+                     stroke-width="18"
+                     id="path1098"
+                     style="stroke:currentColor" />
+                </g>
+                <g
+                   id="f1dp67z6"
+                   class="accid" />
+              </g>
+              <g
+                 id="f1nmfcq3"
+                 class="note">
+                <title
+                   class="labelAttr"
+                   id="title1099">D:16</title>
+                <g
+                   class="notehead"
+                   id="g1099">
+                  <g
+                     id="use1099"
+                     transform="matrix(0.72,0,0,0.72,17324,26280)">
+                    <path
+                       transform="scale(1,-1)"
+                       d="m 0,-39 c 0,68 73,172 200,172 66,0 114,-37 114,-95 0,-84 -106,-171 -218,-171 -64,0 -96,30 -96,94 z"
+                       id="path92"
+                       style="stroke:currentColor" />
+                  </g>
+                </g>
+                <g
+                   id="tc234qw"
+                   class="stem">
+                  <path
+                     d="m 17541,26252 v -928"
+                     stroke-width="18"
+                     id="path1099"
+                     style="stroke:currentColor" />
+                </g>
+              </g>
+              <g
+                 id="u3ck8wn"
+                 class="note">
+                <title
+                   class="labelAttr"
+                   id="title1100">C:16</title>
+                <g
+                   class="notehead"
+                   id="g1100">
+                  <g
+                     id="use1100"
+                     transform="matrix(0.72,0,0,0.72,17662,26370)">
+                    <path
+                       transform="scale(1,-1)"
+                       d="m 0,-39 c 0,68 73,172 200,172 66,0 114,-37 114,-95 0,-84 -106,-171 -218,-171 -64,0 -96,30 -96,94 z"
+                       id="path93"
+                       style="stroke:currentColor" />
+                  </g>
+                </g>
+                <g
+                   id="a16j19kc"
+                   class="stem">
+                  <path
+                     d="m 17879,26342 v -912"
+                     stroke-width="18"
+                     id="path1100"
+                     style="stroke:currentColor" />
+                </g>
+              </g>
+              <g
+                 id="c1pyxtqe"
+                 class="note">
+                <title
+                   class="labelAttr"
+                   id="title1101">D:16</title>
+                <g
+                   class="notehead"
+                   id="g1101">
+                  <g
+                     id="use1101"
+                     transform="matrix(0.72,0,0,0.72,18135,26280)">
+                    <path
+                       transform="scale(1,-1)"
+                       d="m 0,-39 c 0,68 73,172 200,172 66,0 114,-37 114,-95 0,-84 -106,-171 -218,-171 -64,0 -96,30 -96,94 z"
+                       id="path94"
+                       style="stroke:currentColor" />
+                  </g>
+                </g>
+                <g
+                   id="c1cdhlp6"
+                   class="stem">
+                  <path
+                     d="m 18352,26252 v -674"
+                     stroke-width="18"
+                     id="path1101"
+                     style="stroke:currentColor" />
+                </g>
+              </g>
+            </g>
+            <g
+               id="c1d02h4i"
+               class="beam">
+              <polygon
+                 stroke-opacity="1"
+                 fill-opacity="1"
+                 points="19877,25740 18845,25740 18845,25650 19877,25650 "
+                 id="polygon1101" />
+              <polygon
+                 stroke-opacity="1"
+                 fill-opacity="1"
+                 points="19192,25875 18845,25875 18845,25785 19192,25785 "
+                 id="polygon1102" />
+              <polygon
+                 stroke-opacity="1"
+                 fill-opacity="1"
+                 points="19530,25875 19192,25875 19192,25785 19530,25785 "
+                 id="polygon1103" />
+              <polygon
+                 stroke-opacity="1"
+                 fill-opacity="1"
+                 points="19877,25875 19530,25875 19530,25785 19877,25785 "
+                 id="polygon1104" />
+              <g
+                 id="t1hh96uc"
+                 class="note">
+                <title
+                   class="labelAttr"
+                   id="title1104">A:16</title>
+                <g
+                   class="notehead"
+                   id="g1104">
+                  <g
+                     id="use1104"
+                     transform="matrix(0.72,0,0,0.72,18637,26550)">
+                    <path
+                       transform="scale(1,-1)"
+                       d="m 0,-39 c 0,68 73,172 200,172 66,0 114,-37 114,-95 0,-84 -106,-171 -218,-171 -64,0 -96,30 -96,94 z"
+                       id="path95"
+                       style="stroke:currentColor" />
+                  </g>
+                </g>
+                <g
+                   id="i1gvy2p5"
+                   class="stem">
+                  <path
+                     d="m 18854,26522 v -854"
+                     stroke-width="18"
+                     id="path1104"
+                     style="stroke:currentColor" />
+                </g>
+              </g>
+              <g
+                 id="unurhip"
+                 class="note">
+                <title
+                   class="labelAttr"
+                   id="title1105">D:16</title>
+                <g
+                   class="notehead"
+                   id="g1105">
+                  <g
+                     id="use1105"
+                     transform="matrix(0.72,0,0,0.72,18975,26280)">
+                    <path
+                       transform="scale(1,-1)"
+                       d="m 0,-39 c 0,68 73,172 200,172 66,0 114,-37 114,-95 0,-84 -106,-171 -218,-171 -64,0 -96,30 -96,94 z"
+                       id="path96"
+                       style="stroke:currentColor" />
+                  </g>
+                </g>
+                <g
+                   id="k1yloivu"
+                   class="stem">
+                  <path
+                     d="m 19192,26252 v -584"
+                     stroke-width="18"
+                     id="path1105"
+                     style="stroke:currentColor" />
+                </g>
+              </g>
+              <g
+                 id="gccunqx"
+                 class="note">
+                <title
+                   class="labelAttr"
+                   id="title1106">C:16</title>
+                <g
+                   class="notehead"
+                   id="g1106">
+                  <g
+                     id="use1106"
+                     transform="matrix(0.72,0,0,0.72,19313,26370)">
+                    <path
+                       transform="scale(1,-1)"
+                       d="m 0,-39 c 0,68 73,172 200,172 66,0 114,-37 114,-95 0,-84 -106,-171 -218,-171 -64,0 -96,30 -96,94 z"
+                       id="path97"
+                       style="stroke:currentColor" />
+                  </g>
+                </g>
+                <g
+                   id="ontljyy"
+                   class="stem">
+                  <path
+                     d="m 19530,26342 v -674"
+                     stroke-width="18"
+                     id="path1106"
+                     style="stroke:currentColor" />
+                </g>
+              </g>
+              <g
+                 id="bg3wpdl"
+                 class="note">
+                <title
+                   class="labelAttr"
+                   id="title1107">D:16</title>
+                <g
+                   class="notehead"
+                   id="g1107">
+                  <g
+                     id="use1107"
+                     transform="matrix(0.72,0,0,0.72,19651,26280)">
+                    <path
+                       transform="scale(1,-1)"
+                       d="m 0,-39 c 0,68 73,172 200,172 66,0 114,-37 114,-95 0,-84 -106,-171 -218,-171 -64,0 -96,30 -96,94 z"
+                       id="path98"
+                       style="stroke:currentColor" />
+                  </g>
+                </g>
+                <g
+                   id="rm3vaqy"
+                   class="stem">
+                  <path
+                     d="m 19868,26252 v -584"
+                     stroke-width="18"
+                     id="path1107"
+                     style="stroke:currentColor" />
+                </g>
+              </g>
+            </g>
+          </g>
+        </g>
+        <g
+           id="s1xlddl8"
+           class="staff">
+          <path
+             d="m 14103,27270 h 5899"
+             stroke-width="13"
+             id="path1108"
+             style="stroke:currentColor" />
+          <path
+             d="m 14103,27450 h 5899"
+             stroke-width="13"
+             id="path1109"
+             style="stroke:currentColor" />
+          <path
+             d="m 14103,27630 h 5899"
+             stroke-width="13"
+             id="path1110"
+             style="stroke:currentColor" />
+          <path
+             d="m 14103,27810 h 5899"
+             stroke-width="13"
+             id="path1111"
+             style="stroke:currentColor" />
+          <path
+             d="m 14103,27990 h 5899"
+             stroke-width="13"
+             id="path1112"
+             style="stroke:currentColor" />
+          <g
+             class="ledgerLines below"
+             id="g1114">
+            <path
+               d="m 14235,28170 h 322"
+               stroke-width="22"
+               id="path1113"
+               style="stroke:currentColor" />
+            <path
+               d="m 16938,28170 h 322"
+               stroke-width="22"
+               id="path1114"
+               style="stroke:currentColor" />
+          </g>
+          <g
+             id="va7u5pv"
+             class="layer">
+            <g
+               id="bqj4abd"
+               class="beam">
+              <polygon
+                 stroke-opacity="1"
+                 fill-opacity="1"
+                 points="15523,26910 14491,27090 14491,27000 15523,26820 "
+                 id="polygon1114" />
+              <polygon
+                 stroke-opacity="1"
+                 fill-opacity="1"
+                 points="14838,27165 14491,27225 14491,27135 14838,27075 "
+                 id="polygon1115" />
+              <polygon
+                 stroke-opacity="1"
+                 fill-opacity="1"
+                 points="15176,27105 14838,27165 14838,27075 15176,27015 "
+                 id="polygon1116" />
+              <polygon
+                 stroke-opacity="1"
+                 fill-opacity="1"
+                 points="15523,27045 15176,27105 15176,27015 15523,26955 "
+                 id="polygon1117" />
+              <g
+                 id="tdun2we"
+                 class="note">
+                <title
+                   class="labelAttr"
+                   id="title1117">Eb:16</title>
+                <g
+                   class="notehead"
+                   id="g1117">
+                  <g
+                     id="use1117"
+                     transform="matrix(0.72,0,0,0.72,14283,28170)">
+                    <path
+                       transform="scale(1,-1)"
+                       d="m 0,-39 c 0,68 73,172 200,172 66,0 114,-37 114,-95 0,-84 -106,-171 -218,-171 -64,0 -96,30 -96,94 z"
+                       id="path99"
+                       style="stroke:currentColor" />
+                  </g>
+                </g>
+                <g
+                   id="y13837gt"
+                   class="stem">
+                  <path
+                     d="M 14500,28142 V 27018"
+                     stroke-width="18"
+                     id="path1117"
+                     style="stroke:currentColor" />
+                </g>
+                <g
+                   id="ytkiop8"
+                   class="accid" />
+              </g>
+              <g
+                 id="v1nd4nbx"
+                 class="note">
+                <title
+                   class="labelAttr"
+                   id="title1118">Bb:16</title>
+                <g
+                   class="notehead"
+                   id="g1118">
+                  <g
+                     id="use1118"
+                     transform="matrix(0.72,0,0,0.72,14621,27810)">
+                    <path
+                       transform="scale(1,-1)"
+                       d="m 0,-39 c 0,68 73,172 200,172 66,0 114,-37 114,-95 0,-84 -106,-171 -218,-171 -64,0 -96,30 -96,94 z"
+                       id="path100"
+                       style="stroke:currentColor" />
+                  </g>
+                </g>
+                <g
+                   id="ag3end1"
+                   class="stem">
+                  <path
+                     d="m 14838,27782 v -824"
+                     stroke-width="18"
+                     id="path1118"
+                     style="stroke:currentColor" />
+                </g>
+                <g
+                   id="j7alaw8"
+                   class="accid" />
+              </g>
+              <g
+                 id="cmn1x87"
+                 class="note">
+                <title
+                   class="labelAttr"
+                   id="title1119">Eb:16</title>
+                <g
+                   class="notehead"
+                   id="g1119">
+                  <g
+                     id="use1119"
+                     transform="matrix(0.72,0,0,0.72,14959,27540)">
+                    <path
+                       transform="scale(1,-1)"
+                       d="m 0,-39 c 0,68 73,172 200,172 66,0 114,-37 114,-95 0,-84 -106,-171 -218,-171 -64,0 -96,30 -96,94 z"
+                       id="path101"
+                       style="stroke:currentColor" />
+                  </g>
+                </g>
+                <g
+                   id="uiej3bk"
+                   class="stem">
+                  <path
+                     d="m 15176,27512 v -614"
+                     stroke-width="18"
+                     id="path1119"
+                     style="stroke:currentColor" />
+                </g>
+                <g
+                   id="bwpbu1s"
+                   class="accid" />
+              </g>
+              <g
+                 id="my8rye5"
+                 class="note">
+                <title
+                   class="labelAttr"
+                   id="title1120">F:16</title>
+                <g
+                   class="notehead"
+                   id="g1120">
+                  <g
+                     id="use1120"
+                     transform="matrix(0.72,0,0,0.72,15297,27450)">
+                    <path
+                       transform="scale(1,-1)"
+                       d="m 0,-39 c 0,68 73,172 200,172 66,0 114,-37 114,-95 0,-84 -106,-171 -218,-171 -64,0 -96,30 -96,94 z"
+                       id="path102"
+                       style="stroke:currentColor" />
+                  </g>
+                </g>
+                <g
+                   id="z19ggfw5"
+                   class="stem">
+                  <path
+                     d="m 15514,27422 v -584"
+                     stroke-width="18"
+                     id="path1120"
+                     style="stroke:currentColor" />
+                </g>
+              </g>
+            </g>
+            <g
+               id="b1r1dy89"
+               class="beam">
+              <polygon
+                 stroke-opacity="1"
+                 fill-opacity="1"
+                 points="16666,28305 15635,28305 15635,28395 16666,28395 "
+                 id="polygon1120" />
+              <polygon
+                 stroke-opacity="1"
+                 fill-opacity="1"
+                 points="15982,28170 15635,28170 15635,28260 15982,28260 "
+                 id="polygon1121" />
+              <polygon
+                 stroke-opacity="1"
+                 fill-opacity="1"
+                 points="16319,28170 15982,28170 15982,28260 16319,28260 "
+                 id="polygon1122" />
+              <polygon
+                 stroke-opacity="1"
+                 fill-opacity="1"
+                 points="16666,28170 16319,28170 16319,28260 16666,28260 "
+                 id="polygon1123" />
+              <g
+                 id="c1xlb64w"
+                 class="chord">
+                <g
+                   id="f9fr5ad"
+                   class="stem">
+                  <path
+                     d="m 15644,27568 v 809"
+                     stroke-width="18"
+                     id="path1123"
+                     style="stroke:currentColor" />
+                </g>
+                <g
+                   id="p1hh42ga"
+                   class="note">
+                  <title
+                     class="labelAttr"
+                     id="title1123">Bb:16</title>
+                  <g
+                     class="notehead"
+                     id="g1123">
+                    <g
+                       id="use1123"
+                       transform="matrix(0.72,0,0,0.72,15635,27810)">
+                      <path
+                         transform="scale(1,-1)"
+                         d="m 0,-39 c 0,68 73,172 200,172 66,0 114,-37 114,-95 0,-84 -106,-171 -218,-171 -64,0 -96,30 -96,94 z"
+                         id="path103"
+                         style="stroke:currentColor" />
+                    </g>
+                  </g>
+                  <g
+                     id="g144lyai"
+                     class="accid" />
+                </g>
+                <g
+                   id="epdrh7k"
+                   class="note">
+                  <title
+                     class="labelAttr"
+                     id="title1124">Eb:16</title>
+                  <g
+                     class="notehead"
+                     id="g1124">
+                    <g
+                       id="use1124"
+                       transform="matrix(0.72,0,0,0.72,15635,27540)">
+                      <path
+                         transform="scale(1,-1)"
+                         d="m 0,-39 c 0,68 73,172 200,172 66,0 114,-37 114,-95 0,-84 -106,-171 -218,-171 -64,0 -96,30 -96,94 z"
+                         id="path104"
+                         style="stroke:currentColor" />
+                    </g>
+                  </g>
+                  <g
+                     id="u1px6p1m"
+                     class="accid" />
+                </g>
+              </g>
+              <g
+                 id="y1y2uklw"
+                 class="note">
+                <title
+                   class="labelAttr"
+                   id="title1125">G:16</title>
+                <g
+                   class="notehead"
+                   id="g1125">
+                  <g
+                     id="use1125"
+                     transform="matrix(0.72,0,0,0.72,15973,27360)">
+                    <path
+                       transform="scale(1,-1)"
+                       d="m 0,-39 c 0,68 73,172 200,172 66,0 114,-37 114,-95 0,-84 -106,-171 -218,-171 -64,0 -96,30 -96,94 z"
+                       id="path105"
+                       style="stroke:currentColor" />
+                  </g>
+                </g>
+                <g
+                   id="lmooz7b"
+                   class="stem">
+                  <path
+                     d="m 15982,27388 v 989"
+                     stroke-width="18"
+                     id="path1125"
+                     style="stroke:currentColor" />
+                </g>
+              </g>
+              <g
+                 id="u1iueeb"
+                 class="note">
+                <title
+                   class="labelAttr"
+                   id="title1126">Eb:16</title>
+                <g
+                   class="notehead"
+                   id="g1126">
+                  <g
+                     id="use1126"
+                     transform="matrix(0.72,0,0,0.72,16310,27540)">
+                    <path
+                       transform="scale(1,-1)"
+                       d="m 0,-39 c 0,68 73,172 200,172 66,0 114,-37 114,-95 0,-84 -106,-171 -218,-171 -64,0 -96,30 -96,94 z"
+                       id="path106"
+                       style="stroke:currentColor" />
+                  </g>
+                </g>
+                <g
+                   id="y3eebr6"
+                   class="stem">
+                  <path
+                     d="m 16319,27568 v 809"
+                     stroke-width="18"
+                     id="path1126"
+                     style="stroke:currentColor" />
+                </g>
+                <g
+                   id="rs2vpib"
+                   class="accid" />
+              </g>
+              <g
+                 id="a3880n9"
+                 class="note">
+                <title
+                   class="labelAttr"
+                   id="title1127">Bb:16</title>
+                <g
+                   class="notehead"
+                   id="g1127">
+                  <g
+                     id="use1127"
+                     transform="matrix(0.72,0,0,0.72,16648,27810)">
+                    <path
+                       transform="scale(1,-1)"
+                       d="m 0,-39 c 0,68 73,172 200,172 66,0 114,-37 114,-95 0,-84 -106,-171 -218,-171 -64,0 -96,30 -96,94 z"
+                       id="path107"
+                       style="stroke:currentColor" />
+                  </g>
+                </g>
+                <g
+                   id="k1p3kr3y"
+                   class="stem">
+                  <path
+                     d="m 16657,27838 v 539"
+                     stroke-width="18"
+                     id="path1127"
+                     style="stroke:currentColor" />
+                </g>
+                <g
+                   id="hy1n8xf"
+                   class="accid" />
+              </g>
+            </g>
+            <g
+               id="b1ri2lpu"
+               class="beam">
+              <polygon
+                 stroke-opacity="1"
+                 fill-opacity="1"
+                 points="18361,27000 17194,27180 17194,27090 18361,26910 "
+                 id="polygon1127" />
+              <polygon
+                 stroke-opacity="1"
+                 fill-opacity="1"
+                 points="17541,27263 17194,27315 17194,27225 17541,27173 "
+                 id="polygon1128" />
+              <polygon
+                 stroke-opacity="1"
+                 fill-opacity="1"
+                 points="17879,27210 17541,27263 17541,27173 17879,27120 "
+                 id="polygon1129" />
+              <polygon
+                 stroke-opacity="1"
+                 fill-opacity="1"
+                 points="18361,27135 17879,27210 17879,27120 18361,27045 "
+                 id="polygon1130" />
+              <g
+                 id="w1xnj4ka"
+                 class="note">
+                <title
+                   class="labelAttr"
+                   id="title1130">D:16</title>
+                <g
+                   class="notehead"
+                   id="g1130">
+                  <g
+                     id="use1130"
+                     transform="matrix(0.72,0,0,0.72,16986,28260)">
+                    <path
+                       transform="scale(1,-1)"
+                       d="m 0,-39 c 0,68 73,172 200,172 66,0 114,-37 114,-95 0,-84 -106,-171 -218,-171 -64,0 -96,30 -96,94 z"
+                       id="path108"
+                       style="stroke:currentColor" />
+                  </g>
+                </g>
+                <g
+                   id="g7mh71y"
+                   class="stem">
+                  <path
+                     d="M 17203,28232 V 27108"
+                     stroke-width="18"
+                     id="path1130"
+                     style="stroke:currentColor" />
+                </g>
+              </g>
+              <g
+                 id="q14kvmg1"
+                 class="note">
+                <title
+                   class="labelAttr"
+                   id="title1131">A:16</title>
+                <g
+                   class="notehead"
+                   id="g1131">
+                  <g
+                     id="use1131"
+                     transform="matrix(0.72,0,0,0.72,17324,27900)">
+                    <path
+                       transform="scale(1,-1)"
+                       d="m 0,-39 c 0,68 73,172 200,172 66,0 114,-37 114,-95 0,-84 -106,-171 -218,-171 -64,0 -96,30 -96,94 z"
+                       id="path109"
+                       style="stroke:currentColor" />
+                  </g>
+                </g>
+                <g
+                   id="amtl0sz"
+                   class="stem">
+                  <path
+                     d="m 17541,27872 v -816"
+                     stroke-width="18"
+                     id="path1131"
+                     style="stroke:currentColor" />
+                </g>
+              </g>
+              <g
+                 id="g14bp4nn"
+                 class="note">
+                <title
+                   class="labelAttr"
+                   id="title1132">D:16</title>
+                <g
+                   class="notehead"
+                   id="g1132">
+                  <g
+                     id="use1132"
+                     transform="matrix(0.72,0,0,0.72,17662,27630)">
+                    <path
+                       transform="scale(1,-1)"
+                       d="m 0,-39 c 0,68 73,172 200,172 66,0 114,-37 114,-95 0,-84 -106,-171 -218,-171 -64,0 -96,30 -96,94 z"
+                       id="path110"
+                       style="stroke:currentColor" />
+                  </g>
+                </g>
+                <g
+                   id="artaxg"
+                   class="stem">
+                  <path
+                     d="m 17879,27602 v -599"
+                     stroke-width="18"
+                     id="path1132"
+                     style="stroke:currentColor" />
+                </g>
+              </g>
+              <g
+                 id="s2urm4"
+                 class="note">
+                <title
+                   class="labelAttr"
+                   id="title1133">E:16</title>
+                <g
+                   class="notehead"
+                   id="g1133">
+                  <g
+                     id="use1133"
+                     transform="matrix(0.72,0,0,0.72,18135,27540)">
+                    <path
+                       transform="scale(1,-1)"
+                       d="m 0,-39 c 0,68 73,172 200,172 66,0 114,-37 114,-95 0,-84 -106,-171 -218,-171 -64,0 -96,30 -96,94 z"
+                       id="path111"
+                       style="stroke:currentColor" />
+                  </g>
+                </g>
+                <g
+                   id="z13hv2zw"
+                   class="stem">
+                  <path
+                     d="m 18352,27512 v -584"
+                     stroke-width="18"
+                     id="path1133"
+                     style="stroke:currentColor" />
+                </g>
+                <g
+                   id="uqqyvut"
+                   class="accid">
+                  <g
+                     id="use1134"
+                     transform="matrix(0.72,0,0,0.72,17977,27540)">
+                    <path
+                       transform="scale(1,-1)"
+                       d="M 0,-188 V 351 H 18 V 160 l 139,22 v -533 h -17 v 186 z m 18,88 122,17 V 93 L 18,74 Z"
+                       id="path11"
+                       style="stroke:currentColor" />
+                  </g>
+                </g>
+              </g>
+            </g>
+            <g
+               id="olmaozb"
+               class="chord">
+              <g
+                 id="y12ug8v7"
+                 class="stem">
+                <path
+                   d="m 18854,27872 v -962"
+                   stroke-width="18"
+                   id="path1134"
+                   style="stroke:currentColor" />
+              </g>
+              <g
+                 id="jtker85"
+                 class="note">
+                <title
+                   class="labelAttr"
+                   id="title1134">A:4</title>
+                <g
+                   class="notehead"
+                   id="g1135">
+                  <g
+                     id="use1135"
+                     transform="matrix(0.72,0,0,0.72,18637,27900)">
+                    <path
+                       transform="scale(1,-1)"
+                       d="m 0,-39 c 0,68 73,172 200,172 66,0 114,-37 114,-95 0,-84 -106,-171 -218,-171 -64,0 -96,30 -96,94 z"
+                       id="path112"
+                       style="stroke:currentColor" />
+                  </g>
+                </g>
+              </g>
+              <g
+                 id="on6u8mi"
+                 class="note">
+                <title
+                   class="labelAttr"
+                   id="title1135">D:4</title>
+                <g
+                   class="notehead"
+                   id="g1136">
+                  <g
+                     id="use1136"
+                     transform="matrix(0.72,0,0,0.72,18637,27630)">
+                    <path
+                       transform="scale(1,-1)"
+                       d="m 0,-39 c 0,68 73,172 200,172 66,0 114,-37 114,-95 0,-84 -106,-171 -218,-171 -64,0 -96,30 -96,94 z"
+                       id="path113"
+                       style="stroke:currentColor" />
+                  </g>
+                </g>
+              </g>
+              <g
+                 id="r1kys84z"
+                 class="note">
+                <title
+                   class="labelAttr"
+                   id="title1136">F#:4</title>
+                <g
+                   class="notehead"
+                   id="g1137">
+                  <g
+                     id="use1137"
+                     transform="matrix(0.72,0,0,0.72,18637,27450)">
+                    <path
+                       transform="scale(1,-1)"
+                       d="m 0,-39 c 0,68 73,172 200,172 66,0 114,-37 114,-95 0,-84 -106,-171 -218,-171 -64,0 -96,30 -96,94 z"
+                       id="path114"
+                       style="stroke:currentColor" />
+                  </g>
+                </g>
+                <g
+                   id="pfgybza"
+                   class="accid">
+                  <g
+                     id="use1138"
+                     transform="matrix(0.72,0,0,0.72,18451,27450)">
+                    <path
+                       transform="scale(1,-1)"
+                       d="m 136,186 v 169 h 17 V 191 l 44,14 V 114 L 153,100 V -65 l 44,12 v -91 l -44,-13 v -155 h -17 v 150 L 60,-184 V -339 H 43 v 149 L 0,-203 v 90 l 43,14 V 68 L 0,54 v 92 l 43,13 V 328 H 60 V 165 Z M 60,73 V -94 l 76,22 V 96 Z"
+                       id="path123"
+                       style="stroke:currentColor" />
+                  </g>
+                </g>
+              </g>
+            </g>
+          </g>
+        </g>
+        <g
+           id="c1rm7ri"
+           class="barLine">
+          <path
+             d="m 19989,25470 v 720"
+             stroke-width="27"
+             id="path1139"
+             style="stroke:currentColor" />
+          <path
+             d="m 19989,27270 v 720"
+             stroke-width="27"
+             id="path1140"
+             style="stroke:currentColor" />
+          <path
+             d="m 19989,26190 v 1080"
+             stroke-width="27"
+             id="path1141"
+             style="stroke:currentColor" />
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
