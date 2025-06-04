@@ -13,6 +13,6 @@ class RenderRequest(BaseModel):
 @app.post("/render-color-music")
 def render_color_music(request: RenderRequest):
     # Example processing: make it uppercase
-    result = f"filename: {request.filename}, input_format: {request.input_format}, title: {request.title}, bucket: {request.bucket}, session_id: {session_id}"
+    result = f"filename: {request.filename}, input_format: {request.input_format}, title: {request.title}, bucket: {request.bucket}, session_id: {request.session_id}"
 
     return {"result": result}
