@@ -5,6 +5,7 @@ jinja2
 lxml
 playwright
 python-multipart
+requests
 slowapi
 uvicorn
 verovio==5.2.0
