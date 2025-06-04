@@ -60,8 +60,8 @@ def render_color_music(request: RenderRequest):
     filename = request.filename
     input_format = request.input_format
     title = request.title
-    bucket = bucket = gcs_client.bucket(request.bucket_name) 
-    session = request.session_id
+    bucket = gcs_client.bucket(request.bucket_name) 
+    session_id = request.session_id
 
     if input_format == "musicxml_compressed":
         filename = extract_xml_from_zip(bucket, filename, session_id)
