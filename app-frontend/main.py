@@ -169,6 +169,27 @@ async def upload(request: Request, response: Response, file: UploadFile = File(.
     # Save file to GCS
     blob.upload_from_string(content)
 
+
+    # Call Render Service
+    credentials.refresh(GoogleRequest())
+
+    headers = {"Authorization": f"Bearer {credentials.token}"}
+    payload = {"filename": filename,
+               "input_format": input_format,
+               "title": title,
+               "bucket": bucket.name,
+               "session_id": session_id, }
+
+    response = requests.post(CLOUD_RUN_URL, json=payload, headers=headers)
+
+    if response.ok:
+        print("Result:", response.json()["result"])
+    else:
+        print("Error:", response.status_code, response.text)
+
+    
+
+
     if input_format == "musicxml_compressed":
         filename = extract_xml_from_zip(filename, session_id)
         print(f"GCS Extract File: {filename}")
@@ -194,18 +215,7 @@ async def upload(request: Request, response: Response, file: UploadFile = File(.
     elif input_format == "mei":
         mei_filename = filename
     
-    # Call Render Service
-    credentials.refresh(GoogleRequest())
-
-    headers = {"Authorization": f"Bearer {credentials.token}"}
-    payload = {"session_id": session_id, }
-
-    response = requests.post(CLOUD_RUN_URL, json=payload, headers=headers)
-
-    if response.ok:
-        print("Result:", response.json()["result"])
-    else:
-        print("Error:", response.status_code, response.text)
+    
 
     # svg_filenames = await render_color_music(mei_filename, title, bucket, session_id)
     svg_html_parts = await render_color_music(mei_filename, title, bucket, session_id)
