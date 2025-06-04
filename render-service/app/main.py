@@ -11,6 +11,10 @@ import zipfile
 
 from .renderer import render
 
+import logging
+
+logging.basicConfig(level=logging.INFO)
+
 app = FastAPI()
 
 gcs_client = storage.Client()
@@ -55,7 +59,9 @@ def extract_xml_from_zip(bucket, filename, session_id):
 def render_color_music(request: RenderRequest):
     """"""
     # Example processing: make it uppercase
-    print(f"filename: {request.filename}, input_format: {request.input_format}, title: {request.title}, bucket_name: {request.bucket_name}, session_id: {request.session_id}")
+    message = f"filename: {request.filename}, input_format: {request.input_format}, title: {request.title}, bucket_name: {request.bucket_name}, session_id: {request.session_id}"
+
+    logging.info(message)
 
     filename = request.filename
     input_format = request.input_format
