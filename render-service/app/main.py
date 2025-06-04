@@ -80,6 +80,8 @@ def render_color_music(request: RenderRequest):
         # Download XML content as string
         xml_content = blob.download_as_text(encoding="utf-8")
 
+        logging.info(xml_content)
+
         logging.info("Initializing Toolkit ...")
         tk = verovio.toolkit()
         logging.info("Loading XML to toolkit ...")
