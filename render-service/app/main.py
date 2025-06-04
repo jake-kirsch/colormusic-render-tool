@@ -80,9 +80,11 @@ def render_color_music(request: RenderRequest):
         # Download XML content as string
         xml_content = blob.download_as_text(encoding="utf-8")
 
+        logging.info("Initializing Toolkit ...")
         tk = verovio.toolkit()
+        logging.info("Loading XML to toolkit ...")
         tk.loadData(xml_content)
-
+        logging.info("Getting MEI ...")
         mei_data = tk.getMEI()
 
         mei_filename = f"{os.path.splitext(filename)[0]}.mei"
@@ -94,6 +96,7 @@ def render_color_music(request: RenderRequest):
     elif input_format == "mei":
         mei_filename = filename
     
+    logging.info("Rendering ...")
     svg_html_parts = render(mei_filename, title, bucket, session_id)
 
     return {"result": svg_html_parts}
