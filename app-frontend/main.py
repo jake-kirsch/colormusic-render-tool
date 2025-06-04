@@ -177,59 +177,58 @@ async def upload(request: Request, response: Response, file: UploadFile = File(.
     payload = {"filename": filename,
                "input_format": input_format,
                "title": title,
-               "bucket": bucket.name,
+               "bucket_name": bucket.name,
                "session_id": session_id, }
 
     response = requests.post(CLOUD_RUN_URL, json=payload, headers=headers)
 
     if response.ok:
         print("Result:", response.json()["result"])
+
+        svg_html_parts = response.json()["result"]
+        
+        # if input_format == "musicxml_compressed":
+        #     filename = extract_xml_from_zip(filename, session_id)
+        #     print(f"GCS Extract File: {filename}")
+
+        # mei_path = ""
+        # if input_format in ["musicxml", "musicxml_compressed", ]:
+        #     blob = bucket.blob(f"{session_id}/{filename}")
+
+        #     # Download XML content as string
+        #     xml_content = blob.download_as_text(encoding="utf-8")
+
+        #     tk = verovio.toolkit()
+        #     tk.loadData(xml_content)
+
+        #     mei_data = tk.getMEI()
+
+        #     mei_filename = f"{os.path.splitext(filename)[0]}.mei"
+        #     blob = bucket.blob(f"{session_id}/{mei_filename}")
+
+        #     # Save .mei file to GCS
+        #     blob.upload_from_string(mei_data)
+        
+        # elif input_format == "mei":
+        #     mei_filename = filename
+        
+        
+
+        # # svg_filenames = await render_color_music(mei_filename, title, bucket, session_id)
+        # svg_html_parts = await render_color_music(mei_filename, title, bucket, session_id)
+        
+        end_time = time.time()
+
+        elapsed = end_time - start_time
+
+        # Having rendering take at least 5 seconds for effect
+        # if elapsed < 5:
+        #     time.sleep(5 - elapsed)
+
+        return HTMLResponse(generate_svg_results_html(svg_html_parts, session_id))
+
     else:
         print("Error:", response.status_code, response.text)
-
-    
-
-
-    if input_format == "musicxml_compressed":
-        filename = extract_xml_from_zip(filename, session_id)
-        print(f"GCS Extract File: {filename}")
-
-    mei_path = ""
-    if input_format in ["musicxml", "musicxml_compressed", ]:
-        blob = bucket.blob(f"{session_id}/{filename}")
-
-        # Download XML content as string
-        xml_content = blob.download_as_text(encoding="utf-8")
-
-        tk = verovio.toolkit()
-        tk.loadData(xml_content)
-
-        mei_data = tk.getMEI()
-
-        mei_filename = f"{os.path.splitext(filename)[0]}.mei"
-        blob = bucket.blob(f"{session_id}/{mei_filename}")
-
-        # Save .mei file to GCS
-        blob.upload_from_string(mei_data)
-    
-    elif input_format == "mei":
-        mei_filename = filename
-    
-    
-
-    # svg_filenames = await render_color_music(mei_filename, title, bucket, session_id)
-    svg_html_parts = await render_color_music(mei_filename, title, bucket, session_id)
-    
-    end_time = time.time()
-
-    elapsed = end_time - start_time
-
-    # Having rendering take at least 5 seconds for effect
-    if elapsed < 5:
-        time.sleep(5 - elapsed)
-
-    return HTMLResponse(generate_svg_results_html(svg_html_parts, session_id))
-
 
 @app.get("/download-pdf")
 def download_pdf(session_id: str):
