@@ -2,6 +2,7 @@ FROM python:3.11-slim
 
 # Install system dependencies for Playwright
 RUN apt-get update && apt-get install -y \
+    libxml2 libxml2-dev \
     build-essential unzip fontconfig libglib2.0-0 libfreetype6 libfontconfig1 \
     libnss3 libatk1.0-0 libatk-bridge2.0-0 libcups2 libdrm2 \
     libxcomposite1 libxdamage1 libxrandr2 libgbm1 libgtk-3-0 \
