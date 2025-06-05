@@ -41,17 +41,19 @@ def extract_xml_from_zip(bucket, filename, session_id):
                 continue  # skip directories
             
             if '/' not in file_info.filename.rstrip('/'):
-                # Read file content
-                file_data = zip_file.read(file_info.filename)
-                
                 if file_info.filename.lower().endswith(".xml"):
-                    xml_filename = f'{filename.split(".")[0]}.xml'
+                    # Read file content
+                    file_data = zip_file.read(file_info.filename)
+
+                    # xml_filename = f'{filename.split(".")[0]}.xml'
                     
-                    # Upload extracted file back to GCS
-                    new_blob = bucket.blob(f"{session_id}/{xml_filename}")
-                    new_blob.upload_from_string(file_data)
+                    # # Upload extracted file back to GCS
+                    # new_blob = bucket.blob(f"{session_id}/{xml_filename}")
+                    # new_blob.upload_from_string(file_data)
                     
-                    return xml_filename
+                    # return xml_filename
+
+                    return file_data
     
     raise FileNotFoundError("No .xml file found in the ZIP archive.")
 
@@ -71,41 +73,54 @@ def render_color_music(request: RenderRequest):
     bucket = gcs_client.bucket(request.bucket_name) 
     session_id = request.session_id
 
-    if input_format == "musicxml_compressed":
-        filename = extract_xml_from_zip(bucket, filename, session_id)
-        print(f"GCS Extract File: {filename}")
+    mei_data = None
 
-    mei_path = ""
+    if input_format == "musicxml_compressed":
+        # filename = extract_xml_from_zip(bucket, filename, session_id)
+        # print(f"GCS Extract File: {filename}")
+        xml_content = extract_xml_from_zip(bucket, filename, session_id)
+    elif input_format == "musicxml":
+        # Download XML content as string
+        blob = bucket.blob(f"{session_id}/{filename}")
+        xml_content = blob.download_as_text(encoding="utf-8")
+    
+    # mei_path = ""
     if input_format in ["musicxml", "musicxml_compressed", ]:
         time.sleep(2)
-        blob = bucket.blob(f"{session_id}/{filename}")
+        # blob = bucket.blob(f"{session_id}/{filename}")
 
-        # Download XML content as string
-        xml_content = blob.download_as_text(encoding="utf-8")
+        # # Download XML content as string
+        # xml_content = blob.download_as_text(encoding="utf-8")
 
-        logging.info(xml_content[:100])
-        logging.info(xml_content[-100:])
+        first_100 = f"First 100: {xml_content[:100]}"
+        last_100 = f"Last 100: {xml_content[-100:]}"
+        logging.info(first_100)
+        logging.info(last_100)
 
         logging.info("Initializing Toolkit ...")
         tk = verovio.toolkit()
+        
         logging.info("Loading XML to toolkit ...")
         tk.loadData(xml_content)
+        
         logging.info("Getting MEI ...")
         mei_data = tk.getMEI()
 
-        mei_filename = f"{os.path.splitext(filename)[0]}.mei"
-        blob = bucket.blob(f"{session_id}/{mei_filename}")
+        # mei_filename = f"{os.path.splitext(filename)[0]}.mei"
+        # blob = bucket.blob(f"{session_id}/{mei_filename}")
 
-        # Save .mei file to GCS
-        blob.upload_from_string(mei_data)
+        # # Save .mei file to GCS
+        # blob.upload_from_string(mei_data)
     
     elif input_format == "mei":
-        mei_filename = filename
+        # Download MEI content as string
+        blob = bucket.blob(f"{session_id}/{filename}")
+        mei_data = blob.download_as_text(encoding="utf-8")
     
     logging.info("Rendering ...")
 
     time.sleep(2)
     
-    svg_html_parts = render(mei_filename, title, bucket, session_id)
+    svg_html_parts = render(filename, mei_data, title, bucket, session_id)
 
     return {"result": svg_html_parts}

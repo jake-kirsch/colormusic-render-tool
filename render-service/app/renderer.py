@@ -44,13 +44,8 @@ tk = verovio.toolkit()
 
 
 # ====== Processing Functions ======
-def parse_mei(mei_filename, bucket, session_id):
-    blob = bucket.blob(f"{session_id}/{mei_filename}")
-
-    # Download MEI content as string
-    mei_content = blob.download_as_text(encoding="utf-8")
-
-    return BeautifulSoup(mei_content, "xml")
+def parse_mei(mei_data):
+    return BeautifulSoup(mei_data, "xml")
 
 
 def simplify_pitch(note_label):
@@ -565,12 +560,12 @@ def extract_score_title(soup):
     return score_title
 
 
-def render(mei_filename, title, bucket, session_id):
+def render(filename, mei_data, title, bucket, session_id):
     """Render MEI to ColorMusic"""
     
     # Label notes in MEI
-    soup = parse_mei(mei_filename, bucket, session_id)
-    labeled_soup = label_notes(soup)
+    soup = parse_mei(mei_data)
+    mei_data = str(label_notes(soup))
 
     score_title = extract_score_title(soup)
 
@@ -581,13 +576,14 @@ def render(mei_filename, title, bucket, session_id):
     if not title:
         title = "Unknown"
 
-    filename = mei_filename.split(".mei")[0]
-    modified_mei_filename = f"{filename}-mod.mei"
+    filename = filename.rsplit(".", 1)[0]
+    # filename = mei_filename.split(".mei")[0]
+    # modified_mei_filename = f"{filename}-mod.mei"
 
-    blob = bucket.blob(f"{session_id}/{modified_mei_filename}")
-    blob.upload_from_string(str(labeled_soup))
+    # blob = bucket.blob(f"{session_id}/{modified_mei_filename}")
+    # blob.upload_from_string(str(labeled_soup))
 
-    mei_data = blob.download_as_text(encoding="utf-8")
+    # mei_data = blob.download_as_text(encoding="utf-8")
     
     tk.setOptions({
         "pageWidth": 2159,    # 210 mm * 10
