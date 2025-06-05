@@ -71,6 +71,10 @@ def render_color_music(request: RenderRequest):
     """"""
     log_dpkg_list()
 
+    result = subprocess.run(["verovio", "--version"], capture_output=True, text=True)
+    version_message = f"Verovio CLI version: {result.stdout}"
+    logging.info(version_message)
+
     # Example processing: make it uppercase
     time.sleep(2)
     message = f"filename: {request.filename}, input_format: {request.input_format}, title: {request.title}, bucket_name: {request.bucket_name}, session_id: {request.session_id}"
