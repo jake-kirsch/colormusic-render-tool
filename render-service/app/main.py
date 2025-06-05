@@ -101,7 +101,7 @@ def render_color_music(request: RenderRequest):
         tk = verovio.toolkit()
         
         logging.info("Loading XML to toolkit ...")
-        tk.loadData(xml_content, "")
+        tk.loadData(xml_content)
         
         logging.info("Getting MEI ...")
         mei_data = tk.getMEI()
