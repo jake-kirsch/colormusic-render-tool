@@ -31,19 +31,22 @@ RUN pip install --no-cache-dir -r requirements.txt
 # Install Playwright and Chromium
 RUN playwright install chromium
 
-# Clone verovio and checkout tag with submodules
-RUN git clone https://github.com/rism-digital/verovio.git /verovio \
-    && cd /verovio \
+# Clone the repo with all submodules and checkout version 5.2.0
+WORKDIR /opt
+RUN git clone --recursive https://github.com/rism-digital/verovio.git \
+    && cd verovio \
     && git checkout version-5.2.0 \
     && git submodule update --init --recursive
 
-# Build verovio
-RUN cd /verovio && mkdir build && cd build \
-    && cmake .. \
-    && make -j$(nproc)
+# Build Verovio
+WORKDIR /opt/verovio
+RUN mkdir build
+WORKDIR /opt/verovio/build
+RUN cmake .. && make -j"$(nproc)"
 
-# Copy the built CLI into PATH
-RUN cp /verovio/build/tools/verovio /usr/local/bin/verovio
+# Move CLI to system path
+RUN cp /opt/verovio/build/tools/verovio /usr/local/bin/verovio
+ENV PATH="/usr/local/bin:$PATH"
 
 COPY . .
 
