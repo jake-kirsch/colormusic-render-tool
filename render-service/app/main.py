@@ -78,11 +78,11 @@ def render_color_music(request: RenderRequest):
     if input_format == "musicxml_compressed":
         # filename = extract_xml_from_zip(bucket, filename, session_id)
         # print(f"GCS Extract File: {filename}")
-        xml_content = str(extract_xml_from_zip(bucket, filename, session_id))
+        xml_content = extract_xml_from_zip(bucket, filename, session_id)
     elif input_format == "musicxml":
         # Download XML content as string
         blob = bucket.blob(f"{session_id}/{filename}")
-        xml_content = str(blob.download_as_text(encoding="utf-8"))
+        xml_content = blob.download_as_text(encoding="utf-8")
     
     # mei_path = ""
     if input_format in ["musicxml", "musicxml_compressed", ]:
@@ -92,6 +92,7 @@ def render_color_music(request: RenderRequest):
         # # Download XML content as string
         # xml_content = blob.download_as_text(encoding="utf-8")
 
+        logging.info(type(xml_content))
         first_100 = f"First 100: {xml_content[:100]}"
         last_100 = f"Last 100: {xml_content[-100:]}"
         logging.info(first_100)
