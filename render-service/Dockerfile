@@ -11,12 +11,13 @@ RUN apt-get update && apt-get install -y \
     git \
     cmake \
     g++ \
+    make \
     libglib2.0-dev \
     libxml2-dev \
     libzip-dev \
     curl \
     unzip \
-    make \
+    ca-certificates \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
 
@@ -30,16 +31,18 @@ RUN pip install --no-cache-dir -r requirements.txt
 # Install Playwright and Chromium
 RUN playwright install chromium
 
-# Download Verovio 5.2.0 source
-RUN curl -L -o verovio.zip https://github.com/rism-digital/verovio/archive/refs/tags/version-5.2.0.zip \
-    && unzip verovio.zip && mv verovio-version-5.2.0 /verovio
+# Clone verovio and checkout tag with submodules
+RUN git clone https://github.com/rism-digital/verovio.git /verovio \
+    && cd /verovio \
+    && git checkout version-5.2.0 \
+    && git submodule update --init --recursive
 
-# Build Verovio CLI
+# Build verovio
 RUN cd /verovio && mkdir build && cd build \
     && cmake .. \
     && make -j$(nproc)
 
-# Move the CLI to a known path
+# Copy the built CLI into PATH
 RUN cp /verovio/build/tools/verovio /usr/local/bin/verovio
 
 COPY . .
