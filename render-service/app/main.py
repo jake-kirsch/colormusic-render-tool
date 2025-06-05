@@ -53,7 +53,7 @@ def extract_xml_from_zip(bucket, filename, session_id):
                     
                     # return xml_filename
 
-                    return file_data
+                    return file_data.decode("utf-8")
     
     raise FileNotFoundError("No .xml file found in the ZIP archive.")
 
@@ -103,6 +103,8 @@ def render_color_music(request: RenderRequest):
         
         logging.info(tk.getVersion())
         logging.info(tk.getAvailableOptions())
+
+        tk.setOptions({"inputFrom": "musicxml"})
 
         logging.info("Loading XML to toolkit ...")
         tk.loadData(xml_content)
