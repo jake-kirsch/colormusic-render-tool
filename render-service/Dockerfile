@@ -8,16 +8,6 @@ RUN apt-get update && apt-get install -y \
     libxcomposite1 libxdamage1 libxrandr2 libgbm1 libgtk-3-0 \
     libasound2 libxshmfence1 libxss1 fonts-liberation \
     libappindicator3-1 xdg-utils wget ca-certificates \
-    git \
-    cmake \
-    g++ \
-    make \
-    libglib2.0-dev \
-    libxml2-dev \
-    libzip-dev \
-    curl \
-    unzip \
-    ca-certificates \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
 
@@ -31,22 +21,22 @@ RUN pip install --no-cache-dir -r requirements.txt
 # Install Playwright and Chromium
 RUN playwright install chromium
 
-# Download and extract the .tar.gz source
-WORKDIR /opt
-RUN curl -L -o verovio.tar.gz https://github.com/rism-digital/verovio/archive/refs/tags/version-5.2.0.tar.gz && \
-    tar -xzf verovio.tar.gz && \
-    rm verovio.tar.gz
+# # Download and extract the .tar.gz source
+# WORKDIR /opt
+# RUN curl -L -o verovio.tar.gz https://github.com/rism-digital/verovio/archive/refs/tags/version-5.2.0.tar.gz && \
+#     tar -xzf verovio.tar.gz && \
+#     rm verovio.tar.gz
 
-# Build the source
-WORKDIR /opt/verovio-version-5.2.0/build
-RUN cmake ../cmake && make -j"$(nproc)"
+# # Build the source
+# WORKDIR /opt/verovio-version-5.2.0/build
+# RUN cmake ../cmake && make -j"$(nproc)"
 
-# Install CLI globally
-RUN cp /opt/verovio-version-5.2.0/build/tools/verovio /usr/local/bin/verovio
-ENV PATH="/usr/local/bin:$PATH"
+# # Install CLI globally
+# RUN cp /opt/verovio-version-5.2.0/build/tools/verovio /usr/local/bin/verovio
+# ENV PATH="/usr/local/bin:$PATH"
 
-# Optional: test
-RUN verovio --version
+# # Optional: test
+# RUN verovio --version
 
 COPY . .
 
