@@ -12,6 +12,7 @@ import zipfile
 
 from .renderer import render
 
+import subprocess
 import logging
 
 logging.basicConfig(level=logging.INFO)
@@ -57,10 +58,19 @@ def extract_xml_from_zip(bucket, filename, session_id):
     
     raise FileNotFoundError("No .xml file found in the ZIP archive.")
 
+def log_dpkg_list():
+    try:
+        result = subprocess.run(['dpkg', '-l'], stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True, check=True)
+        logging.info("Installed OS packages:\n" + result.stdout)
+    except subprocess.CalledProcessError as e:
+        logging.error(f"Error running dpkg -l: {e.stderr}")
+
 
 @app.post("/render-color-music")
 def render_color_music(request: RenderRequest):
     """"""
+    log_dpkg_list()
+
     # Example processing: make it uppercase
     time.sleep(2)
     message = f"filename: {request.filename}, input_format: {request.input_format}, title: {request.title}, bucket_name: {request.bucket_name}, session_id: {request.session_id}"
