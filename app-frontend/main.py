@@ -200,8 +200,6 @@ async def upload(request: Request, response: Response, file: UploadFile = File(.
     response = requests.post(CLOUD_RUN_URL, json=payload, headers=headers)
 
     if response.ok:
-        print("Result:", response.json()["result"])
-
         svg_html_parts = response.json()["result"]
         
         return HTMLResponse(generate_svg_results_html(svg_html_parts, session_id))
