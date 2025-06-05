@@ -562,7 +562,6 @@ def extract_score_title(soup):
 
 def render(filename, mei_data, title, bucket, session_id):
     """Render MEI to ColorMusic"""
-    
     # Label notes in MEI
     soup = parse_mei(mei_data)
     mei_data = str(label_notes(soup))

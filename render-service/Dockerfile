@@ -21,23 +21,6 @@ RUN pip install --no-cache-dir -r requirements.txt
 # Install Playwright and Chromium
 RUN playwright install chromium
 
-# # Download and extract the .tar.gz source
-# WORKDIR /opt
-# RUN curl -L -o verovio.tar.gz https://github.com/rism-digital/verovio/archive/refs/tags/version-5.2.0.tar.gz && \
-#     tar -xzf verovio.tar.gz && \
-#     rm verovio.tar.gz
-
-# # Build the source
-# WORKDIR /opt/verovio-version-5.2.0/build
-# RUN cmake ../cmake && make -j"$(nproc)"
-
-# # Install CLI globally
-# RUN cp /opt/verovio-version-5.2.0/build/tools/verovio /usr/local/bin/verovio
-# ENV PATH="/usr/local/bin:$PATH"
-
-# # Optional: test
-# RUN verovio --version
-
 COPY . .
 
 CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8080"]
