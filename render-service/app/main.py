@@ -69,10 +69,9 @@ def log_dpkg_list():
 @app.post("/render-color-music")
 def render_color_music(request: RenderRequest):
     """"""
-    log_dpkg_list()
+    # log_dpkg_list()
     
     # Example processing: make it uppercase
-    time.sleep(2)
     message = f"filename: {request.filename}, input_format: {request.input_format}, title: {request.title}, bucket_name: {request.bucket_name}, session_id: {request.session_id}"
 
     logging.info(message)
@@ -96,7 +95,6 @@ def render_color_music(request: RenderRequest):
     
     # mei_path = ""
     if input_format in ["musicxml", "musicxml_compressed", ]:
-        time.sleep(2)
         # blob = bucket.blob(f"{session_id}/{filename}")
 
         # # Download XML content as string
@@ -114,7 +112,7 @@ def render_color_music(request: RenderRequest):
         logging.info(tk.getVersion())
         logging.info(tk.getAvailableOptions())
 
-        tk.setOptions({"inputFrom": "musicxml"})
+        tk.setInputFrom("musicxml")
 
         logging.info("Loading XML to toolkit ...")
         tk.loadData(xml_content)
@@ -135,8 +133,6 @@ def render_color_music(request: RenderRequest):
     
     logging.info("Rendering ...")
 
-    time.sleep(2)
-    
     svg_html_parts = render(filename, mei_data, title, bucket, session_id)
 
     return {"result": svg_html_parts}
