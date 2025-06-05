@@ -100,6 +100,9 @@ def render_color_music(request: RenderRequest):
         logging.info("Initializing Toolkit ...")
         tk = verovio.toolkit()
         
+        logging.info(tk.getVersion())
+        logging.info(tk.getAvailableOptions())
+
         logging.info("Loading XML to toolkit ...")
         tk.loadData(xml_content)
         
