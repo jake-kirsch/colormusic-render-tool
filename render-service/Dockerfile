@@ -20,19 +20,6 @@ RUN pip install --no-cache-dir -r requirements.txt
 # Install Playwright and Chromium
 RUN playwright install chromium
 
-# Download and install Bravura font (SMuFL)
-RUN wget https://github.com/steinbergmedia/bravura/archive/refs/tags/v1.392.zip -O /tmp/bravura.zip && \
-    unzip /tmp/bravura.zip -d /tmp/bravura && \
-    mkdir -p /usr/share/fonts/bravura && \
-    cp /tmp/bravura/bravura-1.392/otf/*.otf /usr/share/fonts/bravura/ && \
-    fc-cache -fv
-
-# Download and install Leipzig font (adjust URL if needed)
-RUN wget https://github.com/LeipzigMusic/XML-Fonts/archive/refs/heads/master.zip -O /tmp/leipzig.zip && \
-    unzip /tmp/leipzig.zip -d /usr/share/fonts/leipzig && \
-    fc-cache -fv
-
-
 COPY . .
 
 CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8080"]
