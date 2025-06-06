@@ -1,5 +1,6 @@
 # Standard Libraries
 import io
+import json
 import math
 import os
 
@@ -7,6 +8,10 @@ import os
 from bs4 import BeautifulSoup
 from playwright.sync_api import sync_playwright
 import verovio
+
+import logging
+
+logging.basicConfig(level=logging.INFO)
 
 # Constants
 BASE_DIR = "app-frontend/static/rendered_svgs"
@@ -44,8 +49,19 @@ SQUARE_PITCHES = ["Af", "Gs",
 tk = verovio.toolkit()
 
 
+def log_analytics_event(event_type, **kwargs):
+    """Log Analytics Event"""
+    log_payload = {
+        "tag": "colormusic-analytics",
+        "event_type": event_type,
+        **kwargs
+    }
+    logging.info(json.dumps(log_payload))
+
+
 # ====== Processing Functions ======
 def parse_mei(mei_data):
+    """Parse MEI to BeautifulSoup"""
     return BeautifulSoup(mei_data, "xml")
 
 
@@ -563,6 +579,13 @@ def extract_score_title(soup):
 
 def render(filename, mei_data, title, bucket, session_id):
     """Render MEI to ColorMusic"""
+    log_analytics_event(
+        "render_start",
+        render_id=session_id,
+        title=title,
+        filename=filename,
+    )
+    
     # Label notes in MEI
     soup = parse_mei(mei_data)
     mei_data = str(label_notes(soup))
