@@ -6,12 +6,12 @@ import os
 
 # Third-party Libraries
 from bs4 import BeautifulSoup
+from google.cloud import logging
 from playwright.sync_api import sync_playwright
 import verovio
 
-import logging
-
-logging.basicConfig(level=logging.INFO)
+client = logging.Client()
+logger = client.logger("colormusic-analytics-log")
 
 # Constants
 BASE_DIR = "app-frontend/static/rendered_svgs"
@@ -50,13 +50,14 @@ tk = verovio.toolkit()
 
 
 def log_analytics_event(event_type, **kwargs):
-    """Log Analytics Event"""
-    log_payload = {
+    """Log a structured analytics event to Cloud Logging."""
+    log_entry = {
         "tag": "colormusic-analytics",
         "event_type": event_type,
         **kwargs
     }
-    logging.info(json.dumps(log_payload))
+
+    logger.log_struct(log_entry)
 
 
 # ====== Processing Functions ======
