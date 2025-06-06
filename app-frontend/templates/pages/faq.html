@@ -9,7 +9,7 @@
         <span class="arrow">▼</span>
       </div>
       <div class="faq-answer">
-        <p>After you click “Render,” the color notation appears below on the webpage. A button labeled “Download All as ZIP” also appears for you to download the rendered notation to your local device. The ZIP folder contains both black-and-white and colorized versions of each song page.</p>
+        <p>After you click “Render,” the first page of the color notation appears below on the webpage. A button labeled “Download Full PDF” also appears for you to download the rendered notation to your local device.</p>
       </div>
     </div>
     
@@ -97,7 +97,7 @@
           <span class="arrow">▼</span>
         </div>
         <div class="faq-answer">
-            <p>As a collaborative project with Mike George, this ColorMusic Notation Tool was created by <strong><a href="https://www.linkedin.com/in/jake-kirsch-dataeng" target="_blank" rel="noopener noreferrer" style="color: black; text-decoration: none;">Jake Kirsch</a></strong> using Python (FastAPI) and JavaScript for development, Render for web hosting, and Google Cloud Storage for file storage. He is a data engineer based in Atlanta.</p>
+            <p>As a collaborative project with Mike George, this ColorMusic Notation Tool was created by <strong><a href="https://www.linkedin.com/in/jake-kirsch-dataeng" target="_blank" rel="noopener noreferrer" style="color: black; text-decoration: none;">Jake Kirsch</a></strong> using FastAPI/JavaScript for front end, Render for web hosting, Google Cloud Run for rendering/PDF generation, and Google Cloud Storage for file storage. He is a data engineer based in Atlanta.</p>
         </div>
     </div>
 
@@ -121,7 +121,7 @@
           <span class="arrow">▼</span>
         </div>
         <div class="faq-answer">
-            <p>Click the “Download All as ZIP” button, then print each colorized page using your printer dialog box. You may need to adjust the print size settings to fit the sheet music within the dimensions of your pages.</p>
+            <p>Click the “Download Full PDF” button to download the score locally and use your app of choice to print. You may need to adjust the print size settings to fit the sheet music within the dimensions of your pages.</p>
         </div>
     </div>
 
@@ -140,6 +140,18 @@
     </div>
 
     <div class="faq">
+      <div class="faq-question">
+        <p dir="ltr" style="line-height: 1.656;">
+            <span style="color: #000000; font-family: Arial; font-size: 13.999999999999998pt; font-weight: 700; vertical-align: baseline;">What are the limits to using the tool?</span>
+        </p>
+        <span class="arrow">▼</span>
+      </div>
+      <div class="faq-answer">
+        <p>Users are limited to 3 renderings / min and [TBD] renderings / day.  Renderings are limited to 6-pages each.</p>
+      </div>
+    </div>
+
+    <div class="faq">
         <div class="faq-question">
           <p dir="ltr" style="line-height: 1.656;">
               <span style="color: #000000; font-family: Arial; font-size: 13.999999999999998pt; font-weight: 700; vertical-align: baseline;">Are the songs I upload private?</span>
@@ -147,7 +159,7 @@
           <span class="arrow">▼</span>
         </div>
         <div class="faq-answer">
-            <p>All files are temporarily stored in a private bucket in Google Cloud Storage with max lifetime of approximately 1-day.<p>
+            <p>All files are temporarily stored in a private bucket in Google Cloud Storage with max lifetime of approximately 1-day.  Aggregated score metadata will be saved for analysis.<p>
         </div>
     </div>
 

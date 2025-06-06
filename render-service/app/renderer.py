@@ -11,6 +11,7 @@ import verovio
 # Constants
 BASE_DIR = "app-frontend/static/rendered_svgs"
 STROKE_WIDTH = 20
+PAGE_LIMIT = 6
 
 # Chromatic Scale (Flat Variant)
 CHROMATIC_SCALE = ["C", "Df", "D", "Ef", "E", "F", "Gf", "G", "Af", "A", "Bf", "B", ]
@@ -436,7 +437,7 @@ def shift_svg_content(soup):
         svg["height"] = str(int(svg["height"].replace("px", "")) + 180)
 
 
-def add_logo_and_title(soup, page_num, page_title):
+def add_logo_and_title(soup, page_num, total_page_count, page_title):
     """Create and Add ColorMusic Logo and Song Title"""
     svg = soup.find("svg")
     group = soup.new_tag("g", id="logo-group")
@@ -521,7 +522,7 @@ def add_logo_and_title(soup, page_num, page_title):
         fill="Black",
         **{"font-size": "10", "text-anchor": "end"}  # Align text to the right
     )
-    title.string = f"{page_title} - Page {page_num}"
+    title.string = f"{page_title} - Page {page_num} / {total_page_count}"
     title_group.append(title)
     svg.insert(0, title_group)
 
@@ -596,7 +597,8 @@ def render(filename, mei_data, title, bucket, session_id):
 
     svg_filenames = []
     svg_html_parts = []
-    for page in range(1, tk.getPageCount() + 1):
+    total_page_count = tk.getPageCount()
+    for page in range(1, min(total_page_count, PAGE_LIMIT) + 1):
         svg = BeautifulSoup(tk.renderToSVG(page), "xml")
         
         # Load original for reference
@@ -614,7 +616,7 @@ def render(filename, mei_data, title, bucket, session_id):
         for accid in svg.find_all(class_="accid"):
             accid["opacity"] = 0.5
 
-        add_logo_and_title(svg, page, title)
+        add_logo_and_title(svg, page, total_page_count, title)
 
         # Footer
         footer = svg.new_tag("comment")
