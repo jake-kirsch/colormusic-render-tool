@@ -16,9 +16,6 @@ WORKDIR /app-frontend
 COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
-# Install Playwright and Chromium
-RUN playwright install chromium
-
 # Copy the rest of the code
 COPY . .
 

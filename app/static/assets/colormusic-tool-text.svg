@@ -1,9 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 230 50" width="230" height="50">
-  <!-- "notation" with outline effect -->
-  <text x="10" y="40" font-family="Arial" font-size="40" fill="none" stroke="black" stroke-width="4">notation</text>
-  <text x="10" y="40" font-family="Arial" font-size="40" fill="white" stroke="white" stroke-width="1">notation</text>
-
-  <!-- "tool" moved closer -->
-  <text x="158" y="40" font-family="Arial" font-size="40" fill="none" stroke="black" stroke-width="4">tool</text>
-  <text x="158" y="40" font-family="Arial" font-size="40" fill="white" stroke="white" stroke-width="1">tool</text>
-</svg>
