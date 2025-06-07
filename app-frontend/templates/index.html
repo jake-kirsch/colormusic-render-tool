@@ -88,25 +88,25 @@
   </div>
     
   <script>
-    let sessionReady = false;
+    let renderReady = false;
     
-    async function startSession() {
-      const existing = localStorage.getItem('session_id');
+    async function startRender() {
+      const existing = localStorage.getItem('render_id');
       if (existing) {
-        console.log('Session already exists:', existing);
+        console.log('Render already exists:', existing);
         return existing;
       }
 
-      const resp = await fetch('/start-session');
+      const resp = await fetch('/start-render');
       const data = await resp.json();
-      localStorage.setItem('session_id', data.session_id);
-      console.log('New session started:', data.session_id);
-      return data.session_id;
+      localStorage.setItem('render_id', data.render_id);
+      console.log('New render started:', data.render_id);
+      return data.render_id;
     }
 
     async function initializeApp() {
-      await startSession(); // Wait until session is ready
-      sessionReady = true;
+      await startRender(); // Wait until render is ready
+      renderReady = true;
     }
 
     function setupRenderPage() {
@@ -123,13 +123,13 @@
             e.preventDefault();
             const formData = new FormData(form);
 
-            // Fetch a new session id
-            const resp = await fetch('/start-session');
+            // Fetch a new render id
+            const resp = await fetch('/start-render');
             const data = await resp.json();
-            const session_id = data.session_id
-            localStorage.setItem('session_id', session_id);
+            const render_id = data.render_id
+            localStorage.setItem('render_id', render_id);
 
-            formData.append('session_id', session_id);
+            formData.append('render_id', render_id);
             
             // Show Rendering Status Visual
             rendering_container.classList.add('active');
@@ -189,12 +189,12 @@
     }
     
     function updateDownloadLink() {
-      const session_id = localStorage.getItem("session_id");
-      if (!session_id) return;
+      const render_id = localStorage.getItem("render_id");
+      if (!render_id) return;
 
       const link = document.getElementById("downloadLink");
       if (link) {
-        link.href = `/download-all?session_id=${encodeURIComponent(session_id)}`;
+        link.href = `/download-all?render_id=${encodeURIComponent(render_id)}`;
       }
     }
     

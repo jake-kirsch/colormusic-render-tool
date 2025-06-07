@@ -30,7 +30,8 @@ app = FastAPI()
 app.state.limiter = limiter
 
 retry_after = "60"
-rate_limit = "3/minute"
+rate_limit_per_minute = "3/minute"
+rate_limit_per_day = "20/day"  # TODO Apply after Locals testing
 
 app.mount("/static", StaticFiles(directory="app-frontend/static"), name="static")
 templates = Jinja2Templates(directory="app-frontend/templates")
@@ -43,15 +44,15 @@ async def custom_rate_limit_handler(request: Request, exc: RateLimitExceeded):
         content=f"""
         <div style="width: 100%; margin: 0 auto;">
             <h2>Rate limit exceeded!</h2>
-            <p>Please wait before rendering more scores.  Current allowed rate is {rate_limit}.</p>
+            <p>Please wait before rendering more scores.  Current allowed rate is {rate_limit_per_minute}.</p>
         </div>
         """,
         headers={"Retry-After": retry_after}
     )
 
 
-def extract_xml_from_zip(filename, session_id):
-    zip_blob = bucket.blob(f"{session_id}/{filename}")
+def extract_xml_from_zip(filename, render_id):
+    zip_blob = bucket.blob(f"{render_id}/{filename}")
 
     # Download zip content into memory
     zip_bytes = zip_blob.download_as_bytes()
@@ -70,7 +71,7 @@ def extract_xml_from_zip(filename, session_id):
                     xml_filename = f'{filename.split(".")[0]}.xml'
                     
                     # Upload extracted file back to GCS
-                    new_blob = bucket.blob(f"{session_id}/{xml_filename}")
+                    new_blob = bucket.blob(f"{render_id}/{xml_filename}")
                     new_blob.upload_from_string(file_data)
                     
                     return xml_filename
@@ -78,12 +79,12 @@ def extract_xml_from_zip(filename, session_id):
     raise FileNotFoundError("No .xml file found in the ZIP archive.")
 
 
-def generate_svg_results_html(svg_html_parts: list[str], session_id: str) -> str:
-    safe_session_id = quote(session_id, safe='')
+def generate_svg_results_html(svg_html_parts: list[str], render_id: str) -> str:
+    safe_render_id = quote(render_id, safe='')
 
     html_parts = [
         '<div style="width: 600px; margin: 0 auto; text-align: center;">',
-        f'  <a href="/download-pdf?session_id={safe_session_id}">',
+        f'  <a href="/download-pdf?render_id={safe_render_id}">',
         '    <button style="background-color: #823F98; color: #ffffff; font-size: 18px; padding: 12px 24px; border: none; border-radius: 8px; cursor: pointer; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">Download Full PDF</button><br><br>',
         '  </a>',
         '</div>',
@@ -142,7 +143,7 @@ gcs_client = storage.Client.from_service_account_json(sa_key_path)
 bucket = gcs_client.bucket("colormusic-notation-tool-render-staging")
 
 CLOUD_RUN_URL = "https://colormusic-render-svc-388982170722.us-east1.run.app/render-color-music"
-AUDIENCE = CLOUD_RUN_URL  # Must match your Cloud Run URL exactly
+AUDIENCE = CLOUD_RUN_URL
 
 # Create credentials from service account file
 credentials = service_account.IDTokenCredentials.from_service_account_file(
@@ -150,29 +151,43 @@ credentials = service_account.IDTokenCredentials.from_service_account_file(
     target_audience=AUDIENCE
 )
 
-@app.get("/start-session")
-def start_session():
-    session_id = str(uuid.uuid4())
-    return {"session_id": session_id}
+@app.get("/start-render")
+def start_render():
+    render_id = str(uuid.uuid4())
+    return {"render_id": render_id}
 
 
 @app.post("/upload")
-@limiter.limit(rate_limit)
-async def upload(request: Request, response: Response, file: UploadFile = File(...), title: str = Form(...), input_format: str = Form(...), session_id: str = Form(...)):
+@limiter.limit(rate_limit_per_minute)
+async def upload(request: Request, response: Response, file: UploadFile = File(...), title: str = Form(...), render_id: str = Form(...)):
     content = await file.read()
     filename = file.filename
     
-    blob = bucket.blob(f"{session_id}/{filename}")
+    # Determine input_format
+    file_extension = os.path.splitext(filename)[1][1:].lower()
+
+    input_format = None
+
+    if file_extension in ["mxl"]:
+        input_format = "musicxml_compressed"
+    elif file_extension in ["mei"]:
+        input_format = "mei"
+    elif file_extension in ["musicxml", "xml"]:
+        input_format = "musicxml"
+    else:
+        return HTMLResponse("<div>Unable to determine file type based on extension ...</div>")
+
+    blob = bucket.blob(f"{render_id}/{filename}")
     
     # Save file to GCS
     blob.upload_from_string(content)
     
     if input_format == "musicxml_compressed":
-        filename = extract_xml_from_zip(filename, session_id)
+        filename = extract_xml_from_zip(filename, render_id)
         print(f"GCS Extract File: {filename}")
 
     if input_format in ["musicxml", "musicxml_compressed", ]:
-        blob = bucket.blob(f"{session_id}/{filename}")
+        blob = bucket.blob(f"{render_id}/{filename}")
 
         # Download XML content as string
         xml_content = blob.download_as_text(encoding="utf-8")
@@ -183,7 +198,7 @@ async def upload(request: Request, response: Response, file: UploadFile = File(.
         mei_data = tk.getMEI()
 
         filename = f"{os.path.splitext(filename)[0]}.mei"
-        blob = bucket.blob(f"{session_id}/{filename}")
+        blob = bucket.blob(f"{render_id}/{filename}")
 
         # Save .mei file to GCS
         blob.upload_from_string(mei_data)
@@ -195,95 +210,21 @@ async def upload(request: Request, response: Response, file: UploadFile = File(.
     payload = {"filename": filename,
                "title": title,
                "bucket_name": bucket.name,
-               "session_id": session_id, }
+               "render_id": render_id, }
 
     response = requests.post(CLOUD_RUN_URL, json=payload, headers=headers)
 
     if response.ok:
         svg_html_parts = response.json()["result"]
         
-        return HTMLResponse(generate_svg_results_html(svg_html_parts, session_id))
+        return HTMLResponse(generate_svg_results_html(svg_html_parts, render_id))
     else:
         print("Error:", response.status_code, response.text)
 
 
-# @app.post("/upload")
-# @limiter.limit(rate_limit)
-# async def upload(request: Request, response: Response, file: UploadFile = File(...), title: str = Form(...), input_format: str = Form(...), session_id: str = Form(...)):
-#     start_time = time.time()
-    
-#     content = await file.read()
-#     filename = file.filename
-    
-#     blob = bucket.blob(f"{session_id}/{filename}")
-    
-#     # Save file to GCS
-#     blob.upload_from_string(content)
-
-
-#     # Call Render Service
-#     credentials.refresh(GoogleRequest())
-
-#     headers = {"Authorization": f"Bearer {credentials.token}"}
-#     payload = {"filename": filename,
-#                "input_format": input_format,
-#                "title": title,
-#                "bucket_name": bucket.name,
-#                "session_id": session_id, }
-
-#     response = requests.post(CLOUD_RUN_URL, json=payload, headers=headers)
-
-#     if response.ok:
-#         print("Result:", response.json()["result"])
-
-#         svg_html_parts = response.json()["result"]
-        
-#         if input_format == "musicxml_compressed":
-#             filename = extract_xml_from_zip(filename, session_id)
-#             print(f"GCS Extract File: {filename}")
-
-#         # mei_path = ""
-#         # if input_format in ["musicxml", "musicxml_compressed", ]:
-#         #     blob = bucket.blob(f"{session_id}/{filename}")
-
-#         #     # Download XML content as string
-#         #     xml_content = blob.download_as_text(encoding="utf-8")
-
-#         #     tk = verovio.toolkit()
-#         #     tk.loadData(xml_content)
-
-#         #     mei_data = tk.getMEI()
-
-#         #     mei_filename = f"{os.path.splitext(filename)[0]}.mei"
-#         #     blob = bucket.blob(f"{session_id}/{mei_filename}")
-
-#         #     # Save .mei file to GCS
-#         #     blob.upload_from_string(mei_data)
-        
-#         # elif input_format == "mei":
-#         #     mei_filename = filename
-        
-        
-
-#         # # svg_filenames = await render_color_music(mei_filename, title, bucket, session_id)
-#         # svg_html_parts = await render_color_music(mei_filename, title, bucket, session_id)
-        
-#         end_time = time.time()
-
-#         elapsed = end_time - start_time
-
-#         # Having rendering take at least 5 seconds for effect
-#         # if elapsed < 5:
-#         #     time.sleep(5 - elapsed)
-
-#         return HTMLResponse(generate_svg_results_html(svg_html_parts, session_id))
-
-#     else:
-#         print("Error:", response.status_code, response.text)
-
 @app.get("/download-pdf")
-def download_pdf(session_id: str):
-    blobs = bucket.list_blobs(prefix=f"{session_id}/")
+def download_pdf(render_id: str):
+    blobs = bucket.list_blobs(prefix=f"{render_id}/")
 
     for blob in blobs:
         if blob.name.endswith(".pdf"):
