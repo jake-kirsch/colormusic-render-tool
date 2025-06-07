@@ -15,8 +15,6 @@ import uuid
 import verovio
 import zipfile
 
-from .renderer import render_color_music
-
 # For Cloud Run Service
 import json
 import requests
