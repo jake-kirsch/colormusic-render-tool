@@ -578,11 +578,11 @@ def extract_score_title(soup):
     return score_title
 
 
-def render(filename, mei_data, title, bucket, session_id):
+def render(filename, mei_data, title, bucket, render_id):
     """Render MEI to ColorMusic"""
     log_analytics_event(
         "render_start",
-        render_id=session_id,
+        render_id=render_id,
         title=title,
         filename=filename,
     )
@@ -604,7 +604,7 @@ def render(filename, mei_data, title, bucket, session_id):
     # filename = mei_filename.split(".mei")[0]
     # modified_mei_filename = f"{filename}-mod.mei"
 
-    # blob = bucket.blob(f"{session_id}/{modified_mei_filename}")
+    # blob = bucket.blob(f"{render_id}/{modified_mei_filename}")
     # blob.upload_from_string(str(labeled_soup))
 
     # mei_data = blob.download_as_text(encoding="utf-8")
@@ -626,7 +626,7 @@ def render(filename, mei_data, title, bucket, session_id):
         svg = BeautifulSoup(tk.renderToSVG(page), "xml")
         
         # Load original for reference
-        blob = bucket.blob(f"{session_id}/{filename}-{page}-original.svg")
+        blob = bucket.blob(f"{render_id}/{filename}-{page}-original.svg")
         blob.upload_from_string(tk.renderToSVG(page))
 
         add_symbols_to_defs(svg.find("defs"))
@@ -652,7 +652,7 @@ def render(filename, mei_data, title, bucket, session_id):
         svg.find("svg").append(footer)
         
         svg_filename = f"{filename}-{page}-colormusic.svg"
-        blob = bucket.blob(f"{session_id}/{svg_filename}")
+        blob = bucket.blob(f"{render_id}/{svg_filename}")
         blob.upload_from_string(str(svg))
         svg_html_parts.append(f"<div style='page-break-after: always'>{str(svg)}</div>")
         
@@ -694,9 +694,16 @@ def render(filename, mei_data, title, bucket, session_id):
 
     # Upload to GCS
     pdf_filename = f"{filename}-colormusic.pdf"
-    blob = bucket.blob(f"{session_id}/{pdf_filename}")
+    blob = bucket.blob(f"{render_id}/{pdf_filename}")
 
     blob.upload_from_file(pdf_io, content_type="application/pdf")
+
+    log_analytics_event(
+        "render_complete",
+        render_id=render_id,
+        title=title,
+        filename=filename,
+    )
 
     # return svg_filenames
     return svg_html_parts[:1]
