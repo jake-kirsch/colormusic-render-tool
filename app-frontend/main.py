@@ -31,8 +31,8 @@ retry_after = "60"
 rate_limit_per_minute = "3/minute"
 rate_limit_per_day = "20/day"  # TODO Apply after Locals testing
 
-app.mount("/static", StaticFiles(directory="app-frontend/static"), name="static")
-templates = Jinja2Templates(directory="app-frontend/templates")
+app.mount("/static", StaticFiles(directory="static"), name="static")
+templates = Jinja2Templates(directory="templates")
 
 # Custom handler
 @app.exception_handler(RateLimitExceeded)
