@@ -13,11 +13,11 @@ RUN apt-get update && apt-get install -y \
 WORKDIR /app-frontend
 
 # Copy and install dependencies
-# COPY ./requirements.txt .
+COPY app-frontend/requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
 # Copy the rest of the code
-COPY . .
+COPY app-frontend/ .
 
 # Command to run your app
 CMD ["uvicorn", "app-frontend.main:app", "--host=0.0.0.0", "--port=10000"]
