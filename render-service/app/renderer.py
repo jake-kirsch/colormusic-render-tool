@@ -14,7 +14,6 @@ client = logging.Client()
 logger = client.logger("colormusic-analytics-log")
 
 # Constants
-BASE_DIR = "app-frontend/static/rendered_svgs"
 STROKE_WIDTH = 20
 PAGE_LIMIT = 6
 
@@ -600,14 +599,14 @@ def render(filename, mei_data, title, bucket, render_id):
     if not title:
         title = "Unknown"
 
+    log_analytics_event(
+        "score_title",
+        render_id=render_id,
+        title=title,
+        filename=filename,
+    )
+
     filename = filename.rsplit(".", 1)[0]
-    # filename = mei_filename.split(".mei")[0]
-    # modified_mei_filename = f"{filename}-mod.mei"
-
-    # blob = bucket.blob(f"{render_id}/{modified_mei_filename}")
-    # blob.upload_from_string(str(labeled_soup))
-
-    # mei_data = blob.download_as_text(encoding="utf-8")
     
     tk.setOptions({
         "pageWidth": 2159,    # 210 mm * 10
