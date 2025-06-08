@@ -16,6 +16,7 @@ logger = client.logger("colormusic-analytics-log")
 # Constants
 STROKE_WIDTH = 20
 PAGE_LIMIT = 6
+DEFAULT_DURATION = 8
 
 # Chromatic Scale (Flat Variant)
 CHROMATIC_SCALE = ["C", "Df", "D", "Ef", "E", "F", "Gf", "G", "Af", "A", "Bf", "B", ]
@@ -137,7 +138,10 @@ def label_notes(soup):
         if dur is None:
             chord = note.find_parent("chord")
 
-            dur = chord.get("dur")
+            if chord:
+                dur = chord.get("dur")
+            else:
+                dur = DEFAULT_DURATION
         
         # Get tied note
         tied_note_id = ties.get(note_id)
