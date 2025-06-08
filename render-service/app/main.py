@@ -68,6 +68,6 @@ def render_color_music(request: RenderRequest):
             status_code=500,
             content={
                 "status": "error",
-                "result": f"Unable to process file.  Error event has been captured for render id: {render_id}."
+                "error": f"Unable to process file.  Error event has been captured for render id: {render_id}."
             }
         )

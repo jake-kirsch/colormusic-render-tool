@@ -217,7 +217,7 @@ async def upload(request: Request, response: Response, file: UploadFile = File(.
         
         return HTMLResponse(generate_svg_results_html(svg_html_parts, render_id))
     else:
-        return HTMLResponse(f"<strong>{response.json()['result']}</strong>")
+        return HTMLResponse(f"<strong>{response.json()['error']}</strong>")
 
 
 @app.get("/download-pdf")
