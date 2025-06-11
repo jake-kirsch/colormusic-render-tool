@@ -53,6 +53,9 @@ def render_color_music(request: RenderRequest):
         
         svg_html_parts = render(filename, mei_data, title, bucket, render_id)
 
+        if len(svg_html_parts) == 0:
+            raise ValueError("SVG HTML Parts should not be empty.")
+        
         return {"result": svg_html_parts}
     except:
         log_analytics_event(

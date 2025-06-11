@@ -1,18 +1,21 @@
+from concurrent.futures import ProcessPoolExecutor, TimeoutError
 from fastapi import FastAPI, UploadFile, File, Form, Request, Response, HTTPException
 from fastapi.responses import HTMLResponse, JSONResponse, StreamingResponse
 from fastapi.staticfiles import StaticFiles
 from fastapi.templating import Jinja2Templates
+from google.cloud import logging
 from google.cloud import storage
 import io
 import os
-from slowapi import Limiter, _rate_limit_exceeded_handler
+import re
+from slowapi import Limiter
 from slowapi.errors import RateLimitExceeded
 from slowapi.util import get_remote_address
-import time
+import traceback
 from typing import List
 from urllib.parse import quote
+import unicodedata
 import uuid
-import verovio
 import zipfile
 
 # For Cloud Run Service
@@ -149,6 +152,45 @@ credentials = service_account.IDTokenCredentials.from_service_account_file(
     target_audience=AUDIENCE
 )
 
+logger = logging.Client.from_service_account_json(sa_key_path).logger("colormusic-analytics-log")
+
+def log_analytics_event(event_type, severity="INFO", **kwargs):
+    """Log a structured analytics event to Cloud Logging."""
+    log_entry = {
+        "tag": "colormusic-analytics",
+        "event_type": event_type,
+        **kwargs
+    }
+
+    logger.log_struct(log_entry, severity=severity)
+
+def gcs_friendly_filename(filename: str) -> str:
+    # Normalize Unicode characters to ASCII (remove accents)
+    nfkd_form = unicodedata.normalize('NFKD', filename)
+    only_ascii = nfkd_form.encode('ASCII', 'ignore').decode()
+
+    # Replace spaces and unsafe chars with underscore
+    cleaned = re.sub(r'[^A-Za-z0-9\-_.\/]', '_', only_ascii)
+
+    # Avoid leading/trailing slashes (optional)
+    cleaned = cleaned.strip('/')
+
+    return cleaned
+
+def verovio_job(xml):
+    from verovio import toolkit
+    tk = toolkit()
+    tk.loadData(xml)
+    return tk.getMEI()
+
+def get_mei_safely(xml_content, timeout=10):
+    with ProcessPoolExecutor(max_workers=1) as executor:
+        future = executor.submit(verovio_job, xml_content)
+        try:
+            return future.result(timeout=timeout)
+        except TimeoutError:
+            raise RuntimeError("Verovio timed out")
+
 @app.get("/start-render")
 def start_render():
     render_id = str(uuid.uuid4())
@@ -161,6 +203,9 @@ async def upload(request: Request, response: Response, file: UploadFile = File(.
     content = await file.read()
     filename = file.filename
     
+    # TODO make the filename GCS friendly
+    filename = gcs_friendly_filename(filename)
+
     # Determine input_format
     file_extension = os.path.splitext(filename)[1][1:].lower()
 
@@ -180,35 +225,62 @@ async def upload(request: Request, response: Response, file: UploadFile = File(.
     # Save file to GCS
     blob.upload_from_string(content)
     
-    if input_format == "musicxml_compressed":
-        filename = extract_xml_from_zip(filename, render_id)
-        print(f"GCS Extract File: {filename}")
+    try:
+        if input_format == "musicxml_compressed":
+            
+            filename = extract_xml_from_zip(filename, render_id)
+            print(f"GCS Extract File: {filename}")
+    except:
+        log_analytics_event(
+            event_type="render_error", 
+            severity="ERROR", 
+            render_id=render_id, 
+            title=title, 
+            filename=filename,
+            stack_trace=traceback.format_exc()
+        )
 
-    if input_format in ["musicxml", "musicxml_compressed", ]:
-        blob = bucket.blob(f"{render_id}/{filename}")
+        return HTMLResponse(f"<strong>Error occurred trying to extract .xml from .mxl file. Error event has been captured for render id: {render_id}.</strong>")
 
-        # Download XML content as string
-        xml_content = blob.download_as_text(encoding="utf-8")
+    try:
+        if input_format in ["musicxml", "musicxml_compressed", ]:
+            blob = bucket.blob(f"{render_id}/{filename}")
 
-        tk = verovio.toolkit()
-        tk.loadData(xml_content)
+            # Download XML content as string
+            xml_content = blob.download_as_text(encoding="utf-8")
 
-        mei_data = tk.getMEI()
+            mei_data = get_mei_safely(xml_content)
 
-        filename = f"{os.path.splitext(filename)[0]}.mei"
-        blob = bucket.blob(f"{render_id}/{filename}")
+            # tk = verovio.toolkit()
+            # tk.loadData(xml_content)
 
-        # Save .mei file to GCS
-        blob.upload_from_string(mei_data)
-    
+            # mei_data = tk.getMEI()
+
+            filename = f"{os.path.splitext(filename)[0]}.mei"
+            blob = bucket.blob(f"{render_id}/{filename}")
+
+            # Save .mei file to GCS
+            blob.upload_from_string(mei_data)
+    except:
+        log_analytics_event(
+            event_type="render_error", 
+            severity="ERROR", 
+            render_id=render_id, 
+            title=title, 
+            filename=filename,
+            stack_trace=traceback.format_exc()
+        )
+
+        return HTMLResponse(f"<strong>Error occurred trying to convert MusicXML file to MEI.  Error event has been captured for render id: {render_id}.</strong>")
+
     # Call Render Service
     credentials.refresh(GoogleRequest())
 
     headers = {"Authorization": f"Bearer {credentials.token}"}
     payload = {"filename": filename,
-               "title": title,
-               "bucket_name": bucket.name,
-               "render_id": render_id, }
+            "title": title,
+            "bucket_name": bucket.name,
+            "render_id": render_id, }
 
     response = requests.post(CLOUD_RUN_URL, json=payload, headers=headers)
 
@@ -218,7 +290,7 @@ async def upload(request: Request, response: Response, file: UploadFile = File(.
         return HTMLResponse(generate_svg_results_html(svg_html_parts, render_id))
     else:
         return HTMLResponse(f"<strong>{response.json()['error']}</strong>")
-
+    
 
 @app.get("/download-pdf")
 def download_pdf(render_id: str):
