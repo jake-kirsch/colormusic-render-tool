@@ -15,7 +15,7 @@ logger = client.logger("colormusic-analytics-log")
 
 # Constants
 STROKE_WIDTH = 20
-PAGE_LIMIT = 6
+PAGE_LIMIT = 100  # Set HIGH to avoid cutting off
 DEFAULT_DURATION = 8
 
 # Chromatic Scale (Flat Variant)
