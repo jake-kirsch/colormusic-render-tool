@@ -3,7 +3,7 @@ fastapi
 google-cloud-logging
 google-cloud-storage
 jinja2
-lxml
+lxml==5.0.0
 playwright
 python-multipart
 requests
