@@ -1,3 +1,4 @@
+from bs4 import BeautifulSoup
 from concurrent.futures import ProcessPoolExecutor, TimeoutError
 from fastapi import FastAPI, UploadFile, File, Form, Request, Response, HTTPException
 from fastapi.responses import HTMLResponse, JSONResponse, StreamingResponse
@@ -249,13 +250,15 @@ async def upload(request: Request, response: Response, file: UploadFile = File(.
             # Download XML content as string
             xml_content = blob.download_as_text(encoding="utf-8")
 
+            soup = BeautifulSoup(xml_content, "xml")
+            
+            # Remove unsupported harmony blocks (chord diagrams)
+            for harmony in soup.find_all("harmony"):
+                harmony.decompose()
+
+            xml_content = str(soup)
             mei_data = get_mei_safely(xml_content)
-
-            # tk = verovio.toolkit()
-            # tk.loadData(xml_content)
-
-            # mei_data = tk.getMEI()
-
+            
             filename = f"{os.path.splitext(filename)[0]}.mei"
             blob = bucket.blob(f"{render_id}/{filename}")
 
