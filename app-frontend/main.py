@@ -259,11 +259,15 @@ async def upload(request: Request, response: Response, file: UploadFile = File(.
 
             soup = BeautifulSoup(xml_content, "xml")
             
+            print(f"Length of xml content: {len(xml_content)}")
+            print("Removing harmony blocks ...")
             # Remove unsupported harmony blocks (chord diagrams)
             for harmony in soup.find_all("harmony"):
                 harmony.decompose()
-
+            
             xml_content = str(soup)
+
+            print(f"Length of xml content: {len(xml_content)}")
             mei_data = get_mei_safely(xml_content)
             
             filename = f"{os.path.splitext(filename)[0]}.mei"
