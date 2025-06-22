@@ -185,167 +185,173 @@ def label_notes(soup):
                 tied_note = soup.find("note", attrs={"xml:id": tied_note_id})
                 # f"{pname.upper()}{accid}:{dur}"
                 # Split out duration, use note and accid from tied start note
-                prefix_label = tied_note.get("label").split(":")[0]
-                
-                note["label"] = f"{prefix_label}:{dur}"
+                tied_note_label = tied_note.get("label")
+                if tied_note_label:
+                    prefix_label = tied_note_label.split(":")[0]
+                    
+                    note["label"] = f"{prefix_label}:{dur}"
             else:
                 pname = note.get("pname")
-                octave = note.get("oct")
 
-                measure = note.find_parent("measure")
-                measure_num = int(measure.get("n"))
-
-                if keysigs_by_measure and measure_num < min(keysigs_by_measure.keys()):
-                    staff = note.find_parent("staff")
-                    staff_num = staff.get("n")
-
-                    sig = keysigs_by_staff_num[staff_num]["sig"]
-                    mode = keysigs_by_staff_num[staff_num]["mode"]
-                else:
-                    # Determine sig based on measure position
-                    if len(keysigs_by_measure) == 1:
-                        sig = list(keysigs_by_measure.values())[0]["sig"]
-                        mode = list(keysigs_by_measure.values())[0]["mode"]
-                    else:
-                        sorted_keysigs_by_measure = sorted(keysigs_by_measure)
-
-                        for i in range(len(sorted_keysigs_by_measure) - 1):
-                            if sorted_keysigs_by_measure[i] <= measure_num < sorted_keysigs_by_measure[i+1]:
-                                sig = keysigs_by_measure[sorted_keysigs_by_measure[i]]["sig"]
-                                mode = keysigs_by_measure[sorted_keysigs_by_measure[i]]["mode"]
-                
-                accid_tag = note.find("accid")
-
-                element_name = ""
-                accid_val = ""
-                if accid_tag:
-                    # Attempt to get accid value
-                    for _element_name in [
-                        "accid.ges",
-                        "accid",
-                    ]:
-                        accid_val = accid_tag.get(_element_name)
-
-                        if accid_val:
-                            element_name = _element_name
-                            break
-                else:
-                    for _element_name in [
-                        "accid.ges",
-                        "accid",
-                    ]:
-                        accid_val = note.get(_element_name)
-
-                        if accid_val:
-                            element_name = _element_name
-                            break
-                
-                accid_tracker_key = ":::".join([str(measure_num), pname.upper(), octave, ])
-                if element_name == "accid":  # Visible-only
-                    # If accid_val is set need to propagate this through for a given note in the same measure in the same octave
-                    accid_tracker[accid_tracker_key] = accid_val
-                elif not accid_val:
-                    accid_val = accid_tracker.get(accid_tracker_key, accid_val)
-                
-                if accid_val == "s":
-                    # Sharp
-                    accid = "s"
-                elif accid_val == "ss":
-                    # Double Sharp
-                    accid = "ss"
-                elif accid_val == "f":
-                    # Flat
-                    accid = "f"
-                elif accid_val == "ff":
-                    # Double Flat
-                    accid = "ff"
-                elif accid_val == "n":
-                    # If natural skip adding accid
-                    accid = ""
-                else:
-                    if sig and sig not in ["0", "1s", "2s", "3s", "4s", "5s", "6s", "7s",
-                                        "1f", "2f", "3f", "4f", "5f", "6f", "7f", ]:
-                        raise ValueError(f"Unhandled key signature: {sig}!")
-
-                    if sig == "0":
-                        # 0 - No sharps or flats
-                        # C Major -> C - D - E - F - G - A - B - (C)
-                        # A Minor -> A - B - C - D - E - F - G - (A)
-                        accid = ""
-                    elif sig == "1s" and  pname.upper() == "F":
-                        # 1s - 1 sharp
-                        # G Major -> G - A - B - C - D - E - F♯ - (G)
-                        # E Minor -> E - F♯ - G - A - B - C - D - (E)
-                        accid = "s"
-                    elif sig == "2s" and pname.upper() in ["C", "F", ]:
-                        # 2s - 2 sharps
-                        # D Major -> D – E – F♯ – G – A – B – C♯ – (D)
-                        # B Minor -> B – C♯ – D – E – F♯ – G – A – (B)
-                        accid = "s"
-                    elif sig == "3s" and pname.upper() in ["C", "F", "G", ]:
-                        # 3s - 3 sharps
-                        # A Major -> A - B - C♯ - D - E - F♯ - G♯ - (A)
-                        # F# Minor -> F♯ - G♯ - A - B - C♯ - D - E - (F♯)
-                        accid = "s"
-                    elif sig == "4s" and pname.upper() in ["C", "D", "F", "G", ]:
-                        # 4s - 4 sharps
-                        # E Major -> E – F♯ – G♯ – A – B – C♯ – D♯ – (E)
-                        # C# Minor -> C♯ – D♯ – E – F♯ – G♯ – A – B – (C♯)
-                        accid = "s"
-                    elif sig == "5s" and pname.upper() in ["A", "C", "D", "F", "G", ]:
-                        # 5 sharps
-                        # B Major -> B – C♯ – D♯ – E – F♯ – G♯ – A♯ – (B)
-                        # G♯ Minor -> G♯ – A♯ – B – C♯ – D♯ – E – F♯ – (G♯)
-                        accid = "s"
-                    elif sig == "6s" and pname.upper() in ["A", "C", "D", "E", "F", "G", ]:
-                        # 6 sharps
-                        # F♯ Major -> F♯ – G♯ – A♯ – B – C♯ – D♯ – E♯ – (F♯)
-                        # D♯ Minor -> D♯ – E♯ – F♯ – G♯ – A♯ – B – C♯ – (D♯)
-                        accid = "s"
-                    elif sig == "7s" and pname.upper() in ["A", "B", "C", "D", "E", "F", "G", ]:
-                        # 7 sharps
-                        # C♯ Major -> C♯ – D♯ – E♯ – F♯ – G♯ – A♯ – B♯ – (C♯)
-                        # A♯ Minor -> A♯ – B♯ – C♯ – D♯ – E♯ – F♯ – G♯ – (A♯)
-                        accid = "s"
-                    elif sig == "1f" and pname.upper() == "B":
-                        # 1f - 1 flat
-                        # F Major -> F - G - A - B♭ - C - D - E - (F)
-                        # D Minor -> D - E - F - G - A - B♭ - C - (D)
-                        accid = "f"
-                    elif sig == "2f" and pname.upper() in ["B", "E", ]:
-                        # 2f - 2 flats
-                        # B♭ Major -> B♭ – C – D – E♭ – F – G – A – (B♭)
-                        # G Minor -> G – A – B♭ – C – D – E♭ – F – (G)
-                        accid = "f"
-                    elif sig == "3f" and pname.upper() in ["A", "B", "E", ]:
-                        # 3f - 3 flats
-                        # E♭ Major -> E♭ – F – G – A♭ – B♭ – C – D – (E♭)
-                        # C Minor -> C – D – E♭ – F – G – A♭ – B♭ – (C)
-                        accid = "f"
-                    elif sig == "4f" and pname.upper() in ["A", "B", "D", "E", ]:
-                        # 4f - 4 flats
-                        # A♭ Major -> A♭ – B♭ – C – D♭ – E♭ – F – G – (A♭)
-                        # F Minor -> F – G – A♭ – B♭ – C – D♭ – E♭ – (F)
-                        accid = "f"
-                    elif sig == "5f" and pname.upper() in ["A", "B", "D", "E", "G", ]:
-                        # 5 flats
-                        # D♭ Major -> D♭ – E♭ – F – G♭ – A♭ – B♭ – C – (D♭)
-                        # B♭ Minor -> B♭ – C – D♭ – E♭ – F – G♭ – A♭ – (B♭)
-                        accid = "f"
-                    elif sig == "6f" and pname.upper() in ["A", "B", "C", "D", "E", "G", ]:
-                        # 6 flats
-                        # G♭ Major -> G♭ – A♭ – B♭ – C♭ – D♭ – E♭ – F – (G♭)
-                        # E♭ Minor -> E♭ – F – G♭ – A♭ – B♭ – C♭ – D♭ – (E♭)
-                        accid = "f"
-                    elif sig == "7f" and pname.upper() in ["A", "B", "C", "D", "E", "F", "G", ]:
-                        # 7 flats
-                        # C♭ Major -> C♭ – D♭ – E♭ – F♭ – G♭ – A♭ – B♭ – (C♭)
-                        # A♭ Minor -> A♭ – B♭ – C♭ – D♭ – E♭ – F♭ – G♭ – (A♭)
-                        accid = "f"
-                    else:    
-                        accid = ""
-                
                 if pname:
+                    octave = note.get("oct")
+                    
+                    measure = note.find_parent("measure")
+                    # Should switch this to measure xml:id instead of number to avoid collisions?
+                    measure_num = int(measure.get("n"))
+                    measure_id = measure.get("xml:id")
+
+                    if keysigs_by_measure and measure_num < min(keysigs_by_measure.keys()):
+                        staff = note.find_parent("staff")
+                        staff_num = staff.get("n")
+
+                        sig = keysigs_by_staff_num[staff_num]["sig"]
+                        mode = keysigs_by_staff_num[staff_num]["mode"]
+                    else:
+                        # Determine sig based on measure position
+                        if len(keysigs_by_measure) == 1:
+                            sig = list(keysigs_by_measure.values())[0]["sig"]
+                            mode = list(keysigs_by_measure.values())[0]["mode"]
+                        else:
+                            sorted_keysigs_by_measure = sorted(keysigs_by_measure)
+
+                            for i in range(len(sorted_keysigs_by_measure) - 1):
+                                if sorted_keysigs_by_measure[i] <= measure_num < sorted_keysigs_by_measure[i+1]:
+                                    sig = keysigs_by_measure[sorted_keysigs_by_measure[i]]["sig"]
+                                    mode = keysigs_by_measure[sorted_keysigs_by_measure[i]]["mode"]
+                    
+                    accid_tag = note.find("accid")
+
+                    element_name = ""
+                    accid_val = ""
+                    if accid_tag:
+                        # Attempt to get accid value
+                        for _element_name in [
+                            "accid.ges",
+                            "accid",
+                        ]:
+                            accid_val = accid_tag.get(_element_name)
+
+                            if accid_val:
+                                element_name = _element_name
+                                break
+                    else:
+                        for _element_name in [
+                            "accid.ges",
+                            "accid",
+                        ]:
+                            accid_val = note.get(_element_name)
+
+                            if accid_val:
+                                element_name = _element_name
+                                break
+                    
+                    accid_tracker_key = ":::".join([str(measure_id), pname.upper(), octave, ])
+                    if element_name == "accid":  # Visible-only
+                        # If accid_val is set need to propagate this through for a given note in the same measure in the same octave
+                        accid_tracker[accid_tracker_key] = accid_val
+                    elif not accid_val:
+                        accid_val = accid_tracker.get(accid_tracker_key, accid_val)
+                    
+                    if accid_val == "s":
+                        # Sharp
+                        accid = "s"
+                    elif accid_val == "ss":
+                        # Double Sharp
+                        accid = "ss"
+                    elif accid_val == "f":
+                        # Flat
+                        accid = "f"
+                    elif accid_val == "ff":
+                        # Double Flat
+                        accid = "ff"
+                    elif accid_val == "n":
+                        # If natural skip adding accid
+                        accid = ""
+                    else:
+                        if sig and sig not in ["0", "1s", "2s", "3s", "4s", "5s", "6s", "7s",
+                                            "1f", "2f", "3f", "4f", "5f", "6f", "7f", ]:
+                            raise ValueError(f"Unhandled key signature: {sig}!")
+
+                        if sig == "0":
+                            # 0 - No sharps or flats
+                            # C Major -> C - D - E - F - G - A - B - (C)
+                            # A Minor -> A - B - C - D - E - F - G - (A)
+                            accid = ""
+                        elif sig == "1s" and  pname.upper() == "F":
+                            # 1s - 1 sharp
+                            # G Major -> G - A - B - C - D - E - F♯ - (G)
+                            # E Minor -> E - F♯ - G - A - B - C - D - (E)
+                            accid = "s"
+                        elif sig == "2s" and pname.upper() in ["C", "F", ]:
+                            # 2s - 2 sharps
+                            # D Major -> D – E – F♯ – G – A – B – C♯ – (D)
+                            # B Minor -> B – C♯ – D – E – F♯ – G – A – (B)
+                            accid = "s"
+                        elif sig == "3s" and pname.upper() in ["C", "F", "G", ]:
+                            # 3s - 3 sharps
+                            # A Major -> A - B - C♯ - D - E - F♯ - G♯ - (A)
+                            # F# Minor -> F♯ - G♯ - A - B - C♯ - D - E - (F♯)
+                            accid = "s"
+                        elif sig == "4s" and pname.upper() in ["C", "D", "F", "G", ]:
+                            # 4s - 4 sharps
+                            # E Major -> E – F♯ – G♯ – A – B – C♯ – D♯ – (E)
+                            # C# Minor -> C♯ – D♯ – E – F♯ – G♯ – A – B – (C♯)
+                            accid = "s"
+                        elif sig == "5s" and pname.upper() in ["A", "C", "D", "F", "G", ]:
+                            # 5 sharps
+                            # B Major -> B – C♯ – D♯ – E – F♯ – G♯ – A♯ – (B)
+                            # G♯ Minor -> G♯ – A♯ – B – C♯ – D♯ – E – F♯ – (G♯)
+                            accid = "s"
+                        elif sig == "6s" and pname.upper() in ["A", "C", "D", "E", "F", "G", ]:
+                            # 6 sharps
+                            # F♯ Major -> F♯ – G♯ – A♯ – B – C♯ – D♯ – E♯ – (F♯)
+                            # D♯ Minor -> D♯ – E♯ – F♯ – G♯ – A♯ – B – C♯ – (D♯)
+                            accid = "s"
+                        elif sig == "7s" and pname.upper() in ["A", "B", "C", "D", "E", "F", "G", ]:
+                            # 7 sharps
+                            # C♯ Major -> C♯ – D♯ – E♯ – F♯ – G♯ – A♯ – B♯ – (C♯)
+                            # A♯ Minor -> A♯ – B♯ – C♯ – D♯ – E♯ – F♯ – G♯ – (A♯)
+                            accid = "s"
+                        elif sig == "1f" and pname.upper() == "B":
+                            # 1f - 1 flat
+                            # F Major -> F - G - A - B♭ - C - D - E - (F)
+                            # D Minor -> D - E - F - G - A - B♭ - C - (D)
+                            accid = "f"
+                        elif sig == "2f" and pname.upper() in ["B", "E", ]:
+                            # 2f - 2 flats
+                            # B♭ Major -> B♭ – C – D – E♭ – F – G – A – (B♭)
+                            # G Minor -> G – A – B♭ – C – D – E♭ – F – (G)
+                            accid = "f"
+                        elif sig == "3f" and pname.upper() in ["A", "B", "E", ]:
+                            # 3f - 3 flats
+                            # E♭ Major -> E♭ – F – G – A♭ – B♭ – C – D – (E♭)
+                            # C Minor -> C – D – E♭ – F – G – A♭ – B♭ – (C)
+                            accid = "f"
+                        elif sig == "4f" and pname.upper() in ["A", "B", "D", "E", ]:
+                            # 4f - 4 flats
+                            # A♭ Major -> A♭ – B♭ – C – D♭ – E♭ – F – G – (A♭)
+                            # F Minor -> F – G – A♭ – B♭ – C – D♭ – E♭ – (F)
+                            accid = "f"
+                        elif sig == "5f" and pname.upper() in ["A", "B", "D", "E", "G", ]:
+                            # 5 flats
+                            # D♭ Major -> D♭ – E♭ – F – G♭ – A♭ – B♭ – C – (D♭)
+                            # B♭ Minor -> B♭ – C – D♭ – E♭ – F – G♭ – A♭ – (B♭)
+                            accid = "f"
+                        elif sig == "6f" and pname.upper() in ["A", "B", "C", "D", "E", "G", ]:
+                            # 6 flats
+                            # G♭ Major -> G♭ – A♭ – B♭ – C♭ – D♭ – E♭ – F – (G♭)
+                            # E♭ Minor -> E♭ – F – G♭ – A♭ – B♭ – C♭ – D♭ – (E♭)
+                            accid = "f"
+                        elif sig == "7f" and pname.upper() in ["A", "B", "C", "D", "E", "F", "G", ]:
+                            # 7 flats
+                            # C♭ Major -> C♭ – D♭ – E♭ – F♭ – G♭ – A♭ – B♭ – (C♭)
+                            # A♭ Minor -> A♭ – B♭ – C♭ – D♭ – E♭ – F♭ – G♭ – (A♭)
+                            accid = "f"
+                        else:    
+                            accid = ""
+                    
+                    # if pname:
                     note["label"] = f"{pname.upper()}{accid}:{dur}"
 
     
@@ -372,85 +378,86 @@ def render_note_to_colormusic(soup, note, chord):
     # Get the pitch and dur value (e.g., 'C', '4')
     note_label_attr = note.find("title", class_="labelAttr")
 
-    # Check on label format to determine how to interpret (this needs improvement)
-    if ":" not in note_label_attr.text:
-        pitch = note_label_attr.text
-        
-        text = note.find("text")
-
-        center_x = int(text.get("x"))
-        center_y = int(text.get("y"))
-
-        if pitch in SQUARE_PITCHES:
-            # Add square
-            square_side = 275
-
-            pitch_square = soup.new_tag('rect', 
-                            x=center_x - (square_side / 2), 
-                            y=center_y - (square_side) + 30, 
-                            width=square_side, 
-                            height=square_side, 
-                            fill=PITCH_COLORS[pitch], 
-                            stroke='black', 
-                            **{'stroke-width': STROKE_WIDTH, "opacity": ".85", })
+    if note_label_attr:
+        # Check on label format to determine how to interpret (this needs improvement)
+        if ":" not in note_label_attr.text:
+            pitch = note_label_attr.text
             
-            # Insert the square before the text (so it's behind it visually)
-            text.insert_before(pitch_square)
-        else:
-            circle_radius = 145
-            pitch_circle = soup.new_tag('circle', 
-                            cx=center_x, 
-                            cy=center_y - (circle_radius / 2) - 20, 
-                            r=circle_radius, 
-                            fill=PITCH_COLORS[pitch], 
-                            stroke='black', 
-                            **{'stroke-width': STROKE_WIDTH, "opacity": ".85", })
+            text = note.find("text")
 
-            # Insert the circle before the text (so it's behind it visually)
-            text.insert_before(pitch_circle)
-    else:
-        note_label, dur = note_label_attr.text.split(":")
+            center_x = int(text.get("x"))
+            center_y = int(text.get("y"))
 
-        pitch = simplify_pitch(note_label)
-        notehead = note.find("g", class_="notehead")
-        stem = note.find("g", class_="stem")
+            if pitch in SQUARE_PITCHES:
+                # Add square
+                square_side = 275
 
-        # Best attempt using chord
-        if chord and not stem:
-            stem = chord.find("g", class_="stem")
-
-        stem_direction = "no-stem"
-        if stem:
-            stem_path = stem.find("path")
-
-            d = stem_path["d"]
-            tokens = d.replace("M", "").replace("L", "").split()
-            x1, y1, x2, y2 = map(float, tokens)
-
-            # Determine direction and side
-            stem_direction = "up" if y2 < y1 else "down"
-
-        if pitch in SQUARE_PITCHES:
-            # Find the <use> tag that contains the x and y position
-            notehead_use = notehead.find("use")
-
-            try:
-                dur = int(dur)
-            except:
-                dur = None
-
-            notehead_style = "open" if dur and int(dur) <= 2 else "filled"
-
-            if stem_direction == "up":
-                notehead_use["xlink:href"] = f"#{pitch}-{notehead_style}-stem-up"
-            elif stem_direction == "down":
-                notehead_use["xlink:href"] = f"#{pitch}-{notehead_style}-stem-down"
+                pitch_square = soup.new_tag('rect', 
+                                x=center_x - (square_side / 2), 
+                                y=center_y - (square_side) + 30, 
+                                width=square_side, 
+                                height=square_side, 
+                                fill=PITCH_COLORS[pitch], 
+                                stroke='black', 
+                                **{'stroke-width': STROKE_WIDTH, "opacity": ".85", })
+                
+                # Insert the square before the text (so it's behind it visually)
+                text.insert_before(pitch_square)
             else:
-                notehead_use["xlink:href"] = f"#{pitch}-{notehead_style}-no-stem"
+                circle_radius = 145
+                pitch_circle = soup.new_tag('circle', 
+                                cx=center_x, 
+                                cy=center_y - (circle_radius / 2) - 20, 
+                                r=circle_radius, 
+                                fill=PITCH_COLORS[pitch], 
+                                stroke='black', 
+                                **{'stroke-width': STROKE_WIDTH, "opacity": ".85", })
+
+                # Insert the circle before the text (so it's behind it visually)
+                text.insert_before(pitch_circle)
         else:
-            notehead["fill"] = PITCH_COLORS[pitch]
-            notehead["stroke"] = "Black"
-            notehead["stroke-width"] = f"{STROKE_WIDTH}"
+            note_label, dur = note_label_attr.text.split(":")
+
+            pitch = simplify_pitch(note_label)
+            notehead = note.find("g", class_="notehead")
+            stem = note.find("g", class_="stem")
+
+            # Best attempt using chord
+            if chord and not stem:
+                stem = chord.find("g", class_="stem")
+
+            stem_direction = "no-stem"
+            if stem:
+                stem_path = stem.find("path")
+
+                d = stem_path["d"]
+                tokens = d.replace("M", "").replace("L", "").split()
+                x1, y1, x2, y2 = map(float, tokens)
+
+                # Determine direction and side
+                stem_direction = "up" if y2 < y1 else "down"
+
+            if pitch in SQUARE_PITCHES:
+                # Find the <use> tag that contains the x and y position
+                notehead_use = notehead.find("use")
+
+                try:
+                    dur = int(dur)
+                except:
+                    dur = None
+
+                notehead_style = "open" if dur and int(dur) <= 2 else "filled"
+
+                if stem_direction == "up":
+                    notehead_use["xlink:href"] = f"#{pitch}-{notehead_style}-stem-up"
+                elif stem_direction == "down":
+                    notehead_use["xlink:href"] = f"#{pitch}-{notehead_style}-stem-down"
+                else:
+                    notehead_use["xlink:href"] = f"#{pitch}-{notehead_style}-no-stem"
+            else:
+                notehead["fill"] = PITCH_COLORS[pitch]
+                notehead["stroke"] = "Black"
+                notehead["stroke-width"] = f"{STROKE_WIDTH}"
 
 
 def add_symbols_to_defs(defs):
