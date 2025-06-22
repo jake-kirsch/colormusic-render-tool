@@ -192,6 +192,13 @@ def get_mei_safely(xml_content, timeout=10):
         except TimeoutError:
             raise RuntimeError("Verovio timed out")
 
+
+@app.get("/healthz")
+def healthz():
+    print("✅ CODE DEPLOYED")
+    return {"status": "ok"}
+
+
 @app.get("/start-render")
 def start_render():
     render_id = str(uuid.uuid4())
