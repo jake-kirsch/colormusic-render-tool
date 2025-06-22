@@ -257,7 +257,7 @@ async def upload(request: Request, response: Response, file: UploadFile = File(.
             # Download XML content as string
             xml_content = blob.download_as_text(encoding="utf-8")
 
-            soup = BeautifulSoup(xml_content, "xml")
+            soup = BeautifulSoup(xml_content, "lxml-xml")
             
             print(f"Length of xml content: {len(xml_content)}")
             print("Removing harmony blocks ...")
