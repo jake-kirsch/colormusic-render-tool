@@ -420,44 +420,47 @@ def render_note_to_colormusic(soup, note, chord):
 
             pitch = simplify_pitch(note_label)
             notehead = note.find("g", class_="notehead")
-            stem = note.find("g", class_="stem")
 
-            # Best attempt using chord
-            if chord and not stem:
-                stem = chord.find("g", class_="stem")
+            # Check if notehead is set
+            if notehead:
+                stem = note.find("g", class_="stem")
 
-            stem_direction = "no-stem"
-            if stem:
-                stem_path = stem.find("path")
+                # Best attempt using chord
+                if chord and not stem:
+                    stem = chord.find("g", class_="stem")
 
-                d = stem_path["d"]
-                tokens = d.replace("M", "").replace("L", "").split()
-                x1, y1, x2, y2 = map(float, tokens)
+                stem_direction = "no-stem"
+                if stem:
+                    stem_path = stem.find("path")
 
-                # Determine direction and side
-                stem_direction = "up" if y2 < y1 else "down"
+                    d = stem_path["d"]
+                    tokens = d.replace("M", "").replace("L", "").split()
+                    x1, y1, x2, y2 = map(float, tokens)
 
-            if pitch in SQUARE_PITCHES:
-                # Find the <use> tag that contains the x and y position
-                notehead_use = notehead.find("use")
+                    # Determine direction and side
+                    stem_direction = "up" if y2 < y1 else "down"
 
-                try:
-                    dur = int(dur)
-                except:
-                    dur = None
+                if pitch in SQUARE_PITCHES:
+                    # Find the <use> tag that contains the x and y position
+                    notehead_use = notehead.find("use")
 
-                notehead_style = "open" if dur and int(dur) <= 2 else "filled"
+                    try:
+                        dur = int(dur)
+                    except:
+                        dur = None
 
-                if stem_direction == "up":
-                    notehead_use["xlink:href"] = f"#{pitch}-{notehead_style}-stem-up"
-                elif stem_direction == "down":
-                    notehead_use["xlink:href"] = f"#{pitch}-{notehead_style}-stem-down"
+                    notehead_style = "open" if dur and int(dur) <= 2 else "filled"
+
+                    if stem_direction == "up":
+                        notehead_use["xlink:href"] = f"#{pitch}-{notehead_style}-stem-up"
+                    elif stem_direction == "down":
+                        notehead_use["xlink:href"] = f"#{pitch}-{notehead_style}-stem-down"
+                    else:
+                        notehead_use["xlink:href"] = f"#{pitch}-{notehead_style}-no-stem"
                 else:
-                    notehead_use["xlink:href"] = f"#{pitch}-{notehead_style}-no-stem"
-            else:
-                notehead["fill"] = PITCH_COLORS[pitch]
-                notehead["stroke"] = "Black"
-                notehead["stroke-width"] = f"{STROKE_WIDTH}"
+                    notehead["fill"] = PITCH_COLORS[pitch]
+                    notehead["stroke"] = "Black"
+                    notehead["stroke-width"] = f"{STROKE_WIDTH}"
 
 
 def add_symbols_to_defs(defs):
