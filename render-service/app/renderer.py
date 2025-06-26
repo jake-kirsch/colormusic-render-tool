@@ -142,6 +142,26 @@ def label_notes(soup):
             string_num = course.get("n")
             pitch = course.get("pname").upper()
 
+            accid = course.get("accid")
+            if accid:
+                accid = accid.lower()
+
+                # Get index of base pitch
+                pitch_idx = CHROMATIC_SCALE.index(pitch)
+
+                # Adjust based on accid
+                for c in accid:
+                    if c == "f":
+                        pitch_idx -= 1
+                    elif c == "s":
+                        pitch_idx += 1
+
+                # Reset pitch_idx if beyond chromatic scale, naturally handled if pitch index is negative
+                while pitch_idx >= CHROMATIC_SCALE_NOTE_COUNT:
+                    pitch_idx = pitch_idx - CHROMATIC_SCALE_NOTE_COUNT
+                
+                pitch = CHROMATIC_SCALE[pitch_idx]
+            
             string_tunings[string_num] = pitch
 
     accid_tracker = {}
@@ -153,19 +173,26 @@ def label_notes(soup):
             fret = int(note.get("tab.fret"))
             string_num = note.get("tab.course")
 
-            open_pitch = string_tunings[string_num]
+            if string_tunings:
+                open_pitch = string_tunings[string_num]
 
-            open_pitch_idx = CHROMATIC_SCALE.index(open_pitch)
+                open_pitch_idx = CHROMATIC_SCALE.index(open_pitch)
 
-            pitch_idx = open_pitch_idx + fret
-                    
-            # Reset pitch_idx
-            while pitch_idx >= CHROMATIC_SCALE_NOTE_COUNT:
-                pitch_idx = pitch_idx - CHROMATIC_SCALE_NOTE_COUNT
-            
-            pitch = CHROMATIC_SCALE[pitch_idx]
+                pitch_idx = open_pitch_idx + fret
+                        
+                # Reset pitch_idx
+                while pitch_idx >= CHROMATIC_SCALE_NOTE_COUNT:
+                    pitch_idx = pitch_idx - CHROMATIC_SCALE_NOTE_COUNT
+                
+                pitch = CHROMATIC_SCALE[pitch_idx]
 
-            note["label"] = pitch
+                note["label"] = pitch
+            else: 
+                # Attempt to pull pitch directly if tunings were not provided
+                pname = note.get("pname")
+
+                if pname:
+                    note["label"] = pname
         else:
             # Get duration
             dur = note.get("dur")
@@ -383,38 +410,40 @@ def render_note_to_colormusic(soup, note, chord):
         if ":" not in note_label_attr.text:
             pitch = note_label_attr.text
             
+            # print(note)
             text = note.find("text")
 
-            center_x = int(text.get("x"))
-            center_y = int(text.get("y"))
+            if text:
+                center_x = int(text.get("x"))
+                center_y = int(text.get("y"))
 
-            if pitch in SQUARE_PITCHES:
-                # Add square
-                square_side = 275
+                if pitch in SQUARE_PITCHES:
+                    # Add square
+                    square_side = 275
 
-                pitch_square = soup.new_tag('rect', 
-                                x=center_x - (square_side / 2), 
-                                y=center_y - (square_side) + 30, 
-                                width=square_side, 
-                                height=square_side, 
-                                fill=PITCH_COLORS[pitch], 
-                                stroke='black', 
-                                **{'stroke-width': STROKE_WIDTH, "opacity": ".85", })
-                
-                # Insert the square before the text (so it's behind it visually)
-                text.insert_before(pitch_square)
-            else:
-                circle_radius = 145
-                pitch_circle = soup.new_tag('circle', 
-                                cx=center_x, 
-                                cy=center_y - (circle_radius / 2) - 20, 
-                                r=circle_radius, 
-                                fill=PITCH_COLORS[pitch], 
-                                stroke='black', 
-                                **{'stroke-width': STROKE_WIDTH, "opacity": ".85", })
+                    pitch_square = soup.new_tag('rect', 
+                                    x=center_x - (square_side / 2), 
+                                    y=center_y - (square_side) + 30, 
+                                    width=square_side, 
+                                    height=square_side, 
+                                    fill=PITCH_COLORS[pitch], 
+                                    stroke='black', 
+                                    **{'stroke-width': STROKE_WIDTH, "opacity": ".85", })
+                    
+                    # Insert the square before the text (so it's behind it visually)
+                    text.insert_before(pitch_square)
+                else:
+                    circle_radius = 145
+                    pitch_circle = soup.new_tag('circle', 
+                                    cx=center_x, 
+                                    cy=center_y - (circle_radius / 2) - 20, 
+                                    r=circle_radius, 
+                                    fill=PITCH_COLORS[pitch], 
+                                    stroke='black', 
+                                    **{'stroke-width': STROKE_WIDTH, "opacity": ".85", })
 
-                # Insert the circle before the text (so it's behind it visually)
-                text.insert_before(pitch_circle)
+                    # Insert the circle before the text (so it's behind it visually)
+                    text.insert_before(pitch_circle)
         else:
             note_label, dur = note_label_attr.text.split(":")
 
