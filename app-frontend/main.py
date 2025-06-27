@@ -267,15 +267,18 @@ async def upload(request: Request, response: Response, file: UploadFile = File(.
             
             # xml_content = str(soup)
 
-            # print(f"Length of xml content: {len(xml_content)}")
+            print(f"Length of xml content: {len(xml_content)}")
             mei_data = get_mei_safely(xml_content)
             
+            if not mei_data:
+                raise Exception("Conversion from MusicXML file to MEI was not successful; empty MEI file.  Verify input file is the correct type (ex. MusicXML, not MuseScore XML)")
+
             filename = f"{os.path.splitext(filename)[0]}.mei"
             blob = bucket.blob(f"{render_id}/{filename}")
 
             # Save .mei file to GCS
             blob.upload_from_string(mei_data)
-    except:
+    except Exception as e:
         log_analytics_event(
             event_type="render_error", 
             severity="ERROR", 
@@ -285,7 +288,7 @@ async def upload(request: Request, response: Response, file: UploadFile = File(.
             stack_trace=traceback.format_exc()
         )
 
-        return HTMLResponse(f"<strong>Error occurred trying to convert MusicXML file to MEI.  Error event has been captured for render id: {render_id}.</strong>")
+        return HTMLResponse(f"<strong>Error occurred trying to convert MusicXML file to MEI.  <br><br>Error Message: {str(e)}.  <br><br>Error event has been captured for render id: {render_id}.</strong>")
 
     # Call Render Service
     credentials.refresh(GoogleRequest())
