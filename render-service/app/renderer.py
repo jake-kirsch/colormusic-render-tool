@@ -57,7 +57,7 @@ def log_analytics_event(event_type, **kwargs):
         **kwargs
     }
 
-    # logger.log_struct(log_entry)
+    logger.log_struct(log_entry)
 
 
 # ====== Processing Functions ======
