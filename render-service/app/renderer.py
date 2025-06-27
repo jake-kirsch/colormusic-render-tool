@@ -57,7 +57,7 @@ def log_analytics_event(event_type, **kwargs):
         **kwargs
     }
 
-    logger.log_struct(log_entry)
+    # logger.log_struct(log_entry)
 
 
 # ====== Processing Functions ======
@@ -224,8 +224,26 @@ def label_notes(soup):
                     octave = note.get("oct")
                     
                     measure = note.find_parent("measure")
-                    # Should switch this to measure xml:id instead of number to avoid collisions?
-                    measure_num = int(measure.get("n"))
+                    
+                    n_attr = measure.get("n")
+
+                    try:
+                        measure_num = int(n_attr)
+                    except:
+                        # Find previous measure with numeric "n" attribute and use that to represent measure number
+                        previous_measure = measure.find_previous("measure")
+
+                        while previous_measure is not None:
+                            n_attr = previous_measure.get("n")
+                            try:
+                                measure_num = int(n_attr)
+                                break  # Successfully parsed a numeric measure number
+                            except (TypeError, ValueError):
+                                previous_measure = previous_measure.find_previous("measure")
+                        else:
+                            measure_num = None  # No numeric measure found
+
+                    # measure_num = int(measure.get("n"))
                     measure_id = measure.get("xml:id")
 
                     if keysigs_by_measure and measure_num < min(keysigs_by_measure.keys()):
