@@ -173,26 +173,32 @@ def label_notes(soup):
             fret = int(note.get("tab.fret"))
             string_num = note.get("tab.course")
 
-            if string_tunings:
-                open_pitch = string_tunings[string_num]
+            head_shape = note.get("head.shape")
 
-                open_pitch_idx = CHROMATIC_SCALE.index(open_pitch)
+            if head_shape and head_shape in ["x"]:
+                # Leave as is
+                note["label"] = "X"
+            else:
+                if string_tunings:
+                    open_pitch = string_tunings[string_num]
 
-                pitch_idx = open_pitch_idx + fret
-                        
-                # Reset pitch_idx
-                while pitch_idx >= CHROMATIC_SCALE_NOTE_COUNT:
-                    pitch_idx = pitch_idx - CHROMATIC_SCALE_NOTE_COUNT
-                
-                pitch = CHROMATIC_SCALE[pitch_idx]
+                    open_pitch_idx = CHROMATIC_SCALE.index(open_pitch)
 
-                note["label"] = pitch
-            else: 
-                # Attempt to pull pitch directly if tunings were not provided
-                pname = note.get("pname")
+                    pitch_idx = open_pitch_idx + fret
+                            
+                    # Reset pitch_idx
+                    while pitch_idx >= CHROMATIC_SCALE_NOTE_COUNT:
+                        pitch_idx = pitch_idx - CHROMATIC_SCALE_NOTE_COUNT
+                    
+                    pitch = CHROMATIC_SCALE[pitch_idx]
 
-                if pname:
-                    note["label"] = pname
+                    note["label"] = pitch
+                else: 
+                    # Attempt to pull pitch directly if tunings were not provided
+                    pname = note.get("pname")
+
+                    if pname:
+                        note["label"] = pname
         else:
             # Get duration
             dur = note.get("dur")
@@ -406,7 +412,7 @@ def label_notes(soup):
         if text.isdigit():
             dir_tag.decompose()
 
-    return soup
+    return soup, string_tunings
 
 
 def reorder_note(note):
@@ -428,40 +434,46 @@ def render_note_to_colormusic(soup, note, chord):
         if ":" not in note_label_attr.text:
             pitch = note_label_attr.text
             
-            # print(note)
-            text = note.find("text")
+            if pitch == "X":
+                tspan = note.find("tspan")
 
-            if text:
-                center_x = int(text.get("x"))
-                center_y = int(text.get("y"))
+                if tspan:
+                    tspan.string = "X"
+            else:
+                # print(note)
+                text = note.find("text")
 
-                if pitch in SQUARE_PITCHES:
-                    # Add square
-                    square_side = 275
+                if text:
+                    center_x = int(text.get("x"))
+                    center_y = int(text.get("y"))
 
-                    pitch_square = soup.new_tag('rect', 
-                                    x=center_x - (square_side / 2), 
-                                    y=center_y - (square_side) + 30, 
-                                    width=square_side, 
-                                    height=square_side, 
-                                    fill=PITCH_COLORS[pitch], 
-                                    stroke='black', 
-                                    **{'stroke-width': STROKE_WIDTH, "opacity": ".85", })
-                    
-                    # Insert the square before the text (so it's behind it visually)
-                    text.insert_before(pitch_square)
-                else:
-                    circle_radius = 145
-                    pitch_circle = soup.new_tag('circle', 
-                                    cx=center_x, 
-                                    cy=center_y - (circle_radius / 2) - 20, 
-                                    r=circle_radius, 
-                                    fill=PITCH_COLORS[pitch], 
-                                    stroke='black', 
-                                    **{'stroke-width': STROKE_WIDTH, "opacity": ".85", })
+                    if pitch in SQUARE_PITCHES:
+                        # Add square
+                        square_side = 275
 
-                    # Insert the circle before the text (so it's behind it visually)
-                    text.insert_before(pitch_circle)
+                        pitch_square = soup.new_tag('rect', 
+                                        x=center_x - (square_side / 2), 
+                                        y=center_y - (square_side) + 30, 
+                                        width=square_side, 
+                                        height=square_side, 
+                                        fill=PITCH_COLORS[pitch], 
+                                        stroke='black', 
+                                        **{'stroke-width': STROKE_WIDTH, "opacity": ".85", })
+                        
+                        # Insert the square before the text (so it's behind it visually)
+                        text.insert_before(pitch_square)
+                    else:
+                        circle_radius = 145
+                        pitch_circle = soup.new_tag('circle', 
+                                        cx=center_x, 
+                                        cy=center_y - (circle_radius / 2) - 20, 
+                                        r=circle_radius, 
+                                        fill=PITCH_COLORS[pitch], 
+                                        stroke='black', 
+                                        **{'stroke-width': STROKE_WIDTH, "opacity": ".85", })
+
+                        # Insert the circle before the text (so it's behind it visually)
+                        text.insert_before(pitch_circle)
         else:
             note_label, dur = note_label_attr.text.split(":")
 
@@ -595,7 +607,7 @@ def shift_svg_content(soup):
         svg["height"] = str(int(svg["height"].replace("px", "")) + 180)
 
 
-def add_logo_and_title(soup, page_num, total_page_count, page_title):
+def add_logo_and_title(soup, page_num, total_page_count, page_title, string_tunings):
     """Create and Add ColorMusic Logo and Song Title"""
     svg = soup.find("svg")
     group = soup.new_tag("g", id="logo-group")
@@ -672,6 +684,29 @@ def add_logo_and_title(soup, page_num, total_page_count, page_title):
     if page_num == 1:
         svg.insert(0, link)
 
+        # Add string tunings (if applicable)
+        if string_tunings:
+            string_tuning_text_val = ""
+
+            string_tuning_text_val = "-".join(
+                string_tunings[key] for key in sorted(string_tunings, key=int, reverse=True)
+            )
+
+            # for string_num in sorted([int(x) for x in string_tunings.keys()], reverse=True):
+            #     string_tuning_text_val += string_tunings[str(string_num)]
+
+            string_tunings_group = soup.new_tag("g", id="string_tunings-group")
+            string_tuning_text = soup.new_tag(
+                "text",
+                x="7%", # Left Side
+                y="15",
+                fill="Black",
+                **{"font-size": "10", }
+            )
+            string_tuning_text.string = f"Tuning: {string_tuning_text_val}"
+            string_tunings_group.append(string_tuning_text)
+            svg.insert(0, string_tunings_group)
+
     title_group = soup.new_tag("g", id="song-title-group")
     title = soup.new_tag(
         "text",
@@ -716,6 +751,18 @@ def extract_score_title(soup):
     elif composers:
         score_title = composers_str
 
+    if not score_title or score_title == "Untitled score - Composer / arranger":
+        music = soup.find("music")
+
+        if music:
+            pg_head = music.find("pgHead")
+
+            if pg_head:
+                rends = [rend.string for rend in pg_head.find_all("rend")]
+
+                if rends:        
+                    score_title = " - ".join(rends)
+    
     return score_title
 
 
@@ -730,7 +777,9 @@ def render(filename, mei_data, title, bucket, render_id):
     
     # Label notes in MEI
     soup = parse_mei(mei_data)
-    mei_data = str(label_notes(soup))
+    mei_data, string_tunings = label_notes(soup)
+
+    mei_data = str(mei_data)
 
     score_title = extract_score_title(soup)
 
@@ -781,7 +830,7 @@ def render(filename, mei_data, title, bucket, render_id):
         for accid in svg.find_all(class_="accid"):
             accid["opacity"] = 0.5
 
-        add_logo_and_title(svg, page, total_page_count, title)
+        add_logo_and_title(svg, page, total_page_count, title, string_tunings)
 
         # Footer
         footer = svg.new_tag("comment")
