@@ -333,7 +333,7 @@ def label_notes(soup):
                         else:
                             sorted_keysigs_by_measure = sorted(keysigs_by_measure)
 
-                            if measure_num >= sorted_keysigs_by_measure[-1]:
+                            if sorted_keysigs_by_measure and measure_num >= sorted_keysigs_by_measure[-1]:
                                 sig = keysigs_by_measure[sorted_keysigs_by_measure[-1]]["sig"]
                                 mode = keysigs_by_measure[sorted_keysigs_by_measure[-1]]["mode"]
                             else:
