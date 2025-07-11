@@ -95,7 +95,7 @@ def label_notes(soup):
 
         staffdef = keysig.find_parent("staffDef")
 
-        # Because of You good example changing
+        # Capture Key Signature Changes
         if staffdef:
             staff_num = staffdef.get("n")
             clef = staffdef.find("clef")
@@ -112,6 +112,12 @@ def label_notes(soup):
 
             keysigs_by_measure[measure_num] = {"sig": sig, "mode": mode, }
     
+    # print("Key Sigs by Measure")
+    # print(keysigs_by_measure)
+    
+    # print("Key Sigs by Staff Num")
+    # print(keysigs_by_staff_num)
+
     if not keysigs_by_staff_num:
         # Different format for tracking
         for staffdef in soup.find_all("staffDef"):
@@ -133,11 +139,33 @@ def label_notes(soup):
 
             ties[endid] = startId
 
-    # Extract Guitar Tunings (if applicable)
-    string_tunings = {}
+    # Extract Instrument Tunings (if applicable)
+    all_tunings = {}
 
-    tuning = soup.find("tuning")
-    if tuning:
+    for tuning in soup.find_all("tuning"):
+        staffdef = tuning.find_parent("staffDef")
+
+        staff_num = staffdef.get("n")
+
+        staff_tunings_label = None
+        label = staffdef.find("label")
+        
+        if label:
+            staff_tunings_label = label.text
+
+        if staff_tunings_label is None:
+            staffgrp = staffdef.find_parent("staffGrp")
+
+            if staffgrp:
+                label = staffgrp.find("label", recursive=False)
+
+                if label:
+                    staff_tunings_label = label.text
+        
+        if staff_tunings_label is None:
+            staff_tunings_label = f"Staff {staff_num}"
+
+        staff_tunings = {}
         for course in tuning.find_all("course"):
             string_num = course.get("n")
             pitch = course.get("pname").upper()
@@ -162,7 +190,39 @@ def label_notes(soup):
                 
                 pitch = CHROMATIC_SCALE[pitch_idx]
             
-            string_tunings[string_num] = pitch
+            staff_tunings[string_num] = pitch
+        
+        all_tunings[staff_num] = {"tunings": staff_tunings, "label": staff_tunings_label, }
+    
+    # print(all_tunings)
+
+    # tuning = soup.find("tuning")
+    # if tuning:
+    #     for course in tuning.find_all("course"):
+    #         string_num = course.get("n")
+    #         pitch = course.get("pname").upper()
+
+    #         accid = course.get("accid")
+    #         if accid:
+    #             accid = accid.lower()
+
+    #             # Get index of base pitch
+    #             pitch_idx = CHROMATIC_SCALE.index(pitch)
+
+    #             # Adjust based on accid
+    #             for c in accid:
+    #                 if c == "f":
+    #                     pitch_idx -= 1
+    #                 elif c == "s":
+    #                     pitch_idx += 1
+
+    #             # Reset pitch_idx if beyond chromatic scale, naturally handled if pitch index is negative
+    #             while pitch_idx >= CHROMATIC_SCALE_NOTE_COUNT:
+    #                 pitch_idx = pitch_idx - CHROMATIC_SCALE_NOTE_COUNT
+                
+    #             pitch = CHROMATIC_SCALE[pitch_idx]
+            
+    #         string_tunings[string_num] = pitch
 
     accid_tracker = {}
     for note in soup.find_all("note"):
@@ -170,6 +230,11 @@ def label_notes(soup):
         
         # Check if Guitar Tab Note, these should have a fret
         if note.get("tab.fret"):
+            staff = note.find_parent("staff")
+
+            if staff:
+                staff_num = staff.get("n")
+
             fret = int(note.get("tab.fret"))
             string_num = note.get("tab.course")
 
@@ -179,8 +244,10 @@ def label_notes(soup):
                 # Leave as is
                 note["label"] = "X"
             else:
-                if string_tunings:
-                    open_pitch = string_tunings[string_num]
+                if all_tunings:
+                    staff_tunings = all_tunings[staff_num]["tunings"]
+                    
+                    open_pitch = staff_tunings[string_num]
 
                     open_pitch_idx = CHROMATIC_SCALE.index(open_pitch)
 
@@ -266,11 +333,18 @@ def label_notes(soup):
                         else:
                             sorted_keysigs_by_measure = sorted(keysigs_by_measure)
 
-                            for i in range(len(sorted_keysigs_by_measure) - 1):
-                                if sorted_keysigs_by_measure[i] <= measure_num < sorted_keysigs_by_measure[i+1]:
-                                    sig = keysigs_by_measure[sorted_keysigs_by_measure[i]]["sig"]
-                                    mode = keysigs_by_measure[sorted_keysigs_by_measure[i]]["mode"]
+                            if measure_num >= sorted_keysigs_by_measure[-1]:
+                                sig = keysigs_by_measure[sorted_keysigs_by_measure[-1]]["sig"]
+                                mode = keysigs_by_measure[sorted_keysigs_by_measure[-1]]["mode"]
+                            else:
+                                for i in range(len(sorted_keysigs_by_measure) - 1):
+                                    if sorted_keysigs_by_measure[i] <= measure_num < sorted_keysigs_by_measure[i+1]:
+                                        sig = keysigs_by_measure[sorted_keysigs_by_measure[i]]["sig"]
+                                        mode = keysigs_by_measure[sorted_keysigs_by_measure[i]]["mode"]
                     
+                    # print(sig)
+                    # print(mode)
+
                     accid_tag = note.find("accid")
 
                     element_name = ""
@@ -412,7 +486,7 @@ def label_notes(soup):
         if text.isdigit():
             dir_tag.decompose()
 
-    return soup, string_tunings
+    return soup, all_tunings
 
 
 def reorder_note(note):
@@ -607,7 +681,7 @@ def shift_svg_content(soup):
         svg["height"] = str(int(svg["height"].replace("px", "")) + 180)
 
 
-def add_logo_and_title(soup, page_num, total_page_count, page_title, string_tunings):
+def add_logo_and_title(soup, page_num, total_page_count, page_title, all_tunings):
     """Create and Add ColorMusic Logo and Song Title"""
     svg = soup.find("svg")
     group = soup.new_tag("g", id="logo-group")
@@ -684,16 +758,29 @@ def add_logo_and_title(soup, page_num, total_page_count, page_title, string_tuni
     if page_num == 1:
         svg.insert(0, link)
 
-        # Add string tunings (if applicable)
-        if string_tunings:
-            string_tuning_text_val = ""
+        # Add tunings (if applicable)
+        if all_tunings:
+            tuning_text_vals = []
+            for key in sorted(all_tunings, key=int):
+                print(all_tunings[key])
+                tunings = all_tunings[key]["tunings"]
+                label = all_tunings[key]["label"]
 
-            string_tuning_text_val = "-".join(
-                string_tunings[key] for key in sorted(string_tunings, key=int, reverse=True)
-            )
+                tuning_text_val = f"{label}: "
+                tuning_text_val += "-".join(
+                    tunings[key] for key in sorted(tunings, key=int, reverse=True)
+                )
+                
+                tuning_text_vals.append(tuning_text_val)
 
-            # for string_num in sorted([int(x) for x in string_tunings.keys()], reverse=True):
-            #     string_tuning_text_val += string_tunings[str(string_num)]
+            # tuning_text_val = ""
+
+            # tuning_text_val = "-".join(
+            #     string_tunings[key] for key in sorted(string_tunings, key=int, reverse=True)
+            # )
+
+            # # for string_num in sorted([int(x) for x in string_tunings.keys()], reverse=True):
+            # #     string_tuning_text_val += string_tunings[str(string_num)]
 
             string_tunings_group = soup.new_tag("g", id="string_tunings-group")
             string_tuning_text = soup.new_tag(
@@ -703,7 +790,8 @@ def add_logo_and_title(soup, page_num, total_page_count, page_title, string_tuni
                 fill="Black",
                 **{"font-size": "10", }
             )
-            string_tuning_text.string = f"Tuning: {string_tuning_text_val}"
+            # string_tuning_text.string = f"Tuning: {tuning_text_val}"
+            string_tuning_text.string = " * ".join(tuning_text_vals)
             string_tunings_group.append(string_tuning_text)
             svg.insert(0, string_tunings_group)
 
@@ -777,7 +865,7 @@ def render(filename, mei_data, title, bucket, render_id):
     
     # Label notes in MEI
     soup = parse_mei(mei_data)
-    mei_data, string_tunings = label_notes(soup)
+    mei_data, all_tunings = label_notes(soup)
 
     mei_data = str(mei_data)
 
@@ -830,7 +918,7 @@ def render(filename, mei_data, title, bucket, render_id):
         for accid in svg.find_all(class_="accid"):
             accid["opacity"] = 0.5
 
-        add_logo_and_title(svg, page, total_page_count, title, string_tunings)
+        add_logo_and_title(svg, page, total_page_count, title, all_tunings)
 
         # Footer
         footer = svg.new_tag("comment")
