@@ -192,7 +192,8 @@ def label_notes(soup):
             
             staff_tunings[string_num] = pitch
         
-        all_tunings[staff_num] = {"tunings": staff_tunings, "label": staff_tunings_label, }
+        if staff_tunings:
+            all_tunings[staff_num] = {"tunings": staff_tunings, "label": staff_tunings_label, }
     
     # print(all_tunings)
 
