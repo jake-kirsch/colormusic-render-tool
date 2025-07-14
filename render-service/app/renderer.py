@@ -837,7 +837,7 @@ def extract_score_title(soup):
         score_title = f"{song_name} - {composers_str}"
     elif song_name:
         score_title = song_name
-    elif composers:
+    elif composers_str:
         score_title = composers_str
 
     if not score_title or score_title == "Untitled score - Composer / arranger":
