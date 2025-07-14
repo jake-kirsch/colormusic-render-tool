@@ -77,6 +77,14 @@ def extract_xml_from_zip(filename, render_id):
                     new_blob.upload_from_string(file_data)
                     
                     return xml_filename
+                elif file_info.filename.lower().endswith(".musicxml"):
+                    xml_filename = f'{filename.split(".")[0]}.musicxml'
+                    
+                    # Upload extracted file back to GCS
+                    new_blob = bucket.blob(f"{render_id}/{xml_filename}")
+                    new_blob.upload_from_string(file_data)
+                    
+                    return xml_filename
     
     raise FileNotFoundError("No .xml file found in the ZIP archive.")
 
