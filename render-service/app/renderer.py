@@ -850,7 +850,7 @@ def extract_score_title(soup):
                 rends = [rend.string for rend in pg_head.find_all("rend")]
 
                 if rends:        
-                    score_title = " - ".join(rends)
+                    score_title = " - ".join([str(rend) for rend in rends if rend])
     
     return score_title
 
